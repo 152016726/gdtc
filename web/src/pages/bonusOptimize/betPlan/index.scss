@@ -1,0 +1,200 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+$styleBorder: 1px solid $DarkerBorderColor;
+
+.bet_plan_content {
+  width: 670px;
+  min-height: 240px;
+  box-sizing: border-box;
+  .plan_price {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    padding-left: 14px;
+    background-color: #F4F4F4;
+    color: $playIntroduceContent;
+    border: $styleBorder;
+    box-shadow: 0px -2px 2px #E9E9E9 inset;
+    dl {
+      dt, dd {
+        float: left;
+      }
+      dd {
+        padding-left: 20px;
+        input {
+          width: 88px;
+          height: 28px;
+          font-size: 16px;
+          color: $playIntroduceContent;
+          border: $styleBorder;
+          text-align: center;
+          vertical-align: middle;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+  .choose_way {
+    border: $styleBorder;
+    border-top: none;
+    dl.title {
+      font-size: 16px;
+      color: $playIntroduceContent;
+      height: 62px;
+      line-height: 40px;
+      padding: 12px 0;
+      dt, dd {
+        float: left;
+      }
+      dt {
+        padding-left: 14px;
+        padding-right: 23px;
+      }
+      dd {
+        padding-right: 12px;
+        position: relative;
+      }
+    }
+    .detail {
+      clear: both;
+      border: 9px solid $CommonHeaderBg;
+      border-top: none;
+      overflow: hidden;
+      color: $playIntroduceContent;
+      display: table;
+      dl {
+        clear: both;
+        height: 40px;
+        line-height: 40px;
+        display: table-row;
+        &.tbl_title{
+          height: 36px;
+          line-height: 36px;
+          background: #EBE588;
+          &:nth-child(odd){
+            background: #EBE588;
+          }
+        }
+        &:nth-child(odd){
+          background: $BgColor;
+        }
+        dd, dt{
+          text-align: center;
+          display: table-cell;
+          vertical-align: middle;
+          &.number {
+            width: 50px;
+          }
+          &.single_bet {
+            width: 250px;
+          }
+          &.single_price {
+            width: 118px;
+          }
+          &.amount {
+            width: 114px;
+            .selectNumBox {
+              float: none;
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0;
+            }
+          }
+          &.price {
+            width: 118px;
+          }
+        }
+        dd.single_bet {
+          font-size: 0;
+          text-align: left;
+          line-height: 32px;
+          ul {
+            display: inline-block;
+            width: 120px;
+            height: 28px;
+            border: 1px solid #B85300;
+            padding: 1px;
+            vertical-align: middle;
+            font-size: 14px;
+            &:nth-child(2n + 1){
+              margin-right: 8px;
+            }
+            li {
+              float: left;
+              display: block;
+              height: 24px;
+              line-height: 24px;
+              &.name {
+                width: 72px;
+                background: #B85300;
+                color: #fff;
+                text-align: center;
+              }
+              &.text {
+                width: 38px;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn_average, .btn_toCold, .btn_toHot {
+    display: block;
+    text-indent: -9000px;
+    width: 128px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .btn_average {
+    background: url("./images/average.png") no-repeat center;
+  }
+  .btn_toCold {
+    background: url("./images/toCold.png") no-repeat center;
+  }
+  .btn_toHot {
+    background: url("./images/toHot.png") no-repeat center;
+  }
+  .btn_question {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -9000px;
+    width: 18px;
+    height: 18px;
+    background: url("./images/question.png") no-repeat center;
+  }
+  .active {
+    .btn_average {
+      background: url("./images/average_active.png") no-repeat center;
+    }
+    .btn_toCold {
+      background: url("./images/toCold_active.png") no-repeat center;
+    }
+    .btn_toHot {
+      background: url("./images/toHot_active.png") no-repeat center;
+    }
+    b {
+      display: block;
+      width: 24px;
+      height: 11px;
+      background: url("./images/arrow_top.png") no-repeat center;
+      position: absolute;
+      bottom: -11px;
+      left: 52px;
+    }
+  }
+  .disabled {
+    .btn_average {
+      background: url("./images/average_disabled.png") no-repeat center;
+    }
+    .btn_toCold {
+      background: url("./images/toCold_disabled.png") no-repeat center;
+    }
+    .btn_toHot {
+      background: url("./images/toHot_disabled.png") no-repeat center;
+    }
+  }
+}

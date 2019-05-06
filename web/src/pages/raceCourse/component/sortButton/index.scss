@@ -1,0 +1,47 @@
+@import "../../../../common/style/color";
+
+#sort_button{
+  position: relative;
+  box-sizing: border-box;
+
+  /* 箭头向下 */
+  .arrowIcon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../../images/jt_sc01.png") no-repeat center;
+  }
+  .defaultClass{
+    border: 1px solid transparent;
+    //box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .upDiv {
+    background: #fff;
+    border: 1px solid $MainColor;
+    border-bottom: none;
+    //box-sizing: border-box;
+    >span{
+      transform:rotate(180deg);
+      -ms-transform:rotate(180deg); 	/* IE 9 */
+      -moz-transform:rotate(180deg); 	/* Firefox */
+      -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+      -o-transform:rotate(180deg);
+    }
+  }
+
+  .marketTime{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid $MainColor;
+    padding: 8px 0;
+    div{
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+
+}

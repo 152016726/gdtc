@@ -1,0 +1,100 @@
+<div class="eventAgenda">
+    <p class="title">首页>足球资料库>{{shortName}}{{seasonName}}赛季</p>
+    <div class="content clearfix">
+        <!-- 左边资料库概览开始  -->
+        <div class="league fl">
+            <h2>足球资料库</h2>
+            <toggle-land
+                v-for="(item, index) in list"
+                :key="index"
+                :event="item"
+                :fid="fid"
+                :sid="sid"
+                :lid="lid"
+                @setDefaultFid="setDefaultFid"
+                @setDefaultSid="setDefaultSid"
+                @setDefaultLid="setDefaultLid"
+                @setDefaultSeasonId="setDefaultSeasonId"
+                @setDefaultName="setDefaultName"
+                @setDefaultStageName="setDefaultStageName"
+                @setDefaultRankType="setDefaultRankType"
+            >
+            </toggle-land>
+        </div>
+        <!-- 左边资料库概览结束  -->
+
+        <!-- 右边联赛资料开始  -->
+        <div class="course fl">
+            <div class="leagueInfo">
+                <!-- 联赛赛季开始  -->
+                <div class="season">
+                    <filter-season
+                        :lid="lid"
+                        :name="name"
+                        :seasonId="seasonId"
+                        @setSeasonId="setDefaultSeasonId"
+                        @setSeasonName="setDefaultSeasonName"
+                    >
+
+                    </filter-season>
+                </div>
+                <!-- 联赛赛季结束  -->
+                <!-- 联赛阶段开始  -->
+                <div class="stage">
+                    <stage-list
+                        :lid="lid"
+                        :seasonId="seasonId"
+                        @setStage="setDefaultStageId"
+                        @setStageName="setDefaultStageName"
+                    >
+                    </stage-list>
+                </div>
+                <!-- 联赛阶段结束  -->
+                <!-- 联赛轮次开始  -->
+                <div class="round">
+                    <round-list
+                        :lid="lid"
+                        :seasonId="seasonId"
+                        :stageId="stageId"
+                        :stageName="stageName"
+                        @setRound="setDefaultRoundId"
+                    >
+                    </round-list>
+                </div>
+                <!-- 联赛轮次结束  -->
+                <!-- 联赛队伍开始  -->
+                <div class="team">
+                    <team-list
+                        :lid="lid"
+                        :seasonId="seasonId"
+                        :stageId="stageId"
+                        :roundId="roundId"
+                    >
+                    </team-list>
+                </div>
+                <!-- 联赛队伍结束  -->
+            </div>
+            <!-- 联赛排名开始  -->
+            <div class="leagueRank">
+                <rank-list
+                    :seasonId="seasonId"
+                    :stageId="stageId"
+                    :roundId="roundId"
+                    :type="rankType"
+                    @setType="setDefaultRankType"
+                >
+                </rank-list>
+            </div>
+            <!-- 联赛排名结束  -->
+            <!-- 联赛介绍开始  -->
+            <div class="introduction">
+                <p class="intro">赛制介绍</p>
+                <p class="description">
+                   {{system}}
+                </p>
+            </div>
+            <!-- 联赛介绍结束  -->
+        </div>
+        <!-- 右边联赛资料结束  -->
+    </div>
+</div>

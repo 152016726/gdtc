@@ -1,0 +1,26 @@
+<div>
+    <div :class="{
+            centerShow: !isVertical,
+            teamBox: !isVertical,
+            clearfix: !isVertical,
+            verticalBox: isVertical
+         }">
+        <div class="home">
+            <div>
+                <label v-if="homeLeagueRank && !isVertical && homeLeagueRank !== '0'">[{{homeLeagueRank}}]</label>
+                <span :title="homeName">{{homeShortName}}</span>
+                <label v-if="homeLeagueRank && isVertical">[{{homeLeagueRank}}]</label>
+                <span v-if="handicap != 0 && isVertical" :class="textColor">({{handicap}})</span>
+            </div>
+        </div>
+        <div class="vs">
+            <div>VS</div>
+        </div>
+        <div class="away">
+            <div>
+                <span :title="awayName">{{awayShortName}}</span>
+                <label v-if="awayLeagueRank && awayLeagueRank !== '0'">[{{awayLeagueRank}}]</label>
+            </div>
+        </div>
+    </div>
+</div>

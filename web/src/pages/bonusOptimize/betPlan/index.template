@@ -1,0 +1,60 @@
+<div class="bet_plan_content">
+    <div class="plan_price">
+        <dl>
+            <dt>①.计划购买金额:</dt>
+            <dd><input type="text" v-bind:value="pay" v-on:keyup="handlePayEnter"/> 元</dd>
+        </dl>
+    </div>
+    <div class="choose_way">
+        <dl class="title">
+            <dt>②.选择优化方式</dt>
+            <dd v-bind:class="{active: optimizeType === 0}">
+                <a href="#" class="btn_average" v-on:click.prevent="changeOptimize(0)">平均优化</a><b></b>
+            </dd>
+            <dd v-bind:class="{active: optimizeType === 1 && isCanOptimizeEx, disabled: !isCanOptimizeEx}">
+                <a href="#" class="btn_toHot" v-on:click.prevent="changeOptimize(1)">搏热优化</a><b></b>
+            </dd>
+            <dd v-bind:class="{active: optimizeType === 2 && isCanOptimizeEx, disabled: !isCanOptimizeEx}">
+                <a href="#" class="btn_toCold" v-on:click.prevent="changeOptimize(2)">搏冷优化</a><b></b>
+            </dd>
+            <dd>
+                <introduction>
+                </introduction>
+            </dd>
+        </dl>
+        <div class="detail">
+            <dl class="tbl_title">
+                <dt class="number">序号</dt>
+                <dt class="single_bet">单注</dt>
+                <dt class="single_price">单注奖金</dt>
+                <dt class="amount">注数</dt>
+                <dt class="price">预计奖金</dt>
+            </dl>
+            <dl v-if="bonusInfo" v-for="(item, i) in bonusInfo.data">
+                <dd class="number">{{i + 1}}</dd>
+                <dd class="single_bet">
+                    <ul v-for="bet in item.data">
+                        <li class="name">{{bet.matchInfo.awayName}}</li>
+                        <li class="text">
+                            <span v-if="bet.outcome.marketKey === 'WDW'">
+                                <span :class="getOddClass(bet.outcome)">{{bet.outcome.oddsName.length === 2 ? bet.outcome.oddsName.charAt(1) : bet.outcome.oddsName}}</span>
+                            </span>
+                            <span v-else-if="bet.outcome.marketKey === 'HWDW'">
+                                <span :class="getOcHcapClass(bet.outcome)">{{bet.outcome.data.handicap}}</span>
+                                <span :class="getOddClass(bet.outcome)">{{bet.outcome.oddsName.length === 2 ? bet.outcome.oddsName.charAt(1) : bet.outcome.oddsName}}</span>
+                            </span>
+                            <span v-else>
+                                <span>{{bet.outcome.oddsName}}</span>
+                            </span>
+                        </li>
+                    </ul>
+                </dd>
+                <dd class="single_price price_font">{{item.singleBonus}}</dd>
+                <dd class="amount">
+                    <SelectNumBox v-bind:ops="{value: item.amount, min: 1, max: 9999, delta: 1, onClick: handleClickItem.bind(this, item)}" />
+                </dd>
+                <dd class="price price_font">{{item.bonus}}</dd>
+            </dl>
+        </div>
+    </div>
+</div>

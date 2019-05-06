@@ -1,0 +1,46 @@
+.lineupContainer {
+  width: 980px;
+  height: 613px;
+  .lineup_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url('./images/playground.png') no-repeat;
+    background-size: contain;
+    .lineupInner {
+      width: 880px;
+      height: 494px;
+      padding: 60px 50px;
+      .innerContent {
+        width: 440px;
+        height: 100%;
+        float: left;
+        display: table;
+        .lineupWarp {
+          width: 14.2%;
+          height: 100%;
+          display: table;
+          float: left;
+          .lineContent {
+            width: 100%;
+            height: 20%;
+            display: table;
+          }
+        }
+      }
+      .awayStyle {
+        transform: rotate(180deg);
+        float: right;
+      }
+    }
+  }
+  .noData {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    font-size: 16px;
+    color: #909090;
+    border: 1px solid #dedede;
+    line-height: 200px;
+  }
+}

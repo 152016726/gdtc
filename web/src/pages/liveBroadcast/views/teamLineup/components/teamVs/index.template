@@ -1,0 +1,15 @@
+<div class="teamVs">
+    <ul class="clearfix">
+        <li>
+            <div class="homeIcon"></div>
+            <div class="homeTeam">{{homeFormation}}</div>
+        </li>
+        <li class="center">
+            VS
+        </li>
+        <li>
+            <div class="awayIcon"></div>
+            <div class="awayTeam">{{awayFormation}}</div>
+        </li>
+    </ul>
+</div>

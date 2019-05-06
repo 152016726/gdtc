@@ -1,0 +1,21 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.eventView{
+  padding: 20px;
+  border-left: 1px solid $CommonBorderColor;
+  border-right: 1px solid $CommonBorderColor;
+  .header{
+    border-bottom: 3px solid $MainColor;
+  }
+  .intro{
+    height: 42px;
+    line-height: 55px;
+    a:hover{
+      color:$MainColor;
+    }
+  }
+  .hots{
+    color: #FF4B27;
+    font-size: $FONT_16;
+  }
+}

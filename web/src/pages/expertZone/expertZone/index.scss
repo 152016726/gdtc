@@ -1,0 +1,74 @@
+@import "~common/style/color.scss";
+$border: 1px solid #DEDEDE;
+.expertZone{
+  padding: 20px 0;
+  background-color: #ffffff;
+  .types{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #D2D2D2;
+  }
+  .latestOrder, .historyOrder{
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 19px;
+    padding-bottom: 12px;
+    text-indent: 24px;
+  }
+  .latest, .history{
+    display: table;
+    width: 100%;
+    border-left: $border;
+    border-top: $border;
+    dt{
+      display: table-row;
+      &:nth-child(2n+1){
+        background-color: #FAFAFA;
+      }
+      dd{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: $border;
+        border-right: $border;
+      }
+    }
+    .th{
+      display: table-header-group;
+      height: 36px;
+      line-height: 36px;
+      color: #333333;
+      font-size: 14px;
+      background-color: #E6EDFA !important;
+      box-sizing: border-box;
+      dd:nth-child(1){
+        width: 116px;
+      }
+      dd:nth-child(2){
+        width: 433px;
+      }
+      dd:nth-child(3){
+        width: 521px;
+      }
+      dd:nth-child(4){
+        width: 122px;
+      }
+    }
+  }
+  .none{
+    width: 100%;
+    heght: 58px;
+    text-align: center;
+    line-height: 58px;
+    color: #909090;
+    font-size: 16px;
+    border: 1px solid #dedede;
+    border-top: none;
+    box-sizing: border-box;
+  }
+  .historyPaginations{
+    padding-top: 26px;
+  }
+}

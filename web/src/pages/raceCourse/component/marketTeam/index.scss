@@ -1,0 +1,51 @@
+
+/* 水平展示样式 */
+.teamBox{
+  width: 100%;
+  font-size: 14px;
+  >div{
+    float: left;
+    width: 40%;
+    label{
+      color: #999;
+    }
+  }
+  .home{
+    text-align: right;
+  }
+  .vs{
+    width: 20%;
+  }
+  .away{
+    text-align: left;
+  }
+}
+/* 水平展示样式 */
+
+/* 垂直展示样式 */
+.verticalBox{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 14px;
+  >div{
+    position: relative;
+    height: 40%;
+    padding-left: 15px;
+    >div{
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+    }
+  }
+  label{
+    color: #999999;
+  }
+  .vs{
+    height: 20%;
+  }
+}
+/* 垂直展示样式 */

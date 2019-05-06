@@ -1,0 +1,14 @@
+<div id="choose-recommend-bottom-view"
+     class="choose-recommend-bottom-view clearfix">
+    <div>说明：</div>
+    <div>
+        <p>1.胜平负2串1只能选择1个复式（共3个选项）；</p>
+        <p>2.总进球只能选择1个复式（共2个选项）；</p>
+        <p>3.单关只能选择1个选项。</p>
+    </div>
+    <div>
+        <span @click="toRecommendHandle">
+            下一步
+        </span>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="team-name-title clearfix">
+    <div class="team-name-title-left">
+        <span :class="{
+            homeIcon: typeNum === 0 || typeNum === 'home',
+            awayIcon: typeNum === 1 || typeNum === 'away'}"/>
+        <span :title="teamName">{{teamShortName}}</span>
+    </div>
+    <div class="team-name-title-right" v-if="isShowRight">
+        <analysis-single-selection-view
+                :title-text="fieldTitleText"
+                :text-li="fieldTextLis"
+                :selectHandelCallBack="fieldHandle"
+                :active-index="fieldActiveIndex">
+        </analysis-single-selection-view>
+        <analysis-single-selection-view
+                :title-text="fieldMarketTitleText"
+                :text-li="marketTeams"
+                :selectHandelCallBack="fieldMarketHandle"
+                :active-index="fieldMarketActiveIndex">
+        </analysis-single-selection-view>
+        <analysis-multiple-selection-view
+                :title-text="marketTitleText"
+                :market-lis="marketLis"
+                :selectHandelCallBack="leagueSelectHandle">
+        </analysis-multiple-selection-view>
+    </div>
+</div>

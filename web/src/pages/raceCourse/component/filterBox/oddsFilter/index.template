@@ -1,0 +1,21 @@
+<filter-box :text='"赔率筛选"' ref="filterBox">
+    <ul class="odds_filter">
+        <li :class="{nochecked: nochecked}">
+            <a v-for="(ele, idx) in buttonsArr"
+               :class="{active:btnVal === ele.id}"
+               :key="idx"
+               @click="changeBtnVal(ele.id)">
+                {{ele.text}}
+            </a>
+        </li>
+        <li>
+            <span>自定义：</span>
+            <input type="text" @input="changeMinInputVal" @change="changeMinInputVal" :value="_minVal" placeholder="最小值">
+            <i></i>
+            <input type="text" @input="changeMaxInputVal" @change="changeMaxInputVal" :value="_maxVal" placeholder="最大值" >
+        </li>
+        <li>
+            <a @click="submitFilter">确定</a><a @click="cancelFilter">取消</a>
+        </li>
+    </ul>
+</filter-box>

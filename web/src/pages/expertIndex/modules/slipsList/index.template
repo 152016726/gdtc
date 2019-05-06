@@ -1,0 +1,64 @@
+<div class="slipsList">
+    <!-- 第一层简单筛选开始 -->
+    <div class="header clearfix">
+        <div class="history fl">
+            <toggle-isHistory
+                    @setIsHistory="setIsHistory"
+            >
+            </toggle-isHistory>
+        </div>
+        <div class="types fl">
+            <toggle-types
+                    @setType="setType"
+            >
+            </toggle-types>
+        </div>
+    </div>
+    <!-- 第一层简单筛选结束 -->
+    <!-- 第二层个性化筛选开始 -->
+    <div class="nav">
+        <div class="mixFilter fl">
+            <div class="match fl">
+                <score-match-filter
+                        :league-arr="leagueList"
+                        @submitCb="setLids"
+                />
+            </div>
+            <div class="orderBy fl">
+                <selections
+                        :optionList="orderByList"
+                        :defaultId="orderBy"
+                        :openIcon="tagIcon"
+                        :closeIcon="tagIcon"
+                        @transfer="setOrderBy"
+                >
+                </selections>
+            </div>
+        </div>
+        <div class="my fr">
+            <div class="heart" @click="setIsFocused" :class="{active: isFocused}">
+                <div class="heartIcon"></div>
+                我的关注
+            </div>
+        </div>
+    </div>
+    <!-- 第二层个性化筛选结束 -->
+    <!-- 推荐单展示开始 -->
+    <div class="orderList">
+        <div class="orders clearfix">
+            <div class="order fl"
+                 v-for="(item, index) in orderList"
+                 :key="index"
+            >
+                <experts-order
+                    :marketEvents="item"
+                >
+                </experts-order>
+            </div>
+        </div>
+        <div class="orderNone" v-if="orderList.length === 0">
+            <p>暂无最新晒单</p>
+        </div>
+    </div>
+    <!-- 推荐单展示结束 -->
+</div>

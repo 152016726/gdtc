@@ -1,0 +1,95 @@
+<div id="single-flex" class="singleFlex">
+    <div class="updateTime">
+        竞彩奖金更新时间：{{updateTime}}
+        <span @click="updateHandle">[刷新]</span>
+    </div>
+    <div class="marketBox">
+        <div class="searchBox clearfix">
+            <div class="searchLeft"
+                 :class="isFloatBonus && 'check'"
+                 v-on:click="bonusChangeHandle">
+                奖金区浮动显示奖金变化
+            </div>
+            <div class="searchCenter">
+                <ul class="clearfix">
+                    <li>
+                        <match-filter
+                                :submitCb="matchFilterCb"
+                                :arrDateButtons="arrWeek"
+                                :arrLeagueButtons="arrLeague"/>
+                    </li>
+                    <li>
+                        <odds-filter :submitCb="oddFilterCb" />
+                    </li>
+                    <li class="hidden-market-tip" v-if="hideLen !== 0">
+                        已隐藏<span class="hidden-number">{{hideLen}}</span>场比赛
+                        <span class="close-btn" @click="closeHiddenHandle"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marketsList topLine"
+             :class="{isFlex: isFlex}">
+            <event-list-title
+                    class="listHeader"
+                    :callbackHandle="callbackHandle">
+                <ul class="clearfix">
+                    <li class="marketNum">编号</li>
+                    <li class="leagueName">赛事</li>
+                    <li class="marketTime">
+                        <market-time-select :no-sort="true"/>
+                    </li>
+                    <li class="teamName">主队 VS 客队</li>
+                    <li class="concede">让球</li>
+                    <li class="events">
+                        <div class="winLen">
+                            <win-draw-win-select
+                                    :title-text="'胜'"
+                                    v-on:clickHandle="winHandle"
+                                    :one-market="true"/>
+                        </div>
+                        <div class="flatLen">
+                            <win-draw-win-select
+                                    :title-text="'平'"
+                                    v-on:clickHandle="flatHandle"
+                                    :one-market="true"/>
+                        </div>
+                        <div class="failLen">
+                            <win-draw-win-select
+                                    :title-text="'负'"
+                                    v-on:clickHandle="failHandle"
+                                    :one-market="true"/>
+                        </div>
+                    </li>
+                    <li class="moreEvents">更多玩法</li>
+                    <li class="record">数据</li>
+                    <li class="average">平均欧赔</li>
+                </ul>
+            </event-list-title>
+            <div class="noMarketTip"
+                 v-if="isNoMarket">
+                暂无单关赛事
+            </div>
+            <match-header
+                    v-for="(item, grpKey) in grpMatch"
+                    :week="item.week"
+                    :date="item.grpDate"
+                    :matchLength="item.events.length"
+                    :key="grpKey"
+            >
+                <div class="listItem">
+                    <ul>
+                        <market-li
+                                v-for="(mk, index) in item.events"
+                                :key="index"
+                                :row-num="index + '-' + grpKey"
+                                :event="mk"
+                                :is-end-time="isEndTime"
+                                :market-sort="'single'"
+                                :min-height="78"/>
+                    </ul>
+                </div>
+            </match-header>
+        </div>
+    </div>
+</div>

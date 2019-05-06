@@ -1,0 +1,140 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.more-information-view {
+  padding-bottom: 20px;
+  color: #333333;
+  .more-information-nav {
+    color: #999999;
+    font-size: 14px;
+    padding: 12px 0;
+    a {
+      color: #999999;
+      &.hover {
+        color: $BorderColor;
+      }
+    }
+  }
+  .more-information-content {
+    .more-information-content-left {
+      float: left;
+      width: 824px;
+      height: 730px;
+      margin-right: 20px;
+      padding: 14px;
+      border: 1px solid $BorderColor;
+      .mif-content-left-title {
+        span {
+          &:nth-of-type(1) {
+            float: left;
+            color: #E60012;
+            font-size: 18px;
+          }
+          &:nth-of-type(2) {
+            float: right;
+            width: 726px;
+            height: 6px;
+            margin-top: 10px;
+            background: url("../images/slant.png") repeat center;
+          }
+        }
+      }
+      .content-article-box {
+        li {
+          height: 40px;
+          line-height: 40px;
+          padding: 12px 0;
+          border-bottom: 1px dashed $BorderColor;
+          a:hover {
+            div {
+              span {
+                color: #FF5502;
+              }
+            }
+          }
+          div {
+            height: 16px;
+            line-height: 16px;
+            span {
+              float: left;
+              &:nth-of-type(1) {
+                width: 5px;
+                height: 8px;
+                margin-top: 4px;
+                margin-right: 10px;
+                background: url("../images/dotIcon.png") no-repeat center;
+              }
+              &:nth-of-type(2) {
+                font-size: 16px;
+                color: #333333;
+              }
+              &:nth-of-type(3) {
+                float: right;
+                font-size: 14px;
+                color: #999999;
+              }
+            }
+          }
+        }
+      }
+      .foot-burster {
+        text-align: center;
+        padding: 28px 0;
+      }
+    }
+    .more-information-content-right {
+      float: left;
+      width: 314px;
+      border: 1px solid $BorderColor;
+      .mif-right-title {
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        background: #F2F2F2;
+        padding: 0 12px;
+        border-bottom: 1px solid $BorderColor;
+        span {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background: url("../images/arrowIcon.png") no-repeat center;
+        }
+      }
+      .mif-right-content {
+        padding: 4px 16px;
+        font-size: 14px;
+        li {
+          padding: 10px 0;
+          a:hover {
+            div {
+              color: #FF5502;
+            }
+          }
+          div {
+            height: 14px;
+            line-height: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            span {
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              margin-right: 4px;
+              margin-bottom: 3px;
+              border-radius: 50%;
+              background: #999999;
+            }
+          }
+        }
+      }
+      &.more-information-content-right-one {
+        min-height: 254px;
+        margin-bottom: 20px;
+      }
+      &.more-information-content-right-two {
+        min-height: 390px;
+      }
+    }
+  }
+}

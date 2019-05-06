@@ -1,0 +1,6 @@
+
+<div v-bind:class="['playerLine',' clearfix', isHome ? ' right': ' left',index%2 ===0 ? '': ' colorBg']">
+    <div class="playerIcon"></div>
+    <div class="shirtNum">{{player.shirtnumber}}</div>
+    <div class="playerName">{{player.playerCnShort}}</div>
+</div>

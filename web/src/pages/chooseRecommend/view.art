@@ -1,0 +1,32 @@
+{{extend '../../common/template/main_expert.art'}}
+{{block 'content'}}
+    <div class="choose-recommend-race-course_main" id="root">
+        <router-view></router-view>
+    </div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

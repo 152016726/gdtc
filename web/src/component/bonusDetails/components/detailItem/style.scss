@@ -1,0 +1,52 @@
+/* 奖金明细css */
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.dark{
+  background-color: #F0F3FA;
+}
+.red{
+  color:#EB2A2A;
+}
+.orange{
+  color:#EB812A;
+}
+.blue{
+  color:#2B78B3;
+}
+.number{
+  display: inline-block;
+  margin:0 8px;
+}
+.betTable{
+  border:1px solid $CommonBorderColor;
+  color:$BasicFontColor;
+  tr{
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    font-size: $FONT_14;
+  }
+  th{
+    color:#fff;
+    background-color: $BonusDetailsExcelColor;
+  }
+  th,td{
+    border-bottom: 1px solid $CommonBorderColor;
+    border-right: 1px solid $CommonBorderColor;
+  }
+  .last_th{
+    border-right:none;
+  }
+  .passWidth{
+    width: 90px;
+  }
+  .countWidth{
+    width: 88px;
+  }
+  .numWidth{
+    width: 399px;
+  }
+  .awardWidth{
+    width: 129px;
+  }
+}

@@ -1,0 +1,29 @@
+<div class="register-alert-cell" id="register-alert-cell">
+    <div class="register-alert-box">
+        <div class="close-register-btn"></div>
+        <div class="title-logo">
+            <span class="title-logo"></span>
+            <span>广东竞猜</span>
+        </div>
+        <div class="register-content">
+            <div class="others-login">
+                <div class="others-login-title">
+                    <span class="line-between"></span>
+                    <span>使用第三方帐号登录</span>
+                    <span class="line-between"></span>
+                </div>
+                <div class="others-login-icon">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="phone-register">
+                <a href="#" class="use-phone">使用手机号注册</a>
+            </div>
+            <div class="go-to-login">
+                <i class="have-account">已有账号？</i><a href="#" class="transfer-login">登录到广东竞猜>></a>
+            </div>
+        </div>
+    </div>
+</div>

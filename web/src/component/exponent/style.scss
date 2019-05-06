@@ -1,0 +1,195 @@
+@import "../../common/style/color.scss";
+@import "../../common/style/fonts.scss";
+
+$rowHeight: 40px;
+.exp_table_wrapper {
+  .exp_table_title {
+    border-bottom: 1px solid $DarkerBorderColor;
+    margin: 12px 0 20px;
+    color: #333;
+    padding-left: 32px;
+    background: url("./images/title_ah.png") left center no-repeat;
+    background-size: 20px 18px;
+    > span, > a {
+      float: left;
+      font-size: 14px;
+      margin-right: 12px;
+      line-height: 32px;
+    }
+    a {
+      float: right;
+      color: $linkColor;
+      padding-left: 21px;
+      background: url("./images/return.png") left center no-repeat;
+      background-size: 15px 12px;
+    }
+  }
+  .exp_table {
+    display: table;
+    width: 100%;
+    margin-bottom: 24px;
+    border-left: 1px solid $CommonBorderColor;
+    border-top: 1px solid $CommonBorderColor;
+    dl {
+      display: table-row;
+      dd {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        line-height: $rowHeight;
+        color: #333;
+        font-size: 15px;
+      }
+    }
+    .title {
+      background: #f2f2f2;
+      dd {
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .sub_table {
+      display: table;
+      width: 100%;
+      > dl {
+        > dd {
+          &:last-of-type {
+            border-right: none;
+          }
+        }
+        &:last-of-type {
+          > dd {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    & dl dd {
+      border-right: 1px solid $CommonBorderColor;
+      border-bottom: 1px solid $CommonBorderColor;
+    }
+    .w33 {
+      width: 33.33333%;
+    }
+    .bet_outcome.downNum span, .bet_outcome.upNum span {
+      color: $downColor;
+      margin: 0;
+      padding: 0;
+      background: none;
+    }
+    .bet_outcome.upNum span {
+      color: $upColor;
+    }
+    .bet_outcome {
+      cursor: initial;
+      background: none;
+      line-height: 40px;
+      height: 40px;
+      span{
+        color: #333;
+        font-size: 15px;
+      }
+    }
+    .brn {
+      border-right: none;
+    }
+    .row_event {
+      background: $rowLightBgColor;
+    }
+    a {
+      color: $linkColor
+    }
+  }
+  &.ah {
+    .c1, c4 {
+      width: 15%;
+    }
+    .c2, .c3 {
+      width: 35%;
+    }
+  }
+  &.wdw {
+    .c1 {
+      width: 10%;
+    }
+    .c2 {
+      width: 5%;
+    }
+    .c3 {
+      width: 15%;
+    }
+    .c4 {
+      width: 20%;
+    }
+    .c5 {
+      width: 20%;
+    }
+    .c6 {
+      width: 10%;
+    }
+    .c7 {
+      width: 10%;
+    }
+    .c8 {
+      width: 10%;
+    }
+
+  }
+  &.common_detail {
+    .c1, .c2, .c3, .c4 {
+      width: 22.5%;
+    }
+    .c5 {
+      width: 10%;
+    }
+    .init {
+      color: $linkColor;
+    }
+    .curr {
+      color: $RedColor;
+    }
+  }
+  &.bt {
+    margin-bottom: 24px;
+    .c1,.c2,.c3{
+      width: 15%;
+    }
+    .c4,.c5{
+      width: 18%;
+    }
+    .left_tab {
+      float: left;
+      width: 15%;
+      border: 1px solid $DarkerBorderColor;;
+      li {
+       a{
+         display: block;
+         line-height: 24px;
+         padding: 13px 24px;
+         font-size: 16px;
+         color: #333;
+         &.active {
+           background: $rowLightBgColor;
+           color: $MainColor;
+           position: relative;
+           &:after {
+             position: absolute;
+             content: '';
+             width: 4px;
+             height: 100%;
+             background: $MainColor;
+             right: 0;
+             top: 0;
+           }
+         }
+       }
+      }
+    }
+    .exp_table {
+      float: right;
+      width: 83%;
+      margin-bottom: 0;
+    }
+  }
+}

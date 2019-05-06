@@ -1,0 +1,128 @@
+<div class="liveScore">
+    <!-- tab切换开始 -->
+    <div class="tabItems clearfix">
+        <div class="items fl"
+             :class="{active: activeType === 0}"
+             @click="toggleActiveHandle(0)">即时比分</div>
+        <div class="items fl"
+             :class="{active: activeType === 1}"
+             @click="toggleActiveHandle(1)">完场比分</div>
+        <div class="items fl"
+             :class="{active: activeType === 2}"
+             @click="toggleActiveHandle(2)">未来赛程</div>
+    </div>
+    <!-- tab切换结束 -->
+
+    <!-- 过滤功能开始 -->
+    <div class="filterFunctions clearfix">
+        <div class="retainBox"
+             v-if="activeType === 0"
+             @click="retainHandle">
+            保留<span/>
+        </div>
+        <div class="eventScreen">
+            <score-match-filter :league-arr="leagueArr"
+                                :submit-cb="screenHandle"/>
+        </div>
+        <div>
+            <div class="dateScreen" v-show="activeType === 1"/>
+            <div class="dateScreen" v-show="activeType === 2"></div>
+        </div>
+        <div class="allMarketBtn fl" v-if="activeType === 0">
+            <span @click="closeHideHandle">完整<i v-if="hideLen > 0">(隐藏{{hideLen}}场)</i></span>
+        </div>
+        <div class="eventSelect" v-if="activeType === 0">
+            <label>
+                <input type="checkbox"
+                       v-model="arrScreen"
+                       :value="'3'"
+                       @click="screenMarketHandle('3')">
+                未开始
+            </label>
+            <label>
+                <input type="checkbox"
+                       v-model="arrScreen"
+                       :value="'1'"
+                       @click="screenMarketHandle('1')">
+                进行中
+            </label>
+            <label>
+                <input type="checkbox"
+                       v-model="arrScreen"
+                       :value="'2'"
+                       @click="screenMarketHandle('2')">
+                已完场
+            </label>
+        </div>
+    </div>
+    <!-- 过滤功能结束 -->
+
+    <!-- 比赛内容开始 -->
+    <div class="content">
+        <!-- 比赛内容结束 -->
+        <div>
+            <dl class="ths"
+                :class="{noneOne: activeType !== 0}">
+            <dt>
+                <div class="delete" v-if="activeType === 0">
+                    <span :class="{
+                                selectSt: isAllSelect,
+                                hasSelectSt: hasSelectSt
+                            }"
+                          @click="allSelectHandle"/>
+                </div>
+            </dt>
+            <dt>编号</dt>
+            <dt>赛事</dt>
+            <dt>比赛时间</dt>
+            <dt>状态</dt>
+            <dt>
+                <div class="fl">主队</div>
+                <div class="fl">比分</div>
+                <div class="fl">客队</div>
+                <div class="fl">
+                    直播
+                </div>
+            </dt>
+            <dt>半场</dt>
+            <dt>
+                <span>胜</span>
+                <span>平</span>
+                <span>负</span>
+            </dt>
+            <dt>详细</dt>
+        </dl>
+        </div>
+        <div class="scoreList" v-for="(event, index) in eventList">
+            <vue-list-lazy-component>
+                <match-team :event="event"
+                            :active-type="activeType"
+                            :all-select-vid="allSelectVid"
+                            :select-handle="selectHandle"
+                            @updateEventItem="updateEventItem"
+                />
+            </vue-list-lazy-component>
+        </div>
+    </div>
+    <!-- 比赛内容结束 -->
+    <div class="bottomTip">
+        <dl class="example">
+            <dt>图<br/>例<br/>说<br/>明</dt>
+            <dd>
+                <ul>
+                    <li v-for="(exp, idx) in exampleList" :key="idx + '_exp'">
+                        <span class="logo">
+                            <img :src="exp.img"
+                                 :title="exp.text"
+                                 :style="{ width: exp.style.width*4/5 + 'px', height: exp.style.height*4/5 + 'px' }"
+                            />
+                        </span>
+                        <span class="text">
+                            {{exp.text}}
+                        </span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>

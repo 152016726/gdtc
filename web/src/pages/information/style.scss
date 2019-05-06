@@ -1,0 +1,419 @@
+@import "../../common/style/color.scss";
+@import "../../common/style/fonts.scss";
+.information{
+  background-color:#fafafa;
+  .container{
+    background-color:#ffffff;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  .italic{
+    font-style: italic;
+  }
+  .w1{
+    width: 45px;
+  }
+  .w2{
+    width: 140px;
+  }
+  .major{
+    padding-top:20px;
+    margin-bottom: 20px;
+    .exhibition{
+      margin-right: 20px;
+      .swiper-container{
+        width: 593px;
+        height: 354px;
+        position: relative;
+        overflow: hidden;
+        //margin-bottom: 20px;
+        z-index: 3;
+        .swiper-wrapper{
+          position: absolute;
+          top:0;
+          left:0;
+          height: 354px;
+          .swiper-slide{
+            float: left;
+            width: 593px;
+            height: 100%;
+            a{
+              display: block;
+              width: 100%;
+              height: 100%;
+              i{
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .pagination {
+          position: absolute;
+          right:8px;
+          bottom: 16px;
+          z-index: 10;
+          .swiper-pagination-switch {
+            cursor: pointer;
+            float: left;
+            margin-right: 8px;
+            width: 26px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            color: #fff;
+            border:1px solid #e5d1d0;
+          }
+          .swiper-active-switch {
+            color:#ffffff;
+            background-color: #be2a24;
+          }
+        }
+      }
+      .photoList{
+        width: 593px;
+        height: 233px;
+        border:1px solid $CommonBorderColor;
+        position: relative;
+        box-sizing: border-box;
+        .phototitle{
+          height: 40px;
+          line-height: 40px;
+          width: 100%;
+          background-color: #ebebeb;
+          border: 1px solid #ebebeb;
+          box-sizing: border-box;
+          position: relative;
+          .lotteryList{
+            text-indent: 15px;
+            font-size: $FONT_18;
+            font-weight: bold;
+            color:$BasicFontColor;
+          }
+          .more{
+            font-size: $FONT_14;
+            color:$BasicFontColor;
+            padding-right: 12px;
+          }
+        }
+        .photoList-container{
+          position: relative;
+          height: 173px;
+          overflow: hidden;
+          margin:30px 48px;
+          .swiper-wrapper{
+            position: absolute;
+            top:0;
+            left:0;
+            .swiper-slide{
+              float: left;
+              width: 173px;
+              padding-right:23px;
+              box-sizing: border-box;
+              &:hover{
+                a{
+                  color:$CommonHoverColor
+                }
+              }
+              a{
+                i{
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
+              }
+              p{
+                text-align: center;
+                font-size: $FONT_14;
+                color:$BasicFontColor;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+              .photo{
+                display: block;
+                height: 100px;
+                width: 150px;
+                margin-bottom: 16px;
+                img{
+                  width: 100%;
+                  height:100%;
+                }
+              }
+            }
+          }
+        }
+        .leftBtn,.rightBtn{
+          cursor: pointer;
+          position: absolute;
+          top:50%;
+          width: 18px;
+          height: 42px;
+          margin-top:-21px;
+          background: url("./images/left.png") no-repeat;
+          background-size: 100%;
+        }
+        .leftBtn{
+          left:16px;
+        }
+        .rightBtn{
+          right:16px;
+          background: url("./images/right.png") no-repeat;
+        }
+      }
+    }
+    .teamsInfo{
+      //height: 608px;
+      width: 577px;
+      padding: 0 16px;
+      border:1px solid $CommonBorderColor;
+      position: relative;
+      padding-bottom: 19px;
+      box-sizing: border-box;
+      .team{
+        box-sizing: border-box;
+        background-color: #fff;
+        border-bottom: 1px solid #999999;
+        padding: 12px 0;
+        h2{
+          height: 40px;
+          width: 100%;
+          line-height: 40px;
+          font-size: $FONT_18;
+          text-indent: 47px;
+          background: url("./images/topic.png") no-repeat center left;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .articleContent{
+          height: 102px;
+          overflow: hidden;
+          li{
+            line-height: 34px;
+            font-size: $FONT_16;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            a:hover{
+              color:$CommonHoverColor;
+            }
+            i{
+              color:#999999;
+              margin-right:12px;
+              display: inline-block;
+              vertical-align: middle;
+              border:2px solid #333333;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+      .hot{
+        border:none;
+        h2{
+          background-image: url("./images/hot.png");
+        }
+      }
+      .forward{
+        h2{
+          background-image: url("./images/forward.png");
+        }
+        border:none;
+      }
+    }
+  }
+  .info{
+    margin-bottom: 20px;
+    .news{
+      width: 778px;
+      border:1px solid $CommonBorderColor;
+      .avatar{
+        i{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .topic{
+        height:40px;
+        font-weight: bold;
+        padding-left:15px;
+        border-bottom: 1px solid $CommonBorderColor;
+        background-color: #ebebeb;
+        box-sizing: border-box;
+        .items{
+          width: 100px;
+          height: 100%;
+          line-height: 40px;
+          text-align: center;
+          font-size: $FONT_18;
+          color:$BasicFontColor;
+          float: left;
+        }
+        .active{
+          background-color: #ffffff;
+          color:$MainColor;
+          border-top:1px solid $MainColor;
+        }
+      }
+      .item{
+        display: none;
+      }
+      .active{
+        display: block;
+      }
+      .hotNews{
+        width: 100%;
+        overflow: hidden;
+        li{
+          padding:20px 14px;
+          .avatar{
+            width: 177px;
+            height: 118px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .content{
+            margin-left: 20px;
+            width: 550px;
+            color:#999999;
+            h2{
+                color:$BasicFontColor;
+                font-size: $FONT_18;
+                line-height: 40px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                a:hover{
+                  color:$CommonHoverColor;
+                }
+            }
+            p{
+              line-height: 24px;
+              height: 48px;
+              font-size: $FONT_16;
+              margin-bottom: 12px;
+              word-break: break-all;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              display: -webkit-box;
+              display: -moz-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp:2;
+              &:hover{
+                a{
+                  color:$CommonHoverColor;
+                }
+              }
+              a{
+                color:#999999;
+              }
+            }
+            .league{
+              margin-left:10px;
+            }
+            .date{
+              margin-left:72px;
+            }
+            .time{
+              margin-left:10px;
+            }
+          }
+        }
+        .line{
+          margin:0 14px;
+          height: 1px;
+          background-color: transparent;
+          border-bottom:1px dashed #CACACA;
+        }
+      }
+      .more{
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        font-size: $FONT_14;
+        background-color:#F2F2F2;
+        color:#999999;
+        a{
+          color:#999999;
+        }
+        i{
+          color:#2B78B2;
+        }
+      }
+    }
+    .rank{
+      margin-left: 22px;
+      width: 388px;
+      .teamLeagueRank,.shootersRank{
+        border:1px solid $CommonBorderColor;
+        margin-bottom: 20px;
+        .tab{
+          height:40px;
+          line-height: 40px;
+          font-size: $FONT_18;
+          font-weight: bold;
+          padding-left:15px;
+          border-bottom: 1px solid $CommonBorderColor;
+          background-color: #ebebeb;
+          box-sizing: border-box;
+        }
+        .teams{
+          .teamRank{
+            height: 38px;
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 1px solid $CommonBorderColor;
+            a{
+              float: left;
+              width: 20%;
+              color:$BasicFontColor;
+              font-weight: bold;
+              font-size: $FONT_16;
+              text-align: center;
+              line-height: 38px;
+              &.active{
+                color:#EB812A;
+              }
+            }
+          }
+        }
+
+        table{
+          &.item{
+            display: none;
+          }
+          &.active{
+            display: block;
+          }
+          margin-left: 15px;
+          th{
+            font-weight: normal;
+          }
+          tr{
+            line-height: 30px;
+            i{
+              display: inline-block;
+              width: 26px;
+              height: 18px;
+              line-height: 18px;
+              background-color: #eeeeee;
+              color:#666666;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

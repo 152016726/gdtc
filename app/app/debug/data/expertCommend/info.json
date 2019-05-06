@@ -1,0 +1,80 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "list": [
+      {
+        "rid": "1",
+        "eid": "1",
+        "state": "2",
+        "nickname": "盒子精",
+        "icon": "",
+        "type": "0",
+        "fiveWinrate": "0.2",
+        "comboWin": "8",
+        "weekHitRate": "0.4",
+        "monthHitRate": "0.4",
+        "publishDate": "2018/12/09 08:00",
+        "gameType": "1",
+        "events":[
+          {
+            "vid": "123",
+            "completeNo": "201901070001",
+            "vsDate": "2019/1/07",
+            "leagueId": "1",
+            "leagueName": "英超",
+            "leagueColor": "#f10215",
+            "leagueShortName": "英超",
+            "homeTid": "1",
+            "homeName": "阿森纳",
+            "homeGoalsScored": "",
+            "awayTid": "1",
+            "awayName": "曼联",
+            "awayShortName": "曼联",
+            "awayGoalsScored": ""
+          },
+          {
+            "vid": "123",
+            "completeNo": "201901070001",
+            "vsDate": "2019/1/07",
+            "leagueId": "1",
+            "leagueName": "英超",
+            "leagueColor": "#f10215",
+            "leagueShortName": "英超",
+            "homeTid": "1",
+            "homeName": "阿森纳",
+            "homeGoalsScored": "",
+            "awayTid": "1",
+            "awayName": "曼联",
+            "awayShortName": "曼联",
+            "awayGoalsScored": ""
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "1",
+              "completeNo": "201901070001",
+              "outcomes": [
+                {
+                  "odds": "0.86",
+                  "marketKey":"wdw",
+                  "outcomeKey": "homeOdds"
+                },
+                {
+                  "odds": "0.86",
+                  "marketKey":"wdw",
+                  "outcomeKey": "drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "2",
+          "money": "20",
+          "maxBonus": "168",
+          "minBonus": "168",
+          "analysis": "今晚打老虎今晚打老虎今晚打老虎今晚打老虎今晚打老虎今晚打老虎今晚打老虎"
+        }
+      }
+    ]
+  }
+}

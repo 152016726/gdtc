@@ -1,0 +1,66 @@
+.liveBroadcastPage {
+  width: 1190px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  .innerContent {
+    .leftSide, .rightSide {
+      float: left;
+    }
+    .leftSide {
+      width: 200px;
+      margin-right: 10px;
+      ul {
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid #DEDEDE;
+        border-left:none;
+        border-right: none;
+        li {
+          width: 200px;
+          height: 50px;
+          line-height: 50px;
+          color: #333333;
+          background-color: #fff;
+          padding-left: 25px;
+          cursor: pointer;
+          border: 1px solid #DEDEDE;
+          border-bottom: none;
+          border-top: none;
+          &.active {
+            color: #EB812B;
+            background-color: #FAFAFA;
+            border-right: 4px solid #EB812B
+          }
+          &.disableLi {
+            color: #999999;
+            cursor: default;
+          }
+        }
+      }
+    }
+    .rightSide {
+      width: 980px;
+      height: auto;
+      .noDataContent {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        height: 200px;
+        font-size: 16px;
+        color: #909090;
+        line-height: 200px;
+        display: table;
+        div {
+          width: 20%;
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .leftLine, .rightLine {
+          height: 1px;
+          border-bottom: 1px dashed #D1D1D1;
+        }
+      }
+    }
+  }
+}

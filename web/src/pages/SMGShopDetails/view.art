@@ -1,0 +1,8 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<div class="SMGShopDetails">
+    <div class="breadCrumbs"><a href="/index.html">首页</a> > <a href="/dot.html">竞彩店</a> > 店铺详情</div>
+    <div id="SMGContainer"></div>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

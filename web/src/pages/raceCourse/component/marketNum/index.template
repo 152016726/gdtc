@@ -1,0 +1,9 @@
+<div>
+    <img src="../../images/singleIcon.png"
+         alt="单关"
+         v-if="dgStatus === '1'">
+    <span class="numberContent"
+          :class="{centerShow: !isBottom, bottomText: isBottom}">
+        {{week}}{{completeNo}}
+    </span>
+</div>

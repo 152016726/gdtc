@@ -1,0 +1,36 @@
+<div class="vueBetslipCheckBox" :class="{check: ops.isChecked}" @click="clickHandle">
+    <span :class="{extend: ops.isExtend, down: _isDown}">
+        {{ops.text}}
+    </span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

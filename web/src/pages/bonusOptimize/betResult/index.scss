@@ -1,0 +1,47 @@
+@import "~common/style/color";
+
+.bet_result_content{
+  width: 670px;
+  height: 80px;
+  background-color: #E6EDFA;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  .left{
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+    .top_price{
+      padding-top: 16px;
+      font-size: 16px;
+      .price {
+        font-size: 18px;
+      }
+    }
+    .bottom_price{
+      font-size: 14px;
+      .price {
+        font-size: 16px;
+      }
+    }
+  }
+  .right{
+    width: 40%;
+    float: right;
+    padding-right: 14px;
+    text-align: right;
+    padding-top: 16px;
+    button{
+      width: 120px;
+      line-height: 48px;
+      border-radius: 4px;
+      background-color: $MainColor;
+      color: $BgColorWhite;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .price{
+    color: #EB2A2A;
+  }
+}

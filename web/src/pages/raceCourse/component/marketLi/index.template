@@ -1,0 +1,130 @@
+<li>
+    <vue-list-lazy-component :min-height="minHeight">
+        <!--比分-->
+        <div class="listBox clearfix"
+             v-if="marketSort === 'cs'">
+            <market-num
+                    class="marketNum"
+                    :week="event.week"
+                    :complete-no="event.number"/>
+            <market-league
+                    class="leagueName"
+                    :league-name="event.leagueName"
+                    :league-color="event.leagueColor"
+                    :league-id="event.leagueId"
+                    :league-short-name="event.leagueShortName"/>
+            <market-time
+                    class="marketTime"
+                    :short-date="event.shortDate"
+                    :start-time="event.startTime"
+                    :end-short-date="event.endShortDate"
+                    :end-time="event.endTime"
+                    :is-end-time="isEndTime"/>
+            <market-team
+                    class="teamName"
+                    :home-league-rank="event.homeLeagueRank"
+                    :home-name="event.homeName"
+                    :home-short-name="event.homeShortName"
+                    :away-name="event.awayName"
+                    :away-short-name="event.awayShortName"
+                    :away-league-rank="event.awayLeagueRank"/>
+            <div class="injectionArea"
+                 :class="{upDiv: isShowOther}">
+                <moreBetCtrlBtn
+                        :row="rowNum"
+                        :clickHandleCb="clickMoreBetBtnCb"
+                        :market-sort="'cs'"
+                        :is-center = "true"
+                        :hiding-text="'展开投注'"
+                        :opening-text="'收起投注'"
+                        :selected-bet="selectedBet.CSBets"/>
+            </div>
+            <market-record
+                    class="record"
+                    :vid="event.vid"
+                    :type-num="1"
+                    :is-peer-review="false"/>
+            <market-average
+                    class="average"
+                    :averages="event.oddsInfo ? event.oddsInfo[0] : {}"/>
+        </div>
+        <!--比分-->
+
+        <!--单关固定-->
+        <div class="listBox clearfix"
+             v-else-if="marketSort === 'single'">
+            <market-num
+                    class="marketNum"
+                    :week="event.week"
+                    :complete-no="event.number"/>
+            <market-league
+                    class="leagueName"
+                    :league-name="event.leagueName"
+                    :league-color="event.leagueColor"
+                    :league-id="event.leagueId"
+                    :league-short-name="event.leagueShortName"/>
+            <market-time
+                    class="marketTime"
+                    :short-date="event.shortDate"
+                    :start-time="event.startTime"
+                    :end-short-date="event.endShortDate"
+                    :end-time="event.endTime"
+                    :is-end-time="isEndTime"/>
+            <market-team
+                    class="teamName"
+                    :home-league-rank="event.homeLeagueRank"
+                    :home-name="event.homeName"
+                    :home-short-name="event.homeShortName"
+                    :away-name="event.awayName"
+                    :away-short-name="event.awayShortName"
+                    :away-league-rank="event.awayLeagueRank"
+                    :handicap="event.markets[marketHWDWSort] && event.markets[marketHWDWSort].handicap"/>
+            <div class="concede">
+                <market-concede
+                        :dg-status="event.markets && event.markets[marketWDWSort] && event.markets[marketWDWSort].dgStatus"
+                        :market-odds="event.markets[marketWDWSort]"/>
+                <market-concede
+                        :dg-status="event.markets && event.markets[marketHWDWSort] && event.markets[marketHWDWSort].dgStatus"
+                        :market-odds="event.markets[marketHWDWSort]"
+                        :handicap="event.markets && event.markets[marketHWDWSort] && event.markets[marketHWDWSort].handicap"/>
+            </div>
+            <div class="events">
+                <div class="hadOdds bottomLine">
+                    <bet-outcome
+                            v-for="(od,index) in WDWOddArr"
+                            :key="event.vid + '#' + marketWDWSort + '#' + od.key"
+                            :num="event.markets[marketWDWSort] && event.markets[marketWDWSort][od.key]"
+                            :trend="event.markets[marketWDWSort] && event.markets[marketWDWSort][od.trend]"
+                            :vid="event.vid"
+                            :outcome-name="od.key"
+                            :sort="marketWDWSort"/>
+                </div>
+                <div class="hhadOdds">
+                    未开售
+                </div>
+            </div>
+            <div class="moreEvents">
+                <moreBetCtrlBtn
+                        :row="rowNum"
+                        :clickHandleCb="clickMoreBetBtnCb"
+                        :market-sort="'single'"
+                        :selected-bet="selectedBet.allBets"/>
+            </div>
+            <market-record
+                    class="record"
+                    :vid="event.vid"
+                    :type-num="1"/>
+            <market-average
+                    class="average"
+                    :averages="event.oddsInfo ? event.oddsInfo[0] : {}"/>
+        </div>
+        <!--单关固定-->
+
+        <more-odds-but
+                class="otherOutcomeBox"
+                v-if="isShowOther"
+                :market-odds="event.markets"
+                :market-sort="sort"
+                :vid="event.vid"/>
+    </vue-list-lazy-component>
+</li>

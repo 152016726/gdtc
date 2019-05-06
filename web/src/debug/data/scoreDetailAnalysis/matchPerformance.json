@@ -1,0 +1,805 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "list": [
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654321",
+        "leagueName": "英超",
+        "leagueColor": "#808080",
+        "leagueShortName": "英超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联1",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西1",
+        "awayGoalsScored": "4",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654321",
+        "leagueName": "英超",
+        "leagueColor": "#808080",
+        "leagueShortName": "英超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联2",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西2",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联3",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西3",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联4",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西4",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联5",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西5",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联6",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西6",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "1",
+          "hwdw": "0",
+          "ou": "3"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654323",
+        "leagueName": "墨超",
+        "leagueColor": "#808080",
+        "leagueShortName": "墨超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联7",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "",
+        "homeYellowCards": "",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西7",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "0",
+          "hwdw": "3",
+          "ou": "1"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654323",
+        "leagueName": "墨超",
+        "leagueColor": "#808080",
+        "leagueShortName": "墨超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联8",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西8",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654323",
+        "leagueName": "墨超",
+        "leagueColor": "#808080",
+        "leagueShortName": "墨超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联9",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西9",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654324",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联10",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西10",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654321",
+        "leagueName": "英超",
+        "leagueColor": "#808080",
+        "leagueShortName": "英超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联1",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西1",
+        "awayGoalsScored": "4",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654321",
+        "leagueName": "英超",
+        "leagueColor": "#808080",
+        "leagueShortName": "英超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联2",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西2",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联3",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西3",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联4",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西4",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联5",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西5",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654322",
+        "leagueName": "欧冠",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧冠",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联6",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西6",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "1",
+          "hwdw": "0",
+          "ou": "3"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654323",
+        "leagueName": "墨超",
+        "leagueColor": "#808080",
+        "leagueShortName": "墨超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联7",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "",
+        "homeYellowCards": "",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西7",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "0",
+          "hwdw": "3",
+          "ou": "1"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654323",
+        "leagueName": "墨超",
+        "leagueColor": "#808080",
+        "leagueShortName": "墨超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联8",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西8",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654323",
+        "leagueName": "墨超",
+        "leagueColor": "#808080",
+        "leagueShortName": "墨超",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联9",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西9",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "654324",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#808080",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联10",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "1",
+        "homeCornerKicks": "1",
+        "awayTid": "124",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西10",
+        "awayGoalsScored": "0",
+        "awayHalftimeScored": "0",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "wdw": {
+          "homeOdds": "3.02",
+          "drawOdds": "2.03",
+          "awayOdds": "1.23"
+        },
+        "hwdw": {
+          "handicap": "1.75",
+          "homeOdds": "2.01",
+          "awayOdds": "2.63"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      }
+    ]
+  }
+}

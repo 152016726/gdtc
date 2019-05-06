@@ -1,0 +1,27 @@
+<live-score-filter-box :text="'公司筛选'">
+    <div class="scoreCompanyBox">
+        <div class="matchTop">
+            <div class="topContent">
+                <ul class="clearfix">
+                    <li v-for="(cp, index) in companyArr">
+                        <label>
+                            <input type="checkbox"
+                                   :value="cp.cid"
+                                   v-model="selectCid"
+                                   @click="selectHandle(cp.cid)">
+                            <span :title="cp.cn">{{cp.cnShort}}</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="matchBottom clearfix">
+            <div class="bottomLeft">
+                <span>默认</span>
+            </div>
+            <div class="bottomRight">
+                <span>确认</span>|<span>取消</span>
+            </div>
+        </div>
+    </div>
+</live-score-filter-box>

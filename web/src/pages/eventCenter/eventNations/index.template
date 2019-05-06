@@ -1,0 +1,31 @@
+<div class="eventNations clearfix">
+    <div class="content clearfix">
+        <div :class="['nations', 'fl', (index+1)%6 === 0 ? 'last' : '']"
+             v-for="(item, index) in itemList"
+             :key="index"
+             @click="getAreas(item.id, index)"
+        >
+            <div class="flag fl"
+                 :style="{backgroundImage: 'url('+(webPath+item.flag)+')'}"
+            >
+            </div>
+            <span class="nationName fl">{{item.name}}</span>
+        </div>
+    </div>
+    <div class="areas clearfix" v-if="activeSort === sort">
+        <div class="triangle" :style="{left: 16.6*defaultIndex+8.3+'%'}"></div>
+        <a v-for="(item, index) in leagueArr"
+           :key="index"
+           href="#"
+           class="league fl"
+           @click.stop="getSeason(item, index)"
+        >
+            {{item.shortName}}>>
+            <ul class="seasons" v-if="isShowSeason && leagueActiveIndex === index">
+                <li v-for="(item, index) in seasonArr" :key="index" @click.stop="selectSeason(item)">
+                    {{item.seasonName}}
+                </li>
+            </ul>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<div :class="{noneOne: activeType !== 0}">
+    <dl class="matchTeam">
+        <dd>
+            <div class="delete" v-if="activeType === 0">
+                    <span :class="{selectSt: isSelect}"
+                          @click="selectMarketHandle"></span>
+            </div>
+        </dd>
+        <dd>
+            {{event.week}}{{event.number}}
+        </dd>
+        <dd :style="{background: '#' + event.leagueColor}"
+            :title="event.leagueName">
+            {{event.leagueShortName}}
+        </dd>
+        <dd>
+            {{event.shortDate}} {{event.startTime}}
+        </dd>
+        <dd class="defColor"
+            :class="{
+                doingSt: isDoing,
+                finishSt: isFinish
+             }">
+            {{stateText}}{{isDoing ? "'" : ""}}
+        </dd>
+        <dd>
+            <div class="fl">
+                <i class="orangeCards" v-if="event.homeYellowCards && event.homeYellowCards !== '0'">{{event.homeYellowCards}}</i>
+                <i class="redCards" v-if="event.homeRedCards && event.homeRedCards !== '0'">{{event.homeRedCards}}</i>
+                <i class="rank" v-if="event.homeLeagueRank && event.homeLeagueRank !== '0'">[{{event.homeLeagueRank}}]</i>
+                <i class="teamName" :title="event.homeName">{{event.homeShortName}}</i>
+            </div>
+            <div class="fl"
+                 :class="{scoreNum: !isHiedScore}"
+                 @mouseenter="showScoreOverlays()"
+                 @mouseleave="hideScoreOverlays()">
+                <span v-if="!isHiedScore">
+                    <a v-bind:href="'/liveBroadcast.html?vid=' + event.vid + '#/eventSituation'" target="_blank">
+                        {{event.homeGoalsScored || 0}}-{{event.awayGoalsScored || 0}}
+                    </a>
+                </span>
+                <span v-if="isHiedScore">-</span>
+                <scoreOverlays v-if="isShowScoreOverlays"
+                               :homeName="event.homeShortName"
+                               :awayName="event.awayShortName"
+                               :vid="event.vid"
+                               :homeLeagueRank="event.homeLeagueRank"
+                               :awayLeagueRank="event.awayLeagueRank"
+                               :asianHandicap="event.asianHandicap"/>
+            </div>
+            <div class="fl">
+                <i class="teamName" :title="event.awayName">{{event.awayShortName}}</i>
+                <i class="rank" v-if="event.awayLeagueRank && event.awayLeagueRank !== '0'">[{{event.awayLeagueRank}}]</i>
+                <i class="redCards" v-if="event.awayRedCards && event.awayRedCards !== '0'">{{event.awayRedCards}}</i>
+                <i class="orangeCards" v-if="event.awayYellowCards && event.awayYellowCards !== '0'">{{event.awayYellowCards}}</i>
+            </div>
+            <div class="fl">
+                <a v-if="event.hasTextLive === 'true'" v-bind:href="'/liveBroadcast.html?vid=' + event.vid + '#/liveWords'" target="_blank"/>
+            </div>
+        </dd>
+        <dd >
+            <div v-if="!isHiedScore">
+                {{event.homeHalftimeScored}}:{{event.awayHalftimeScored}}
+            </div>
+            <div v-if="isHiedScore">
+                -
+            </div>
+        </dd>
+        <dd>
+            <span>{{event.homeOdds || '--'}}</span>
+            <span>{{event.drawOdds || '--'}}</span>
+            <span>{{event.awayOdds || '--'}}</span>
+        </dd>
+        <dd>
+            <!--<span>-->
+                <!--<a v-if="event.hasTextLive === 'true'" v-bind:href="'/liveBroadcast.html?vid=' + event.vid + '#/liveWords'" target="_blank">直播</a>-->
+            <!--</span>-->
+            <span>
+                <a v-bind:href="'/scoreAnalysis.html?vid='+ event.vid">
+                    析
+                </a>
+            </span>
+            <span>
+                <a v-bind:href="'/liveSubplate.html?vid=' + event.vid" target="_blank">亚</a>
+            </span>
+            <span>
+                <a v-bind:href="'/scoreWDW.html?vid=' + event.vid" target="_blank">欧</a>
+            </span>
+        </dd>
+    </dl>
+    <match-plus v-if="(event.homeOverTimeScored && event.awayOverTimeScored) || (event.homePenaltyScored && event.awayPenaltyScored)"
+                :event="event"/>
+</div>

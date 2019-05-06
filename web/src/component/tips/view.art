@@ -1,0 +1,6 @@
+<div id="tips">
+    <div class="box">
+        <div class="title">提示</div>
+        <div class="content">登录成功, 3秒跳转首页</div>
+    </div>
+</div>  

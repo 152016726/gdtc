@@ -1,0 +1,16 @@
+<div class="introduction">
+    <div class="select" @click="tabClick">
+
+    </div>
+    <ul class="items" v-if="isFold">
+        <li>
+            <i class="title">平均优化：</i>使所有单注奖金较为平均，一定程度上避免方案中奖不盈利！
+        </li>
+        <li>
+            <i class="title">搏热优化：</i>在其他单注奖金保本的情况下，使概率最高的单注奖金最大化！
+        </li>
+        <li>
+            <i class="title">搏冷优化：</i>在其他单注奖金保本的情况下，使回报最高的单注奖金最大化！
+        </li>
+    </ul>
+</div>

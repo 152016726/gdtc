@@ -1,0 +1,103 @@
+<div class="exp_table_wrapper wdw">
+    <div class="exp_table">
+        <dl class="title">
+            <dd class="c1">赔率公司</dd>
+            <dd class="c2"></dd>
+            <dd class="c3">
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">主胜</dd>
+                        <dd class="w33 brn">平局</dd>
+                        <dd class="w33 brn">客胜</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd class="c4">
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">主胜率</dd>
+                        <dd class="w33 brn">平局率</dd>
+                        <dd class="w33 brn">主胜率</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd class="c5">凯利指数</dd>
+            <dd class="c6">变化时间</dd>
+            <dd class="c7">详细变化</dd>
+        </dl>
+        <dl v-for="(ele, index) in list" :key="index" :class="{row_event: index%2===1}">
+            <dd>
+                {{ele.companyCnShort}}
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd>即时</dd>
+                    </dl>
+                    <dl>
+                        <dd>初盘</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">{{ele.homeOddsInit}}</dd>
+                        <dd class="w33 brn">{{ele.awayOddsInit}}</dd>
+                        <dd class="w33 brn">{{ele.awayOddsInit}}</dd>
+                    </dl>
+                    <dl>
+                        <dd class="w33 brn">
+                            <bet-outcome :isResult="true"
+                                         :trend="ele.homeTrend"
+                                         :num="ele.homeOddsCurr"
+                            />
+                        </dd>
+                        <dd class="w33 brn">
+                            <bet-outcome :isResult="true"
+                                         :trend="ele.drawTrend"
+                                         :num="ele.drawOddsCurr"
+                            />
+                        </dd>
+                        <dd class="w33 brn">
+                            <bet-outcome :isResult="true"
+                                         :trend="ele.awayTrend"
+                                         :num="ele.awayOddsCurr"
+                            />
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">{{ele.homeRateOfWin}}</dd>
+                        <dd class="w33 brn">{{ele.drawRateOfWin}}</dd>
+                        <dd class="w33 brn">{{ele.awayRateOfWin}}</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">
+                            {{ele.homeKelly}}
+                        </dd>
+                        <dd class="w33 brn">
+                            {{ele.drawKelly}}
+                        </dd>
+                        <dd class="w33 brn">
+                            {{ele.awayKelly}}
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                {{getTimeStr(ele.updateTimeCurr)}}
+            </dd>
+            <dd>
+                <a @click="goToDetail(ele)">查看</a>
+            </dd>
+        </dl>
+    </div>
+</div>

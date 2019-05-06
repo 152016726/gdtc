@@ -1,0 +1,101 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.expertList{
+  background-color: $oddsBgColor;
+  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+  .inlineBlock{
+    display: inline-block;
+    vertical-align: super;
+  }
+  .header{
+    margin:30px auto;
+  }
+  .line{
+    width: 87px;
+    height: 1px;
+    background-color: #B8B8B0;
+  }
+  .circle{
+    margin-top: -2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #B8B8B0;
+  }
+  .intro{
+    margin: 0 16px;
+    color: $BasicFontColor;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .swiper-container{
+    width: 1084px;
+    height: 165px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    .swiper-wrapper{
+      position: absolute;
+      top:0;
+      left:0;
+      .swiper-slide{
+        float: left;
+        height: 165px;
+        width: 219px;
+        box-sizing: border-box;
+        .expert{
+          margin:0 auto;
+          display: block;
+          width: 107px;
+        }
+        &:first-child{
+          width: 107px;
+        }
+        .avatar{
+          width: 108px;
+          height: 108px;
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .name{
+          line-height: 36px;
+          color: $BasicFontColor;
+          text-align: center;
+          font-size: $FONT_18;
+        }
+        .score{
+          .circle{
+            width: 48px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 10px;
+            color: #ffffff;
+            background-color: $MainColor;
+          }
+          .combat{
+            background-color: #DA573A;
+          }
+        }
+      }
+    }
+  }
+  .tagIcon{
+    position: absolute;
+    top: 137px;
+    width: 29px;
+    height: 50px;
+  }
+  .pre{
+    left: 24px;
+    background: url("../../images/pre.png") no-repeat center center;
+  }
+  .next{
+    right: 24px;
+    background: url("../../images/next.png") no-repeat center center;
+  }
+}

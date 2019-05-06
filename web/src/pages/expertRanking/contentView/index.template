@@ -1,0 +1,51 @@
+<div class="expert_ranking_content_view clearfix">
+    <div class="expert-ranking-left-tab-bar">
+        <div class="tab-bar-title">
+            排行榜
+        </div>
+        <div class="tab-bar-content">
+            <div :class="{active: activeNum === 0}"
+                 @click="tabChangeHandle(0)">周榜</div>
+            <div @click="tabChangeHandle(1)"
+                 :class="{active: activeNum === 1}">月榜</div>
+        </div>
+    </div>
+    <div class="expert-ranking-right-content">
+        <div class="content-li-title clearfix">
+            <div class="ranking-cell">排行</div>
+            <div class="header-icon-cell">头像</div>
+            <div class="name-cell">昵称</div>
+            <div class="hit-rate-cell">命中率</div>
+            <div class="win-cell">胜</div>
+            <div class="defeat-cell">负</div>
+            <div class="recent-dev-cell">近况</div>
+            <div class="win-streak-cell">连胜</div>
+        </div>
+        <ul class="content-box">
+            <li class="content-li clearfix"
+                v-for="(item, index) in rankingList"
+                :key="index">
+                <div class="ranking-cell">
+                    <span>{{index < 3 ? '' : index + 1 }}</span>
+                </div>
+                <div class="header-icon-cell">
+                    <img :src="item.webApiPath + item.icon" alt="">
+                </div>
+                <div class="name-cell">
+                    <a v-bind:href="'/expertZone.html?eid=' + item.eid">
+                        {{item.nickname}}
+                    </a>
+                </div>
+                <div class="hit-rate-cell">
+                    {{activeNum ? parseInt(item.monthHitRate * 100): parseInt(item.weekHitRate * 100)}}%
+                </div>
+                <div class="win-cell">{{activeNum ? item.monthWin: item.weekWin}}</div>
+                <div class="defeat-cell">{{activeNum ? item.monthDefeat: item.weekDefeat}}</div>
+                <div class="recent-dev-cell">
+                    5中{{Math.round(5 * item.fiveWinrate)}}
+                </div>
+                <div class="win-streak-cell">{{item.comboWin}}</div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.analysis-view {
+  font-size: $FONT_12;
+  padding-bottom: 20px;
+  position: relative;
+  .winColor {
+    color: #DA573A;
+  }
+  .loseColor {
+    color: #7DB839;
+  }
+  .flatColor {
+    color: #669DF6;
+  }
+  .no-score-analysis-data {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #999999;
+  }
+}

@@ -1,0 +1,79 @@
+<div class="content">
+    <div class="exp_table_wrapper">
+        <div class="exp_table ">
+            <dl class="title">
+                <dd>公司</dd>
+                <dd class="c2">初/即</dd>
+                <dd>主队</dd>
+                <dd>盘口</dd>
+                <dd>客队</dd>
+                <dd class="ly">主胜</dd>
+                <dd class="ly">平局</dd>
+                <dd class="ly">客胜</dd>
+                <dd>亚盘详细</dd>
+                <dd>欧赔详细</dd>
+            </dl>
+            <dl v-for="(ele, index) in data" :class="{row_event: index % 2 === 1}">
+                <dd>{{ele.companyCnShort}}</dd>
+                <dd class="justSpan">
+                    <span>初</span>
+                    <span>即</span>
+                </dd>
+                <dd>
+                    <bet-outcome :isResult="true"
+                                 :vertical="true"
+                                 :trend="ele.homeTrendAH"
+                                 :text="ele.homeOddsInitAH"
+                                 :num="ele.homeOddsCurrAH"
+                    />
+                </dd>
+                <dd>
+                    <bet-outcome :isResult="true"
+                                 :vertical="true"
+                                 :trend="ele.handTrendAH"
+                                 :text="ele.handicapInitAH"
+                                 :num="ele.handicapCurrAH"
+                    />
+                </dd>
+                <dd>
+                    <bet-outcome :isResult="true"
+                                 :vertical="true"
+                                 :trend="ele.awayTrendAH"
+                                 :text="ele.awayOddsInitAH"
+                                 :num="ele.awayOddsInitAH"
+                    />
+                </dd>
+                <dd>
+                    <bet-outcome :isResult="true"
+                                 :vertical="true"
+                                 :trend="ele.homeTrend"
+                                 :text="ele.homeOddsInit"
+                                 :num="ele.homeOddsCurr"
+                    />
+                </dd>
+                <dd>
+                    <bet-outcome :isResult="true"
+                                 :vertical="true"
+                                 :trend="ele.drawTrend"
+                                 :text="ele.drawOddsInit"
+                                 :num="ele.drawOddsCurr"
+                    />
+                </dd>
+                <dd>
+                    <bet-outcome :isResult="true"
+                                 :vertical="true"
+                                 :trend="ele.awayTrend"
+                                 :text="ele.awayOddsInit"
+                                 :num="ele.awayOddsInit"
+                    />
+                </dd>
+                <dd>
+                    <a v-bind:href="'/liveSubplate.html?vid=' + ele.vid" target="_blank">亚</a>
+                </dd>
+                <dd>
+                    <a v-bind:href="'/scoreWDW.html?vid=' + ele.vid" target="_blank">欧</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>

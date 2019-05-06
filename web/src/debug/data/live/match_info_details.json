@@ -1,0 +1,307 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "queryUrl": "match_detailsextended/14224283",
+  "doc": [
+    {
+      "event": "match_detailsextended",
+      "_dob": 1527563566,
+      "_maxage": 10,
+      "data": {
+        "_doc": "details",
+        "_matchid": 14224283,
+        "teams": {
+          "home": "墨西哥",
+          "away": "威尔士"
+        },
+        "index": [
+          110,
+          "goalattempts",
+          125,
+          126,
+          171,
+          127,
+          124,
+          120,
+          129,
+          121,
+          122,
+          40,
+          60,
+          158,
+          1030,
+          1126,
+          1029,
+          161
+        ],
+        "values": {
+          "40": {
+            "name": "黄牌",
+            "value": {
+              "home": 1,
+              "away": 1
+            }
+          },
+          "60": {
+            "name": "换人",
+            "value": {
+              "home": 6,
+              "away": 6
+            }
+          },
+          "110": {
+            "name": "控球时间",
+            "value": {
+              "home": 63,
+              "away": 37
+            }
+          },
+          "120": {
+            "name": "任意球",
+            "value": {
+              "home": 12,
+              "away": 8
+            }
+          },
+          "121": {
+            "name": "球门球",
+            "value": {
+              "home": 7,
+              "away": 8
+            }
+          },
+          "122": {
+            "name": "界外球",
+            "value": {
+              "home": 26,
+              "away": 23
+            }
+          },
+          "124": {
+            "name": "角球",
+            "value": {
+              "home": 12,
+              "away": 2
+            }
+          },
+          "125": {
+            "name": "射正",
+            "value": {
+              "home": 4,
+              "away": 0
+            }
+          },
+          "126": {
+            "name": "射偏",
+            "value": {
+              "home": 5,
+              "away": 1
+            }
+          },
+          "127": {
+            "name": "扑救",
+            "value": {
+              "home": 0,
+              "away": 2
+            }
+          },
+          "129": {
+            "name": "犯规",
+            "value": {
+              "home": 8,
+              "away": 12
+            }
+          },
+          "158": {
+            "name": "伤停",
+            "value": {
+              "home": 0,
+              "away": 2
+            }
+          },
+          "161": {
+            "name": "点球",
+            "value": {
+              "home": "0/0",
+              "away": "0/0"
+            }
+          },
+          "171": {
+            "name": "射正球门被封",
+            "value": {
+              "home": 4,
+              "away": 0
+            }
+          },
+          "1029": {
+            "name": "危险进攻",
+            "value": {
+              "home": 70,
+              "away": 48
+            }
+          },
+          "1030": {
+            "name": "安全区域",
+            "value": {
+              "home": 120,
+              "away": 97
+            }
+          },
+          "1126": {
+            "name": "进攻",
+            "value": {
+              "home": 127,
+              "away": 81
+            }
+          },
+          "1199": {
+            "name": "控球时间",
+            "value": {
+              "home": "60/63",
+              "away": "40/37"
+            }
+          },
+          "1627": {
+            "name": "黄牌",
+            "value": {
+              "home": "0/1",
+              "away": "0/1"
+            }
+          },
+          "1634": {
+            "name": "角球",
+            "value": {
+              "home": "5/7",
+              "away": "1/1"
+            }
+          },
+          "freekicksperiod": {
+            "name": "任意球",
+            "value": {
+              "home": "8/4",
+              "away": "7/1"
+            }
+          },
+          "goalkicksperiod": {
+            "name": "球门球",
+            "value": {
+              "home": "7",
+              "away": "3/5"
+            }
+          },
+          "throwinsperiod": {
+            "name": "界外球",
+            "value": {
+              "home": "12/14",
+              "away": "11/12"
+            }
+          },
+          "goalattempts": {
+            "name": "射门",
+            "value": {
+              "home": 9,
+              "away": 1
+            }
+          },
+          "shotsonperiod": {
+            "name": "射正",
+            "value": {
+              "home": "3/1"
+            }
+          },
+          "shotsoffperiod": {
+            "name": "射偏",
+            "value": {
+              "home": "0/5",
+              "away": "1"
+            }
+          },
+          "savesperiod": {
+            "name": "扑救",
+            "value": {
+              "away": "1/1"
+            }
+          },
+          "foulsperiod": {
+            "name": "犯规",
+            "value": {
+              "home": "7/1",
+              "away": "8/4"
+            }
+          },
+          "shotsblockedperiod": {
+            "name": "射正球门被封",
+            "value": {
+              "home": "2/2"
+            }
+          },
+          "substitutionsperiod": {
+            "name": "换人",
+            "value": {
+              "home": "0/6",
+              "away": "1/5"
+            }
+          },
+          "goalattemptsperiod": {
+            "name": "射门",
+            "value": {
+              "home": "3/6",
+              "away": "1"
+            }
+          },
+          "injuriesperiod": {
+            "name": "伤停",
+            "value": {
+              "home": "",
+              "away": "2"
+            }
+          },
+          "ballsafeperiod": {
+            "name": "安全区域",
+            "value": {
+              "home": "53/67",
+              "away": "53/44"
+            }
+          },
+          "attackperiod": {
+            "name": "进攻",
+            "value": {
+              "home": "60/67",
+              "away": "45/36"
+            }
+          },
+          "dangerousperiod": {
+            "name": "危险进攻",
+            "value": {
+              "home": "31/39",
+              "away": "26/22"
+            }
+          }
+        },
+        "types": {
+          "40": "黄牌",
+          "45": "黄红牌",
+          "50": "红牌",
+          "60": "换人",
+          "110": "控球时间",
+          "120": "任意球",
+          "121": "球门球",
+          "122": "界外球",
+          "123": "越位",
+          "124": "角球",
+          "125": "射正",
+          "126": "射偏",
+          "127": "扑救",
+          "129": "犯规",
+          "158": "伤停",
+          "161": "点球",
+          "171": "射正球门被封",
+          "1029": "危险进攻",
+          "1030": "安全区域",
+          "1126": "进攻",
+          "goalattempts": "射门"
+        }
+      }
+    }
+  ]
+}

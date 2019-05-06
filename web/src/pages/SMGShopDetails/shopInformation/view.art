@@ -1,0 +1,54 @@
+<div class="SMGContainer clearfix">
+    <div class="containerLeft">
+        <div class="pc-slide">
+            <div class="view">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {{each userInfo.pictures}}
+                            <div class="swiper-slide">
+                                <img src="{{$value}}" alt="">
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="arrow arrow-left">
+                    <span></span>
+                </div>
+                <div class="arrow arrow-right">
+                    <span></span>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {{each userInfo.pictures}}
+                            <div class="swiper-slide {{$index === 0 && 'active-nav'}}">
+                                <img src="{{$value}}" alt="">
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerRight">
+        <div class="CRTop">
+            <p>网点编号：<span>{{userInfo.dotNumer}}</span></p>
+            <p>网点星级：
+                <% for(var i = 0; i < userInfo.starLevel; i++){ %>
+                    <img src="../images/star.png">
+                <% } %>
+            </p>
+            <p>中出最高奖金：{{userInfo.maxBonus}}</p>
+            <p>网点地址：{{userInfo.address}}</p>
+            <p>联系人：{{userInfo.contact}}</p>
+            <p>联系电话：{{userInfo.phone}}</p>
+            <p>业主二维码：</p>
+        </div>
+        <div class="CRBottom">
+            <div class="coreImg">
+                <img src="{{userInfo.qrCode}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>

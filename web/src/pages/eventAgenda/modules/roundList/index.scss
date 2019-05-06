@@ -1,0 +1,51 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.roundList {
+  display: table;
+  .row{
+    display: table-row;
+    .roundTitle {
+      display: table-cell;
+      width: 136px;
+      height: 100%;
+      text-align: center;
+      background-color: #edf2f2;
+      color: #333333;
+      font-size: $FONT_14;
+      line-height: 21px;
+      vertical-align: middle;
+      .roundName {
+        color: #2B78B2;
+      }
+    }
+    .roundDiv {
+      margin-top: -2px;
+      width: 814px;
+      .rounds {
+        li {
+          cursor: pointer;
+          height: 30px;
+          line-height: 30px;
+          width: 66px;
+          text-align: center;
+          background-color: #F7F7F7;
+          color: $MainColor;
+          margin-right: 2px;
+          margin-top: 2px;
+          &.active {
+            background-color: $MainColor;
+            color: #ffffff;
+          }
+          &.unStart{
+            //background-color: #ffffff;
+            color: #aaaaaa;
+          }
+          &:nth-child(12n){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,445 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<staticLabel>
+    <div class="index">
+        <div class="container">
+            <!--banner部分 -->
+            <div class="banner clearfix">
+                <div class="leftBanner fl">
+                    <!--竞彩足球部分 -->
+                    <div class="lotteryFoot universal clearfix">
+                        <div class="icons fl"></div>
+                        <div class="category fl">
+                            <div class="cateTitle">
+                                竞彩足球
+                            </div>
+                            <div class="types">
+                                <a href="/raceCourse.html#/win_draw_win" class="sign">胜平负/让球</a>
+                                <a href="/raceCourse.html#/hybrid">混合过关</a>
+                                <a href="/raceCourse.html#/correctScores">比分</a>
+                            </div>
+                            <div class="types">
+                                <a href="/raceCourse.html#/totalGoals" class="sign">进球数</a>
+                                <a href="/raceCourse.html#/halfFullTime">半全场</a>
+                                <a href="/raceCourse.html#/singleFlex">单关</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--便捷工具部分 -->
+                    <!--<div class="tools universal clearfix">-->
+                        <!--<div class="icons fl"></div>-->
+                        <!--<div class="category fl">-->
+                            <!--<div class="cateTitle">便捷工具</div>-->
+                            <!--<div class="types">-->
+                                <!--<a href="#" class="sign">今日寻胆</a>-->
+                                <!--<a href="#">开奖汇总</a>-->
+                            <!--</div>-->
+                            <!--<div class="types">-->
+                                <!--&lt;!&ndash;<a href="#" class="sign">竞彩图集</a>&ndash;&gt;-->
+                                <!--<a href="#" class="sign">玩法介绍</a>-->
+                                <!--<a href="#">网站导航</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--app推广部分 -->
+                    <div class="apps clearfix">
+                          <div class="evm fl"></div>
+                          <div class="text fl">
+                            <p>官方</p>
+                            <p>APP下载</p>
+                          </div>
+                          <div class="android fl"></div>
+                          <div class="ios fl"></div>
+                    </div>
+                    <div class="legal">
+
+                    </div>
+                </div>
+                <!--轮播图部分 -->
+                <div class="swiper-container fl">
+                    <div class="swiper-wrapper">
+                        {{each banner val index}}
+                            <div class="swiper-slide">
+                                <a target="{{val.link ? '_blank' : '_self'}}"
+                                   href="{{val.link}}"
+                                   title="{{val.alt}}">
+                                    <i style="
+                                    background: url({{!!val.url ? val.url : ''}}) no-repeat;
+                                    background-size:cover;">
+                                    </i>
+                                </a>
+                            </div>
+                        {{/each}}
+                    </div>
+
+                    <!--分页器 -->
+                    <div class="pagination">
+
+                    </div>
+
+                </div>
+                <!--每日推荐部分 -->
+                <div class="rightBanner fl">
+                    <div class="notice clearfix">
+                        <div class="gameNotice">
+                            <a href="#" class="info fl">每日推荐</a>
+                            <a href="/moreInformation.html?id=140" target="_blank" class="more fr">更多</a>
+                            <i class="icon"></i>
+                        </div>
+                        <div class="notices">
+                            {{if !!daily[0]}}
+                                <h2 class="bold">
+                                    <a href="{{daily[0].link ? daily[0].link : '#'}}"
+                                       title="{{daily[0].title ?daily[0].title : ''}}"
+                                       target="{{daily[0].link ? '_blank' : '_self'}}"
+                                       style="{{!!daily[0].titleColor ? 'color:'+daily[0].titleColor : '' }}">
+                                        {{daily[0].title ? daily[0].title : ''}}
+                                    </a>
+                                </h2>
+                            {{/if}}
+                            <ul class="articleContent">
+                                {{each daily val index}}
+                                    {{if index !== 0}}
+                                        <li>
+                                            <a class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                               target="{{val.link ? '_blank' : '_self'}}"
+                                               title="{{val.title}}"
+                                               href="{{!!val.link ? val.link : '#'}}"
+                                               style="{{!!val.titleColor?'color:'+val.titleColor:''}}">
+                                                <i></i>
+                                                {{val.title}}
+                                            </a>
+                                        </li>
+                                    {{/if}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--banner部分 -->
+
+            <!--资讯部分 -->
+            <div class="news clearfix">
+                <div class="gameInfo clearfix">
+                    <!--中奖喜报部分 -->
+                    <div class="happyNews fl">
+                        <div class="gameNotice">
+                            <a href="#" class="info fl">中奖喜报</a>
+                            <a href="/moreInformation.html?id=132" target="_blank" class="more fr">更多</a>
+                        </div>
+                        <div class="notices">
+                            <ul class="articleContent">
+                                 {{each happyNews val index}}
+                                    <li>
+                                        <a class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                           title="{{val.title}}"
+                                           target="{{val.link ? '_blank' : '_self'}}"
+                                           href="{{!!val.link ? val.link : '#'}}"
+                                           style="{{!!val.titleColor?'color:'+val.titleColor:''}}">
+                                            <i></i>
+                                            {{val.title}}
+                                        </a>
+                                    </li>
+                                 {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <!--焦点赛事部分 -->
+                    <div class="footFocus fl">
+                        <div class="footFocusArticle">
+                            <a href="#" class="fastMsg fl">焦点赛事</a>
+                            <!--<div class="analyze fr clearfix">-->
+                                <!--<a href="/information" target="_blank" class="loterry fl">开奖</a>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="gamesFocus">
+                            {{if focusEvents.length === 0}}
+                                <span class="noneFocus">暂无焦点赛事</span>
+                            {{/if}}
+                            {{if focusEvents.length > 0}}
+                            <div class="gamesFocusSub" id="focusEvent">
+                                <div class="swiper-wrapper">
+
+                                        {{each focusEvents val index}}
+                                            <div class="swiper-slide">
+                                                <div class="matchDetails clearfix">
+                                                    <div class="matchTime clearfix fl">
+                                                        <span class="completeNo">{{val.completeNo}}</span>
+                                                        <span>{{val.leagueShortName}}</span>
+                                                        <span>{{val.vsDate}}</span> 开赛
+                                                    </div>
+                                                    <div class="sands fr">
+                                                        [<a href="{{'/liveSubplate.html?vid=' + val.vid}}" target="_blank">亚 </a>
+                                                        <a href="{{'/scoreWDW.html?vid=' + val.vid}}" target="_blank">欧 </a> ]
+                                                    </div>
+                                                </div>
+                                                <div class="matchTeams clearfix">
+                                                    <div class="home fl"></div>
+                                                    <div class="homeTeamName match fl">
+                                                        <p class="name">{{val.homeShortName}}</p>
+                                                        <p>胜 {{val.markets.wdw.homeOdds}}</p>
+                                                    </div>
+                                                    <div class="draw match fl">
+                                                        <p class="name">平局</p>
+                                                        <p>{{val.markets.wdw.drawOdds}}</p>
+                                                    </div>
+                                                    <div class="courtTeamName match fl">
+                                                        <p class="name">{{val.awayShortName}}</p>
+                                                        <p>胜 {{val.markets.wdw.awayOdds}}</p>
+                                                    </div>
+                                                    <div class="court fl"></div>
+                                                </div>
+                                            </div>
+                                        {{/each}}
+
+                                </div>
+                            </div>
+                            {{/if}}
+                        </div>
+                        {{if focusEvents.length > 0}}
+                            <span class="leftBtn" data="{{focusEvents}}"></span>
+                            <span class="rightBtn" data="{{focusEvents}}"></span>
+
+                            {{if !!focusEvents[0]}}
+                                <div class="others clearfix">
+                                    <a class="laba fl"
+                                       href="{{focusEvents[0].news.link ? focusEvents[0].news.link : '#'}}"
+                                       target="{{focusEvents[0].news.link ? '_blank' : '_self'}}">
+                                    </a>
+                                    <a href="{{focusEvents[0].news.link ? focusEvents[0].news.link : '#'}}"
+                                       target="{{focusEvents[0].news.link ? '_blank' : '_self'}}"
+                                       class="short fl">
+                                        {{focusEvents[0].news.title ? focusEvents[0].news.title : ''}}
+                                    </a>
+                                    <a href="/raceCourse.html#/win_draw_win" target="_blank" class="figure fr">计算奖金</a>
+                                </div>
+                            {{/if}}
+
+                            <!--分页器 -->
+                            <div class="swiper-pagination">
+
+                            </div>
+                        {{/if}}
+                    </div>
+                    <!--官方公告部分 -->
+                    <div class="officialNews fl">
+                        <div class="gameNotice">
+                            <a href="#" class="info fl">官方公告</a>
+                            <a href="/moreInformation.html?id=130" target="_blank" class="more fr">更多</a>
+                        </div>
+                        <div class="notices">
+                            <ul class="articleContent">
+                                {{each notice val index}}
+                                    <li class="clearfix">
+                                        <a target="{{val.link ? '_blank' : '_self'}}"
+                                           class="fl {{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                           title="{{val.title}}"
+                                           href="{{!!val.link ? val.link : '#'}}"
+                                           style="{{!!val.titleColor?'color:'+val.titleColor:''}}">
+                                            <i></i><em>{{val.title}}</em>
+                                            <span class="fr">{{val.publishDate.split(" ")[0].split("-")[1]+'-'+val.publishDate.split(" ")[0].split("-")[2]}}</span>
+                                        </a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--赛事资讯部分 -->
+                <div class="matches clearfix">
+                    <div class="pitBoard fl">
+                        <div class="gameNotice">
+                            <a href="#" class="info fl">赛事资讯</a>
+                            <a href="/information.html" target="_blank" class="more fr">更多</a>
+                        </div>
+                        <div class="board clearfix">
+                            <div class="title">
+                                热门资讯
+                                <div class="line">
+                                </div>
+                            </div>
+                            <p>
+                                <a target="{{hot.setTop.link ? '_blank' : '_self'}}"
+                                   class="{{hot.setTop.titleIsBolder === 'true' ? 'bold' : ''}} {{hot.setTop.titleIsEm === 'true' ? 'italic' : ''}}"
+                                   href="{{!!hot.setTop.link ? hot.setTop.link : '#'}}"
+                                   style="{{!!hot.setTop.titleColor ? 'color:'+hot.setTop.titleColor : ''}}"
+                                   title="{{!!hot.setTop.title ? hot.setTop.title : ''}}">
+                                    {{!!hot.setTop.title ? hot.setTop.title : ''}}
+                                </a>
+                            </p>
+                            <a target="{{hot.setTop.link ? '_blank' : '_self'}}"
+                               class="avatar fl" href="{{!!hot.setTop.link ? hot.setTop.link : '#'}}"
+                               style="
+                               background:url({{!!hot.setTop.titleImage ? hot.setTop.titleImage : ''}})
+                                no-repeat 100% 100%;background-size: cover;">
+                            </a>
+                            <ul class="articles fl">
+                                 {{each hot.else val index}}
+                                    <li>
+                                        <a target="{{!!val.link ? '_blank' : '_self'}}"
+                                           class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                           title="{{val.title}}"
+                                           href="{{!!val.link ? val.link : '#'}}"
+                                           style="{{!!val.titleColor ? 'color:'+val.titleColor : ''}}">
+                                            <i></i>
+                                            {{val.title}}
+                                        </a>
+                                    </li>
+                                 {{/each}}
+                            </ul>
+                        </div>
+                        <div class="board clearfix">
+                            <div class="title">
+                                赛事分析
+                                <div class="line">
+                                </div>
+                            </div>
+                            <p>
+                                <a target="{{analysis.setTop.link ? '_blank' : '_self'}}"
+                                   class="{{analysis.setTop.titleIsBolder === 'true' ? 'bold' : ''}} {{analysis.setTop.titleIsEm === 'true' ? 'italic' : ''}}"
+                                   href="{{!!analysis.setTop.link ? analysis.setTop.link : '#'}}"
+                                   style="{{!!analysis.setTop.titleColor ? 'color:'+analysis.setTop.titleColor:''}}">
+                                    {{!!analysis.setTop.title ? analysis.setTop.title : ''}}
+                                </a>
+                            </p>
+                            <a target="{{analysis.setTop.link ? '_blank' : '_self'}}"
+                               class="avatar fl"
+                               href="{{!!analysis.setTop.link ? analysis.setTop.link : '#'}}"
+                               style="
+                               background:url({{!!analysis.setTop.titleImage ? analysis.setTop.titleImage : ''}})
+                                no-repeat 100% 100%;background-size: cover;">
+                            </a>
+                            <ul class="articles fl">
+                                {{each analysis.else val index}}
+                                    <li>
+                                        <a target="{{!!val.link ? '_blank' : '_self'}}"
+                                           class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                           title="{{val.title}}"
+                                           href="{{!!val.link ? val.link : '#'}}"
+                                           style="{{!!val.titleColor?'color:'+val.titleColor:''}}">
+                                            <i></i>
+                                            {{val.title}}
+                                        </a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="others fl">
+                        <div class="skills">
+                            <div class="gameNotice">
+                                <a href="#" class="info fl">玩法技巧</a>
+                                <a href="/moreInformation.html?id=131" target="_blank" class="more fr">更多</a>
+                            </div>
+                            <div class="notices">
+                                <ul class="articleContent">
+                                     {{each skill val index}}
+                                        <li>
+                                            <a target="{{!!val.link ? '_blank' : '_self'}}"
+                                               class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                               title="{{val.title}}"
+                                               href="{{!!val.link ? val.link : '#'}}"
+                                               style="{{!!val.titleColor?'color:'+val.titleColor:''}}">
+                                                <i></i>
+                                                {{val.title}}
+                                            </a>
+                                        </li>
+                                     {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="material">
+                            <div class="gameNotice">
+                                <a href="#" class="info fl">联赛资料</a>
+                                <a href="/information.html" target="_blank" class="more fr">更多</a>
+                            </div>
+                            <div class="notices">
+                                <ul class="clearfix">
+                                    {{each league val index}}
+                                        {{if index < 8}}
+                                            <li>
+                                                <a target="_self"
+                                                   class="area"
+                                                   title="{{val.leagueName ? val.leagueName : ''}}"
+                                                   href="{{'/eventAgenda.html?vid='+val.leagueId}}"
+                                                   style="{{!!val.leagueColor?'color:'+val.leagueColor:''}}">
+                                                    <i style="
+                                                        background:url({{!!val.leagueLogo ? val.leagueLogo : ''}})
+                                                         no-repeat center center;background-size: cover;">
+                                                    </i>
+                                                    <p>{{val.leagueShortName}}</p>
+                                                </a>
+                                            </li>
+                                        {{/if}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--资讯部分 -->
+
+            <!--底部链接部分 -->
+            <!--<div class="photoList">-->
+                <!--<div class="phototitle">-->
+                    <!--<div class="lotteryList fl">竞彩图集</div>-->
+                    <!--<a href="/information.html" target="_blank" class="more fr">更多</a>-->
+                <!--</div>-->
+                <!--<div class="photoList-container" id="photobox">-->
+                    <!--<div class="swiper-wrapper">-->
+                        <!--{{each atlas val index}}-->
+                            <!--<div class="swiper-slide">-->
+                                <!--<a target="{{!!val.link ? '_blank' : '_self'}}"-->
+                                   <!--href="{{val.link ? val.link : '#'}}"-->
+                                   <!--class="photo"-->
+                                   <!--title="{{val.title}}">-->
+                                    <!--<i style="-->
+                                        <!--background: url({{!!val.titleImage ? val.titleImage : ''}}) no-repeat;-->
+                                       <!--background-size: cover;"></i>-->
+                                <!--</a>-->
+                                <!--<p>-->
+                                    <!--<a target="{{!!val.link ? '_blank' : '_self'}}"-->
+                                       <!--href="{{val.link ? val.link : '#'}}"-->
+                                       <!--title="{{val.title}}">-->
+                                        <!--{{val.title}}-->
+                                    <!--</a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--{{/each}}-->
+                        <!--{{if atlas.length < 5}}-->
+                            <!--{{each atlas val index}}-->
+                                <!--<div class="swiper-slide">-->
+                                    <!--<a target="{{!!val.link ? '_blank' : '_self'}}"-->
+                                       <!--href="{{val.link ? val.link : '#'}}"-->
+                                       <!--class="photo"-->
+                                       <!--title="{{val.title}}">-->
+                                        <!--<i style="-->
+                                            <!--background: url({{!!val.titleImage ? val.titleImage : ''}}) no-repeat;-->
+                                           <!--background-size: cover;"></i>-->
+                                    <!--</a>-->
+                                    <!--<p>-->
+                                        <!--<a target="{{!!val.link ? '_blank' : '_self'}}"-->
+                                           <!--href="{{val.link ? val.link : '#'}}"-->
+                                           <!--title="{{val.title}}">-->
+                                            <!--{{val.title}}-->
+                                        <!--</a>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--{{/each}}-->
+                        <!--{{/if}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<span class="leftBtn"></span>-->
+                <!--<span class="rightBtn"></span>-->
+            <!--</div>-->
+            <!--底部链接部分 -->
+        </div>
+
+    </div>
+</staticLabel>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

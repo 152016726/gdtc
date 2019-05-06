@@ -1,0 +1,46 @@
+<analysis-sub-title-view
+        id="future-five"
+        :text="textStr">
+    <div class="future-five clearfix">
+        <div class="future-five-box"
+             v-for="(item, index_1) in dataList"
+             :key="index_1">
+            <analysis-team-name-title
+                    :type-num="index_1"
+                    :team-name="item.teamName"
+                    :team-short-name='item.teamShortName'>
+            </analysis-team-name-title>
+            <div class="future-five-box-content">
+                <div class="future-five-box-content-title market-li">
+                    <div>时间</div>
+                    <div>赛事</div>
+                    <div>对阵</div>
+                    <div>分析</div>
+                    <div>直播</div>
+                    <div>相隔</div>
+                </div>
+                <div class="future-five-box-content-content">
+                    <ul>
+                        <li class="clearfix market-li"
+                            v-for="(event, index) in eventsList[item.title]"
+                            :key="index">
+                            <div>{{event.vsDate}}</div>
+                            <div :title="event.leagueName"
+                                 :style="{color: event.leagueColor}">
+                                {{event.leagueShortName}}
+                            </div>
+                            <div>
+                                <span :title="event.homeName">{{event.homeName.substring(0, 6)}}</span>
+                                <span>--</span>
+                                <span :title="event.awayName">{{event.awayName.substring(0, 6)}}</span>
+                            </div>
+                            <div> </div>
+                            <div> </div>
+                            <div>{{event.day}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</analysis-sub-title-view>

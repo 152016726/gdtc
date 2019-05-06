@@ -1,0 +1,28 @@
+<table class="betTable">
+    <tbody>
+    <tr>
+        <th class="passWidth">过关方式</th>
+        <th class="countWidth">中奖注数</th>
+        <th class="numWidth">中{{number}}场 最大奖金 奖金明细</th>
+        <th class="last_th awardWidth">奖金</th>
+    </tr>
+    <tr>
+        <td>{{strArr.length === 2 ? '单关' : strArr.length-1+'串1'}}</td>
+        <td>1注</td>
+        <td>
+            <div>
+                <em v-for="(item,index) in strArr" :key="index">{{item}} {{index === strArr.length -1 ? '' : '&times;'}}</em>
+                =
+                <em class="blue">{{detailItems.bonus}}</em>
+            </div>
+        </td>
+        <td class="last_th">{{detailItems.bonus}}</td>
+    </tr>
+    <tr>
+        <td>合计</td>
+        <td><em>1</em>注</td>
+        <td></td>
+        <td class="last_th">{{detailItems.bonus}}元</td>
+    </tr>
+    </tbody>
+</table>

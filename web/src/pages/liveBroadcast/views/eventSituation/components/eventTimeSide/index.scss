@@ -1,0 +1,63 @@
+.eventTimeSide{
+  display: table-row;
+  height: 40px;
+  dd {
+    display: table-cell;
+    border: 1px solid #DEDEDE;
+    border-left: none;
+    border-top: none;
+    vertical-align: middle;
+    font-size: 14px;
+    position: relative;
+    &.showEvent {
+      text-align: right;
+      padding-right: 70px;
+      width: 47%;
+    }
+    &.time {
+      text-align: center;
+      width: 6%;
+    }
+    &.blank {
+      width: 47%;
+    }
+    &:first-child{
+      border-left: 1px solid #DEDEDE;
+    }
+    &.reverse {
+      text-align: left;
+      &.showEvent {
+        padding-right: 0;
+        padding-left: 70px;
+      }
+      .logo {
+        left: 30px;
+      }
+    }
+    .logo {
+      position: absolute;
+      right: 30px;
+    }
+    .subFrom, .subTo{
+      display: inline-block;
+      text-indent: 15px;
+      margin-right: 10px;
+    }
+    .subFrom {
+      background: url(../../images/subIn.png) no-repeat left center;
+      background-size: 10px 14px;
+    }
+    .subTo {
+      background: url(../../images/subOut.png) no-repeat left center;
+      background-size: 10px 14px;
+    }
+  }
+  &:first-child {
+    .showEvent, .time, .blank{
+      border-top: 1px solid #DEDEDE;
+    }
+  }
+  &:nth-child(even) {
+    background: #FAFAFA;
+  }
+}

@@ -1,0 +1,325 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+$styleBorder: 1px solid $CommonBorderColor;
+.liveScore {
+  margin: 20px 0;
+  .bold {
+    font-weight: bold;
+  }
+  .tabItems {
+    .items {
+      cursor: pointer;
+      height: 37px;
+      width: 98px;
+      margin-right: 5px;
+      font-size: $FONT_14;
+      color: $marketTitleColor;
+      line-height: 37px;
+      text-align: center;
+      border: 1px solid $BorderColor;
+      border-bottom: none;
+      border-radius: 4px 4px 0 0;
+      &.active {
+        color: #fff;
+        background-color: $MainColor;
+      }
+    }
+  }
+  .filterFunctions {
+    height: 42px;
+    padding: 7px 12px;
+    background: $marketTitleBgColor;
+    border: 1px solid $BorderColor;
+    border-bottom: none;
+    box-sizing: border-box;
+    > div {
+      float: left;
+      margin-right: 12px;
+    }
+    .retainBox {
+      padding: 4px 8px;
+      background: #F5F3E1;
+      border-radius: 4px;
+      color: #EB812A;
+      border: 1px solid #dedede;
+      cursor: pointer;
+      span {
+        display: inline-block;
+        width: 11px;
+        height: 9px;
+        margin-left: 8px;
+        background: url("../images/gz_.png") no-repeat center;
+      }
+    }
+    .dateScreen {
+      position: relative;
+      padding: 4px 36px 4px 8px;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        width: 18px;
+        height: 16px;
+        background: url("../images/icon_riqi.png") no-repeat center;
+      }
+      #test1 {
+        width: 66px;
+        height: 16px;
+      }
+    }
+    .allMarketBtn {
+      padding-top: 5px;
+      span{
+        padding: 5px 12px;
+        border-radius: 4px;
+        background: $MainColor;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    .eventSelect {
+      float: right;
+      padding: 4px 0;
+      label{
+        margin-left: 15px;
+        cursor: pointer;
+        input {
+          margin-right: 5px;
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+  .content {
+    display: table;
+    width: 100%;
+    font-size: $FONT_14;
+    border-top: $styleBorder;
+    dl {
+      display: table-row;
+      dd, dt {
+        display: table-cell;
+        color: $BasicFontColor;
+        border: 1px solid $CommonBorderColor;
+        border-left: none;
+        border-top: none;
+        text-align: center;
+        vertical-align: middle;
+        box-sizing: border-box;
+        &:nth-child(1) {
+          border-left: $styleBorder;
+        }
+      }
+    }
+    .ths {
+      height: 32px;
+      font-weight: bold;
+      background-color: #F2F2F2;
+      > dt:nth-child(1) {
+        width: 50px;
+        .delete {
+          margin-top: 7px;
+          span{
+            margin: 0 auto;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background: url("../images/unchoose.png") no-repeat center;
+            cursor: pointer;
+          }
+          .selectSt{
+            background: url("../images/choose.png") no-repeat center;
+          }
+          .hasSelectSt{
+            background: url("../images/gouzi _bufen.png") no-repeat center;
+          }
+        }
+      }
+      > dt:nth-child(2) {
+        width: 86px;
+      }
+      > dt:nth-child(3) {
+        width: 86px;
+      }
+      > dt:nth-child(4) {
+        width: 120px;
+      }
+      > dt:nth-child(5) {
+        width: 58px;
+      }
+      > dt:nth-child(6) {
+        width: 405px;
+        > div:nth-child(1) {
+          width: 145px;
+          text-align: right;
+        }
+        > div:nth-child(2) {
+          width: 67px;
+          text-align: center;
+        }
+        > div:nth-child(3) {
+          width: 142.5px;
+          text-align: left;
+        }
+      }
+      > dt:nth-child(7) {
+        width: 58px;
+      }
+      > dt:nth-child(8) {
+        width: 180px;
+        span{
+          width: 28%;
+          display: inline-block;
+        }
+      }
+      > dt:nth-child(9) {
+        width: 154px;
+      }
+    }
+    .noneOne {
+      dt:nth-child(1) {
+        width: 0px ;
+        border-right: none ;
+      }
+      > dd:nth-child(3) {
+        width: 87px;
+      }
+      dt:nth-child(6) {
+        width: 447px;
+        > div:nth-child(1) {
+          width: 170px;
+          text-align: right;
+        }
+        > div:nth-child(2) {
+          width: 67px;
+          text-align: center;
+        }
+        > div:nth-child(3) {
+          width: 164.5px;
+          text-align: left;
+        }
+      }
+    }
+    .scoreList {
+      dl{
+        > dd:nth-child(2) {
+          width: 86px;
+        }
+        > dd:nth-child(3) {
+          width: 87px;
+        }
+        > dd:nth-child(4) {
+          width: 120px;
+        }
+        > dd:nth-child(5) {
+          width: 58px;
+        }
+        > dd:nth-child(6) {
+          width: 405px;
+          > div:nth-child(1) {
+            width: 145px;
+            text-align: right;
+          }
+          > div:nth-child(2) {
+            width: 67px;
+            text-align: center;
+          }
+          > div:nth-child(3) {
+            width: 145px;
+            text-align: left;
+          }
+        }
+        > dd:nth-child(7) {
+          width: 58px;
+        }
+        > dd:nth-child(8) {
+          width: 180px;
+        }
+        > dd:nth-child(9) {
+          width: 154px;
+        }
+      }
+      .noneOne {
+        dd:nth-child(1) {
+          width: 0px ;
+          border-right: none ;
+        }
+        > dd:nth-child(3) {
+          width: 86px;
+        }
+        dd:nth-child(6) {
+          width: 447px;
+          > div:nth-child(1) {
+            width: 170px;
+            text-align: right;
+          }
+          > div:nth-child(2) {
+            width: 67px;
+            text-align: center;
+          }
+          > div:nth-child(3) {
+            width: 166px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .scoreList:nth-of-type(odd) {
+      background: #FAFAFA;
+    }
+  }
+  .bottomTip{
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    .example {
+      display: table-row;
+      dt, dd {
+        display: table-cell;
+        border: 1px solid #DEDEDE;
+        border-top: none;
+        vertical-align: middle;
+      }
+      dt {
+        width: 4%;
+        height: 70px;
+        background: #DEDEDE;
+        color: #808080;
+        line-height: 15px;
+        text-align: center;
+      }
+      dd {
+        width: 96%;
+        height: 70px;
+        border-left: none;
+        padding-left: 20px;
+        text-align: left;
+        ul {
+          li {
+            float: left;
+            padding-right: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+/* ---修改日期筛选框的样式--- */
+.layui-laydate {
+  .layui-laydate-content {
+    table {
+      tr{
+        td {
+          height: 36px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

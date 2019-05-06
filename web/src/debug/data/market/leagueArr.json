@@ -1,0 +1,28 @@
+{
+  "rspCode": "SUCCESS",
+  "rspMsg": "成功",
+  "sysTime": "2018-09-30 15:11:44",
+  "token": "",
+  "data": {
+    "list": [
+      {
+        "leagueId": "-1",
+        "leagueName": "全部联赛",
+        "leagueShortName": "全部",
+        "leagueColor": "#f40"
+      },
+      {
+        "leagueId": "1",
+        "leagueName": "英格兰超级足球联赛",
+        "leagueShortName": "英超",
+        "leagueColor": "#f0f"
+      },
+      {
+        "leagueId": "2",
+        "leagueName": "西班牙甲级足球联赛",
+        "leagueShortName": "西甲",
+        "leagueColor": "#0ff"
+      }
+    ]
+  }
+}

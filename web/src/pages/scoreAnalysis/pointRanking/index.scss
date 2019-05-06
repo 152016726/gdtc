@@ -1,0 +1,89 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.point-ranking {
+  .point-ranking-box {
+    width: 585px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    box-sizing: border-box;
+    &:last-child {
+      margin-right: 0;
+    }
+    .point-ranking-content {
+      text-align: center;
+      .full-match, .match-account {
+        width: 68px;
+      }
+      .match {
+        width: 40px;
+      }
+      .match-ranking {
+        width: 50px;
+      }
+      .winning-probability {
+        width: 112px;
+      }
+      .point-ranking-content-title {
+        height: 32px;
+        line-height: 32px;
+        background: #F2F2F2;
+        border-top: 1px solid $BorderColor;
+        border-bottom: 1px solid $BorderColor;
+        ul {
+          li {
+            float: left;
+            border-right: 1px solid $BorderColor;
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
+      }
+      .point-ranking-content-content {
+        ul {
+          li {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid $BorderColor;
+            > div {
+              float: left;
+              height: 40px;
+              border-right: 1px solid $BorderColor;
+              box-sizing: border-box;
+              &:nth-of-type(2),
+              &:nth-of-type(3),
+              &:nth-of-type(4),
+              &:nth-of-type(5),
+              &:nth-of-type(6),
+              &:nth-of-type(7),
+              &:nth-of-type(8) {
+                width: 40px;
+              }
+              &:nth-of-type(9) {
+                width: 68px;
+                color: $MainColor;
+              }
+              &:nth-of-type(10) {
+                width: 50px;
+              }
+              &:last-child {
+                width: 112px;
+                color: $MainColor;
+                border-right: none;
+              }
+            }
+            &:nth-of-type(even) {
+              background: #FAFAFA;
+            }
+            &:last-child {
+              border-bottom: none
+            }
+          }
+        }
+      }
+    }
+  }
+}

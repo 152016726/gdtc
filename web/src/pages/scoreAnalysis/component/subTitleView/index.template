@@ -1,0 +1,6 @@
+<div class="analysis-sub-title-view">
+    <p class="analysis-title">
+        {{text}}
+    </p>
+    <slot></slot>
+</div>

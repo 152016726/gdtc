@@ -1,0 +1,77 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "had": {
+      "list": [
+        {
+          "id": "183392",
+          "h": "2.32",
+          "h_updown": "equal",
+          "h_ratio": "38.2%",
+          "a": "2.75",
+          "a_updown": "equal",
+          "a_ratio": "32.2%",
+          "d": "3.00",
+          "d_updown": "equal",
+          "d_ratio": "29.6%",
+          "date": "2018-04-24",
+          "time": "20:42:46"
+        },
+        {
+          "id": "183541",
+          "h": "2.28",
+          "h_updown": "down",
+          "h_ratio": "38.8%",
+          "a": "2.80",
+          "a_updown": "up",
+          "a_ratio": "31.6%",
+          "d": "3.00",
+          "d_updown": "equal",
+          "d_ratio": "29.5%",
+          "date": "2018-04-25",
+          "time": "23:55:52"
+        }
+      ],
+      "vote": {
+        "win_per": "45%",
+        "draw_per": "29%",
+        "lose_per": "26%"
+      },
+      "odds": {
+        "h": "2.28",
+        "a": "2.80",
+        "d": "3.00"
+      }
+    },
+    "hhad": {
+      "list": [
+        {
+          "id": "254514",
+          "h": "5.25",
+          "h_updown": "equal",
+          "h_ratio": "16.9%",
+          "a": "1.47",
+          "a_updown": "equal",
+          "a_ratio": "60.3%",
+          "d": "3.88",
+          "d_updown": "equal",
+          "d_ratio": "22.8%",
+          "date": "2018-04-24",
+          "time": "20:42:46"
+        }
+      ],
+      "vote": {
+        "win_per": "36%",
+        "draw_per": "28%",
+        "lose_per": "36%"
+      },
+      "odds": {
+        "h": "5.25",
+        "a": "1.47",
+        "d": "3.88",
+        "goalline": "-1"
+      }
+    }
+  }
+}

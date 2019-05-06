@@ -1,0 +1,136 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.register-com-view {
+  .input-box {
+    font-size: 16px;
+    color: #333333;
+    li {
+      height: 38px;
+      margin-bottom: 20px;
+      .error-prompt {
+        color: $MainColor;
+        margin-left: 12px;
+      }
+      >div {
+        float: left;
+        &:nth-of-type(1) {
+          width: 150px;
+          height: 38px;
+          line-height: 38px;
+          text-align: right;
+          margin-right: 20px;
+          color: #666666;
+        }
+        &:nth-of-type(2) {
+          text-align: left;
+          height: 38px;
+          line-height: 38px;
+          input {
+            height: 100%;
+            font-size: 16px;
+            padding-left: 10px;
+            border-radius: 2px;
+            border: 1px solid #CCCCCC;
+          }
+        }
+      }
+      &.img-code {
+        div:nth-of-type(2) {
+          input {
+            width: 120px;
+          }
+          img {
+            margin-left: 10px;
+            &.circle-icon {
+              cursor: pointer;
+            }
+          }
+          span {
+            display: inline-block;
+            width: 21px;
+            height: 20px;
+            margin-left: 8px;
+            vertical-align: middle;
+            background: url("../phoneVerify/images/circle.png") no-repeat center;
+          }
+        }
+      }
+      &.verification-code {
+        input {
+          width: 144px;
+        }
+        div:nth-of-type(2) {
+          div {
+            float: left;
+            height: 38px;
+            &:nth-of-type(1) {
+              margin-right: 10px;
+            }
+            &:nth-of-type(2) {
+              width: 132px;
+              text-align: center;
+              color: #777777;
+              border-radius: 2px;
+              border: 1px solid #CCCCCC;
+              background: #F2F2F2;
+              cursor: pointer;
+            }
+            &.codeSure {
+              width: 16px;
+              height: 12px;
+              margin-left: 12px;
+              margin-top: 14px;
+              background: url("./images/codeRight.png") no-repeat center;
+            }
+            &.codeError {
+              width: 10px;
+              height: 10px;
+              margin-left: 12px;
+              margin-top: 16px;
+              background: url("./images/codeError.png") no-repeat center;
+            }
+            &.stopCursor {
+              cursor: no-drop;
+            }
+          }
+        }
+      }
+      &.user-password,
+      &.user-enter-password,
+      &.user-name {
+        input {
+          width: 288px;
+        }
+      }
+      &.agreement {
+        color: #7D7D7D;
+        font-size: 14px;
+        a {
+          color: $MainColor;
+        }
+      }
+      &.submit-btn {
+        span {
+          display: inline-block;
+          height: 32px;
+          line-height: 32px;
+          padding: 0 20px;
+          color: #999999;
+          background: #F2F2F2;
+          border-radius: 2px;
+          border: 1px solid #CCCCCC;
+          cursor: no-drop;
+        }
+        .enterSue {
+          span {
+            color: #ffffff;
+            background: $MainColor;
+            border: 1px solid $MainColor;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

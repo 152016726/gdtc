@@ -1,0 +1,51 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+    <div class="raceCourse_main" id="root">
+        <div class="market_title">
+            <ul class="clearfix ">
+                <router-link tag="li" to="/win_draw_win" active-class="active">胜平负/让球胜平负</router-link>
+                <router-link tag="li" to="/hybrid" active-class="active">混合过关</router-link>
+                <router-link tag="li" to="/correctScores" active-class="active">比分</router-link>
+                <router-link tag="li" to="/totalGoals" active-class="active">总进球数</router-link>
+                <router-link tag="li" to="/halfFullTime" active-class="active">半全场胜平负</router-link>
+                <router-link tag="li" to="/singleFlex" active-class="active">单关固定</router-link>
+            </ul>
+        </div>
+        <router-view></router-view>
+        <betslip></betslip>
+        <ul id="betTips">
+            <li class="title">竞彩足球投注提示：</li>
+            <li>1、“让球胜平负”玩法包含让球和非让球,“+”为客让主，“-”为主让客。</li>
+            <li>2、页面中过关投注固定奖金仅供参考，实际奖金以投注成功奖金为准。投注区显示的中奖金额=每1元对应中奖奖金。</li>
+            <li>3、过关投注完场显示的奖金仅指比赛截止投注时最终变化的过关奖金，仅供参考，奖金以方案详情中最终投注成功的奖金为准。</li>
+            <li>4、单关投注，单注最高奖金限额为10万元；2或3场过关投注，单注最高奖金限额为20万元；4或5场过关投注，单注最高奖金限额为50万元；6场过关投注，单注最高奖金限额100万元。</li>
+            <li>5、竞彩足球参与时间：周一 到周五 9:00-24:00 周六、日 9:00 - 01:00。</li>
+        </ul>
+    </div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

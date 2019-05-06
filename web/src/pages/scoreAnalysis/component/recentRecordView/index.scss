@@ -1,0 +1,122 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.recent-record-box {
+  .recent-record-content {
+    .match-league {
+      width: 64px;
+    }
+    .match-date {
+      width: 76px;
+    }
+    .match-team {
+      width: 209px;
+      div {
+        float: left;
+        width: 80px;
+        &:nth-of-type(2) {
+          width: 48px;
+        }
+      }
+    }
+    .match-score {
+      width: 57px;
+    }
+    .match-corner {
+      width: 45px;
+    }
+    .match-result, .match-disk-drive, .match-size-ball {
+      width: 44px;
+    }
+    .recent-record-content-title {
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background: #F2F2F2;
+      border-top: 1px solid $BorderColor;
+      border-bottom: 1px solid $BorderColor;
+      ul {
+        li {
+          float: left;
+          border-right: 1px solid $BorderColor;
+          box-sizing: border-box;
+          &:last-child {
+            border-right: none;
+          }
+        }
+        .match-team {
+          div {
+            &:nth-of-type(1) {
+              text-align: right;
+            }
+            &:nth-of-type(3) {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .recent-record-content-center {
+      ul {
+        li {
+          height: 40px;
+          line-height: 40px;
+          border-bottom: 1px solid $BorderColor;
+          > div {
+            float: left;
+            height: 40px;
+            text-align: center;
+            box-sizing: border-box;
+            border-right: 1px solid $BorderColor;
+            &:last-child {
+              border-right: none;
+            }
+          }
+          .match-league {
+            color: #B42DB6;
+          }
+          .match-team {
+            div {
+              height: 40px;
+            }
+          }
+          .match-score {
+            line-height: 18px;
+            padding: 2px 0;
+            .scoreHalf {
+              color: #DA573A;
+            }
+          }
+          &:nth-of-type(even) {
+            background: #FAFAFA;
+          }
+          &:last-child {
+            border-bottom: none
+          }
+        }
+      }
+    }
+    .recent-record-content-bottom {
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      border-top: 1px solid $BorderColor;
+      .winColor {
+        color: #DA573A;
+      }
+      .flatColor {
+        color: #669DF6;
+      }
+      .loseColor {
+        color: #7DB839;
+      }
+      span {
+        &:nth-of-type(4),
+        &:nth-of-type(5),
+        &:nth-of-type(6) {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.rankList{
+  .rankTitle{
+    width: 195px;
+    border-bottom: 3px solid #E0E3E6;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    margin-bottom: 12px;
+    h2{
+      width: 55px;
+      font-size: 18px;
+      color: #333333;
+      font-weight: 700;
+    }
+  }
+  .rankContent{
+    border-left: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    .rankTable{
+      display: table;
+      .rankThead{
+        display: table-header-group;
+        .th{
+          display: table-row;
+          dt{
+            display: table-cell;
+            line-height: 32px;
+            text-align: center;
+            background-color: #E6EDFA;
+            font-size: 14px;
+            color: #666666;
+            border-bottom: 1px solid #DEDEDE;
+            border-right: 1px solid #DEDEDE;
+            &:nth-child(1){
+              width: 50px;
+            }
+            &:nth-child(2){
+              width: 170px;
+            }
+            &:nth-child(3){
+              width: 72px;
+            }
+            &:nth-child(4){
+              width: 90px;
+            }
+            &:nth-child(5){
+              width: 90px;
+            }
+            &:nth-child(6){
+              width: 90px;
+            }
+            &:nth-child(7){
+              width: 98px;
+            }
+            &:nth-child(8){
+              width: 98px;
+            }
+            &:nth-child(9){
+              width: 98px;
+            }
+            &:nth-last-child(1){
+              width: 92px;
+            }
+          }
+        }
+      }
+      .rank{
+        display: table-row;
+        background-color: #ffffff;
+        .rankItem{
+          display: table-cell;
+          text-align: center;
+          line-height: 42px;
+          color: #333333;
+          border-bottom: 1px solid #DEDEDE;
+          border-right: 1px solid #DEDEDE;
+          &.dark{
+            background-color: #FAFAFA;
+          }
+          .circle{
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .colors{
+      line-height: 48px;
+      border-bottom: 1px solid #DEDEDE;
+      border-right: 1px solid #DEDEDE;
+      .colorItem{
+        .circle{
+          display: inline-block;
+          vertical-align: baseline;
+          width: 12px;
+          height: 12px;
+          border-radius: 12px;
+          margin-left: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.marketNum{
+  height: 100%;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 19px;
+  }
+  .bottomText{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+  }
+}
+.numberContent{
+  word-break: keep-all;
+  white-space: nowrap;
+}

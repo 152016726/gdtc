@@ -1,0 +1,60 @@
+<div class="expertHeader">
+    <!-- 个人信息开始 -->
+    <div class="info clearfix">
+        <div class="person fl">
+            <div class="avatar fl" :style="{backgroundImage: 'url('+expertInfo.webApiPath+expertInfo.icon+')'}"></div>
+            <div class="description fl">
+                <div class="details clearfix">
+                    <span class="nickname">{{expertInfo.nickname}}</span>
+                    <i class="rate" v-if="+expertInfo.fiveWinrate !== 0">
+                        近5中{{Math.ceil((+expertInfo.fiveWinrate)*5)}}
+                    </i>
+                    <i class="combat" v-if="+expertInfo.comboWin !== 0 || +expertInfo.comboWin !== 1">
+                        {{expertInfo.comboWin}}连胜
+                    </i>
+                    <div class="getConcern" @click="focusClick" v-if="isLogin && isShowConcern">
+                        <i class="concern" v-if="isFocused"></i>
+                        <span>{{isFocused ? '已关注' : '+ 未关注'}}</span>
+                    </div>
+                </div>
+                <div class="focus">
+                    <div class="onFocus" v-if="!isLogin"
+                    >
+                        我的关注：<i class="icon"></i><i class="fans">{{expertInfo.attentionNumber}}</i>
+                    </div>
+                    <div class="word">
+                        <i class="introduce">简介：</i>
+                        <i class="write"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shareOrder fr">
+            <a href="/chooseRecommend.html">
+                <span>我要晒单</span>
+            </a>
+        </div>
+    </div>
+    <!-- 个人信息结束 -->
+
+    <!-- 战绩开始 -->
+    <div class="battles clearfix">
+        <div class="monthRate">
+            <div id="monthRate"></div>
+            <p>月命中率</p>
+        </div>
+        <div class="weekRate">
+            <div id="weekRate"></div>
+            <p>周命中率</p>
+        </div>
+        <div class="recentBattles">
+            <div id="recentBattles"></div>
+            <p>近况</p>
+        </div>
+        <div class="combo">
+            <div id="combo"></div>
+            <p>连胜</p>
+        </div>
+    </div>
+    <!-- 战绩结束 -->
+</div>

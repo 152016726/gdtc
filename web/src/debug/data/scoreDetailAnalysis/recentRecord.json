@@ -1,0 +1,327 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "list": [
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      },
+      {
+        "vid": "123456",
+        "vsDate": "2018-09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#B42DB6",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "homeGoalsScored": "2",
+        "homeHalftimeScored": "1",
+        "homeRedCards": "1",
+        "homeYellowCards": "2",
+        "homeCornerKicks": "1",
+        "awayTid": "456",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "awayGoalsScored": "2",
+        "awayHalftimeScored": "1",
+        "awayRedCards": "1",
+        "awayYellowCards": "1",
+        "awayCornerKicks": "1",
+        "hwdw": {
+          "handicap": "1.75"
+        },
+        "result": {
+          "wdw": "3",
+          "hwdw": "1",
+          "ou": "0"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "rspCode": "SUCCESS",
+  "rspMsg": "成功",
+  "systime": "2019-01-22 14:21:09",
+  "token": "1234567890",
+  "data": {
+    "list":
+    [
+      {
+        "version": "1.3",
+        "content": "1.修复bug 2.功能优化",
+        "isForce": "false",
+        "author": "EasyLotto",
+        "date": "2019-03-06",
+        "url": "https://fir.im/65nb"
+      }
+    ]
+  }
+}

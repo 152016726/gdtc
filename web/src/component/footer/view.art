@@ -1,0 +1,18 @@
+<div class="footer">
+    <div class="footZC">
+        <a href="#">关于我们</a> |
+        <a href="#">政策法规</a> |
+        <a href="#">玩法规则</a> |
+        <a href="#">联系我们</a> |
+        <a href="#">帮助中心</a> |
+        <a href="#">友情链接</a> |
+        <a href="#">网站导航</a>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <a href="#" class="safe"></a>
+        </div>
+        <p>版权所有：广东省体育彩票中心 | Copyright(C)2014 www.gdlottery.cn | 技术支持：广州市易彩乐网络科技有限公司</p>
+        <p>ICP备案编号：粤ICP备13051266号-1 | 彩票有风险，投注需理性，不向未满18周岁者出售彩票</p>
+    </div>
+</div>

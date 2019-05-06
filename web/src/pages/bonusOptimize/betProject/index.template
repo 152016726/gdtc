@@ -1,0 +1,29 @@
+<div class="bet_project_content">
+    <div class="inner_table">
+        <h1 class="title">已选投注方案</h1>
+        <dl>
+            <dt class="number">编号</dt>
+            <dt class="teams">主队 VS 客队</dt>
+            <dt class="detail">投注详情</dt>
+        </dl>
+        <dl v-for="item in betslipInfo">
+            <dd class="number">{{item.matchInfo.week}}{{item.matchInfo.number}}</dd>
+            <dd class="teams">{{item.matchInfo.homeName}} VS {{item.matchInfo.awayName}}</dd>
+            <dd class="detail">
+                <p v-for="oc in item.outcomes">
+                    <span v-if="oc.marketKey === 'WDW'">
+                        <span :class="getOddClass(oc)">{{oc.oddsName.length === 2 ? oc.oddsName.charAt(1) : oc.oddsName}}</span>
+                    </span>
+                    <span v-else-if="oc.marketKey === 'HWDW'">
+                        <span :class="getOcHcapClass(oc)">[{{oc.data.handicap}}]</span><!--
+                     --><span :class="getOddClass(oc)">{{oc.oddsName.length === 2 ? oc.oddsName.charAt(1) : oc.oddsName}}</span>
+                    </span>
+                    <span v-else>
+                        <span>{{oc.oddsName}}</span>
+                    </span>
+                    @{{oc.odds}}
+                </p>
+            </dd>
+        </dl>
+    </div>
+</div>

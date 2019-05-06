@@ -1,0 +1,12 @@
+<analysis-sub-title-view
+        id="recent-record"
+        :text="textStr">
+    <div class="recent-record clearfix">
+        <analysis-recent-record-view
+                v-for="(item, index) in 2"
+                :index_1 = 'index'
+                :key="index"
+                :vid="vid">
+        </analysis-recent-record-view>
+    </div>
+</analysis-sub-title-view>

@@ -1,0 +1,37 @@
+@import "../../../../common/style/color";
+
+.recordBox{
+  a{
+    color: $linkColor;
+  }
+  .oneRow{
+    width: 100%;
+    a{
+      margin: 0 2px;
+    }
+  }
+
+  .fourRecord{
+    padding: 20px;
+    a{
+      float: left;
+      width: 50%;
+      line-height: 19px;
+    }
+  }
+
+  .threeRecord{
+    width: 100%;
+    a{
+      margin: 0 3px;
+    }
+  }
+  .verticalSty {
+    a {
+      display: block;
+    }
+    .isPeerReview {
+      margin-top: 10px;
+    }
+  }
+}

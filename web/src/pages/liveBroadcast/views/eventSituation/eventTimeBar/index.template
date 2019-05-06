@@ -1,0 +1,29 @@
+<div class="eventTimeBarContent">
+    <div class="eventTimeBarInner">
+        <event-time-side
+                v-for="(mk, idx) in events"
+                v-bind="mk"
+                :key="idx + '_evtSide'"
+        />
+    </div>
+    <div class="bottomTip">
+        <dl class="example">
+            <dt>图<br/>例<br/>说<br/>明</dt>
+            <dd>
+                <ul>
+                    <li v-for="(exp, idx) in exampleList" :key="idx + '_exp'">
+                        <span class="logo">
+                            <img :src="exp.img"
+                                 :title="exp.text"
+                                 :style="{ width: exp.style.width*4/5 + 'px', height: exp.style.height*4/5 + 'px' }"
+                            />
+                        </span>
+                        <span class="text">
+                            {{exp.text}}
+                        </span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>

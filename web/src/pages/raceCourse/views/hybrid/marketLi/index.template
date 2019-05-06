@@ -1,0 +1,138 @@
+<li>
+    <vue-list-lazy-component :min-height="118">
+        <div class="listBox clearfix">
+            <div class="marketNum">
+                <market-num
+                        :complete-no="event.number"
+                        :week="event.week"
+                        :dg-status="event.dgStatus"
+                        :is-bottom="true"/>
+                <market-league
+                        class="leagueName"
+                        :league-name="event.leagueName"
+                        :league-color="event.leagueColor"
+                        :league-id="event.leagueId"
+                        :league-short-name="event.leagueShortName"
+                        :is-top="true"/>
+            </div>
+            <market-time
+                    class="marketTime"
+                    :short-date="event.shortDate"
+                    :start-time="event.startTime"
+                    :end-short-date="event.endShortDate"
+                    :end-time="event.endTime"
+                    :is-end-time="isEndTime"/>
+            <market-team
+                    class="teamName"
+                    :home-league-rank="event.homeLeagueRank"
+                    :home-name="event.homeName"
+                    :home-short-name="event.homeShortName"
+                    :away-name="event.awayName"
+                    :away-short-name="event.awayShortName"
+                    :away-league-rank="event.awayLeagueRank"
+                    :handicap="event.markets[marketHWDWSort] && event.markets[marketHWDWSort].handicap"
+                    :is-vertical="true"/>
+            <market-record
+                    class="record"
+                    :vid="event.vid"
+                    :type-num="2"
+                    :win-odds="event.markets && event.markets.wdw && event.markets.wdw.homeOdds"
+                    :flat-odds="event.markets && event.markets.wdw && event.markets.wdw.drawOdds"
+                    :lose-odds="event.markets && event.markets.wdw && event.markets.wdw.awayOdds"/>
+            <market-average
+                    class="average"
+                    :averages="event.oddsInfo ? event.oddsInfo[0] : {}"
+                    :is-vertical="true"/>
+            <div class="WDWLen">
+                <bet-outcome
+                        v-for="(od,index) in WDWOddArr"
+                        :key="event.vid + '#' + marketWDWSort + '#' + od.key"
+                        :num="event.markets[marketWDWSort] && event.markets[marketWDWSort][od.key]"
+                        :trend="event.markets[marketWDWSort] && event.markets[marketWDWSort][od.trend]"
+                        :vid="event.vid"
+                        :is-horizontal="true"
+                        :text="od.shortTitle"
+                        :outcome-name="od.key"
+                        :sort="marketWDWSort"/>
+            </div>
+            <div class="HWDWLen">
+                <bet-outcome
+                        v-for="(od,index) in WDWOddArr"
+                        :key="event.vid + '#' + marketHWDWSort + '#' + od.key"
+                        :num="event.markets[marketHWDWSort] && event.markets[marketHWDWSort][od.key]"
+                        :trend="event.markets[marketHWDWSort] && event.markets[marketHWDWSort][od.trend]"
+                        :vid="event.vid"
+                        :text="od.shortTitle"
+                        :is-horizontal="true"
+                        :outcome-name="od.key"
+                        :sort="marketHWDWSort"/>
+            </div>
+            <div class="scoreLen">
+                <div class="topBox clearfix">
+                    <bet-outcome
+                            v-for="(od,index) in CSOddArr"
+                            :key="event.vid + '#' + marketCSSort + '#' + od.key"
+                            :num="event.markets[marketCSSort] && event.markets[marketCSSort][od.key]"
+                            :vid="event.vid"
+                            :outcome-name="od.key"
+                            :text="od.title"
+                            :is-horizontal="true"
+                            :sort="marketCSSort"/>
+                </div>
+                <div class="bottomBox">
+                    <moreBetCtrlBtn
+                            :row="rowNum"
+                            :clickHandleCb="clickMoreBetBtnCb"
+                            :market-sort="marketCSSort"
+                            :selected-bet="selectedBet.CSBets"/>
+                </div>
+            </div>
+            <div class="goalsLen">
+                <div class="topBox clearfix">
+                    <bet-outcome
+                            v-for="(od,index) in TGOddArr"
+                            :key="event.vid + '#' + marketTGSort + '#' + od.key"
+                            :num="event.markets[marketTGSort] && event.markets[marketTGSort][od.key]"
+                            :vid="event.vid"
+                            :is-horizontal="true"
+                            :outcome-name="od.key"
+                            :text="od.title"
+                            :sort="marketTGSort"/>
+                </div>
+                <div class="bottomBox">
+                    <moreBetCtrlBtn
+                            :row="rowNum"
+                            :clickHandleCb="clickMoreBetBtnCb"
+                            :market-sort="marketTGSort"
+                            :selected-bet="selectedBet.TGBets"/>
+                </div>
+            </div>
+            <div class="halfLen">
+                <div class="topBox clearfix">
+                    <bet-outcome
+                            v-for="(od,index) in halfOddArr"
+                            :key="event.vid + '#' + marketHFTSort + '#' + od.key"
+                            :num="event.markets[marketHFTSort] && event.markets[marketHFTSort][od.key]"
+                            :vid="event.vid"
+                            :is-horizontal="true"
+                            :outcome-name="od.key"
+                            :text="od.title"
+                            :sort="marketHFTSort"/>
+                </div>
+                <div class="bottomBox">
+                    <moreBetCtrlBtn
+                            :row="rowNum"
+                            :clickHandleCb="clickMoreBetBtnCb"
+                            :market-sort="marketHFTSort"
+                            :selected-bet="selectedBet.HFTBets"/>
+                </div>
+            </div>
+        </div>
+        <more-odds-but
+                class="otherOutcomeBox"
+                v-if="isShowOther"
+                :market-odds="event.markets"
+                :market-sort="sort"
+                :vid="event.vid"/>
+    </vue-list-lazy-component>
+</li>

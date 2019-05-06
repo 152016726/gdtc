@@ -1,0 +1,240 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "cr_date": "2018-05-24 14:41:17",
+    "sort": "MTCH",
+    "status": "A",
+    "channels": "IPHKWE",
+    "bir_time_ref": "2018-06-04 11:23:09",
+    "has_bet_halftime": "N",
+    "last_state_change": "2018-06-04 11:24:09",
+    "ev_id": "26",
+    "ev_class_id": "18",
+    "ev_type_id": "136",
+    "start_time": "2018-06-04 11:24:09",
+    "desc": "山度士 對 皇家加斯拿素",
+    "settled": "N",
+    "has_bet_in_run": "Y",
+    "state": "1",
+    "ht_minutes": "  600",
+    "result_conf": "N",
+    "verify_status": "S",
+    "home_team": "山度士",
+    "away_team": "皇家加斯拿素",
+    "home_score": "0",
+    "away_score": "0",
+    "home_id": "10",
+    "away_id": "12",
+    "result": "0|0",
+    "minutes": "45+",
+    "eventType": {
+      "ev_type_id": "136",
+      "name": "南美自由盃",
+      "status": "A",
+      "channels": "IPHKWE",
+      "logo_path": "csf.png",
+      "flag": "SACL"
+    },
+    "values": [
+      {
+        "type": "110",
+        "name": "控球时间",
+        "status": "A",
+        "value": {
+          "home": 52,
+          "away": 48
+        }
+      },
+      {
+        "type": "110",
+        "name": "控球时间",
+        "status": "P",
+        "value": {
+          "away": "62/52",
+          "home": "38/48"
+        }
+      },
+      {
+        "type": "goalattempts",
+        "name": "射门",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 10
+        }
+      },
+      {
+        "type": "goalattempts",
+        "name": "射门",
+        "status": "P",
+        "value": {
+          "home": "5/5",
+          "away": "4/6"
+        }
+      },
+      {
+        "type": "125",
+        "name": "射正",
+        "status": "A",
+        "value": {
+          "home": 0,
+          "away": 10
+        }
+      },
+      {
+        "type": "125",
+        "name": "射正",
+        "status": "P",
+        "value": {
+          "home": "0/0",
+          "away": "4/6"
+        }
+      },
+      {
+        "type": "126",
+        "name": "射偏",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 8
+        }
+      },
+      {
+        "type": "126",
+        "name": "射偏",
+        "status": "P",
+        "value": {
+          "home": "5/5",
+          "away": "4/4"
+        }
+      },
+      {
+        "type": "124",
+        "name": "角球",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 6
+        }
+      },
+      {
+        "type": "124",
+        "name": "角球",
+        "status": "P",
+        "value": {
+          "home": "5/5",
+          "away": "4/2"
+        }
+      },
+      {
+        "type": "120",
+        "name": "任意球",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 7
+        }
+      },
+      {
+        "type": "120",
+        "name": "任意球",
+        "status": "P",
+        "value": {
+          "home": "6/4",
+          "away": "4/3"
+        }
+      },
+      {
+        "type": "123",
+        "name": "越位",
+        "status": "A",
+        "value": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      {
+        "type": "123",
+        "name": "越位",
+        "status": "P",
+        "value": {
+          "home": "0/0",
+          "away": "1/0"
+        }
+      },
+      {
+        "type": "goalkicksperiod",
+        "name": "球门球",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 11
+        }
+      },
+      {
+        "type": "goalkicksperiod",
+        "name": "球门球",
+        "status": "P",
+        "value": {
+          "home": "2/8",
+          "away": "4/7"
+        }
+      },
+      {
+        "type": "122",
+        "name": "界外球",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 10
+        }
+      },
+      {
+        "type": "122",
+        "name": "界外球",
+        "status": "P",
+        "value": {
+          "home": "5/5",
+          "away": "4/6"
+        }
+      },
+      {
+        "type": "40",
+        "name": "黄牌",
+        "status": "A",
+        "value": {
+          "home": 10,
+          "away": 10
+        }
+      },
+      {
+        "type": "40",
+        "name": "黄牌",
+        "status": "P",
+        "value": {
+          "home": "5/5",
+          "away": "4/6"
+        }
+      },
+      {
+        "type": "50",
+        "name": "红牌",
+        "status": "A",
+        "value": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      {
+        "type": "50",
+        "name": "红牌",
+        "status": "P",
+        "value": {
+          "home": "0/2",
+          "away": "1/0"
+        }
+      }
+    ]
+  }
+}

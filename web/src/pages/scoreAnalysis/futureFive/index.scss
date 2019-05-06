@@ -1,0 +1,89 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.future-five {
+  .future-five-box {
+    width: 585px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    box-sizing: border-box;
+    &:last-child {
+      margin-right: 0;
+    }
+    .future-five-box-content {
+      .market-li {
+        > div {
+          float: left;
+          text-align: center;
+          border-right: 1px solid $BorderColor;
+          box-sizing: border-box;
+          &:nth-of-type(1) {
+            width: 60px;
+          }
+          &:nth-of-type(2) {
+            width: 70px;
+          }
+          &:nth-of-type(3) {
+            width: 279px;
+          }
+          &:nth-of-type(4) {
+            width: 58px;
+          }
+          &:nth-of-type(5),
+          &:nth-of-type(6) {
+            width: 58px;
+          }
+          &:nth-of-type(6) {
+            border-right: none;
+          }
+        }
+      }
+      .future-five-box-content-title {
+        height: 32px;
+        line-height: 32px;
+        background: #F2F2F2;
+        border-top: 1px solid $BorderColor;
+        border-bottom: 1px solid $BorderColor;
+      }
+      .future-five-box-content-content {
+        ul {
+          li {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid $BorderColor;
+            > div {
+              height: 40px;
+              &:nth-of-type(2) {
+                color: #B42DB6;
+              }
+              &:nth-of-type(3) {
+                span {
+                  display: inline-block;
+                  height: 100%;
+                  width: 116px;
+                  &:nth-of-type(1) {
+                    text-align: right;
+                  }
+                  &:nth-of-type(2) {
+                    width: 36px;
+                  }
+                  &:nth-of-type(3) {
+                    text-align: left;
+                  }
+                }
+              }
+            }
+            &:nth-of-type(even) {
+              background: #FAFAFA;
+            }
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

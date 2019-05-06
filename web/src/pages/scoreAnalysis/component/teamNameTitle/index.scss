@@ -1,0 +1,43 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.team-name-title {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 17px;
+  .team-name-title-left {
+    float: left;
+    span {
+      display: inline-block;
+      &:nth-of-type(1) {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      &:nth-of-type(3) {
+        color: #999999;
+      }
+      &.homeIcon {
+        background: url("../../images/homeIcon.png") no-repeat center;
+      }
+      &.awayIcon {
+        background: url("../../images/awayIcon.png") no-repeat center;
+      }
+    }
+  }
+  .team-name-title-right {
+    float: right;
+    padding-top: 4px;
+    > div {
+      float: left;
+      margin-right: 10px;
+      line-height: 14px;
+      .content-box {
+        .content-box-top {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+}

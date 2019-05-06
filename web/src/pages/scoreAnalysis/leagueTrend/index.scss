@@ -1,0 +1,142 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.league-trend {
+  .league-trend-box {
+    width: 585px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    box-sizing: border-box;
+    &:last-child {
+      margin-right: 0;
+    }
+    .league-trend-box-content {
+      text-align: center;
+      .league-li {
+        div {
+          float: left;
+          border-right: 1px solid $BorderColor;
+          box-sizing: border-box;
+          &:nth-of-type(1) {
+            width: 55px;
+          }
+          &:nth-of-type(2) {
+            width: 42px;
+          }
+          &:nth-of-type(3),
+          &:nth-of-type(5),
+          &:nth-of-type(9),
+          &:nth-of-type(10),
+          &:nth-of-type(11) {
+            width: 61px;
+          }
+          &:nth-of-type(4) {
+            width: 50px;
+          }
+          &:nth-of-type(6) {
+            width: 68px;
+          }
+          &:nth-of-type(7) {
+            width: 61px;
+          }
+          &:nth-of-type(8) {
+            width: 62px;
+          }
+          &:last-child {
+            width: 62px;
+            border-right: none;
+          }
+        }
+      }
+      .league-trend-content-title {
+        background: #F2F2F2;
+        height: 50px;
+        border-top: 1px solid $BorderColor;
+        border-bottom: 1px solid $BorderColor;
+        box-sizing: border-box;
+        .league-content-title-top {
+          border-bottom: 1px solid $BorderColor;
+          box-sizing: border-box;
+          div {
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            border-right: 1px solid $BorderColor;
+            &:nth-of-type(1) {
+              width: 96px;
+            }
+            &:nth-of-type(2) {
+              width: 239px;
+            }
+            &:nth-of-type(3) {
+              width: 242px;
+              border-right: none;
+            }
+          }
+        }
+        .league-li {
+          div {
+            height: 24px;
+            line-height: 24px;
+          }
+        }
+
+      }
+      .league-trend-content-content {
+        ul {
+          li {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid $BorderColor;
+            &:nth-of-type(even) {
+              background: #FAFAFA;
+            }
+          }
+          .league-li {
+            > div {
+              height: 40px;
+            }
+          }
+        }
+        .content-bottom {
+          > div {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            background: #FAFAFA;
+            border-right: 1px solid $BorderColor;
+            &:nth-of-type(1) {
+              width: 54px;
+            }
+            &:nth-of-type(2) {
+              width: 41px;
+            }
+            &:nth-of-type(3) {
+              width: 151px;
+              padding: 0 10px;
+              span {
+                width: 16%;
+                display: inline-block;
+              }
+            }
+            &:nth-of-type(4) {
+              width: 67px;
+            }
+            &:last-child {
+              width: 226px;
+              border-right: none;
+              padding: 0 10px;
+              span {
+                width: 16%;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

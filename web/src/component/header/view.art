@@ -1,0 +1,92 @@
+<div id="header">
+    <div class="headerTop">
+        <div class="container clearfix">
+            <div class="loginBox fl">
+                <a href="javascript:;">欢迎你！</a> |
+                <a href="javascript:;">客服热线：95086</a>
+            </div>
+            <div class="itemsBox fr">
+                <span class="logout-status">
+                    <a href="#" id="top-login-btn"><i class="login"></i>登录</a>
+                    <a href="#" id="top-register-btn"><i class="register"></i>注册</a>
+                </span>
+                <span class="login-status">
+                    <img src="" alt="" id="user-image">
+                    <span class="user-name">hahahaha</span>
+                    <span class="logout-btn">退出</span>
+                </span>
+                <a href="#"><i class="phone"></i>手机版</a>
+                <!--<a href="#"><i class="nav"></i>网站导航</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="headerBanner">
+        <div class="container clearfix">
+            <div class="promote fl">
+                <a class="promoteLogo" href="/index.html"></a>
+                <div class="choosePlay">
+                    选择玩法<i class="below"></i>
+                    <div class="plays">
+                        <div class="division"></div>
+                        <!--竞彩足球部分 -->
+                        <div class="lotteryFoot universal clearfix">
+                            <div class="icons fl"></div>
+                            <div class="category fl">
+                                <div class="cateTitle">
+                                    竞彩足球
+                                </div>
+                                <div class="types">
+                                    <a href="/raceCourse.html#/win_draw_win" class="sign">胜平负/让球</a>
+                                    <a href="/raceCourse.html#/hybrid">混合过关</a>
+                                    <a href="/raceCourse.html#/correctScores">比分</a>
+                                </div>
+                                <div class="types">
+                                    <a href="/raceCourse.html#/totalGoals" class="sign">进球数</a>
+                                    <a href="/raceCourse.html#/halfFullTime">半全场</a>
+                                    <a href="/raceCourse.html#/singleFlex">单关</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--便捷工具部分 -->
+                        <div class="tools universal clearfix">
+                            <div class="icons fl"></div>
+                            <div class="category fl">
+                                <div class="cateTitle">便捷工具</div>
+                                <div class="types">
+                                    <a href="#" class="sign">今日寻胆</a>
+                                    <a href="#">开奖汇总</a>
+                                </div>
+                                <div class="types">
+                                    <a href="#" class="sign">竞彩图集</a>
+                                    <a href="#">玩法介绍</a>
+                                    <a href="#">网站导航</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectPlay">选择玩法</div>
+            </div>
+            <div class="tabItems fl">
+                <div class="search clearfix">
+                    <input class="searchInput fl" placeholder="请输入资讯/赛事/业主/关键词进行查询"/>
+                    <div class="find fl"><i>搜</i><i>索</i></div>
+                    <span class="searchIcon"></span>
+                </div>
+                <ul class="navigation clearfix">
+                    <li><a class="home" href="/index.html">首页</a></li>
+                    <li><a href="/soccerResult.html">开奖查询</a></li>
+                    <li><a href="/information.html">赛事资讯</a></li>
+                    <li><a href="/liveScore.html">比分直播</a></li>
+                    <li><a href="/exponent.html">指数中心</a></li>
+                    <li><a href="/eventCenter.html">资料库</a></li>
+                    <li><a href="/dot.html">竞彩店</a></li>
+                    <!--<li><a href="#">APP下载</a></li>-->
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{include './../../component/login/view.art'}}
+{{include './../../component/register/view.art'}}

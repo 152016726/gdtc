@@ -1,0 +1,73 @@
+@import "../../../common/style/color.scss";
+
+.market_lists {
+  .market_item {
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #c9e1f0;
+    .fullScore {
+      font-size: 13px;
+    }
+    .textColor {
+      color: #ff5e01;
+    }
+    .lianSai {
+      color: #fff;
+    }
+    .colorWhite {
+      color: #fff;
+    }
+    .market_info {
+      a {
+        color: #4e91ea;
+      }
+    }
+    .team {
+      color: $linkColor;
+      cursor: pointer;
+      &:hover{
+        color: $CommonHoverColor;
+      }
+    }
+    .market_result {
+      a {
+        color: #4e91ea;
+        margin-right: 6px;
+      }
+    }
+    .market_num {
+      position: relative;
+      .singleLogo {
+        position: absolute;
+        width: 15px;
+        height: 18px;
+        background: url("../images/single.png");
+        background-size: 100% 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+  .odd_item {
+    background: #f5f5f5;
+  }
+  .f_win {
+    color: $DarkerRedColor
+  }
+  .f_draw {
+    color: $BlueColor
+  }
+  .f_lose {
+    color: $DarkerGreenColor
+  }
+  .f_bold {
+    font-weight: bold;
+  }
+}
+
+.page_tool {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #c9e1f0;
+}

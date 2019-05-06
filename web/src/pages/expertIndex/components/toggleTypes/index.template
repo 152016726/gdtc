@@ -1,0 +1,13 @@
+<div class="toggleTypes">
+     <dl class="clearfix">
+         <dt
+             v-for="(item, index) in strList"
+             :key="index"
+             :class="{active: activeIndex === index}"
+         >
+             <a href="#" @click.prevent="itemClick(index)">
+                 {{item}}
+             </a>
+         </dt>
+     </dl>
+</div>

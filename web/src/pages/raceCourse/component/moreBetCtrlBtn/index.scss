@@ -1,0 +1,72 @@
+@import "../../../../common/style/color";
+
+.moreBetCtrlBtn {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  background: $oddsBgColor;
+  cursor: pointer;
+  border-right: 1px solid $BorderColor;
+  border-bottom: 1px solid $BorderColor;
+  box-shadow: -6px -6px 6px -6px #dbd9c1 inset;
+  position: relative;
+  h2 {
+    color: $linkColor;
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    padding-right: 8px;
+    text-align: right;
+    span {
+      display: inline-block;
+      b {
+        background: #eb812a;
+        display: inline-block;
+        font-size: 10px;
+        color: #fff;
+        margin-right: 4px;
+        line-height: 16px;
+        padding: 0 4px;
+        border-radius: 4px;
+      }
+    }
+  }
+  &.active {
+    background: $otherOutcomeBgColor;
+    border: 2px solid $otherOutcomeBorderColor;
+    box-shadow: none;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    top: -1px;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      padding: 0 2px;
+      height: 2px;
+      width: 100%;
+      left: -2px;
+      background: $otherOutcomeBgColor;
+    }
+    &:before{
+      background: $otherOutcomeBorderColor;
+    }
+    &:after{
+      background: $otherOutcomeBgColor;
+      top: initial;
+      bottom: -2px;
+      left: 0;
+      box-sizing: border-box;
+    }
+    h2 {
+      color: #b85300;
+    }
+  }
+}
+.csMoreBetCtrlBtn {
+  h2{
+    color: #CCBC29;
+    padding: 0;
+    text-align: center;
+  }
+}

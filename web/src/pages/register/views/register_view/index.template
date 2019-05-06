@@ -1,0 +1,8 @@
+<div class="register-view">
+    <div class="welcome-text">
+        欢迎来到广东竞猜网，请完善你的信息
+    </div>
+    <register-com-view
+            :tel-num="phone"
+            :submit-call-back="submitCallBack"></register-com-view>
+</div>

@@ -1,0 +1,31 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.team-name {
+  text-align: right;
+  .yellowCards {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 200;
+    font-size: 12px;
+    background: #FCAA04;
+  }
+  .redCards {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: $FONT_12;
+    font-weight: 200;
+    background: $overEventColor;
+  }
+  &.textLeft {
+    text-align: left;
+  }
+}

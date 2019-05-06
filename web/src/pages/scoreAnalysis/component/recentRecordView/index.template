@@ -1,0 +1,116 @@
+<div class="recent-record-box">
+    <analysis-team-name-title
+            :type-num="index_1"
+            :team-name="teamName"
+            :team-short-name="teamShortName"
+            :is-show-right="true"
+            :field-title-text="fieldTitleText"
+            :market-title-text="marketTitleText"
+            :field-text-lis="fieldTextLis"
+            :market-lis="marketLis"
+            :field-active-index="fieldActiveIndex"
+            :field-handle="fieldHandle"
+            :league-select-handle="leagueSelectHandle"
+            :field-market-title-text="fieldMarketTitleText"
+            :market-teams="marketTeams"
+            :field-market-active-index="fieldMarketActiveIndex"
+            :field-market-handle="fieldMarketHandle"
+    >
+    </analysis-team-name-title>
+    <div class="recent-record-content">
+        <div class="recent-record-content-title">
+            <ul class="clearfix">
+                <li class="match-league">赛事</li>
+                <li class="match-date">日期</li>
+                <li class="match-team">
+                    <div>主场</div>
+                    <div>盘口</div>
+                    <div>客场</div>
+                </li>
+                <li class="match-score">比分</li>
+                <li class="match-corner">角球</li>
+                <li class="match-result">胜负</li>
+                <li class="match-disk-drive">盘路</li>
+                <li class="match-size-ball">大小</li>
+            </ul>
+        </div>
+        <div class="recent-record-content-center">
+            <ul>
+                <li class="clearfix" v-for="(ev, index) in showMarketList">
+                    <div class="match-league">
+                        <span :title="ev.leagueName"
+                              :style="{color: ev.leagueColor}">
+                            {{ev.leagueShortName}}
+                        </span>
+                    </div>
+                    <div class="match-date">
+                        {{ev.vsDate}}
+                    </div>
+                    <div class="match-team">
+                        <analysis-team-name
+                                :is-default="true"
+                                :type-num="1"
+                                :team-name="ev.homeName"
+                                :team-short-name="ev.homeShortName"
+                                :home-goals-scored="ev.homeGoalsScored"
+                                :away-goals-scored="ev.awayGoalsScored">
+                        </analysis-team-name>
+                        <div>
+                            {{ev.hwdw.handicap}}
+                        </div>
+                        <div>
+                            <analysis-team-name
+                                    :is-default="true"
+                                    :type-num="2"
+                                    :team-name="ev.awayName"
+                                    :team-short-name="ev.awayShortName"
+                                    :home-goals-scored="ev.homeGoalsScored"
+                                    :away-goals-scored="ev.awayGoalsScored">
+                            </analysis-team-name>
+                        </div>
+                    </div>
+                    <div class="match-score">
+                        <analysis-score-display-view
+                                :is-vertical="true"
+                                :home-goals-scored="ev.homeGoalsScored"
+                                :away-goals-scored="ev.awayGoalsScored"
+                                :home-halftime-scored="ev.homeHalftimeScored"
+                                :away-halftime-scored="ev.awayHalftimeScored">
+                        </analysis-score-display-view>
+                    </div>
+                    <div class="match-corner">
+                        {{ev.homeCornerKicks}}-{{ev.awayCornerKicks}}
+                    </div>
+                    <div class="match-result">
+                        <analysis-result-btn
+                                :type-num="0"
+                                :result-num="ev.result && ev.result.wdw">
+                        </analysis-result-btn>
+                    </div>
+                    <div class="match-disk-drive">
+                        <analysis-result-btn
+                                :type-num="1"
+                                :result-num="ev.result && ev.result.hwdw">
+                        </analysis-result-btn>
+                    </div>
+                    <div class="match-size-ball">
+                        <analysis-result-btn
+                                :type-num="2"
+                                :result-num="ev.result && ev.result.ou">
+                        </analysis-result-btn>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="recent-record-content-bottom">
+            共{{showMarketLen}}场,
+            胜 <span class="winColor">{{WinLen}}</span>
+            平 <span class="flatColor">{{FlatLen}}</span>
+            负 <span class="loseColor">{{loseLen}}</span>,
+            胜率 <span class="winColor">{{WinRate}}</span>
+            赢盘率 <span class="winColor">{{BeatRate}}</span>
+            大球（>2.5 <span class="winColor">{{bigBallRate}}</span>
+            <!--单率 <span class="winColor">40%</span>-->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="expert_group_content_view">
+    <div class="search-title clearfix">
+        <div class="search-title-left">
+            晒单团
+        </div>
+        <div class="search-title-right">
+            <div :class="{active: showExpertNum === 0}"
+                 @click="searchHandle(0)">
+                全部
+            </div>
+            <div :class="{active: showExpertNum === 1}"
+                 @click="searchHandle(1)">
+                我的关注
+            </div>
+        </div>
+    </div>
+    <div class="expert_group_content">
+        <ul class="clearfix">
+            <li v-for="(EX, index) in expertLists">
+                <expert-group-li-view
+                        :expert-info="EX"
+                        :key="index"
+                        :expert-icon="EX.webApiPath + EX.icon"
+                        :nickname="EX.nickname"
+                        :combo-win="EX.comboWin"
+                        :expert-summary="EX.summary"
+                        :five-win-rate="EX.fiveWinrate"
+                        :eid="EX.eid">
+                </expert-group-li-view>
+            </li>
+        </ul>
+    </div>
+</div>

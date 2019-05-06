@@ -1,0 +1,26 @@
+<div class="eventView">
+    <div class="header clearfix">
+        <div class="fl">
+            <event-header :list="continentList" @setCountryList="setCountryList"></event-header>
+        </div>
+        <div class="intro fr">
+            <span class="hots">热门赛事：</span>
+            <a :href="'/eventAgenda.html?vid=' + item.id"
+               v-for="(item, index) in hotLeagueList" :key="index"
+               :style="{color: '#'+item.color}"
+            >
+                {{item.shortName}}
+            </a>
+        </div>
+    </div>
+    <event-nations
+            v-for="(item, index) in  countryList"
+            :key="index"
+            :fid="fid"
+            :itemList="item"
+            :sort="index"
+            :activeSort="activeIndex"
+            @setActiveSort="setActiveSort"
+    >
+    </event-nations>
+</div>

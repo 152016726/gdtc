@@ -1,0 +1,159 @@
+<div class="exp_table_wrapper ah">
+    <div class="exp_table ">
+        <dl class="title">
+            <dd class="c1">赔率公司</dd>
+            <dd class="c2">
+                <div class="sub_table">
+                    <dl>
+                        <dd>
+                            <div class="sub_table">
+                                <dl>
+                                    <dd>
+                                        初始盘口
+                                    </dd>
+                                </dl>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd>
+                            <div class="sub_table">
+                                <dl>
+                                    <dd class="w33 brn">主队</dd>
+                                    <dd class="w33 brn">盘口</dd>
+                                    <dd class="w33 brn">主队</dd>
+                                </dl>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd class="c3">
+                <div class="sub_table">
+                    <dl>
+                        <dd>
+                            <div class="sub_table">
+                                <dl>
+                                    <dd>
+                                        即时盘口
+                                    </dd>
+                                </dl>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd>
+                            <div class="sub_table">
+                                <dl>
+                                    <dd class="w33 brn">主队</dd>
+                                    <dd class="w33 brn">盘口</dd>
+                                    <dd class="w33 brn">主队</dd>
+                                </dl>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd class="c4">详细变化</dd>
+        </dl>
+        <dl v-for="(ele, index) in list" :key="index" :class="{row_event: index%2===1}">
+            <dd>
+                {{ele.companyCnShort}}
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">{{ele.homeOddsInit}}</dd>
+                        <dd class="w33 brn">{{ele.handicapInit}}</dd>
+                        <dd class="w33 brn">{{ele.awayOddsInit}}</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">
+                            <bet-outcome :isResult="true"
+                                         :trend="ele.homeTrend"
+                                         :num="ele.homeOddsCurr"
+                            />
+                        </dd>
+                        <dd class="w33 brn">
+                            <bet-outcome :isResult="true"
+                                         :trend="ele.handTrend"
+                                         :num="ele.handicapCurr"
+                            />
+                        </dd>
+                        <dd class="w33 brn">
+                            <bet-outcome :isResult="true"
+                                         :trend="ele.awayTrend"
+                                         :num="ele.awayOddsCurr"
+                            />
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd><a @click="goToDetail(ele)">查看</a></dd>
+        </dl>
+        <dl :class="{row_event: (list.length)%2===1}">
+            <dd>
+                最大值
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">{{maxData.homeOddsInit}}</dd>
+                        <dd class="w33 brn">{{maxData.handicapInit}}</dd>
+                        <dd class="w33 brn">{{maxData.awayOddsInit}}</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">
+                            {{maxData.homeOddsCurr}}
+                        </dd>
+                        <dd class="w33 brn">
+                            {{maxData.handicapCurr}}
+                        </dd>
+                        <dd class="w33 brn">
+                            {{maxData.awayOddsCurr}}
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd></dd>
+        </dl>
+        <dl :class="{row_event: (list.length + 1)%2===1}">
+            <dd>
+                最大值
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">{{minData.homeOddsInit}}</dd>
+                        <dd class="w33 brn">{{minData.handicapInit}}</dd>
+                        <dd class="w33 brn">{{minData.awayOddsInit}}</dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd>
+                <div class="sub_table">
+                    <dl>
+                        <dd class="w33 brn">
+                            {{minData.homeOddsCurr}}
+                        </dd>
+                        <dd class="w33 brn">
+                            {{minData.handicapCurr}}
+                        </dd>
+                        <dd class="w33 brn">
+                            {{minData.awayOddsCurr}}
+                        </dd>
+                    </dl>
+                </div>
+            </dd>
+            <dd></dd>
+        </dl>
+    </div>
+</div>

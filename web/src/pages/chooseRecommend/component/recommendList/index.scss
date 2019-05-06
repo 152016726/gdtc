@@ -1,0 +1,108 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.recommend-list-view {
+  padding: 0 24px;
+  font-size: 16px;
+  .recommend-list-left {
+    height: 100%;
+    float: left;
+    position: relative;
+    padding-left: 28px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #D2D2D2;
+    }
+  }
+  .recommend-list-right {
+    float: left;
+    .recommend-list-right-title {
+      div {
+        float: left;
+        padding: 0 12px;
+        &:nth-of-type(1) {
+          color: #777777;
+        }
+        &:nth-of-type(2) {
+          color: #E83C3C;
+        }
+        &:nth-of-type(3) {
+          font-weight: bold;
+        }
+      }
+    }
+    .recommend-list-right-content {
+      padding: 12px 0;
+      > div {
+        float: left;
+        &:nth-of-type(1) {
+          font-weight: bold;
+          padding-left: 8px;
+          margin-right: 16px;
+          height: 38px;
+          line-height: 38px;
+        }
+      }
+      .recommend-list-bet-outcome-box {
+        > div {
+          width: 368px;
+          border-top: 1px solid $BorderColor;
+          border-left: 1px solid $BorderColor;
+          > div {
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            background: #FAF9EB;
+            &.bet_outcome {
+              cursor: not-allowed;
+              span {
+                margin-left: 0;
+                font-size: 14px;
+              }
+            }
+          }
+          &.wdwSty {
+            div {
+              width: 102px;
+              height: 38px;
+              line-height: 38px;
+              &.bet_outcome {
+
+              }
+            }
+            .recommend-list-handicap {
+              width: 62px;
+              border: 1px solid $BorderColor;
+              border-top: none;
+              border-left: none;
+              box-sizing: border-box;
+              background: #FFFFFF;
+            }
+          }
+          &.tg_odd_box {
+            div {
+              width: 25%;
+              height: 48px;
+              padding-top: 4px;
+              line-height: 48px;
+              &.bet_outcome {
+                cursor: not-allowed;
+                span {
+                  margin-left: 0;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

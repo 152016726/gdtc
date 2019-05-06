@@ -1,0 +1,35 @@
+<div class="expert_group_li_view">
+    <div>
+        <a v-bind:href="'/expertZone.html?eid=' + eid">
+            <img :src="expertIcon" alt="">
+            <div>
+                {{nickname}}
+            </div>
+        </a>
+    </div>
+    <div>
+        {{expertSummary ? expertSummary: '暂无个人信息'}}
+    </div>
+    <div>
+        <span>
+            5中{{fiveRate}}
+        </span>
+        <span v-if="comboWin > '1'">
+            {{comboWin}}连胜
+        </span>
+    </div>
+    <div>
+        <span
+           class="unconcerned"
+           v-if="!isAttention"
+           @click="attentionHandle(true)">
+            + 关注
+        </span>
+        <span
+            class="attention"
+            v-if="isAttention"
+            @click="attentionHandle(false)">
+            已关注
+        </span>
+    </div>
+</div>

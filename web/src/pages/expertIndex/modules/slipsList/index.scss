@@ -1,0 +1,85 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.slipsList{
+  .header{
+    padding-top: 18px;
+    .history{
+      padding: 12px 160px 10px 4px;
+    }
+  }
+  .nav{
+    width: 100%;
+    height: 42px;
+    border: 1px solid $CommonBorderColor;
+    border-top: 2px solid $CommonBorderColor;
+    background-color: #E6EDFA;
+    box-sizing: border-box;
+    .mixFilter{
+      padding-top: 4px;
+      line-height: 42px;
+      .match{
+        margin-left: 25px;
+      }
+      .orderBy{
+        margin-left: 20px;
+      }
+    }
+    .my{
+      line-height: 42px;
+      margin-right: 25px;
+      text-align: center;
+      .heart{
+        cursor: pointer;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        height: 28px;
+        line-height: 26px;
+        color: #777777;
+        font-size: 14px;
+        width: 102px;
+        border-radius: 14px;
+        border: 1px solid $CommonBorderColor;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        display: inline-block;
+        .heartIcon{
+          height: 14px;
+          width: 16px;
+          margin-right: 6px;
+          vertical-align: middle;
+          background: url('../../images/heart.png') no-repeat center center;
+          display: inline-block;
+        }
+        &.active{
+          color: $MainColor;
+          .heartIcon{
+            background-image: url("../../images/heart_orange.png");
+          }
+        }
+      }
+    }
+  }
+  .orderList{
+    padding-top: 20px;
+    background-color: #ffffff;
+    .orders{
+      .order{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+      }
+    }
+    .orderNone{
+      min-height: 304px;
+      text-align: center;
+      line-height: 304px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #A0A0A0;
+    }
+  }
+}

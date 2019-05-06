@@ -1,0 +1,12 @@
+<div class="linePercentContent">
+    <h1>{{title}}</h1>
+    <div class="linePercentContentInner">
+        <div class="left">{{left}}</div>
+        <div class="line">
+            <div class="inContent">
+                <div class="percent" :style="{width: percent + '%'}"></div>
+            </div>
+        </div>
+        <div class="right">{{right}}</div>
+    </div>
+</div>

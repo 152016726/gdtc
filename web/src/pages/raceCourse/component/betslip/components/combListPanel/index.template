@@ -1,0 +1,43 @@
+<div class="combListPanel" v-show="show">
+    <div class="combListPanel_inner">
+        <h2>过关方式对照表<a @click="toggleWin"></a></h2>
+        <ul>
+            <li v-for="(ele, idx) in listSorted"
+                :key="idx"
+            >
+                <betslipCheckBox :ops="ele_c" v-for="(ele_c, idx_c) in sortList(ele.arr)" :key="idx_c"/>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

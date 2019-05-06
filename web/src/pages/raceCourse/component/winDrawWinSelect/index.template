@@ -1,0 +1,14 @@
+<div id="win-draw-win-select" class="winDrawWinSelect">
+    <sort-button :title-text='titleText'>
+        <div class="moreSelect">
+             <ul>
+                 <li v-for="(tt,index) in textArr "
+                     v-on:click="selectHandle(index)">
+                     {{tt.text}}
+                     <span :class="tt.className" v-if="selectArr[index] && tt.className"/>
+                 </li>
+             </ul>
+        </div>
+        <div class="linkWhite"></div>
+    </sort-button>
+</div>

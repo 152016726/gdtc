@@ -1,0 +1,344 @@
+@import "~common/style/color";
+
+$searchHeight: 28px;
+
+@mixin inputStyle() {
+  width: 123px - 12px * 2;
+  height: $searchHeight - 2px;
+  line-height: $searchHeight - 2px;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid $CommonBorderColor;
+  background: url('./images/down.png') #fff no-repeat right 13px center;
+  background-size: 9px auto;
+  cursor: pointer;
+  display: block;
+  color: #333;
+}
+
+$infoListGridHeight: 255px;
+.dot_index {
+  .infoList {
+    width: 380px;
+    border: 1px solid $CommonBorderColor;
+    margin: 0 14px 0 0;
+    h2 {
+      line-height: 40px;
+      border-bottom: 1px solid $CommonBorderColor;
+      font-size: 19px;
+      padding: 0 16px;
+      color: #333;
+      background: #f2f2f2;
+      position: relative;
+    }
+    .list {
+      padding: 0 12px;
+      margin: 12px 0;
+      height: 231px;
+      overflow-y: auto;
+      li {
+        padding-left: 12px;
+        line-height: 32px;
+        background: url("./images/point.png") left center no-repeat;
+        a {
+          color: #333;
+          font-size: 14px;
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:hover {
+            color: $CommonHoverColor !important;
+          }
+        }
+      }
+    }
+    &.excellentDot { //本月优秀站点
+      h2 {
+        padding-left: 32px;
+        background: #fff;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 12px;
+          background: $MainColor;
+          top: 14px;
+          left: 12px;
+        }
+      }
+      .mc {
+        cursor: pointer;
+        img {
+          display: block;
+          height: 216px;
+          width: 100%;
+        }
+        h3 {
+          line-height: $infoListGridHeight - 216px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding: 0 12px;
+          text-align: center;
+          span {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+    &.help { //站点帮助中心
+      margin-right: 0;
+      $imgHeight: 94px;
+      ul {
+        height: 129px;
+      }
+      .btn {
+        margin: 8px 12px;
+        display: block;
+        height: $imgHeight;
+        background: url("./images/buttonBg.png");
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .top {
+    margin: 20px 0;
+    .infoList {
+      float: left;
+    }
+  }
+  .middle {
+    .infoList {
+      width: 100%;
+      ul {
+        padding: 24px 20px;
+        li {
+          width: 356px;
+          float: left;
+          margin-right: 40px;
+          .img {
+            width: 156px;
+            height: 116px;
+            padding: 4px;
+            border: 1px solid $DarkerBorderColor;
+            float: left;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .mc {
+            margin-left: 182px;
+            .row {
+              line-height: 18px;
+              font-size: 14px;
+              margin-bottom: 12px;
+              span {
+                float: left;
+                width: 44px;
+              }
+              i, .starBox {
+                font-style: normal;
+                display: block;
+                margin-left: 44px;
+              }
+              .starBox {
+                overflow: hidden;
+                $width: (17 + 6) * 5px;
+                .inner {
+                  width: $width;
+                  b {
+                    width: 17px;
+                    height: 17px;
+                    float: left;
+                    background: url("./images/star.png");
+                    background-size: 100% 100%;
+                    margin-right: 6px;
+                  }
+                }
+                &.w1 {
+                  width: 1 / 5 * $width;
+                }
+                &.w2 {
+                  width: 2 / 5 * $width;
+                }
+                &.w3 {
+                  width: 3 / 5 * $width;
+                }
+                &.w4 {
+                  width: 4 / 5 * $width;
+                }
+                &.w5 {
+                  width: 5 / 5 * $width;
+                }
+              }
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+            }
+          }
+          &.mr0 {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    margin: 20px 0;
+    .infoList {
+      width: 100%;
+    }
+    .map_wrapper {
+      height: 706px;
+      .sidebar {
+        width: 287px;
+        height: 100%;
+        float: left;
+        overflow-y: auto;
+        background: #f2f2f2;
+        font-size: 14px;
+        .search_box {
+          margin: 10px 0;
+          input {
+            border: 1px solid $CommonBorderColor;
+            height: 24px;
+            line-height: 24px;
+            width: 202px;
+            display: block;
+            background: #fff;
+            margin: 10px auto;
+            padding: 0 8px;
+          }
+          .info {
+            color: #999;
+            text-align: center;
+            b {
+              color: $linkColor;
+              margin: 0 4px;
+            }
+          }
+          .buttons {
+            line-height: 20px;
+            color: $marketTitleColor;
+            width: 220px;
+            margin: 8px auto;
+            .page_btn_wrapper{
+              float: left;
+              width: 162px;
+            }
+            a {
+              float: left;
+              border: 1px solid $CommonBorderColor;
+              background: #ebebeb;
+              width: 22px;
+              text-align: center;
+              margin-right: 3px;
+              &.active {
+                color: #333;
+                border: 1px solid #f2f2f2;
+                cursor: initial;
+                background: none;
+              }
+            }
+          }
+        }
+        .city_list {
+          background: $rowLightBgColor;
+          padding: 14px 0;
+          li {
+            border-bottom: 1px dashed $betslipSeparatorColor;
+            line-height: 24px;
+            padding: 12px;
+            &:hover {
+              cursor: pointer;
+              background: #eee;
+              transition: all .5s;
+            }
+            h3 {
+              color: $linkColor;
+            }
+            p {
+              color: #333
+            }
+            &:last-of-type{
+              border-bottom: none;
+            }
+          }
+        }
+      }
+      .map_baidu {
+        margin-left: 287px;
+        height: 100%;
+      }
+    }
+  }
+  .fontBolader {
+    font-weight: bolder;
+  }
+  .titleEm {
+    font-style: italic;
+  }
+  .city_ctrl {
+    float: right;
+    width: 900px;
+    font-size: 14px;
+    color: #999;
+    padding: 6px 0;
+    line-height: 28px;
+    .info {
+      float: left;
+      .address {
+        color: $linkColor;
+      }
+    }
+    .inputs {
+      float: right;
+      .select_box {
+        position: relative;
+        z-index: 2;
+        float: left;
+        margin-right: 12px;
+        .text {
+          @include inputStyle;
+        }
+        .selector {
+          position: absolute;
+          background-color: #fff;
+          width: 123px;
+          border: 1px solid $CommonBorderColor;
+          border-top: none;
+          color: #000;
+          max-height: 200px;
+          overflow-y: scroll;
+          display: none;
+          ul {
+            li {
+              cursor: pointer;
+              padding: 0 12px;
+              &:hover {
+                background: $oddsBgColor;
+              }
+            }
+          }
+        }
+      }
+      .search_btn {
+        float: left;
+        width: 56px;
+        line-height: 28px;
+        background: url("./images/btn.png");
+        background-size: 100% 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+  .cm {
+    color: $MainColor;
+  }
+}

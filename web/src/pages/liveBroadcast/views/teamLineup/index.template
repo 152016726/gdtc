@@ -1,0 +1,4 @@
+<div id="team-lineup-vue" class="teamLineupPage">
+    <lineup-vue :formation="formation" :homeLineCfg="homeLineCfg" :awayLineCfg="awayLineCfg" :homeFormation="homeFormation" :awayFormation="awayFormation"/>
+    <player-list-vue :playerList="playerList"></player-list-vue>
+</div>

@@ -1,0 +1,89 @@
+@import "../../../../../../common/style/color";
+
+.combListPanel {
+  position: absolute;
+  width: 720px;
+  .combListPanel_inner {
+    position: absolute;
+    transform: translateX(-50%);
+    margin: 0 0 17px 50px;
+    bottom: 100%;
+    background-color: #fff;
+    border: 1px solid $MainColor;
+    min-width: 200px;
+    padding: 0 0 16px;
+    h2 {
+      height: 36px;
+      line-height: 36px;
+      padding: 0 12px;
+      background: $BgColor;
+      position: relative;
+      a {
+        color: $linkColor;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        width: 12px;
+        height: 12px;
+        background: url("../../images/close_l.png");
+        background-size: 100% 100%;
+      }
+    }
+    ul {
+      padding: 16px 16px 0;
+      max-height: 420px;
+      overflow-y: auto;
+      li {
+        &:after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+        > .vueBetslipCheckBox {
+          span {
+            display: inline-block;
+            width: 64px;
+          }
+        }
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 17px;
+      background: url("../../images/down_white.png");
+      background-size: 100% 100%;
+      top: 100%;
+      left: 50%;
+      margin-left: -16px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

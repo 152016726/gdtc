@@ -1,0 +1,209 @@
+$TitleBgColor: #E6EDFA; // 背景颜色
+$BorderColor: #DEDEDE; // 边框颜色
+$contentBgColor: #FAF9EB; // 内容背景颜色
+$WinColor: #DA573A; // 主胜颜色
+$FlatColor: #669DF6; // 平颜色
+$LoseColor: #7DB839; // 客胜颜色
+$inEndColor: #DA0303; // 最终奖金颜色
+$changeBonus: #0EB80E; // 变化中的奖金颜色
+
+.peer-review-list {
+  border: 1px solid $BorderColor;
+  color: #333333;
+  font-size: 14px;
+  .peer-review-list-top {
+    background: $TitleBgColor;
+    border-bottom: 1px solid $BorderColor;
+    padding: 0 14px;
+    height: 48px;
+    line-height: 48px;
+    .prl-top-left {
+      float: left;
+      > ul {
+        > li {
+          float: left;
+          margin-right: 16px;
+          &:nth-of-type(-n + 3) {
+            > div {
+              width: 76px;
+            }
+          }
+          &:nth-of-type(n + 4) {
+            > div {
+              width: 102px;
+            }
+          }
+        }
+      }
+    }
+    .prl-top-center {
+      float: left;
+      margin-left: 32px;
+      span {
+        padding: 7px 23px;
+        border: 1px solid #83A0D7;
+        background: #FFFFFF;
+        color: #83A0D7;
+        margin-right: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+    .prl-top-bottom {
+      float: right;
+      color: #909090;
+      margin-right: 16px;
+    }
+  }
+  .peer-review-list-center {
+    background: $contentBgColor;
+    border-bottom: 1px solid $BorderColor;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    font-size: 16px;
+    > div {
+      display: inline-block;
+      span {
+        position: relative;
+        padding: 0 20px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          width: 12px;
+          height: 12px;
+          z-index: 0;
+        }
+      }
+      .win-len {
+        color: $WinColor;
+        &::before {
+          background: $WinColor;
+        }
+      }
+      .flat-len {
+        color: $FlatColor;
+        &::before {
+          background: $FlatColor;
+        }
+      }
+      .lose-len {
+        color: $LoseColor;
+        &::before {
+          background: $LoseColor;
+        }
+      }
+    }
+    .prl-center-left {
+      font-weight: bold;
+    }
+    .prl-center-center {
+      margin: 0 18px;
+    }
+  }
+  .peer-review-list-bottom {
+    .market-date {
+      width: 170px;
+    }
+    .market-league {
+      width: 100px;
+    }
+    .market-team {
+      width: 306px;
+      span {
+        display: inline-block;
+        width: 126px;
+        font-weight: 600;
+        &:nth-of-type(1){
+          text-align: right;
+        }
+        &:nth-of-type(2){
+          width: 42px;
+        }
+        &:nth-of-type(3){
+          text-align: left;
+        }
+      }
+    }
+    .home-win, .draw, .away-win {
+      width: 82px;
+    }
+    .select-status {
+      width: 156px;
+    }
+    .market-result {
+      width: 210px;
+      border-right: none;
+    }
+    .list-div {
+      div {
+        float: left;
+        text-align: center;
+        border-right: 1px solid $BorderColor;
+        box-sizing: border-box;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    .prl-bottom-list-title {
+       height: 36px;
+       line-height: 36px;
+       background: $TitleBgColor;
+       border-bottom: 1px solid $BorderColor;
+     }
+    ul {
+      li {
+        border-bottom: 1px solid $BorderColor;
+        div{
+          float: left;
+          height: 42px;
+          line-height: 42px;
+          &.market-team {
+            position: relative;
+            span {
+              font-weight: 400;
+            }
+            img {
+              position: absolute;
+              top: 1px;
+              left: 1px;
+              width: 17px;
+              height: 17px;
+            }
+          }
+          &.market-league {
+            color: #FFFFFF;
+          }
+          &.select-status {
+            color: $changeBonus;
+          }
+          &.selectStatusInEnd {
+            color: $inEndColor;
+          }
+          &.market-result {
+           color: $FlatColor;
+          }
+          &.winResult {
+            color: $WinColor;
+          }
+          &.loseResult {
+            color: $LoseColor;
+          }
+          &.noDataSty {
+            width: 100%;
+          }
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+}

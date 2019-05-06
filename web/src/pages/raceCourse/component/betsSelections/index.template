@@ -1,0 +1,51 @@
+<div class="betsSelections" v-if="betslip.length !== 0 && isSelected">
+    <table>
+       <tbody>
+           <!-- 表头 -->
+           <tr class="header">
+               <th class="clear">
+                   <a href="javascript:;" @click="clearBetslip">清空</a>
+               </th>
+               <th class="No">编号</th>
+               <th class="teams">主队VS客队</th>
+               <th class="selection">投注选项</th>
+               <th class="banker">设胆</th>
+               <a href="javascript:;" class="close" @click="close"></a>
+           </tr>
+           <!-- 表头 -->
+
+           <!-- 表格 -->
+           <tr class="content"
+               align="center"
+               v-for="(item,index) in betslip"
+               v-if="item.outcomes.length !== 0"
+               :key="index">
+               <td href="javascript:;"
+                   @click="deleteItem([item.matchInfo.vid])"
+                   class="clear">
+               </td>
+               <td class="No">{{item.matchInfo.week+item.matchInfo.number}}</td>
+               <td class="teams clearfix">
+                   <div class="homeName fl">{{item.matchInfo.homeShortName}}</div>
+                   <div class="VS fl">VS</div>
+                   <div class="awayName fl">{{item.matchInfo.awayShortName}}</div>
+               </td>
+               <td class="selection" align="left">
+                   <a href="javascript:;"
+                      @click="deleteVal([val.key])"
+                      v-for="(val,i) in item.outcomes"
+                      :key="i">
+                       {{val.oddsName}}@{{val.odds}}
+                   </a>
+               </td>
+               <td class="banker">
+                   <input type="checkbox"
+                          class="check"
+                          v-bind:checked="item.isBanker"
+                          @click="setBanker(item.matchInfo.vid,$event)">
+               </td>
+           </tr>
+           <!-- 表格 -->
+       </tbody>
+    </table>
+</div>

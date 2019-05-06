@@ -1,0 +1,29 @@
+.outer {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  .playerCycle {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    line-height: 36px;
+    border: 1px solid #ffffff;
+    background-color: #E3696C;
+    text-align: center;
+    color: #ffffff;
+    .shirtnum {
+      font-size: 16px;
+    }
+    .playerName {
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 6px;
+    }
+  }
+
+  .awayCls {
+    transform: rotate(180deg);
+    background-color: #669DF6;
+  }
+}

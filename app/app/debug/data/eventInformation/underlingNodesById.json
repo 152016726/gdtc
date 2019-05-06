@@ -1,0 +1,40 @@
+{
+    "rspCode":"SUCCESS",
+    "data":{
+        "list":[
+            {
+                "name":"英超",
+                "nodeId":"5"
+            },
+            {
+                "name":"日职",
+                "nodeId":"6"
+            },
+            {
+                "name":"意甲",
+                "nodeId":"7"
+            },
+            {
+                "name":"荷甲",
+                "nodeId":"8"
+            },
+            {
+                "name":"英格兰",
+                "nodeId":"9"
+            },
+            {
+                "name":"西甲",
+                "nodeId":"10"
+            },
+            {
+                "name":"法甲",
+                "nodeId":"11"
+            },
+            {
+                "name":"德甲",
+                "nodeId":"12"
+            }
+        ]
+    }
+
+}

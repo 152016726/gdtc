@@ -1,0 +1,68 @@
+//公共颜色
+//主色调
+$MainColor: #eb812b;       //指示强烈的控件/可点击按 钮及文字/重点突出的信息
+$BgColor: #f5f5f5;          //背景色
+$BorderColor: #e5e5e5;     //标题/分栏边框线
+$SpiltLineColor: #eeeeee;  //分割线
+$BgColorWhite: #ffffff;
+$CommonHoverColor: #FF5502; // 文字hover色
+
+//辅助色
+$DateBarColor: #f5f6f7;  //赛程-日期标题背景色
+$DarkerBorderColor: #d1d1d1;    //赛程-可选表格边框线
+$DarkerRedColor: #da573a;   //胜-背景颜色以及文字颜色，所有页面通用
+$BlueColor: #669df6;   //平-背景及文字颜色所有页面通用/弹框总进球背景色
+$DarkerGreenColor: #7db839; //负-背景及文字颜色所有页面通用
+$GrassGreen: #cad1c5;  //非让球背景色
+$LightGreenColor: #89d948;   //让球数为负背景色
+$RedColor: #e3696d;    //让球数为正背景色
+$GreenColor: #59d9a7; //弹框比分背景色
+$YellowColor: #f5b464; //弹框半全场背景色
+$SingleColor: #eb4a26; //单关颜色
+$teamRankGrey: #b0b0b0; //队伍排名的灰色字体
+$teamRateGrey: #777777; //队伍赔率的灰色字体
+$playIntroduceTitle: #282828; //玩法介绍的标题颜色
+$playIntroduceContent: #333333; //玩法介绍的正文字体颜色
+$headerBorderColor: #e6e6e6; //使用工具栏里的头部border颜色
+$awayIconColor: #74CC00; //焦点赛事的客 icon 颜色
+$homeIconColor: #CC5C00; //焦点赛事的客 icon 颜色
+$upColor: #ea2a2a; //焦点赛事的赔率上升的颜色
+$downColor: #0fb80f; //焦点赛事的赔率下降的颜色
+$flatColor: #777777; //焦点赛事的赔率不变的颜色
+$awardBgColor: #fafaf5;       //赛果查询背景色
+$awardBorderColor: #d9d9d9;  //赛果查询边框颜色
+
+//PC 头部颜色
+$CommonHeaderBg: #EDEDED;  // 头部背景
+$CommonHeaderColor: #808080; // 文字颜色
+$BasicFontColor: #333333;  // 基准黑色字体
+$CommonBorderColor: #dedede;
+
+//PC赛程页颜色
+$oddsBgColor: #FAF9EB;   //outcome背景色
+$marketTitleColor: #666666;  //玩法 tabTitle字体颜色
+$marketTitleBgColor: #E6EDFA;  //赛程页头部背景色
+$positiveBallColor: #da573a; //让球数为正数的字体颜色
+$negativeBallColor: #7db839; //让球数为负数的字体颜色
+$betTipsColor: #F6F1EC; // 提示框颜色
+$otherOutcomeBgColor: #EBEED4; //展开更多 outcome 的容器背景色
+$otherOutcomeBorderColor: #CBD1A0; //展开更多 outcome 的容器边框色
+$overEventColor: #DA0303; //赛事完场状态颜色
+
+$linkColor: #2B78B2; //跳转链接的字体颜色
+$betslipSeparatorColor: #CACACA; // 投注揽分割线颜色
+
+//奖金明细表格基色
+$BonusDetailsExcelColor: #A0BFFA; //表格背景色
+$betslipRedFont: #EB2A2A; // 投注揽红字
+$selectNumBorder: #e0e0e0; // 加减号边框颜色
+
+//红黄牌颜色
+$orangeCardsColor: #FCBF04; // 黄牌
+$redCardsColor: #E64D5A; // 红牌
+
+//队伍排名颜色
+$teamRankColor: #999999; // 队伍排名
+
+//列表辅助背景色
+$rowLightBgColor: #fafafa;

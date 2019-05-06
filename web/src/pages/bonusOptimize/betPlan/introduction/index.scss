@@ -1,0 +1,54 @@
+.introduction{
+  display: inline-block;
+  position: relative;
+  background-color: #FAFAFA;
+  vertical-align: middle;
+  .select{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background: url("../images/wenhao.png") no-repeat;
+    background-size: cover;
+  }
+  .items{
+    position: absolute;
+    top: 30px;
+    left: -260px;
+    z-index: 9;
+    width: 347px;
+    border:1px solid #E7CFBC;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    li{
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+      line-height: 18px;
+      color: #999999;
+      font-size: 14px;
+      margin-bottom: 20px;
+      .title{
+        font-weight: bold;
+        color: #A8A8A8;
+      }
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 16px;
+      height: 12px;
+      left: 260px;
+      top: -11px;
+      background: url("../images/icon.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

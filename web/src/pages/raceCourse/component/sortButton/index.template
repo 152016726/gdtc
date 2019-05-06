@@ -1,0 +1,10 @@
+<div id="sort_button"
+     v-on:click="clickHandle"
+     v-clickOutside="handleClose">
+    <div class="defaultClass"
+         :class="isUp && 'upDiv'">
+        <span>{{titleText}}</span>
+        <span class="arrowIcon"></span>
+    </div>
+    <slot v-if="isUp"></slot>
+</div>

@@ -1,0 +1,174 @@
+<div id="win-draw-win" class="winDrawWin">
+    <div class="updateTime">
+        竞彩奖金更新时间：{{updateTime}}
+        <span @click="updateHandle">[刷新]</span>
+    </div>
+    <div class="marketBox">
+        <div class="searchBox clearfix">
+            <div class="searchLeft">
+                <ul class="clearfix">
+                    <li :class="(isWDW && isHWDW) && 'check'"
+                        v-on:click="selectMarketHandle(0)">
+                         胜平负/让球胜平负
+                    </li>
+                    <li v-on:click="selectMarketHandle(1)"
+                        :class="(isWDW && !isHWDW) && 'check'">
+                        胜平负
+                    </li>
+                    <li v-on:click="selectMarketHandle(2)"
+                        :class="(!isWDW && isHWDW) && 'check'">
+                        让球胜平负
+                    </li>
+                    <li v-on:click="bonusChangeHandle"
+                        :class="isFloatBonus && 'check'">
+                        奖金区浮动显示奖金变化
+                    </li>
+                </ul>
+            </div>
+            <div class="searchCenter">
+                <ul class="clearfix">
+                    <li>
+                        <match-filter
+                                :submitCb="matchFilterCb"
+                                :arrDateButtons="arrWeek"
+                                :arrHandicapButtons="arrHandicap"
+                                :arrLeagueButtons="arrLeague"/>
+                    </li>
+                    <li>
+                        <odds-filter :submitCb="oddFilterCb" />
+                    </li>
+                    <li class="hidden-market-tip" v-if="hideLen !== 0">
+                        已隐藏<span class="hidden-number">{{hideLen}}</span>场比赛
+                        <span class="close-btn" @click="closeHiddenHandle"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marketsList topLine"
+             :class="{isFlex: isFlex}">
+            <event-list-title
+                    class="listHeader"
+                    :callbackHandle="callbackHandle">
+                <ul class="clearfix">
+                    <li class="marketNum">编号</li>
+                    <li class="leagueName">赛事</li>
+                    <li class="marketTime">
+                        <market-time-select :no-sort="true"/>
+                    </li>
+                    <li class="teamName">主队 VS 客队</li>
+                    <li class="concede">让球</li>
+                    <li class="events">
+                        <div class="winLen">
+                            <win-draw-win-select
+                                    :title-text="'胜'"
+                                    v-on:clickHandle="winHandle"/>
+                        </div>
+                        <div class="flatLen">
+                            <win-draw-win-select
+                                    :title-text="'平'"
+                                    v-on:clickHandle="flatHandle"/>
+                        </div>
+                        <div class="failLen">
+                            <win-draw-win-select
+                                    :title-text="'负'"
+                                    v-on:clickHandle="failHandle"/>
+                        </div>
+                    </li>
+                    <li class="record">数据</li>
+                    <li class="average">平均欧赔</li>
+                </ul>
+            </event-list-title>
+            <match-header
+                    v-for="(item, grpKey) in grpMatch"
+                    :week="item.week"
+                    :date="item.grpDate"
+                    :matchLength="item.events.length"
+                    :key="grpKey">
+                <div class="listItem">
+                    <ul>
+                        <li v-for="(mk, index) in item.events"
+                            :key="index">
+                            <vue-list-lazy-component
+                                    class="listBox clearfix"
+                                    :class="(!isWDW || !isHWDW) && 'oneRowList'"
+                            >
+                                <market-num
+                                        class="marketNum"
+                                        :week="mk.week"
+                                        :complete-no="mk.number"/>
+                                <market-league
+                                        class="leagueName"
+                                        :league-name="mk.leagueName"
+                                        :league-color="mk.leagueColor"
+                                        :league-id="mk.leagueId"
+                                        :league-short-name="mk.leagueShortName"/>
+                                <market-time
+                                        class="marketTime"
+                                        :short-date="mk.shortDate"
+                                        :start-time="mk.startTime"
+                                        :end-short-date="mk.endShortDate"
+                                        :end-time="mk.endTime"
+                                        :is-end-time="isEndTime"/>
+                                <market-team
+                                        class="teamName"
+                                        :home-league-rank="mk.homeLeagueRank"
+                                        :home-name="mk.homeName"
+                                        :home-short-name="mk.homeShortName"
+                                        :away-name="mk.awayName"
+                                        :away-short-name="mk.awayShortName"
+                                        :away-league-rank="mk.awayLeagueRank"
+                                        :handicap="mk.markets[marketHWDWSort] ? mk.markets[marketHWDWSort].handicap : ''"/>
+                                <div class="concede">
+                                    <market-concede
+                                            :dg-status="mk.markets && mk.markets[marketWDWSort] && mk.markets[marketWDWSort].dgStatus"
+                                            :is-show="isWDW"
+                                            :market-odds="mk.markets[marketWDWSort]"/>
+                                    <market-concede
+                                            :dg-status="mk.markets && mk.markets[marketHWDWSort] && mk.markets[marketHWDWSort].dgStatus"
+                                            :is-show="isHWDW"
+                                            :market-odds="mk.markets[marketWDWSort]"
+                                            :handicap="mk.markets && mk.markets[marketHWDWSort] && mk.markets[marketHWDWSort].handicap"/>
+                                </div>
+                                <div class="events">
+                                    <div class="hadOdds"
+                                         :class="isHWDW && 'bottomLine'"
+                                         v-if="isWDW">
+                                        <bet-outcome
+                                                v-for="(od,index) in oddStr"
+                                                :key="mk.vid + '#' + marketWDWSort + '#' + od.key"
+                                                :num="mk.markets[marketWDWSort] && mk.markets[marketWDWSort][od.key]"
+                                                :trend="mk.markets[marketWDWSort] && mk.markets[marketWDWSort][od.trend]"
+                                                :vid="mk.vid"
+                                                :outcome-name="od.key"
+                                                :sort="marketWDWSort"/>
+                                    </div>
+                                    <div class="hhadOdds"
+                                         v-if="isHWDW">
+                                        <bet-outcome
+                                                v-for="(od,index) in oddStr"
+                                                :key="mk.vid + '#' + marketWDWSort + '#' + od.key"
+                                                :num="mk.markets[marketHWDWSort] && mk.markets[marketHWDWSort][od.key]"
+                                                :trend="mk.markets[marketHWDWSort] && mk.markets[marketHWDWSort][od.trend]"
+                                                :vid="mk.vid"
+                                                :outcome-name="od.key"
+                                                :sort="marketHWDWSort"/>
+                                    </div>
+                                </div>
+                                <market-record
+                                        class="record"
+                                        :vid="mk.vid"
+                                        :win-odds="mk.markets && mk.markets.wdw && mk.markets.wdw.homeOdds"
+                                        :flat-odds="mk.markets && mk.markets.wdw && mk.markets.wdw.drawOdds"
+                                        :lose-odds="mk.markets && mk.markets.wdw && mk.markets.wdw.awayOdds"
+                                        :type-num="1"/>
+                                <market-average
+                                        class="average"
+                                        :averages="mk.oddsInfo ? mk.oddsInfo[0] : {}"/>
+                            </vue-list-lazy-component>
+                        </li>
+                    </ul>
+                </div>
+            </match-header>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+<div class="vueBetslipComponentTemp">
+    <div class="vueBetslipComponent">
+        <div class="showBetslipList">
+            
+            <div class="btn" :class="isShowBetslipListPanel ? 'down' : 'up'" @click="showBetslipListPanel">已选<span>{{betslip.length}}</span>场</div>
+            <bets-selections
+                    :isSelected="isShowBetslipListPanel"
+                    @toggleSelection="setSelections">
+            </bets-selections>
+        </div>
+        <div class="middle">
+            <div class="top">
+                <div class="tips" v-if="isBetslipEmpty">
+                    过关方式: <span>请在上方选择比赛</span>
+                </div>
+                <div class="tips" v-if="isSingleNotDgMatch">
+                    过关方式: <span>请再选择一场比赛</span>
+                </div>
+                <div class="clearfix" v-if="!isBetslipEmpty && !isSingleNotDgMatch">
+                    <div class="text">过关方式:</div>
+                    <div class="freeGroup">
+                        <betslipCheckBox
+                            v-for="(item, idx) in free"
+                            :key="idx"
+                            :ops="item"
+                        />
+                    </div>
+                    <div class="moreGame">
+                        <betslipCheckBox v-if="comb.length !== 0" v-bind:ops="moreOps" :isDownFromParent="showMoreFree" :useIsDownFromParent="true" />
+                        <combListPanel v-bind:list="comb" :show="showMoreFree" :toggleWin="toggleMoreFree" />
+                    </div>
+                </div>
+            </div>
+            <div class="bottom clearfix">
+                <div class="text">倍数:</div>
+                <SelectNumBox v-bind:ops="multipleOps" />
+                <div class="text">倍</div>
+                <div class="text money">
+                    金额:
+                    <span class="moneyText">{{money}}元</span>
+                </div>
+                <div class="text">
+                    预计奖金:
+                    <span class="bonusText">{{minBonus}} ~ {{maxBonus}}元</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="left">
+                <div @click="betslipFilter">
+                    <span style="display: none">选单过滤</span>
+                </div>
+                <div @click="bonusOptimization(true)" v-if="isShowBO">
+                    <span>奖金优化</span>
+                </div>
+            </div>
+            <div class="right">
+                <button @click="showBonusDetails">奖金明细</button>
+            </div>
+        </div>
+    </div>
+    <div class="vueBetslipComponentShadow"></div>
+    <bonus-details
+            :options="{
+            isShowBonus,
+            ratio:multipleOps.value,
+            amount,
+            money,
+            betslip,
+            stickWays,
+            bonusInfo}"
+            @toggleBonus="setBonus">
+    </bonus-details>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

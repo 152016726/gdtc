@@ -1,0 +1,87 @@
+<div class="score-details-header">
+    <div class="score-details-header-top clearfix">
+        <div class="header-team-name">
+            <div v-if="event.homeLeagueRank && event.homeLeagueRank !== 0" class="leagueRank">
+                [{{event.homeLeagueRank}}]
+            </div>
+            <div class="team-name" :title="event.homeName">
+                <img src="images/homeIcon.png">
+                <p>{{event.homeShortName}}</p>
+            </div>
+        </div>
+        <div class="header-center-vs">
+            <p class="league-name" :title="event.leagueName">{{event.leagueShortName}}</p>
+            <p class="league-time">{{vsDate}}  {{week}}</p>
+            <p class="league-status">
+                <span :class="{timeColor: isShowTime,
+                               overColor: isOverEvent}">
+                    {{statusText}} {{isShowTime ? "'" : ""}}
+                </span>
+            </p>
+            <div class="league-vs">
+                <p v-if="isShowVS">VS</p>
+                <p v-if="!isShowVS" class="score">
+                    <span>{{homeGoalsScored || 0}}</span>
+                    <span>-</span>
+                    <span>{{awayGoalsScored || 0}}</span>
+                </p>
+                <p v-if="!isShowVS" class="halfScore">
+                    半场 {{homeHalftimeScored || 0}}-{{awayHalftimeScored || 0}}
+                </p>
+            </div>
+            <p class="league-weather" :title="event.weatherText">
+                <img :src="event.weatherImage" alt="">
+                    {{parseInt(event.weatherHigh) || '未知'}}<span v-if="parseInt(event.weatherHigh)">°C</span>
+            </p>
+            <p class="league-address" v-if="false">场地:{{event.stadiumName}}</p>
+        </div>
+        <div class="header-team-name">
+            <div class="team-name" :title="event.awayName">
+                <img src="images/awayIcon.png">
+                <p>{{event.awayShortName}}</p>
+            </div>
+            <div v-if="event.awayLeagueRank && event.awayLeagueRank !== '0'" class="leagueRank lrRight">
+                [{{event.awayLeagueRank}}]
+            </div>
+        </div>
+    </div>
+    <div class="score-details-header-tab">
+        <ul class="clearfix">
+            <li class="live"
+                :class="{active: htmlType === 0}">
+                <a v-bind:href="'/liveBroadcast.html?vid=' + curVid + '#/eventSituation'">
+                    <span/>
+                    直播
+                </a>
+            </li>
+            <li class="analysis"
+                :class="{active: htmlType === 1}">
+                <a v-bind:href="'/scoreAnalysis.html?vid='+ curVid">
+                    <span/>
+                    分析
+                </a>
+            </li>
+            <li class="subplate"
+                :class="{active: htmlType === 2}">
+                <a v-bind:href="'/liveSubplate.html?vid='+ curVid">
+                    <span/>
+                    亚指
+                </a>
+            </li>
+            <li class="european"
+                :class="{active: htmlType === 3}">
+                <a v-bind:href="'/scoreWDW.html?vid='+ curVid">
+                    <span/>
+                    欧指
+                </a>
+            </li>
+            <li class="betir"
+                :class="{active: htmlType === 4}">
+                <a v-bind:href="'/scoreBetfair.html?vid=' + curVid">
+                    <span/>
+                    必发
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

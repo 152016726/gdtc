@@ -1,0 +1,16 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.recent-record {
+  > div {
+    width: 585px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    box-sizing: border-box;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

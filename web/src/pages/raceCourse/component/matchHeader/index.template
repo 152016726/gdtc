@@ -1,0 +1,11 @@
+<div class="toggleBox">
+    <h1 class="toggleBox_header">
+        <span class="week">{{week}}</span>
+        <span class="date">{{date}}</span>
+        <span class="info"><i>{{matchLength}}</i>场比赛可选</span>
+        <a @click="toggleMainContent">{{`[ ${show ? '收起' : '展开'} ]`}}</a>
+    </h1>
+    <div v-if="show" class="toggleBox_mainContent">
+        <slot></slot>
+    </div>
+</div>

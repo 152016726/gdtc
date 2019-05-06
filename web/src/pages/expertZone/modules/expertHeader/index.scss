@@ -1,0 +1,148 @@
+@import "~common/style/color.scss";
+.expertHeader{
+  background-color: #F3F4F5;
+  .info{
+    padding: 20px 24px;
+    height: 128px;
+    border-bottom: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    .person {
+      height: 100%;
+      .avatar {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .description {
+        margin-left: 21px;
+        transform: translateY(-50%);
+        margin-top: 44px;
+        .details {
+          .nickname {
+            padding-right: 9px;
+            line-height: 16px;
+            color: $BasicFontColor;
+            font-size: 16px;
+            font-weight: bold;
+            border-right: 1px solid #D2D2D2;
+          }
+          .rate, .combat {
+            display: inline-block;
+            width: 52px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid $MainColor;
+            border-radius: 8px;
+          }
+          .rate {
+            margin-left: 10px;
+            color: $MainColor;
+          }
+          .combat {
+            margin-left: 6px;
+            color: #DA573A;
+            border: 1px solid #DA573A;
+          }
+          .getConcern{
+            cursor: pointer;
+            margin-left: 42px;
+            width: 60px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 4px;
+            color: #CC6516;
+            background-color: #EDE7E8;
+            display: inline-block;
+            .concern{
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              background:url('../../images/yiguanzhu.png') no-repeat;
+              background-size: cover;
+            }
+            &.active{
+              color: #ffffff;
+              background-color: $MainColor;
+            }
+          }
+        }
+        .focus {
+          .onFocus {
+            font-size: 14px;
+            line-height: 45px;
+            color: #333333;
+            .icon{
+              display: inline-block;
+              width: 24px;
+              height: 17px;
+              margin: 0 8px;
+              vertical-align: middle;
+              background: url("../../images/man.png") no-repeat 100% 100%;
+            }
+            .fans{
+              color: #2B75B3;
+            }
+          }
+          .word {
+            line-height: 24px;
+            font-size: 14px;
+            color: #B6B6B6;
+            .write{
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              margin-left: 8px;
+              vertical-align: middle;
+              background: url("../../images/credit.png") no-repeat 100% 100%;
+            }
+          }
+        }
+      }
+    }
+    .shareOrder{
+      cursor: pointer;
+      width: 118px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      background-color: $MainColor;
+      transform: translateY(-50%);
+      margin-top: 44px;
+      a {
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .battles{
+    padding: 20px 24px;
+    height: 175px;
+    box-sizing: border-box;
+      .monthRate, .weekRate, .recentBattles, .combo{
+        float: left;
+        height: 100%;
+        width: 25%;
+        padding: 0 80px;
+        box-sizing: border-box;
+        div{
+          height: 80%;
+        }
+        p{
+          margin-top: 10px;
+          text-align: center;
+          color: #333333;
+          font-size: 16px;
+        }
+      }
+  }
+}

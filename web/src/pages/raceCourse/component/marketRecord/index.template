@@ -1,0 +1,24 @@
+<div class="recordBox">
+    <div class="clearfix"
+         v-if="typeNum === 0"
+         :class="[isOneRow ? 'centerShow oneRow': 'fourRecord']">
+        <a v-bind:href="'/scoreAnalysis.html?vid='+ vid">析</a>
+        <a v-bind:href="'/liveSubplate.html?vid=' + vid">亚</a>
+        <a v-bind:href="'/scoreWDW.html?vid=' + vid">欧</a>
+        <a href="#">情</a>
+    </div>
+    <div v-else-if="typeNum === 1" class="centerShow threeRecord">
+        <a v-bind:href="'/scoreAnalysis.html?vid='+ vid">析</a>
+        <a v-bind:href="'/liveSubplate.html?vid=' + vid">亚</a>
+        <a v-bind:href="'/scoreWDW.html?vid=' + vid">欧</a>
+        <a v-bind:href="'/peerReview.html?odds=' + winOdds + '-' + flatOdds + '-' + loseOdds"
+           v-if="isPeerReview">同</a>
+    </div>
+    <div v-else-if="typeNum === 2"
+         class="centerShow verticalSty">
+        <a v-bind:href="'/scoreAnalysis.html?vid='+ vid">析</a>
+        <a v-bind:href="'/peerReview.html?odds=' + winOdds + '-' + flatOdds + '-' + loseOdds"
+           v-if="isPeerReview"
+           class="isPeerReview">同</a>
+    </div>
+</div>

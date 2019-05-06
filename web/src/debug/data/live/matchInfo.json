@@ -1,0 +1,60 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": [
+    {
+      "half_result": "1:0",
+      "state": "F",
+      "date": "2018-6-18 18:00",
+      "away_team": "国际体育会",
+      "home_team": "桑托斯",
+      "home_score": "1",
+      "away_score": "1",
+      "home_icon": "https://ls.sportradar.com/ls/crest/big/1968.png",
+      "away_icon": "https://ls.sportradar.com/ls/crest/big/1966.png"
+    },
+    {
+      "home_score_details": [
+        {
+          "name": "Barbosa, Gabriel",
+          "score_type": "点球",
+          "score_time": "51'"
+        }
+      ],
+      "away_score_details": [
+        {
+          "name": "达米奥, 莱安德罗",
+          "score_type": "点球",
+          "score_time": "33'"
+        },
+        {
+          "name": "达米奥, 莱安德罗",
+          "score_type": "",
+          "score_time": "56'"
+        }
+      ]
+    },
+    {
+      "other_info": [
+        {
+          "stadium": "Urbano Caldeira"
+        },
+        {
+          "referee": "Magalhaes, Wagner do Nascimento"
+        },
+        {
+          "stadium_info": "16798"
+        },
+        {
+          "stadium_condition": "良好"
+        },
+        {
+          "half_time": "45"
+        },
+        {
+          "weather": "温和"
+        }
+      ]
+    }
+  ]
+}

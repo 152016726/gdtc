@@ -1,0 +1,48 @@
+<div class="recommend-list-view">
+    <div class="recommend-list-left">
+        {{matchInfo.week}}{{matchInfo.number}}
+    </div>
+    <div class="recommend-list-right">
+        <div class="recommend-list-right-title clearfix">
+            <div>{{matchInfo.vsDate.substr(5, 11)}}</div>
+            <div>
+                <span :title="matchInfo.leagueName">
+                    {{matchInfo.leagueShortName}}
+                </span>
+            </div>
+            <div>
+                <span :title="matchInfo.homeName">
+                    {{matchInfo.homeShortName}}
+                </span>
+                <span>vs</span>
+                <span :title="matchInfo.awayName">
+                    {{matchInfo.awayShortName}}
+                </span>
+            </div>
+        </div>
+        <div class="recommend-list-right-content clearfix">
+            <div>→ 推荐:</div>
+            <div class="recommend-list-bet-outcome-box">
+                <div class="clearfix"
+                     :class="[sort === 'tg' ? 'tg_odd_box': 'wdwSty']">
+                    <div class="recommend-list-handicap"
+                         v-if="sort !== 'tg'">
+                        {{market.markets && market.markets[marketKey] && market.markets[marketKey].handicap || 0}}
+                    </div>
+                    <bet-outcome
+                            v-for="(od,index) in oddArr"
+                            :key="index"
+                            :num="market.markets && market.markets[marketKey] && market.markets[marketKey][od.key]"
+                            :trend="market.markets && market.markets[marketKey] && market.markets[marketKey][od.trend]"
+                            :text="sort === 'tg' ? od.title : ''"
+                            :vid="matchInfo.vid"
+                            :vertical="sort === 'tg'"
+                            :is-disabled="true"
+                            :is-recommend="true"
+                            :outcome-name="od.key"
+                            :sort="marketKey"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

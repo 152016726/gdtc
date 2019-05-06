@@ -1,0 +1,119 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.send-recommend-view {
+  color: #333333;
+  background: #ffffff;
+  .send-recommend-view-top {
+    .send-recommend-view-top-title {
+      position: relative;
+      padding: 0 36px;
+      margin-bottom: 16px;
+      font-weight: bold;
+      font-size: 16px;
+      .events-type {
+        color: $MainColor;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 20px;
+        width: 4px;
+        height: 16px;
+        background: $MainColor;
+      }
+    }
+    .send-recommend-view-top-content {
+      background: #F6F6F6;
+      ul {
+        padding: 24px 0;
+        li {
+          float: left;
+          width: 50%;
+          &:nth-of-type(odd) {
+            border-right: 1px dashed $BorderColor;
+          }
+          &:last-child {
+            border-right: none
+          }
+        }
+      }
+    }
+    .send-recommend-view-top-max-bonus {
+      padding: 12px 24px;
+      background: #FAE6BE;
+      font-size: 14px;
+      .send-recommend-view-top-max-bonus-left {
+        padding: 5px 8px;
+        margin-right: 13px;
+        border: 1px solid $MainColor;
+        color: $MainColor;
+        background: #ffffff;
+        border-radius: 2px;
+      }
+      .send-recommend-view-top-max-bonus-right {
+        color: $MainColor;
+      }
+    }
+  }
+  .send-recommend-view-bottom {
+    .send-recommend-view-bottom-title {
+      position: relative;
+      padding: 30px 0 16px 36px;
+      font-weight: bold;
+      font-size: 16px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 33px;
+        left: 20px;
+        width: 4px;
+        height: 16px;
+        background: $MainColor;
+      }
+    }
+    .send-recommend-view-bottom-content {
+      padding: 24px 24px 0 24px;
+      background: #F6F6F6;
+      .send-recommend-view-input-text {
+        textarea {
+          width: calc(100% - 24px);
+          padding: 12px;
+          height: 98px;
+          border-color: #DEDEDE;
+        }
+      }
+      .send-recommend-view-input-text-tips {
+        padding: 16px 0 26px 0;
+        div:nth-of-type(1) {
+          float: left;
+          color: #999999;
+        }
+        div:nth-of-type(2) {
+          float: right;
+          span:nth-of-type(1) {
+            margin-right: 20px;
+            color: #999999;
+          }
+          span:nth-of-type(2) {
+            padding: 8px 17px;
+            color: #FFFFFF;
+            font-size: 16px;
+            background: $MainColor;
+            cursor: pointer;
+            border-radius: 2px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            &.banSty {
+              opacity: .6;
+              cursor: no-drop;
+            }
+          }
+        }
+      }
+    }
+  }
+}

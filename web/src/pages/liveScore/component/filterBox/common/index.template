@@ -1,0 +1,11 @@
+<div class="live_score_filter_Box"
+     :class="{active: show}"
+     :style="{zIndex: zIndex}"
+     v-clickOutside="handleClose"
+>
+    <h2 @click="toggleContent">{{text}}</h2>
+    <div class="mc" v-if="show">
+        <div class="minTriangle"/>
+        <slot/>
+    </div>
+</div>

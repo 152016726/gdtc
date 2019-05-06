@@ -1,0 +1,44 @@
+<div id="expertHeader">
+    <div class="headerTop">
+        <div class="container clearfix">
+            <div class="loginBox fl">
+                <a href="javascript:;">您好，广东竞彩网欢迎您！</a> |
+                <a href="javascript:;">客服热线：95086</a>
+            </div>
+            <div class="itemsBox fr">
+                <span class="logout-status">
+                    <a href="#" id="top-login-btn"><i class="login"></i>登录</a>
+                    <a href="#" id="top-register-btn"><i class="register"></i>注册</a>
+                </span>
+                <span class="login-status">
+                    <img src="" alt="" id="user-image">
+                    <span class="user-name">hahahaha</span>
+                    <span class="logout-btn">退出</span>
+                </span>
+                <a href="#"><i class="phone"></i>手机版</a>
+                <!--<a href="#"><i class="nav"></i>网站导航</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="headerBanner">
+        <div class="container clearfix">
+            <div class="promote fl">
+                <a class="promoteLogo" href="/index.html"></a>
+            </div>
+            <div class="tabItems fr">
+                <ul class="navigation fl">
+                    <li><a class="home" href="/expertIndex.html">首页</a></li>
+                    <li><a href="/chooseRecommend.html">我要晒单</a></li>
+                    <li><a href="/expertGroup.html">晒单团</a></li>
+                    <li><a href="/expertRanking.html">排行榜</a></li>
+                </ul>
+                <div class="search fl">
+                    <input class="searchInput fl" placeholder="搜索用户"/>
+                    <span class="searchIcon"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{include './../../component/login/view.art'}}
+{{include './../../component/register/view.art'}}

@@ -1,0 +1,61 @@
+.selections{
+  width: 103px;
+  position: relative;
+  background-color: #ffffff;
+  .select{
+    cursor: pointer;
+    width: 100%;
+    line-height: 28px;
+    text-indent: 12px;
+    color: #666666;
+    font-size: 14px;
+    position: relative;
+    background-color: #FAFAFA;
+    border:1px solid #D1D1D1;
+    border-radius: 2px;
+    .label{
+      position: absolute;
+      height: 10px;
+      width: 5px;
+      top: 0;
+      right: 12px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  .items{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 9;
+    width: 103px;
+    border:1px solid #D1D1D1;
+    box-sizing: border-box;
+    li{
+      cursor: pointer;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+      line-height: 28px;
+      text-indent: 12px;
+      color: #666666;
+      font-size: 14px;
+      background-color: #ffffff;
+      &:hover{
+        background-color: #FAFAFA;
+      }
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 16px;
+      height: 8px;
+      left: 40px;
+      top: -8px;
+      background: url("../../images/icon.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

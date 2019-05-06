@@ -1,0 +1,22 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.register-main {
+    width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    .register-title {
+        .title-logo {
+            font-size: 56px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $BorderColor;
+            span {
+                display: inline-block;
+                width: 68px;
+                height: 64px;
+                background: url("images/jclogo.png") no-repeat center;
+                vertical-align: sub;
+            }
+        }
+    }
+}

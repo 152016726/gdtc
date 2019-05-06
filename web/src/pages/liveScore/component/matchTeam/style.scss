@@ -1,0 +1,116 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+$styleBorder: 1px solid $CommonBorderColor;
+.matchTeam {
+  height: 38px;
+  .orangeCards {
+    text-align: center;
+    width: 12px;
+    height: 15px;
+    background-color: #FCBF04;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 16px;
+    font-size: $FONT_10;
+  }
+  .redCards {
+    text-align: center;
+    width: 12px;
+    height: 15px;
+    background-color: $redCardsColor;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 16px;
+    font-size: $FONT_10;
+  }
+  .rank {
+    width: 12px;
+    height: 14px;
+    font-size: $FONT_10;
+    color: $teamRankColor;
+  }
+  > dd:nth-child(1) {
+    width: 50px;
+    .delete {
+      span {
+        margin: 0 auto;
+        width: 18px;
+        height: 18px;
+        display: block;
+        background: url("../../images/unchoose.png") no-repeat center;
+        cursor: pointer;
+      }
+      .selectSt {
+        background: url("../../images/choose.png") no-repeat center;
+      }
+    }
+  }
+  > dd:nth-child(3) {
+    color: #ffffff !important;
+  }
+  > dd:nth-child(5) {
+    &.defColor {
+      color: #666;
+    }
+    &.doingSt {
+      color: $MainColor;
+    }
+    &.finishSt {
+      color: #DA0303;
+    }
+  }
+  > dd:nth-child(6) {
+    line-height: 38px;
+    > div:nth-child(1) {
+      width: 145px;
+      text-align: right;
+    }
+    > div:nth-child(2) {
+      width: 67px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      &.scoreNum {
+        a {
+          color: #F46859;
+        }
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+    > div:nth-child(3) {
+      width: 145px;
+      text-align: left;
+    }
+    > div:nth-child(4) {
+      a{
+        display: inline-block;
+        width: 24px;
+        height: 20px;
+        background: url("../../images/liveIcon.png") no-repeat center;
+        vertical-align: middle;
+      }
+    }
+  }
+  > dd:nth-child(8) {
+    text-align: center;
+    vertical-align: middle;
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 28%;
+    }
+  }
+  > dd:nth-child(9) {
+    text-align: center;
+    vertical-align: middle;
+    > span {
+      display: inline-block;
+      width: 28px;
+      vertical-align: middle;
+      margin: 0 4px;
+    }
+  }
+}

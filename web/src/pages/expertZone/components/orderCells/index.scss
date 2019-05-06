@@ -1,0 +1,99 @@
+@import "~common/style/color.scss";
+
+.row {
+  font-size: 14px;
+  color: #333333;
+  .player {
+    height: 58px;
+    font-weight: bold;
+  }
+  .match {
+    line-height: 29px;
+    display: inline-block;
+    text-align: left;
+    .completeNum {
+      color: $MainColor;
+    }
+    .leagueName {
+      font-weight: bold;
+    }
+    .vs {
+      color: $MainColor;
+    }
+  }
+  .noWard {
+    color: #909090;
+  }
+  .result {
+    width: 48px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 13px;
+    display: inline-block;
+  }
+  .red {
+    color: #ffffff;
+    background-color: #DA573A;
+  }
+  .black {
+    color: #777777;
+    background-color: #BFBFBF;
+  }
+  .delay, .cancel {
+    color: #909090;
+    background-color: #DEDEDE;
+  }
+  .showMore {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 240px;
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F5B464;
+    border-radius: 4px;
+    display: inline-block;
+    .icon {
+      margin-left: 6px;
+      width: 9px;
+      height: 9px;
+      display: inline-block;
+      vertical-align: baseline;
+      background: url("../../images/xiala.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  .description {
+    display: inline-block;
+    padding: 13px 25px;
+    .bets, .analysis {
+      text-align: left;
+    }
+    .details {
+      display: inline-block;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .rate {
+      color: #F5B464;
+    }
+  }
+  .first {
+    background: url('../../images/index1.png') no-repeat 100% 100%;
+  }
+  .second {
+    background: url("../../images/index2.png") no-repeat 100% 100%;
+  }
+  .index {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: sub;
+  }
+}

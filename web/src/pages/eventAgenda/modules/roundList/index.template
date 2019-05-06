@@ -1,0 +1,22 @@
+<div class="roundList clearfix">
+    <div class="row">
+        <div class="roundTitle">
+            <p>{{stageName}}</p>
+            <p>
+                进行到{{+roundName - 0 >= 0 ? '第' : ''}}<i class="roundName">{{roundName}}</i>{{+roundName - 0 >= 0 ? '轮' : '组'}}
+            </p>
+        </div>
+        <div class="roundDiv">
+            <ul class="rounds clearfix">
+                <li
+                        v-for="(item, index) in roundList"
+                        :key="index"
+                        :class="['fl', {active: currentIndex === index, unStart: activeIndex < index}]"
+                        @click="itemClick(item, index)"
+                >
+                    {{!!item.roundName ? item.roundName : '-'}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

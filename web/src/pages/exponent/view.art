@@ -1,0 +1,11 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<staticLabel>
+    <div class="container">
+        <div id="exponent_wrapper">
+            <exponent-list />
+        </div>
+    </div>
+</staticLabel>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

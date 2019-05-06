@@ -1,0 +1,608 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "ao": [
+      {
+        "company": "皇冠",
+        "originally": [
+          "2.5",
+          "2.6",
+          "2.7"
+        ],
+        "now": [
+          {
+            "text": "2.5",
+            "type": "u"
+          },
+          {
+            "text": "2.5",
+            "type": "e"
+          },
+          {
+            "text": "2.5",
+            "type": "d"
+          }
+        ],
+        "list": [
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "1"
+            },
+            "time": {
+              "text": "中",
+              "type": "u"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "-1"
+            },
+            "time": {
+              "text": "45",
+              "type": "d"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "-1.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "1"
+            },
+            "time": {
+              "text": "中",
+              "type": "u"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "-1"
+            },
+            "time": {
+              "text": "45",
+              "type": "d"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "-1.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "1"
+            },
+            "time": {
+              "text": "中",
+              "type": "u"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "-1"
+            },
+            "time": {
+              "text": "45",
+              "type": "d"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "-1.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          }
+        ]
+      },
+      {
+        "company": "澳彩",
+        "originally": [
+          "2.5",
+          "2.6",
+          "2.7"
+        ],
+        "now": [
+          {
+            "text": "2.5",
+            "type": "u"
+          },
+          {
+            "text": "2.5",
+            "type": "e"
+          },
+          {
+            "text": "2.5",
+            "type": "d"
+          }
+        ],
+        "list": [
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "中",
+              "type": "u"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "45",
+              "type": "d"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "hc": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          }
+        ]
+      }
+    ],
+    "eo": [
+      {
+        "company": "皇冠",
+        "originally": [
+          "2.5",
+          "2.6",
+          "2.7"
+        ],
+        "now": [
+          {
+            "text": "2.5",
+            "type": "u"
+          },
+          {
+            "text": "2.5",
+            "type": "e"
+          },
+          {
+            "text": "2.5",
+            "type": "d"
+          }
+        ],
+        "list": [
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "d": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "中",
+              "type": "u"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "d": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "45",
+              "type": "d"
+            }
+          },
+          {
+            "a": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "h": {
+              "text": "2.5",
+              "type": "u"
+            },
+            "d": {
+              "text": "2.5"
+            },
+            "time": {
+              "text": "08-08 09:30"
+            }
+          }
+        ]
+      }
+    ],
+    "bf": [
+      {
+        "company": "胜",
+        "list": [
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15",
+              "type": "u"
+            }
+          }
+        ]
+      },
+      {
+        "company": "平",
+        "list": [
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15",
+              "type": "u"
+            }
+          }
+        ]
+      },
+      {
+        "company": "负",
+        "list": [
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15"
+            }
+          },
+          {
+            "price": {
+              "text": "1.61",
+              "type": "u"
+            },
+            "volume": {
+              "text": "5151",
+              "type": "u"
+            },
+            "change": {
+              "text": "0"
+            },
+            "prop": {
+              "text": "买"
+            },
+            "time": {
+              "text": "08-08 10:15",
+              "type": "u"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

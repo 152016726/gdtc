@@ -1,0 +1,110 @@
+<div class="bonusDetails" v-show="isShowBonus">
+    <!-- 奖金明细 -->
+    <div class="bonus">
+        <h1 class="bodyHeader">
+            奖金明细
+            <i class="close" @click="close"></i>
+        </h1>
+        <div class="content">
+            <div class="scroller">
+                <div class="bettingDetails">
+                    <!-- 投注详情 -->
+                    <h2>投注详情</h2>
+                    <table class="betTable">
+                        <tbody>
+                        <tr class="h1">
+                            <th class="w1">赛事编号</th>
+                            <th class="w2">对阵</th>
+                            <th class="w3">您的选择（奖金）</th>
+                            <th class="w4">最大</th>
+                            <th class="w4">最小</th>
+                            <th class="last_th w4">胆码</th>
+                        </tr>
+                        <tr v-for="(item,index) in betslip" :key="index">
+                            <td>{{item.matchInfo.week+item.matchInfo.number}}</td>
+                            <td>{{item.matchInfo.homeShortName}} VS {{item.matchInfo.awayShortName}}</td>
+                            <td align="left" class="padding">
+                                <div>
+                                        <span v-for="(val,i) in item.outcomes" :key="i">
+                                            {{val.oddsName}}@{{val.odds}}{{i === item.outcomes.length-1 ? '' : ','}}
+                                        </span>
+                                </div>
+                            </td>
+                            <td>{{item.maxOdds}}</td>
+                            <td>{{item.minOdds}}</td>
+                            <td class="last_th">{{item.isBanker ? '&#10003' : '&#10005'}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                过关方式:
+                                <em class="orange" v-for="(item,index) in mSnArr" :key="index">
+                                    {{item.split("#")[0] ==1 && item.split("#")[1] == 1 ? '单关' :
+                                    item.split("#")[0]+'串'+item.split("#")[1]}}
+                                    {{index === mSnArr.length-1 ? '' : ','}}
+                                </em>
+                                方案总金额: <em class="red">{{options.money}}</em>元
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 奖金明细 -->
+                <div class="awardDetails">
+                    <h2>奖金明细</h2>
+                    <table class="betTable">
+                        <tbody>
+                        <tr>
+                            <th rowspan="2" class="w5">命中场数</th>
+                            <th v-bind="{colspan:Object.keys(mSnObj).length}" class="w6">中奖注数/注</th>
+                            <th colspan="2" class="last_th w7">{{counts}}注奖金</th>
+                        </tr>
+                        <tr>
+                            <td v-if="Object.keys(mSnObj).length === 0"></td>
+                            <td v-for="(item,key) in mSnObj" :key="key" class="dark">
+                                {{
+                                    key.split("#")[0] === "1" ? '单关' : key.split("#")[0] + '串' + key.split("#")[1]
+                                }}
+                            </td>
+                            <th>单注最小</th>
+                            <th class="last_th">单注最大</th>
+                        </tr>
+                        <tr>
+                            <td>{{betslip.length}}</td>
+                            <td v-if="Object.keys(mSnObj).length === 0"></td>
+                            <td v-for="(item,key) in mSnObj" :key="key">{{item}}</td>
+                            <td>
+                                <em class="red">{{totalBonus.min ? totalBonus.min.bonus :
+                                    ''}}</em>元
+                                <a href="javascript:;" :class="isMinStatus ? 'orange' : 'blue'"
+                                   @click="toggleMin(totalBonus.min)">
+                                    ({{isMinStatus ? '收起' : '明细'}})
+                                </a>
+                            </td>
+                            <td class="last_th">
+                                <em class="red">{{totalBonus.max ? totalBonus.max.bonus :
+                                    ''}}</em>元
+                                <a href="javascript:;" :class="isMaxStatus ? 'orange' : 'blue'"
+                                   @click="toggleMax(totalBonus.max)">
+                                    ({{isMaxStatus ? '收起' : '明细'}})
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 拆分明细 -->
+                <div class="breakDetails" v-show="isBreak">
+                    <h2>拆分明细</h2>
+                    <detail-item
+                            :number="betslip.length"
+                            :detailItems="detailItems">
+                    </detail-item>
+                </div>
+                <p class="notice orange">注：1、奖金评测的为即时竞彩奖金指数，仅供参考；最终实际奖金请按照出票后飘扬中的指数计算</p>
+            </div>
+        </div>
+        <div class="bodyBottom">
+            <a class="ok" href="javascript:;" @click="close">我知道了</a>
+        </div>
+    </div>
+</div>

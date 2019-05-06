@@ -1,0 +1,143 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.singleFlex{
+  border: 1px solid $BorderColor;
+  border-bottom: none;
+  position: relative;
+
+  /* 箭头向下 */
+  .arrowIcon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../../images/jt_sc01.png") no-repeat center;
+  }
+
+  /* 箭头向上 */
+  .upSearch{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);
+  }
+
+  /*赛事列表显示宽度*/
+  .marketNum{
+    width: 78px;
+  }
+  .leagueName, .marketTime{
+    width: 102px;
+  }
+  .teamName{
+    width: 270px;
+  }
+  .concede{
+    width: 56px;
+  }
+  .events{
+    width: 268px;
+  }
+  .moreEvents{
+    width: 82px;
+  }
+  .record{
+    width: 90px;
+  }
+  .average{
+    width: 140px;
+    border: none;
+  }
+  /*赛事列表显示宽度*/
+
+  .marketBox{
+    /* 头部筛选 */
+    .searchBox{
+      height: 42px;
+      width: 100%;
+      background: $marketTitleBgColor;
+      .searchLeft{
+        float: left;
+        margin: 0 20px 0 10px;
+        padding: 12px 0 12px 16px;
+        cursor: pointer;
+        background: url("../../images/unchoose.png") no-repeat left center;
+        &.check{
+          background: url("../../images/choose.png") no-repeat left center;
+        }
+      }
+    }
+    /* 头部筛选 */
+
+    /* 赛事列表框 */
+    .marketsList{
+      /* 赛事表头 */
+      .listHeader{
+        .events{
+          >div{
+            float: left;
+            width: 33.3%;
+            border: none;
+          }
+        }
+      }
+      /* 赛事表头 */
+
+      /* 赛事列表 */
+      .listItem{
+        ul{
+          li{
+            .listBox{
+
+              height: 78px;
+              .concede{
+                div{
+                  height: 39px;
+                  line-height: 39px;
+                }
+              }
+              .events{
+                >div{
+                  height: 39px;
+                  line-height: 39px;
+                  background: $oddsBgColor;
+                  font-weight: Bold;
+                  div{
+                    width: 33.333333333333%;
+                    float: left;
+                    cursor: pointer;
+                  }
+                }
+                .hhadOdds{
+                  height: 38px;
+                  line-height: 38px;
+                  background: #F5F5F5;
+                  color: #B3B3B3;
+                }
+                .noSelect{
+                  background: $BgColorWhite;
+                  font-weight: normal;
+                }
+              }
+              .moreEvents{
+                .moreBetCtrlBtn {
+                  height: 79px;
+                  line-height: 79px;
+                }
+              }
+            }
+          }
+        }
+      }
+      /* 赛事列表 */
+    }
+    /* 赛事列表框 */
+  }
+  .noMarketTip {
+    text-align: center;
+    color: #666;
+    padding: 10px;
+    border-bottom: 1px solid $BorderColor;
+  }
+}

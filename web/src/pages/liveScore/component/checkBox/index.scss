@@ -1,0 +1,43 @@
+@import "~common/style/color";
+
+.vueCheckBox{
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin:0 auto;
+  background: url("./images/unchoose.png") no-repeat;
+  background-size: cover;
+  &.check{
+    background: url("images/choose.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

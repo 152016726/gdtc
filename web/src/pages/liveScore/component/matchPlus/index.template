@@ -1,0 +1,15 @@
+<dl class="plus">
+    <dd></dd>
+    <dd></dd>
+    <dd></dd>
+    <dd></dd>
+    <dd></dd>
+    <dd>
+        <span>90分钟[{{event.homeGoalsScored || 0}}-{{event.awayGoalsScored || 0}}]</span>
+        <span v-if="event.homeOverTimeScored">120分钟[{{event.homeOverTimeScored || 0}}-{{event.awayOverTimeScored || 0}}]</span>
+        <span v-if="event.homePenaltyScored">点球[{{event.homePenaltyScored || 0}}-{{event.awayPenaltyScored || 0}}]</span>
+    </dd>
+    <dd></dd>
+    <dd></dd>
+    <dd></dd>
+</dl>

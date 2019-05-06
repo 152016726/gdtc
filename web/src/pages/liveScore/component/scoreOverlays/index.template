@@ -1,0 +1,117 @@
+<div class="scoreOverlays">
+    <div class="overlays">
+        <div class="title">初盘参考：
+            {{
+            !!asianHandicap && asianHandicap.split("").indexOf('-') === -1 ? asianHandicap :
+            asianHandicap
+            }}
+        </div>
+        <div class="teamName clearfix">
+            <div class="left fl">
+                <div class="home clearfix">
+                    <div class="fr">{{homeName}}</div>
+                    <div class="fr rank">{{homeLeagueRank ? '['+homeLeagueRank+']' : ''}}</div>
+                </div>
+            </div>
+            <div class="center fl">VS</div>
+            <div class="right fl">
+                <div class="away clearfix">
+                    <div class="fl">{{awayName}}</div>
+                    <div class="fl rank">{{awayLeagueRank ? '['+awayLeagueRank+']' : ''}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="live" v-if="actionData.length !== 0">
+            <dl class="tabs"
+                v-for="(item, index) in actionData"
+                :key="index"
+                v-if="!(item.homeSubstitution || item.awaySubstitution)">
+                <dt class="left" align="center">
+                    <!-- 主队时间轴 -->
+                    <div v-for="(val, sort) in item" :key="sort" v-if="sort.indexOf('home') !== -1 ">
+                        <div class="home clearfix">
+                            <div class="fr" :style="
+                                {
+                                    backgroundImage: 'url('+ item.img +')'
+                                }"
+                            >
+                            </div>
+                            <div class="fr">
+                                {{item[sort].playerCnShort}}
+                            </div>
+                        </div>
+                    </div>
+                </dt>
+                <dt class="center" align="center">{{Math.floor(item.time/60)}}'</dt>
+                <dt class="right" align="center">
+
+                    <!-- 客队时间轴 -->
+                    <div v-for="(val, sort) in item" :key="sort" v-if="sort.indexOf('away') !== -1 ">
+                        <div class="away clearfix">
+                            <div class="fl" :style="
+                                {
+                                    backgroundImage: 'url('+ item.img +')'
+                                }
+                            ">
+                            </div>
+                            <div class="fl">
+                                {{item[sort].playerCnShort}}
+                            </div>
+                        </div>
+                    </div>
+                </dt>
+            </dl>
+        </div>
+        <div class="info" v-if="Object.keys(rates).length !== 0">
+            <div class="rows">
+                <p>射正</p>
+                <div class="line">
+                    <i>{{rates.homeShotOnTarget}}</i>
+                    <div class="colorLine clearfix">
+                        <div class="homeLine fl" :style="{
+            width:rates.homeShotOnTarget/(+rates.homeShotOnTarget+(+rates.awayShotOnTarget))*LINEWIDTH+'px'
+            }"></div>
+                        <div class="awayLine fl" :style="{
+            width:rates.awayShotOnTarget/(+rates.homeShotOnTarget+(+rates.awayShotOnTarget))*LINEWIDTH+'px'
+            }"></div>
+                    </div>
+                    <i>{{rates.awayShotOnTarget}}</i>
+                </div>
+            </div>
+            <div class="rows">
+                <p>射门</p>
+                <div class="line">
+                    <i>{{rates.homeShots}}</i>
+                    <div class="colorLine clearfix">
+                        <div class="homeLine fl" :style="{
+            width:rates.homeShots/(+rates.homeShots+(+rates.awayShots))*LINEWIDTH+'px'
+            }"></div>
+                        <div class="awayLine fl" :style="{
+            width:rates.awayShots/(+rates.homeShots+(+rates.awayShots))*LINEWIDTH+'px'
+            }"></div>
+                    </div>
+                    <i>{{rates.awayShots}}</i>
+                </div>
+            </div>
+            <div class="rows">
+                <p>控球率</p>
+                <div class="line">
+                    <i>{{rates.homePossession}}%</i>
+                    <div class="colorLine clearfix">
+                        <div class="homeLine fl" :style="{
+                width:
+                rates.homePossession/(+rates.homePossession+(+rates.awayPossession))*LINEWIDTH+'px'
+                }">
+                        </div>
+                        <div class="awayLine fl" :style="{
+                width:
+                rates.awayPossession/(+rates.homePossession+(+rates.awayPossession))*LINEWIDTH+'px'
+                }">
+                        </div>
+                    </div>
+                    <i>{{rates.awayPossession}}%</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

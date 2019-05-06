@@ -1,0 +1,41 @@
+.eventTimeBarContent {
+  .eventTimeBarInner{
+    display: table;
+    width: 100%;
+  }
+  .bottomTip{
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    .example {
+      display: table-row;
+      dt, dd {
+        display: table-cell;
+        border: 1px solid #DEDEDE;
+        border-top: none;
+        vertical-align: middle;
+      }
+      dt {
+        width: 4%;
+        height: 70px;
+        background: #DEDEDE;
+        color: #808080;
+        line-height: 15px;
+        text-align: center;
+      }
+      dd {
+        width: 96%;
+        height: 70px;
+        border-left: none;
+        padding-left: 20px;
+        text-align: left;
+        ul {
+          li {
+            float: left;
+            padding-right: 27px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<dl class="eventTimeSide">
+    <dd v-for="showType in arrShow" :class="[showType, {reverse: !isHome && showType === 'showEvent'}]">
+        <span v-if="showType === 'time'">
+            {{time}}
+        </span>
+        <span v-else-if="showType === 'showEvent'">
+            <span class="logo">
+                <img :src="objImg.img" :style="{ width: objImg.style.width + 'px', height: objImg.style.height + 'px' }"/>
+            </span>
+            <span v-if="type === subPlaysType">
+                <span class="subFrom">{{person1 === '' ? '&nbsp;' : person1}}</span>
+                <span class="subTo">{{person2 === '' ? '&nbsp;' : person2}}</span>
+            </span>
+            <span v-else>
+                {{person1 === '' ? '&nbsp;' : person1}}
+            </span>
+        </span>
+    </dd>
+</dl>

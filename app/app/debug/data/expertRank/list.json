@@ -1,0 +1,82 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "list": [
+      {
+        "eid": "1",
+        "nickname":"Jay",
+        "fiveWinrate": "0",
+        "comboWin": "5",
+        "weekHitRate": "0.8",
+        "monthHitRate": "0.8",
+        "monthWin": "24",
+        "monthDefeat": "6",
+        "weekWin": "8",
+        "weekDefeat": "2",
+        "summary": "帅的一匹",
+        "icon": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3259600917,179456761&fm=26&gp=0.jpg",
+        "isSendToday": "true"
+      },
+      {
+        "eid": "2",
+        "nickname":"Jay",
+        "fiveWinrate": "0.5",
+        "comboWin": "5",
+        "weekHitRate": "0.6",
+        "monthHitRate": "0.8",
+        "monthWin": "24",
+        "monthDefeat": "6",
+        "weekWin": "8",
+        "weekDefeat": "2",
+        "summary": "资深砖家",
+        "icon": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3259600917,179456761&fm=26&gp=0.jpg",
+        "isSendToday": "false"
+      },
+      {
+        "eid": "3",
+        "nickname":"Jay",
+        "fiveWinrate": "0.2",
+        "comboWin": "8",
+        "weekHitRate": "0.7",
+        "monthHitRate": "0.5",
+        "monthWin": "24",
+        "monthDefeat": "6",
+        "weekWin": "8",
+        "weekDefeat": "2",
+        "summary": "专业人士",
+        "icon": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3259600917,179456761&fm=26&gp=0.jpg",
+        "isSendToday": "false"
+      },
+      {
+        "eid": "4",
+        "nickname":"Jay",
+        "fiveWinrate": "0.4",
+        "comboWin": "6",
+        "weekHitRate": "0.8",
+        "monthHitRate": "0.8",
+        "monthWin": "24",
+        "monthDefeat": "6",
+        "weekWin": "8",
+        "weekDefeat": "2",
+        "summary": "体彩砖家",
+        "icon": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3259600917,179456761&fm=26&gp=0.jpg",
+        "isSendToday": "true"
+      },
+      {
+        "eid": "5",
+        "nickname":"Jay",
+        "fiveWinrate": "0.6",
+        "comboWin": "4",
+        "weekHitRate": "0.2",
+        "monthHitRate": "0.3",
+        "monthWin": "24",
+        "monthDefeat": "6",
+        "weekWin": "8",
+        "weekDefeat": "2",
+        "summary": "著名球迷",
+        "icon": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3259600917,179456761&fm=26&gp=0.jpg",
+        "isSendToday": "true"
+      }
+    ]
+  }
+}

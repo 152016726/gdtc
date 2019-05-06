@@ -1,0 +1,29 @@
+<div>
+    <div class="team-name"
+         :class="{textLeft: typeNum === 2}">
+        <span v-if="typeNum === 2"
+              :title="teamName"
+              :class="{winColor: isAwayWin}">
+            {{teamShortName}}
+        </span>
+        <span :class="{
+                redCards: typeNum === 1,
+                yellowCards: typeNum === 2
+                }"
+              v-if="(redNum && typeNum === 1) || (yellowNum && typeNum === 2)">
+            {{typeNum === 1 ? redNum : yellowNum}}
+        </span>
+        <span :class="{
+                redCards: typeNum === 2,
+                yellowCards: typeNum === 1
+                }"
+              v-if="(redNum && typeNum === 2) || (yellowNum && typeNum === 1)">
+            {{typeNum === 1 ? yellowNum : redNum}}
+        </span>
+        <span v-if="typeNum === 1"
+              :title="teamName"
+              :class="{winColor: isHomeWin}">
+            {{teamShortName}}
+        </span>
+    </div>
+</div>

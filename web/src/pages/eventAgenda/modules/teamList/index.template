@@ -1,0 +1,52 @@
+<div class="teamList">
+    <div class="teamThead">
+        <dl class="th">
+            <dt v-for="(item, index) in th"
+                :key="index"
+            >
+                {{item}}
+            </dt>
+        </dl>
+    </div>
+    <dl
+        :class="['team',{even: index%2 !== 0}]"
+        v-for="(item, index) in matchList"
+        :key="index"
+    >
+        <dt class="teamItem rank">
+            {{!!item.roundName ? item.roundName : '-'}}
+        </dt>
+        <dt class="teamItem">
+            {{!!item.vsDate ? item.vsDate.substring(0, item.vsDate.length-3) : '-'}}
+        </dt>
+        <dt class="teamItem">
+            {{!!item.homeShortName ? item.homeShortName : '-'}}
+        </dt>
+        <dt class="teamItem" :class="{score: item.eventState !== 1}">
+            {{!!item.homeGoalsScored && item.eventState !== 1 ? item.homeGoalsScored : ''}}<i>-</i>{{!!item.awayGoalsScored && item.eventState !== 1 ? item.awayGoalsScored : ''}}
+        </dt>
+        <dt class="teamItem">
+            {{!!item.awayShortName ? item.awayShortName : '-'}}
+        </dt>
+        <dt class="teamItem">
+            <div class="odds">
+                <odds-result
+                        :homeOdds="item.homeOddsCurr"
+                        :drawOdds="item.drawOddsCurr"
+                        :awayOdds="item.awayOddsCurr"
+                        :homeGoalsScored="item.homeGoalsScored"
+                        :awayGoalsScored="item.awayGoalsScored"
+                >
+                </odds-result>
+            </div>
+        </dt>
+        <dt class="teamItem analysis">
+            <a :href="'/scoreAnalysis.html?vid=' + item.vid">析</a>
+            <a :href="'/liveSubplate.html?vid=' + item.vid" target="_blank">亚</a>
+            <a :href="'/scoreWDW.html?vid=' + item.vid" target="_blank">欧</a>
+        </dt>
+        <dt class="teamItem" :class="{score: item.eventState !== 1}">
+            {{!!item.homeHalftimeScored && item.eventState !== 1 ? item.homeHalftimeScored : ''}}<i>-</i>{{!!item.awayHalftimeScored && item.eventState !== 1 ? item.awayHalftimeScored : ''}}
+        </dt>
+    </dl>
+</div>

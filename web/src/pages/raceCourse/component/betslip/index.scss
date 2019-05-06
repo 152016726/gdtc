@@ -1,0 +1,152 @@
+@import "../../../../common/style/color";
+
+.vueBetslipComponentTemp {
+  .vueBetslipComponent {
+    color: $BasicFontColor;
+    font-size: 14px;
+    position: relative;
+    width: 1164px;
+    height: 56px;
+    border: 1px solid $CommonBorderColor;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px auto 0;
+    padding: 11px 12px;
+    background-color: $marketTitleBgColor;
+    z-index: 99;
+    >div{
+      float: left;
+    }
+    >.right{
+      width: 195px;
+      padding-top: 4px;
+      .left{
+        float: left;
+        color: $linkColor;
+        >div{
+          cursor: pointer;
+          line-height: 24px;
+        }
+      }
+      .right{
+        float: right;
+        button{
+          -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+          width: 120px;
+          line-height: 48px;
+          border-radius: 4px;
+          background-color: $MainColor;
+          color: $BgColorWhite;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+    .middle{
+      width: 818px;
+      padding-left: 20px;
+      .top{
+        line-height: 30px;
+        height: 30px;
+        > .tips > span{
+          color: $MainColor
+        }
+        .text{
+          float: left;
+        }
+        .freeGroup{
+          float: left;
+          margin: 0 40px 0 10px;
+          >div{
+            margin-right: 20px;
+          }
+        }
+        .moreGame{
+          float: left;
+          position: relative;
+        }
+      }
+      .bottom{
+        line-height: 28px;
+        > div{
+          float: left;
+        }
+        .text{
+          span{
+            color: $betslipRedFont;
+            margin-left: 10px;
+          }
+        }
+        .text.money{
+          margin: 0 20px;
+          span{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .showBetslipList{
+      height: 58px;
+      border-right: 1px solid $betslipSeparatorColor;
+      padding-right: 12px;
+      position: relative;
+      .btn{
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+        cursor: pointer;
+        width: 102px;
+        height: 52px;
+        line-height: 54px;
+        border: 1px solid $MainColor;
+        font-size: 18px;
+        padding-left: 14px;
+        &.down{
+          background: url(images/down2.png) no-repeat 93px 21px $BgColorWhite;
+        }
+        &.up{
+          background: url(images/up2.png) no-repeat 93px 21px $BgColorWhite;
+        }
+        span{
+          color: $MainColor;
+        }
+      }
+    }
+  }
+  .vueBetslipComponentShadow {
+    width: 1190px;
+    height: 80px;
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

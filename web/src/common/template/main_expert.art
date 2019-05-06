@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{block 'title'}}{{$data.global.title}}{{/block}}</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <style type="text/css">{{block 'styleContent'}}{{/block}}</style>
+</head>
+<body>
+{{include './../../component/expertHeader/view.art'}}
+{{block 'content'}}{{/block}}
+{{include './../../component/footer/view.art'}}
+{{include './../../component/tips/view.art'}}
+<script type="text/javascript" src="{{$data.global.configJs}}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

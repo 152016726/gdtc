@@ -1,0 +1,257 @@
+@import "~common/style/color";
+
+.articleIndex {
+  width: 100%;
+  margin-bottom: 20px;
+  .page_location {
+    a, span {
+      line-height: 36px;
+      color: #999;
+      font-size: 12px;
+    }
+    span {
+      padding: 0 2px;
+    }
+  }
+  .left {
+    float: left;
+    width: 854px;
+    box-sizing: border-box;
+    .article { //文章
+      padding: 16px;
+      border: 1px solid $CommonBorderColor;
+      margin-bottom: 21px;
+      .top {
+        border-bottom: 1px solid $CommonBorderColor;
+        h1 {
+          line-height: 40px;
+          padding: 16px 0;
+          font-size: 24px;
+          font-weight: bolder;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #333;
+        }
+        .info {
+          height: 32px;
+          p {
+            font-size: 12px;
+            line-height: 24px;
+            padding: 4px;
+            color: #666;
+            float: left;
+          }
+          .btns {
+            float: right;
+            position: relative;
+            padding-bottom: 8px;
+            a {
+              width: 24px;
+              height: 24px;
+              padding: 0;
+              margin: 0 0 0 30px;
+            }
+            .weixin {
+              background: url("./images/wechat.png") center center no-repeat;
+              background-size: 24px 24px;
+            }
+            .sina {
+              background: url("./images/sina.png") center center no-repeat;
+              background-size: 24px 24px;
+            }
+            .bds_more {
+              background: url("./images/share.png") center center no-repeat;
+              background-size: 24px 24px;
+            }
+            .otherBtns {
+              position: absolute;
+              display: none;
+              top: 100%;
+              left: 100%;
+              margin-left: -24px;
+              background: #fff;
+              box-shadow: 0 2px 4px $CommonBorderColor;
+              a {
+                margin: 0;
+                display: block;
+                float: none;
+                width: 84px;
+                height: 24px;
+                line-height: 24px;
+                float: none;
+                padding: 4px 4px 4px 32px;
+              }
+              .sqq {
+                background: url("./images/qq.png") 4px center no-repeat;
+                background-size: 24px 24px;
+              }
+              .qzone {
+                background: url("./images/qzone.png") 4px center no-repeat;
+                background-size: 24px 24px;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        .content {
+          padding: 30px 0 24px;
+          font-size: 16px;
+          font-weight: 200;
+          line-height: 24px;
+          img {
+            max-width: 100%;
+          }
+        }
+        .keyword {
+          span {
+            color: #999
+          }
+        }
+      }
+    }
+    .information { //相关资讯
+      border: 1px solid $CommonBorderColor;
+      h2 {
+        line-height: 40px;
+        border-bottom: 1px solid $CommonBorderColor;
+        font-size: 17px;
+        padding-left: 16px;
+        color: #333;
+        background: #f2f2f2;
+      }
+      ul {
+        padding: 21px 16px 0;
+        li {
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: 1px dashed #cacaca;
+          .img {
+            float: left;
+            width: 177px;
+            height: 118px;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+          .info {
+            margin-left: 194px;
+            a { //标题
+              font-size: 20px;
+              line-height: 40px;
+              height: 40px;
+              display: block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              &:hover {
+                color: $CommonHoverColor !important;
+              }
+            }
+            .c { //内容
+              line-height: 20px;
+              max-height: 40px;
+              overflow: hidden;
+              font-size: 16px;
+              color: #999;
+              margin-bottom: 16px;
+              font-weight: 200;
+            }
+            .bottom { //标签
+              line-height: 20px;
+              font-size: 12px;
+              color: #999;
+              font-weight: 200;
+              span {
+                float: left;
+              }
+              .date {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+      .information_other_list {
+        ul {
+          padding: 0 16px 21px;
+          li {
+            &:last-child {
+              border-bottom: none;
+              padding-bottom: 0;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .information_loadMore {
+          height: 36px;
+          line-height: 36px;
+          background: $CommonBorderColor;
+          text-align: center;
+          cursor: pointer;
+          margin-top: -22px;
+          color: #999;
+          &.active {
+            margin-top: 0;
+          }
+          &.noMore {
+            cursor: initial;
+          }
+          a {
+            color: $linkColor;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    float: right;
+    width: 314px;
+    .infoList {
+      border: 1px solid $CommonBorderColor;
+      margin-bottom: 21px;
+      h2 {
+        line-height: 40px;
+        border-bottom: 1px solid $CommonBorderColor;
+        font-size: 19px;
+        padding-left: 16px;
+        color: #333;
+        background: #f2f2f2;
+      }
+      ul {
+        padding: 10px 16px;
+        li {
+          padding-left: 11px;
+          line-height: 32px;
+          background: url("./images/point.png") left center no-repeat;
+          a {
+            color: #333;
+            font-size: 14px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover {
+              color: $CommonHoverColor !important;
+            }
+          }
+        }
+      }
+      &.hotspot {
+        h2 {
+          padding-left: 36px;
+          background: url("./images/arrow.png") #f2f2f2 16px center no-repeat;
+        }
+      }
+    }
+  }
+  .fontBolader {
+    font-weight: bolder;
+  }
+  .titleEm {
+    font-style: italic;
+  }
+}

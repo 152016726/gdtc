@@ -1,0 +1,21 @@
+<div class="eventSituationContent">
+    <div v-if="isTimeData">
+        <h1 class="title">
+            <b></b>
+            <span>详细时间</span>
+        </h1>
+        <event-time-bar class="detail" :vid="vid" @updateNoTimeData="updateNoTimeData"/>
+    </div>
+    <div v-if="isStrokeData">
+        <h1 class="title">
+            <b></b>
+            <span>本场技术统计</span>
+        </h1>
+        <stroke-analysis class="detail" :vid="vid" @updateNoStrokeData="updateNoStrokeData"/>
+    </div>
+    <div v-if="!isTimeData && !isStrokeData" class="noDataContent">
+        <div class="leftLine"></div>
+        <div>暂无实时赛况</div>
+        <div class="rightLine"></div>
+    </div>
+</div>

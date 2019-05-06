@@ -1,0 +1,36 @@
+<div class="expertList">
+    <!-- 头部文字开始 -->
+    <div class="header inlineBlock">
+        <div class="lineLeft inlineBlock clearfix">
+            <div class="line fl"></div>
+            <i class="circle fl"></i>
+        </div>
+        <span class="intro">
+            精选晒单团
+        </span>
+        <div class="lineRight inlineBlock clearfix">
+            <i class="circle fl"></i>
+            <div class="line fl"></div>
+        </div>
+    </div>
+    <!-- 头部文字结束 -->
+
+    <!-- 轮播图开始 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(item, index) in expertList" :key="index">
+                <a v-bind:href="'/expertZone.html?eid=' + item.eid" target="_blank" class="expert">
+                    <div :style="{backgroundImage: 'url('+ item.webApiPath+item.icon +')'}" class="avatar"></div>
+                    <p class="name">{{item.nickname}}</p>
+                    <div class="score clearfix">
+                        <div class="circle fl">5中{{Math.ceil(item.fiveWinrate * 5)}}</div>
+                        <div class="combat circle fr">{{item.comboWin}}连胜</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="pre tagIcon"></a>
+    <a href="#" class="next tagIcon"></a>
+    <!-- 轮播图结束 -->
+</div>

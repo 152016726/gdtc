@@ -1,0 +1,44 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+
+.page-tool-view {
+    display: inline-block;
+    .page_list {
+        display: inline-block;
+        ul {
+            li {
+                font-size: 12px;
+                height: 23px;
+                line-height: 22px;
+                text-align: center;
+                float: left;
+                margin: 0 3px;
+                border: 1px solid $BorderColor;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .u-pg1 {
+                width: 55px;
+            }
+            .u-pg2 {
+                width: 28px;
+            }
+            .active {
+                background-color: #eb812a;
+                color: #FFF;
+            }
+        }
+    }
+    .lastTip {
+        display: inline-block;
+        width: 200px;
+        vertical-align: super;
+        span {
+            color: #ff5e01;
+        }
+    }
+}

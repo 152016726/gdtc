@@ -1,0 +1,40 @@
+.linePercentContent{
+  margin: 20px 0;
+  color: #333333;
+  h1 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .linePercentContentInner{
+    position: relative;
+    .left{
+      position: absolute;
+      width: 4%;
+      left: 0;
+      top: 0;
+      text-align: right;
+    }
+    .line{
+      width: 88%;
+      margin: 0 auto;
+      text-align: center;
+      .inContent{
+        display: inline-block;
+        width: 100%;
+        height: 10px;
+        background: #E5E5E5;
+        .percent{
+          height: 10px;
+          background: #EB812B;
+        }
+      }
+    }
+    .right{
+      position: absolute;
+      width: 4%;
+      right: 0;
+      top: 0;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../../../../common/style/color";
+
+.vueBetslipCheckBox{
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  cursor: pointer;
+  float: left;
+  line-height: 30px;
+  padding-left: 20px;
+  background: url("images/unchoose.png") no-repeat left center;
+  &.check{
+    background: url("images/choose.png") no-repeat left center;
+  }
+  span.extend{
+    padding-right: 14px;
+    background: url("images/up1.png") no-repeat right center;
+  }
+  span.extend.down{
+    background: url("images/down1.png") no-repeat right center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<div>
+    <span class="leagueText"
+          :style="{backgroundColor: '#' + leagueColor}"
+          :class="{centerShow: !isTop }"
+          v-bind:title="leagueName">
+        {{leagueShortName}}
+    </span>
+</div>

@@ -1,0 +1,27 @@
+<div>
+    <div class="oddsBox clearfix"
+         v-for="(oddArr, index) in showOddArr"
+         :key="index" >
+        <div class="leftOddBox"
+             :class="{csLeftOddBox: oddArr.marketSort === marketCSSort}">
+            <div class="leftTextBox centerShow clearfix">
+                {{oddArr.title}}
+            </div>
+        </div>
+        <div class="rightOddBox">
+            <div class="oddsLi clearfix"
+                 v-for="(odds,j) in oddArr.oddsArr"
+                 :key="j">
+                <bet-outcome
+                        v-for="(od, k) in odds"
+                        :key="vid + '#' + oddArr.marketSort + '#' + od.key"
+                        :num="marketOdds[oddArr.marketSort] && marketOdds[oddArr.marketSort][od.key]"
+                        :vid="vid"
+                        :text="od.title"
+                        :outcome-name="od.key"
+                        :vertical="true"
+                        :sort="oddArr.marketSort"/>
+            </div>
+        </div>
+    </div>
+</div>

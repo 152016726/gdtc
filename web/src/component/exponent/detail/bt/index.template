@@ -1,0 +1,25 @@
+<div class="exp_table_wrapper bt clearfix">
+    <ul class="left_tab">
+        <li><a :class="{active: dataType==='home'}" @click="changeDataType('home')">主队大注提示</a></li>
+        <li><a :class="{active: dataType==='draw'}" @click="changeDataType('draw')">平局大注提示</a></li>
+        <li><a :class="{active: dataType==='away'}" @click="changeDataType('away')">客队大注提示</a></li>
+    </ul>
+    <div class="exp_table">
+        <dl class="title">
+            <dd class="c1">类别</dd>
+            <dd class="c2">属性</dd>
+            <dd class="c3">成交量</dd>
+            <dd class="c4">成交价位</dd>
+            <dd class="c5">交易时间</dd>
+            <dd class="c6">交易比例</dd>
+        </dl>
+        <dl v-for="(ele, index) in list[dataType]" :class="{row_event: index % 2 === 1}">
+            <dd>{{getTypeName()}}</dd>
+            <dd>{{ele.attribute}}</dd>
+            <dd>{{ele.volume}}</dd>
+            <dd>{{ele.price}}</dd>
+            <dd>{{getTimeStr(ele.tradingTime)}}</dd>
+            <dd>{{`${ele.proportion}%`}}</dd>
+        </dl>
+    </div>
+</div>

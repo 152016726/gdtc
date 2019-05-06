@@ -1,0 +1,23 @@
+<div class="exponent_list">
+    <div class="filter clearfix">
+        <match-filter :submitCb="matchFilterCb"
+                       ref="matchFilterComponent"
+                      :leagueArr="leagueArr"/>
+        <company-filter :submitCb="companyFilterCb"
+                        :initArr = "initCompanyArr"
+                        :leagueArr="leagueArr"/>
+        <handicap-filter :submitCb="handicapFilterCb"
+                         :leagueArr="handicapArr"/>
+        <div class="dateScreen"></div>
+        <div class="hidden_tips_btn" @click="showAllEvents" v-if="eventsAll.length - events.length !== 0">
+            已隐藏<b>{{eventsAll.length - events.length}}</b>场比赛
+            <i></i>
+        </div>
+    </div>
+    <ul>
+        <li v-for="item in events">
+            <exponent-list-header :data="item"/>
+            <exponent-list-content :data="getDataByFilter(item)"/>
+        </li>
+    </ul>
+</div>

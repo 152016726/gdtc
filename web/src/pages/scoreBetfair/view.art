@@ -1,0 +1,33 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+    <div class="live-subplate-main" id="root">
+        <score-details-header  :html-type="4"></score-details-header>
+        <exponent-detail-bt :vid="vid" />
+    </div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

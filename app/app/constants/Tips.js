@@ -1,0 +1,15 @@
+export const TIPS = "提示";
+export const MAX_SELECT_STICK_WAY  = "最多只能选择5个过关方式";
+export const PLEASE_SELECT_STICK_WAY  = "请选择过关方式！";
+export const PLEASE_SELECT_OUTCOME  = "请先选择投注项";
+export const ONE_MARKET_ONE_OUTCOME  = "单场比赛仅能选择一种玩法，请调整后重试";
+export const MAX_SELECT_MATCH = "最多只能选择8场赛事";
+export const MIN_SELECT_MATCH = "请至少选择2场比赛(单关除外)";
+export const PLEASE_SELECT_TWO = "请选择两场比赛";
+export const MAX_SELECT_TWO_OUTCOME = "最多选择俩个注项";
+export const MAX_SECLECT_ONE = "最多只能选择一场比赛";
+export const LESS_THIRTY_WORDS = "请输入最少30个字的分析";
+export const ONLY_REPEAT_ONE = "只能复选一个选项";
+export const ECEIPT_FULL_TODAY = "当天发单数量已满";
+export const UPDATING_TRY_AGAIN = "数据更新中，请稍后再试";
+export const ODDS_NUM_TIPS = "请输入两位小数的赔率";

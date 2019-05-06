@@ -1,0 +1,5 @@
+<body>
+    <div class="register-main" id="root">
+        <forget-password-content-view></forget-password-content-view>
+    </div>
+</body>

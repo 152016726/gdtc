@@ -1,0 +1,19 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<div class="liveBroadcastPage" id="root">
+    <score-details-header :html-type="0" ></score-details-header>
+    <div class="innerContent clearfix">
+        <div class="leftSide">
+            <ul>
+                <router-link tag="li" to="/eventSituation" active-class="active">实时赛况</router-link>
+                <router-link tag="li" to="/teamLineup" active-class="active">球队阵容</router-link>
+                <router-link tag="li" to="/liveWords" active-class="active">文字直播</router-link>
+            </ul>
+        </div>
+        <div class="rightSide">
+            <router-view></router-view>
+        </div>
+    </div>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

@@ -1,0 +1,63 @@
+<filter-box
+        :text='"赛事筛选"'
+        :showCloseBtn='true'>
+    <ul class="match_filter" >
+        <li v-if ='arrDateButtons.length !== 0'>
+            <h3><span>按日期筛选</span></h3>
+            <div class="buttons">
+                <p>
+                    <label>
+                        <input type="checkbox"
+                               v-model="dateAllChecked"
+                               @click="checkAll('date')">全选
+                    </label>
+                </p>
+                <p v-for="(ele, idx) in arrDateButtons" :key="idx">
+                    <label>
+                        <input type="checkbox"
+                               :value="ele.id"
+                               v-model="arrDateChecked">{{ele.text}}
+                    </label>
+                </p>
+            </div>
+        </li>
+        <li v-if ='arrHandicapButtons.length !== 0'>
+            <h3><span>按让球筛选</span></h3>
+            <div class="buttons">
+                <p>
+                    <label>
+                        <input type="checkbox"
+                               v-model="handicapAllChecked"
+                               @click="checkAll('handicap')">全选
+                    </label>
+                </p>
+                <p v-for="(ele, idx) in arrHandicapButtons" :key="idx">
+                    <label>
+                        <input type="checkbox"
+                               :value="ele.id"
+                               v-model="arrHandicapChecked">{{ele.text}}
+                    </label>
+                </p>
+            </div>
+        </li>
+        <li v-if ='arrLeagueButtons.length !== 0' class="league">
+            <h3><span>按赛事筛选</span></h3>
+            <div class="buttons">
+                <p class="w100">
+                    <label>
+                        <input type="checkbox"
+                               v-model="leagueAllChecked"
+                               @click="checkAll('league')">全选
+                    </label>
+                </p>
+                <p v-for="(ele, idx) in arrLeagueButtons" :key="idx">
+                    <label>
+                        <input type="checkbox"
+                               :value="ele.id"
+                               v-model="arrLeagueChecked">{{ele.text}}
+                    </label>
+                </p>
+            </div>
+        </li>
+    </ul>
+</filter-box>

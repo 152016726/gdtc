@@ -1,0 +1,38 @@
+<div class="selectNumBox">
+    <div class="cut" @click="clickHandle(false)"></div>
+    <input type="text" v-model="ops.value"/>
+    <div class="add" @click="clickHandle(true)"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

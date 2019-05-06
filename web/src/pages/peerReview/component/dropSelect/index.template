@@ -1,0 +1,24 @@
+
+<div class="peer-review-drop-select">
+    <span
+       class="peer-review-drop-select-title"
+       :class="{showActive: isShow}"
+       @click="showToggleHandle">
+        {{titleText}}
+    </span>
+    <div
+      class="peer-review-drop-select-content"
+      v-if="isShow"
+      v-clickOutside="handleClose">
+        <span class="peer-review-drop-select-content-arrow"/>
+        <ul>
+            <li
+              v-for="(CA, index) in contentArr "
+              :key="index"
+              :class="{activeLi: selectValue === CA.typeNum}"
+              @click="selectHandle(CA)">
+                {{CA.text}}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<analysis-sub-title-view
+        id="history-same"
+        :text="textStr">
+    <div class="history-same clearfix">
+        <div class="history-same-box" v-for="(item, index_1) in dataList">
+            <analysis-team-name-title
+                    :type-num="index_1"
+                    :team-name="item.teamName"
+                    :team-short-name='item.teamShortName'>
+            </analysis-team-name-title>
+            <div class="history-same-box-content">
+                <div class="history-same-content-title market-li clearfix">
+                    <div>赛事</div>
+                    <div>时间</div>
+                    <div>上盘</div>
+                    <div>初盘</div>
+                    <div>下盘</div>
+                    <div>比分</div>
+                    <div>盘路</div>
+                </div>
+                <div class="history-same-content-content">
+                    <ul>
+                        <li class="clearfix market-li"
+                            v-for="(event, index) in historyList[item.title]"
+                            :key="index">
+                            <div :title="event.leagueName"
+                                 :style="{color: event.leagueColor}">
+                                {{event.leagueShortName}}
+                            </div>
+                            <div>{{event.vsDate}}</div>
+                            <div :title="event.homeName">
+                                {{event.homeName.substring(0, 6)}}
+                            </div>
+                            <div>{{event.handicap}}</div>
+                            <div :title="event.awayName">
+                                {{event.awayName.substring(0, 6)}}
+                            </div>
+                            <div>
+                                {{event.homeGoalsScored}}-{{event.awayGoalsScored}}
+                            </div>
+                            <div>
+                                <analysis-result-btn
+                                        :type-num="1"
+                                        :result-num="event.result">
+                                </analysis-result-btn>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</analysis-sub-title-view>

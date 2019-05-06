@@ -1,0 +1,72 @@
+<div class="expertZone">
+    <!-- 专家信息头部开始 -->
+    <expert-header
+        :eid="eid"
+    >
+    </expert-header>
+    <!-- 专家信息头部结束 -->
+
+    <!-- tab分类栏开始 -->
+    <div class="types">
+        <toggle-types
+                @setType="setType"
+        >
+        </toggle-types>
+    </div>
+    <!-- tab分类栏结束 -->
+
+    <!-- 最新晒单开始 -->
+    <p class="latestOrder">最新晒单</p>
+    <dl class="latest">
+        <dt class="th">
+        <dd>玩法</dd>
+        <dd>赛事</dd>
+        <dd>晒单</dd>
+        <dd>结果</dd>
+        </dt>
+        <order-cells
+                v-if="latestOrder.length>0"
+                v-for="(item, index) in latestOrder"
+                :key="index"
+                :order="item"
+        >
+        </order-cells>
+    </dl>
+    <div class="none" v-if="latestOrder.length === 0">
+        暂无最新晒单
+    </div>
+
+    <!-- 最新晒单结束 -->
+
+    <!-- 历史晒单开始 -->
+    <p class="historyOrder">历史晒单</p>
+    <dl class="history">
+        <dt class="th">
+            <dd>玩法</dd>
+            <dd>赛事</dd>
+            <dd>晒单</dd>
+            <dd>结果</dd>
+        </dt>
+        <order-cells
+            v-if="historyOrder.length>0"
+            v-for="(item, index) in historyOrder"
+            :key="index"
+            :order="item"
+        >
+        </order-cells>
+    </dl>
+    <div class="none" v-if="historyOrder.length === 0">
+        暂无历史晒单
+    </div>
+    <div class="historyPaginations clearfix" v-if="paginations.length > 0">
+        <div class="fr">
+            <paginator
+                    :paginations="paginations"
+                    :count="totalOrder.length"
+                    @setPageIndex="setPageIndex"
+            >
+            </paginator>
+        </div>
+    </div>
+    <!-- 历史晒单结束 -->
+</div>

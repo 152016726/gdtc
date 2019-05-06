@@ -1,0 +1,103 @@
+@import "../../../../../common/style/color";
+
+.odds_filter {
+  width: 280px;
+  li {
+    margin-bottom: 11px;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &:nth-child(1) { //赔率按钮
+      a {
+        padding: 0 12px;
+        height: 24px;
+        line-height: 24px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #808080;
+        border: 1px solid $DarkerBorderColor;
+        border-radius: 4px;
+        float: left;
+        margin-right: 10px;
+        background: #fff;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          background: $MainColor;
+          border-color: $MainColor;
+          color: #fff;
+        }
+      }
+      &.nochecked{
+        opacity: .5;
+        a{
+          background: #fff;
+          border-color: $DarkerBorderColor;
+          color: #808080;
+          cursor: initial;
+        }
+      }
+    }
+    &:nth-child(2) { //输入框
+      span, input ,i{
+        float: left;
+        margin-right: 6px;
+      }
+      input {
+        width: 66px;
+        height: 24px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        border: 1px solid $CommonHeaderColor;
+        &:focus{
+          border-color: $MainColor;
+        }
+        &::placeholder{
+          color: #aaa;
+        }
+      }
+      span{
+        height: 24px;
+        line-height: 24px;
+        margin-right: 12px;
+      }
+      i {
+        width: 16px;
+        height: 24px;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          background: $CommonHeaderColor;
+          width: 100%;
+          height: 1px;
+        }
+      }
+    }
+    &:nth-child(3) { //确认取消按钮
+      padding-left: 43px;
+      margin-bottom: 0;
+      a{
+        width:80px;
+        height:28px;
+        box-sizing: border-box;
+        border:1px solid $DarkerBorderColor;
+        border-radius:4px;
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        &:nth-child(1){
+          color: #333;
+          border-color: $MainColor;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

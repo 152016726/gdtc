@@ -1,0 +1,17 @@
+<div id="live-words-vue" class="liveWordsPage">
+    <div v-if="infoList.length>0" class="liveInfo">
+        <live-item-vue v-for="(item,index) in infoList"
+                       :key="index"
+                       :text="item.text"
+                       :time="item.time"
+                       :sysTime="item.sysTime"
+                       :isLast="index===infoList.length-1"
+                       :isFirst="index===0"
+        />
+    </div>
+    <div v-if="infoList.length===0" class="noDataContent">
+        <div class="leftLine"></div>
+        <div>暂无文字直播</div>
+        <div class="rightLine"></div>
+    </div>
+</div>

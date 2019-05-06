@@ -1,0 +1,61 @@
+@import "~common/style/color";
+
+.live_score_filter_Box {
+  position: relative;
+  border: 1px solid $BorderColor;
+  border-radius: 4px;
+  h2 {
+    position: relative;
+    background: #fff;
+    padding: 4px 34px 4px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 7px;
+      top: 50%;
+      right: 13px;
+      margin-top: -3.5px;
+      background: url("../../../images/djt_sc01.png");
+      background-size: 100% 100%;
+      transition: all .3s ease;
+      z-index: 3;
+    }
+  }
+  .mc {
+    display: none;
+  }
+  &.active {
+    border-color: $MainColor;
+    h2 {
+      &:after {
+        transform: rotate(180deg);
+        transition: all .3s ease;
+      }
+    }
+    .mc {
+      display: block;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      //padding: 20px;
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      border-radius: 4px;
+      .minTriangle {
+        position: absolute;
+        top: -12px;
+        left: 24px;
+        width: 18px;
+        height: 14px;
+        background-image: url("../../../images/minTriangle.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+    }
+
+  }
+}

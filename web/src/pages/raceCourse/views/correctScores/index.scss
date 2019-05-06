@@ -1,0 +1,65 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.correctScores{
+  border: 1px solid $BorderColor;
+  border-bottom: none;
+  position: relative;
+
+  /* 头部筛选 */
+  .searchBox{
+    height: 42px;
+    width: 100%;
+    background: $marketTitleBgColor;
+    .searchLeft{
+      float: left;
+      margin: 0 20px 0 10px;
+      padding: 12px 0 12px 16px;
+      cursor: pointer;
+      background: url("../../images/unchoose.png") no-repeat left center;
+      &.check{
+        background: url("../../images/choose.png") no-repeat left center;
+      }
+    }
+  }
+  /* 头部筛选 */
+
+  /* 赛事列表 */
+  .marketsList{
+    /* 赛事组件宽度 */
+    .marketNum{
+      width: 78px;
+    }
+    .leagueName, .marketTime{
+      width: 102px;
+    }
+    .teamName{
+      width: 278px;
+    }
+    .injectionArea{
+      width: 334px;
+    }
+    .record{
+      width: 90px;
+    }
+    .average{
+      width: 204px;
+      border: none;
+    }
+    /* 赛事组件宽度 */
+
+    .listItem{
+      ul{
+        li{
+          .listBox{
+            height: 50px;
+            .average{
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* 赛事列表 */
+}

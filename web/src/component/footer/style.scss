@@ -1,0 +1,39 @@
+/* 底部css */
+@import "../../common/style/color.scss";
+@import "../../common/style/fonts.scss";
+.footer {
+    padding-bottom: 40px;
+    background-color: #f3f3f3;
+    text-align: center;
+    border-top:4px solid $MainColor;
+    .footZC{
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        background-color:#ededed ;
+        color:#cccccc;
+        a{
+            color:#666666;
+            font-size: $FONT_14;
+        }
+    }
+    .logo{
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        .safe{
+            margin-top: 15px;
+            display: inline-block;
+            width: 98px;
+            height: 36px;
+            background: url("./images/360.png") no-repeat;
+        }
+    }
+    p{
+        color:#999999;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        font-size: $FONT_12;
+    }
+}

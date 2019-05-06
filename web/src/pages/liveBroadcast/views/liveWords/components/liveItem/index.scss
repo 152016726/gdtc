@@ -1,0 +1,78 @@
+.liveItem {
+  width: 928px;
+  height: 75px;
+  margin-bottom: 20px;
+  position: relative;
+  ul {
+    width: 100%;
+    height: 75px;
+    li {
+      height: 75px;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 16px;
+      color: #333333;
+      &.cycle {
+        width: 12px;
+        div {
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          border: 2px solid #DEDEDE;
+        }
+      }
+      &.sysTime {
+        width: 76px;
+        text-align: center;
+        color: #DEDEDE;
+      }
+      &.textContent {
+        width: 830px;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border: 1px solid #D1D1D1;
+        border-radius: 8px;
+        div {
+          float: left;
+          height: 100%;
+        }
+        .broadcast {
+          .broadcastIcon {
+            width: 36px;
+            height: 36px;
+            background: url('./images/broadcastIcon.png') no-repeat;
+          }
+          p {
+            color: #999999;
+            font-size: 14px;
+          }
+        }
+        .time {
+          color: #EB812A;
+          font-size: 16px;
+          margin-left: 10px;
+          margin-right: 20px;
+        }
+        .time, .words {
+          line-height: 55px;
+        }
+      }
+      &.darkBg {
+        background-color: #F2F2F2;
+        color: #999999;
+      }
+    }
+  }
+  .line {
+    width: 1px;
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    left: 8px;
+    border-color: #D1D1D1;
+    border-style: dashed;
+    border-width: 0;
+    border-left-width: 1px;
+  }
+}

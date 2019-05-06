@@ -1,0 +1,116 @@
+<div id="choose-recommend-total-goals" class="choose-recommend-total-goals">
+    <choose-recommend-tab-view></choose-recommend-tab-view>
+    <div class="updateTime">
+        竞彩奖金更新时间：{{updateTime}}
+        <span @click="updateHandle">[刷新]</span>
+    </div>
+    <div class="marketBox">
+        <div class="searchBox clearfix">
+            <div class="searchLeft"
+                 :class="isFloatBonus && 'check'"
+                 v-on:click="bonusChangeHandle">
+                奖金区浮动显示奖金变化
+            </div>
+            <div class="searchCenter">
+                <ul class="clearfix">
+                    <li>
+                        <match-filter
+                                :submitCb="matchFilterCb"
+                                :arrDateButtons="arrWeek"
+                                :arrLeagueButtons="arrLeague"
+                        />
+                    </li>
+                    <li>
+                        <odds-filter :submitCb="oddFilterCb" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marketsList topLine"
+             :class="{isFlex: isFlex}">
+            <event-list-title
+                    class="listHeader"
+                    :callbackHandle="callbackHandle">
+                <ul class="clearfix">
+                    <li class="marketNum">编号</li>
+                    <li class="leagueName">赛事</li>
+                    <li class="marketTime">
+                        <market-time-select :no-sort="true"/>
+                    </li>
+                    <li class="teamName">主队 VS 客队</li>
+                    <li class="record">析</li>
+                    <li class="injectionArea">
+                        <div v-for="index in 8 "
+                             :key="index">
+                            {{index-1}}{{index === 8 ? '+': ''}}球
+                        </div>
+                    </li>
+                    <li class="average">
+                        平均欧赔
+                    </li>
+                </ul>
+            </event-list-title>
+            <match-header
+                    v-for="(item, grpKey) in grpMatch"
+                    :week="item.week"
+                    :date="item.grpDate"
+                    :matchLength="item.events.length"
+                    :key="grpKey"
+            >
+                <div class="listItem">
+                    <ul>
+                        <li v-for="(mk, index) in item.events"
+                            :key="index">
+                            <vue-list-lazy-component class="listBox clearfix">
+                                <market-num
+                                        class="marketNum"
+                                        :week="mk.week"
+                                        :complete-no="mk.number"/>
+                                <market-league
+                                        class="leagueName"
+                                        :league-name="mk.leagueName"
+                                        :league-color="mk.leagueColor"
+                                        :league-id="mk.leagueId"
+                                        :league-short-name="mk.leagueShortName"/>
+                                <market-time
+                                        class="marketTime"
+                                        :short-date="mk.shortDate"
+                                        :start-time="mk.startTime"
+                                        :end-short-date="mk.endShortDate"
+                                        :end-time="mk.endTime"
+                                        :is-end-time="isEndTime"/>
+                                <market-team
+                                        class="teamName"
+                                        :home-league-rank="mk.homeLeagueRank"
+                                        :home-name="mk.homeName"
+                                        :home-short-name="mk.homeShortName"
+                                        :away-name="mk.awayName"
+                                        :away-short-name="mk.awayShortName"
+                                        :away-league-rank="mk.awayLeagueRank"/>
+                                <market-record
+                                        class="record"
+                                        :vid="mk.vid"
+                                        :type-num="2"
+                                        :is-peer-review="false"/>
+                                <div class="injectionArea">
+                                    <bet-outcome
+                                            v-for="(od,index) in TGOddArr"
+                                            :key="mk.vid + '#' + marketTGSort + '#' + od.odd"
+                                            :num="mk.markets[marketTGSort] && mk.markets[marketTGSort][od.odd]"
+                                            :vid="mk.vid"
+                                            :is-recommend="true"
+                                            :outcome-name="od.odd"
+                                            :sort="marketTGSort"/>
+                                </div>
+                                <market-average
+                                        class="average"
+                                        :averages="mk.oddsInfo ? mk.oddsInfo[0] : {}"/>
+                            </vue-list-lazy-component>
+                        </li>
+                    </ul>
+                </div>
+            </match-header>
+        </div>
+    </div>
+    <choose-recommend-bottom-view></choose-recommend-bottom-view>
+</div>

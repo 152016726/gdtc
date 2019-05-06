@@ -1,0 +1,86 @@
+<ul>
+    {{each $data.marketList mk i}}
+    <li class="market_item clearfix">
+        <div class="market_num oneLine">
+            {{$data.getCompleteNo(mk.completeNo)}}
+            {{if mk.dgStatus === '1'}}
+            <div class="singleLogo">
+            </div>
+            {{/if}}
+        </div>
+        <div class="league colorWhite oneLine" style='{{"background: #" + mk.leagueColor}}'>{{mk.leagueShortName}}</div>
+        <div class="market_time oneLine">{{$data.getSortDate(mk.vsDate)}}</div>
+        <div class="teams oneLine">
+            <a href="#">
+                <span class="h" title='{{mk.homeName}}'>{{mk.homeShortName}}</span><span class="vs">VS</span><span
+                    class="a" title='{{mk.awayName}}'>{{mk.awayShortName}}</span>
+            </a>
+        </div>
+        <div class="halfScore oneLine">
+            {{$data.getScore(mk.homeHalfScore, mk.awayHalfScore, mk.eventState)}}
+        </div>
+        <div class="fullScore oneLine">
+            {{$data.getScore(mk.homeScore, mk.awayScore, mk.eventState)}}
+        </div>
+        <div class="WDW twoLine">
+            <ul>
+                <li>
+                    <span class="w50 f_bold f_win">
+                        {{$data.getResultByGoal(mk.homeScore, mk.awayScore, 0, mk.eventState)}}
+                    </span>
+                    <span class="w50 noBoeder">
+                       {{$data.getOddsStr(mk[marketSort.WIN_DRAW_WIN], mk.eventState)}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="HWDW twoLine">
+            <ul>
+                <li>
+                    <span class='{{"w33 f_bold " + $data.getHandicapColorStyle(mk.handicap)}}'>
+                        {{mk.handicap}}
+                    </span>
+                    <span class="w33  f_bold f_win">
+                       {{$data.getResultByGoal(mk.homeScore, mk.awayScore, mk.handicap, mk.eventState)}}
+                    </span>
+                    <span class="w33 noBoeder">
+                       {{$data.getOddsStr(mk[marketSort.HANDICAP_WIN_DRAW_WIN])}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="CS twoLine">
+            <ul>
+                <li>
+                    <span class="w50 f_bold f_win">{{mk.homeScore}}:{{mk.awayScore}}</span>
+                    <span class="w50 noBoeder">
+                        {{$data.getOddsStr(mk[marketSort.CORRECT_SCORES])}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="TG twoLine">
+            <ul>
+                <li>
+                    <span class="w50 f_bold f_win">{{$data.getTotalGoal(mk.homeScore , mk.awayScore)}}</span>
+                    <span class="w50 noBoeder">
+                        {{$data.getOddsStr(mk[marketSort.TOTAL_GOALS])}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="HFT twoLine noBoeder">
+            <ul>
+                <li>
+                    <span class="w50 f_bold f_win">
+                        {{$data.getHFResult(mk)}}
+                    </span>
+                    <span class="w50 noBoeder">
+                        {{$data.getOddsStr(mk[marketSort.HALF_FULL_TIME])}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </li>
+    {{/each}}
+</ul>

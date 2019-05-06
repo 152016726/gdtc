@@ -1,0 +1,19 @@
+
+<div class="page-tool-view">
+        <div class="page_list" v-if="isShow">
+            <ul class="clearfix pageLi">
+                <li class="pageNum u-pg1" @click="firstHandel">首页</li>
+                <li class="propTen u-pg1" v-if="isProp" @click="propHandel">上十页</li>
+                <li class="pageNum u-pg2"
+                    v-for="(value, i) in numArr"
+                    :key="i"
+                    @click="clickHandel(value)"
+                    :class="{active: value === activeVal}">
+                    {{value}}
+                </li>
+                <li class="nextTen u-pg1" v-if="isNext" @click="nextHandel">下十页</li>
+                <li class="pageNum u-pg1" @click="lastPageHandel">尾页</li>
+            </ul>
+        </div>
+    <div class="lastTip" v-if="isShowResult">查询结果：有 <span class="result_num">{{allMarkets}}</span> 场赛事符合条件</div>
+</div>

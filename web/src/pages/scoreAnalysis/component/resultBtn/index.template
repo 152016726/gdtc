@@ -1,0 +1,4 @@
+<span class="result-text-view"
+      :class="clsSty">
+    {{resultText}}
+</span>

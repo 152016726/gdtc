@@ -1,0 +1,20 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "home":{
+      "round":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "name":"阿森纳",
+      "point":[2, 4, 7, 23, 25, 26, 35, 40, 52, 59, 74, 93],
+      "ranking":[18, 10, 8, 4, 5, 3, 4, 4, 3, 3, 4, 4],
+      "result":["win", "win","draw","win","win","lose","win","win","draw","win","win","draw"]
+    },
+    "away":{
+      "round":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "name":"AC米兰",
+      "point":[3, 4, 5, 13, 15, 28, 32, 40, 42, 49, 64, 73],
+      "ranking":[18, 10, 8, 4, 5, 3, 4, 2, 1, 1, 1, 1],
+      "result":["win", "win","draw","win","win","lose","win","win","draw","draw","draw","draw"]
+    }
+  }
+}

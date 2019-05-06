@@ -1,0 +1,69 @@
+<div class="rankList">
+    <div class="rankTitle clearfix">
+        <h2 class="fl">积分榜</h2>
+        <div class="rankSelector fl">
+            <selections
+                :optionList="itemList"
+                :defaultId="type"
+                @transfer="toggleRank"
+            >
+            </selections>
+        </div>
+    </div>
+    <div class="rankContent">
+        <div class="rankTable">
+            <div class="rankThead">
+                <dl class="th">
+                    <dt v-for="(item, index) in th"
+                        :key="index"
+                    >
+                        {{item}}
+                    </dt>
+                </dl>
+            </div>
+            <dl v-for="(item, index) in rankList" :key="index" class="rank">
+                <dt class="rankItem">
+                    <i
+                        :class="{circle: !!item.color}"
+                        :style="{backgroundColor: !!item.color ? item.color : '#ffffff'}"
+                    >
+                        {{item.totalRank}}
+                    </i>
+                </dt>
+                <dt class="rankItem">
+                    {{!!item.shortName ? item.shortName : '-'}}
+                </dt>
+                <dt class="rankItem">
+                    {{!!item.totalVersusCount ? item.totalVersusCount : '-'}}
+                </dt>
+                <dt class="rankItem dark">
+                    {{!!item.totalWin ? item.totalWin : '-'}}
+                </dt>
+                <dt class="rankItem dark">
+                    {{!!item.totalDraw ? item.totalDraw : '-'}}
+                </dt>
+                <dt class="rankItem dark">
+                    {{!!item.totalDefeat ? item.totalDefeat : '-'}}
+                </dt>
+                <dt class="rankItem">
+                    {{!!item.totalGoal ? item.totalGoal : '-'}}
+                </dt>
+                <dt class="rankItem">
+                    {{!!item.totalLose ? item.totalLose : '-'}}
+                </dt>
+                <dt class="rankItem">
+                    {{!!item.totalGD ? item.totalGD : '-'}}
+                </dt>
+                <dt class="rankItem dark">
+                    {{!!item.totalPoint ? item.totalPoint : '-'}}
+                </dt>
+            </dl>
+        </div>
+        <div class="colors clearfix">
+            <div class="colorItem fl" v-for="(v, k) in colorList" :key="k">
+                <i class="circle" :style="{backgroundColor: v.color}"></i>
+                {{v.text}}
+            </div>
+        </div>
+    </div>
+</div>

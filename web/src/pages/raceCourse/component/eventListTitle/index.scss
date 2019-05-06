@@ -1,0 +1,11 @@
+
+.relativeDiv{
+  position: relative;
+  z-index: 1;
+}
+.flexDiv{
+  position: fixed;
+  margin: 0 auto;
+  width: 1190px;
+  z-index: 1;
+}

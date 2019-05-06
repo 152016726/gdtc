@@ -1,0 +1,180 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.winDrawWin{
+  border: 1px solid $BorderColor;
+  border-bottom: none;
+  position: relative;
+
+  /* 箭头向下 */
+  .arrowIcon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../../images/jt_sc01.png") no-repeat center;
+  }
+
+  .marketBox{
+    /*赛事列表显示宽度*/
+    .marketNum{
+      width: 76px;
+    }
+    .leagueName{
+      width: 101px;
+    }
+    .marketTime{
+      width: 101px;
+    }
+    .teamName{
+      width: 278px;
+    }
+    .concede{
+      width: 55px;
+    }
+    .events{
+      width: 277px;
+    }
+    .record{
+      width: 118px;
+    }
+    .average{
+      width: 182px;
+      border: none;
+    }
+    /*赛事列表显示宽度*/
+
+    /* 头部筛选栏 */
+    .searchBox{
+      height: 42px;
+      width: 100%;
+      background: $marketTitleBgColor;
+      .searchLeft{
+        float: left;
+        ul{
+          padding: 0 10px;
+          li{
+            float: left;
+            margin-right: 14px;
+            padding: 12px 0 12px 16px;
+            cursor: pointer;
+            background: url("../../images/unchoose.png") no-repeat left center;
+            &.check{
+              background: url("../../images/choose.png") no-repeat left center;
+            }
+            input{
+              vertical-align: initial;
+              cursor: pointer;
+            }
+            label{
+              padding-left: 4px;
+              cursor: pointer;
+            }
+            #single{
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+    /* 头部筛选栏 */
+
+    /* 赛事列表框 */
+    .marketsList{
+      /* 赛事表头 */
+      .listHeader{
+        .events{
+          width: 277px;
+          >div{
+            float: left;
+            width: 33.3%;
+            border: none;
+            }
+        }
+      }
+      /* 赛事表头 */
+
+      /* 赛事列表 */
+      .listItem{
+        ul{
+          li{
+            .listBox{
+              height: 78px;
+              .concede{
+                div{
+                  height: 39px;
+                  line-height: 39px;
+                  position: relative;
+                  img {
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 16px;
+                    height: 19px;
+                  }
+                }
+              }
+              .events{
+                >div{
+                  height: 38.5px;
+                  line-height: 39px;
+                  background: $oddsBgColor;
+                  font-weight: Bold;
+                  div{
+                    width: 92px;
+                    float: left;
+                    cursor: pointer;
+                    border-right: 1px solid $BorderColor;
+                    &:last-child {
+                      border-right: none;
+                    }
+                  }
+                  .bet_outcome{
+                    span{
+                      margin-left: 32px;
+                    }
+                    &.centerAlign{
+                      span{
+                        margin-left: 0;
+                      }
+                    }
+                  }
+                }
+                .hhadOdds{
+                  .bet_outcome{
+                    height: 38px;
+                    line-height: 38px;
+                  }
+                }
+                .noSelect{
+                  background: $BgColorWhite;
+                  font-weight: normal;
+                }
+              }
+            }
+            .oneRowList{
+              height: 50px;
+              .concede{
+                div{
+                  height: 50px;
+                  line-height: 50px;
+                }
+              }
+              .events{
+                .hhadOdds, .hadOdds{
+                  height: 50px;
+                  .bet_outcome{
+                    height: 50px;
+                    line-height: 60px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      /* 赛事列表 */
+      }
+    /* 赛事列表框 */
+  }
+
+}

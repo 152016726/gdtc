@@ -1,0 +1,1226 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "player": {
+      "_doc": "extendedplayer",
+      "_id": 383560,
+      "name": "曼努埃尔，阿肯基",
+      "fullname": "Akanji, Manuel Obafemi",
+      "birthdate": {
+        "_doc": "time",
+        "time": "00:00",
+        "date": "19/07/95",
+        "tz": "CEST",
+        "tzoffset": 7200,
+        "uts": 806104800
+      },
+      "nationality": {
+        "_doc": "countrycode",
+        "_id": 206,
+        "a2": "ch",
+        "name": "瑞士",
+        "a3": "CHE",
+        "ioc": "SUI",
+        "continentid": 1,
+        "continent": "欧洲",
+        "population": 7800000
+      },
+      "secondarynationality": {
+        "_doc": "countrycode",
+        "_id": 156,
+        "a2": "ng",
+        "name": "尼日利亚",
+        "a3": "NGA",
+        "ioc": "NGR",
+        "continentid": 4,
+        "continent": "非洲",
+        "population": 154700000
+      },
+      "position": {
+        "_type": "D",
+        "name": "后卫",
+        "shortname": "后卫",
+        "abbr": "D"
+      },
+      "primarypositiontype": null,
+      "haslogo": true,
+      "height": 186,
+      "weight": 85,
+      "_foot": "Right",
+      "foot": "右",
+      "nickname": null
+    },
+    "roles": [
+      {
+        "_doc": "playerrole",
+        "_playerid": 383560,
+        "_id": 684984,
+        "_type": 1,
+        "name": "球员",
+        "team": {
+          "_doc": "uniqueteam",
+          "_id": 2458,
+          "_sid": 1,
+          "name": "温特图尔",
+          "mediumname": "温特图尔",
+          "suffix": null,
+          "abbr": "温特图尔",
+          "nickname": null,
+          "teamtypeid": 0,
+          "iscountry": false,
+          "sex": "m",
+          "haslogo": true,
+          "founded": null,
+          "website": "http://www.fcwinterthur.ch",
+          "realcategory": {
+            "_doc": "realcategory",
+            "_id": 25,
+            "_sid": 1,
+            "_rcid": 25,
+            "name": "瑞士",
+            "cc": {
+              "_doc": "countrycode",
+              "_id": 206,
+              "a2": "ch",
+              "name": "瑞士",
+              "a3": "CHE",
+              "ioc": "SUI",
+              "continentid": 1,
+              "continent": "欧洲",
+              "population": 7800000
+            }
+          }
+        },
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "01/01/14",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1388530800
+        },
+        "end": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "30/06/15",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1435615200
+        },
+        "active": false,
+        "shirt": "25"
+      },
+      {
+        "_doc": "playerrole",
+        "_playerid": 383560,
+        "_id": 1129771,
+        "_type": 1,
+        "name": "球员",
+        "team": {
+          "_doc": "uniqueteam",
+          "_id": 2501,
+          "_sid": 1,
+          "name": "巴塞尔",
+          "mediumname": "巴塞尔",
+          "suffix": null,
+          "abbr": "巴塞尔",
+          "nickname": null,
+          "teamtypeid": 0,
+          "iscountry": false,
+          "sex": "m",
+          "haslogo": true,
+          "founded": "1893",
+          "website": "http://www.fcb.ch",
+          "realcategory": {
+            "_doc": "realcategory",
+            "_id": 25,
+            "_sid": 1,
+            "_rcid": 25,
+            "name": "瑞士",
+            "cc": {
+              "_doc": "countrycode",
+              "_id": 206,
+              "a2": "ch",
+              "name": "瑞士",
+              "a3": "CHE",
+              "ioc": "SUI",
+              "continentid": 1,
+              "continent": "欧洲",
+              "population": 7800000
+            }
+          }
+        },
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "01/07/15",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1435701600
+        },
+        "end": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "14/01/18",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1515884400
+        },
+        "active": false,
+        "shirt": "36"
+      },
+      {
+        "_doc": "playerrole",
+        "_playerid": 383560,
+        "_id": 2028119,
+        "_type": 1,
+        "name": "球员",
+        "team": {
+          "_doc": "uniqueteam",
+          "_id": 2673,
+          "_sid": 1,
+          "name": "多特蒙德",
+          "mediumname": "多特蒙德",
+          "suffix": null,
+          "abbr": "多特蒙德",
+          "nickname": null,
+          "teamtypeid": 0,
+          "iscountry": false,
+          "sex": "m",
+          "haslogo": true,
+          "founded": "1909",
+          "website": "http://www.bvb.de",
+          "realcategory": {
+            "_doc": "realcategory",
+            "_id": 30,
+            "_sid": 1,
+            "_rcid": 30,
+            "name": "德国",
+            "cc": {
+              "_doc": "countrycode",
+              "_id": 80,
+              "a2": "de",
+              "name": "德国",
+              "a3": "DEU",
+              "ioc": "GER",
+              "continentid": 1,
+              "continent": "欧洲",
+              "population": 82500000
+            }
+          }
+        },
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "15/01/18",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1515970800
+        },
+        "end": null,
+        "active": true,
+        "shirt": "16"
+      },
+      {
+        "_doc": "playerrole",
+        "_playerid": 383560,
+        "_id": 1705498,
+        "_type": 1,
+        "name": "球员",
+        "team": {
+          "_doc": "uniqueteam",
+          "_id": 4699,
+          "_sid": 1,
+          "name": "瑞士",
+          "mediumname": "瑞士",
+          "suffix": null,
+          "abbr": "瑞士",
+          "nickname": null,
+          "teamtypeid": 0,
+          "iscountry": true,
+          "sex": "m",
+          "haslogo": true,
+          "founded": null,
+          "website": "http://www.football.ch",
+          "cc": {
+            "_doc": "countrycode",
+            "_id": 206,
+            "a2": "ch",
+            "name": "瑞士",
+            "a3": "CHE",
+            "ioc": "SUI",
+            "continentid": 1,
+            "continent": "欧洲",
+            "population": 7800000
+          },
+          "realcategory": {
+            "_doc": "realcategory",
+            "_id": 4,
+            "_sid": 1,
+            "_rcid": 4,
+            "name": "国际",
+            "cc": null
+          }
+        },
+        "start": null,
+        "end": null,
+        "active": true,
+        "shirt": "5"
+      },
+      {
+        "_doc": "playerrole",
+        "_playerid": 383560,
+        "_id": 1251036,
+        "_type": 1,
+        "name": "球员",
+        "team": {
+          "_doc": "uniqueteam",
+          "_id": 4876,
+          "_sid": 1,
+          "name": "瑞士",
+          "mediumname": "瑞士",
+          "suffix": "U21",
+          "abbr": "瑞士",
+          "nickname": null,
+          "teamtypeid": 0,
+          "iscountry": true,
+          "sex": "m",
+          "haslogo": true,
+          "founded": null,
+          "website": null,
+          "cc": {
+            "_doc": "countrycode",
+            "_id": 206,
+            "a2": "ch",
+            "name": "瑞士",
+            "a3": "CHE",
+            "ioc": "SUI",
+            "continentid": 1,
+            "continent": "欧洲",
+            "population": 7800000
+          },
+          "realcategory": {
+            "_doc": "realcategory",
+            "_id": 4,
+            "_sid": 1,
+            "_rcid": 4,
+            "name": "国际",
+            "cc": null
+          }
+        },
+        "start": null,
+        "end": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "06/10/16",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1475704800
+        },
+        "active": false,
+        "shirt": "4"
+      }
+    ],
+    "stats": {
+      "_doc": "toplistentry",
+      "_id": 383560,
+      "playerid": 383560,
+      "player": {
+        "_doc": "player",
+        "_id": 383560,
+        "name": "曼努埃尔，阿肯基",
+        "fullname": "Akanji, Manuel Obafemi",
+        "birthdate": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "19/07/95",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 806104800
+        },
+        "nationality": {
+          "_doc": "countrycode",
+          "_id": 206,
+          "a2": "ch",
+          "name": "瑞士",
+          "a3": "CHE",
+          "ioc": "SUI",
+          "continentid": 1,
+          "continent": "欧洲",
+          "population": 7800000
+        },
+        "secondarynationality": {
+          "_doc": "countrycode",
+          "_id": 156,
+          "a2": "ng",
+          "name": "尼日利亚",
+          "a3": "NGA",
+          "ioc": "NGR",
+          "continentid": 4,
+          "continent": "非洲",
+          "population": 154700000
+        },
+        "position": {
+          "_type": "D",
+          "name": "后卫",
+          "shortname": "后卫",
+          "abbr": "D"
+        },
+        "primarypositiontype": null,
+        "haslogo": true
+      },
+      "teams": {
+        "2458": {
+          "seasons": {
+            "6343": {
+              "active": false,
+              "lastevent": "2014-05-03 23:57:27",
+              "started": 2,
+              "yellowred_cards": 1,
+              "matches": 2,
+              "minutes_played": 119
+            },
+            "8162": {
+              "active": false,
+              "lastevent": "2015-05-30 22:23:14",
+              "started": 30,
+              "goals": 1,
+              "yellow_cards": 4,
+              "matches": 33,
+              "goal_points": 1,
+              "minutes_played": 2743,
+              "substituted_in": 3,
+              "substituted_out": 3
+            }
+          }
+        },
+        "2501": {
+          "seasons": {
+            "10468": {
+              "active": false,
+              "lastevent": "2016-02-28 14:08:41",
+              "started": 5,
+              "yellow_cards": 2,
+              "matches": 8,
+              "shots_off_goal": 1,
+              "minutes_played": 530,
+              "substituted_in": 3,
+              "substituted_out": 1,
+              "team_scored": 12,
+              "team_conceded": 8,
+              "total_shots": 1,
+              "matches_won": 5,
+              "matches_lost": 2,
+              "matches_drawn": 1,
+              "number_of_cards_1st_half": 1,
+              "number_of_cards_2nd_half": 1,
+              "team_matches": 35
+            },
+            "10486": {
+              "active": false,
+              "lastevent": "2015-11-05 20:31:27",
+              "started": 1,
+              "matches": 1,
+              "minutes_played": 90,
+              "team_scored": 2,
+              "matches_won": 1,
+              "team_matches": 9
+            },
+            "33017": {
+              "active": false,
+              "lastevent": "2017-06-02 20:05:46",
+              "started": 14,
+              "goals": 4,
+              "yellow_cards": 1,
+              "matches": 15,
+              "offside": 1,
+              "shots_on_goal": 6,
+              "shots_off_goal": 3,
+              "goal_points": 4,
+              "goals_by_header": 1,
+              "minutes_played": 1323,
+              "substituted_in": 1,
+              "team_scored": 37,
+              "team_conceded": 17,
+              "total_shots": 9,
+              "matches_won": 10,
+              "matches_drawn": 5,
+              "first_goals": 2,
+              "last_goals": 1,
+              "number_of_cards_2nd_half": 1,
+              "team_matches": 36
+            },
+            "33235": {
+              "active": false,
+              "lastevent": "2017-05-25 15:21:14",
+              "started": 3,
+              "goals": 1,
+              "matches": 3,
+              "shots_on_goal": 1,
+              "shots_off_goal": 1,
+              "goal_points": 1,
+              "minutes_played": 270,
+              "team_scored": 9,
+              "team_conceded": 2,
+              "total_shots": 2,
+              "matches_won": 3,
+              "team_matches": 3
+            },
+            "41198": {
+              "active": false,
+              "lastevent": "2017-12-05 22:06:17",
+              "started": 6,
+              "yellow_cards": 2,
+              "matches": 6,
+              "shots_off_goal": 1,
+              "assists": 1,
+              "goal_points": 1,
+              "minutes_played": 540,
+              "team_scored": 12,
+              "team_conceded": 5,
+              "total_shots": 1,
+              "matches_won": 4,
+              "matches_lost": 2,
+              "number_of_cards_1st_half": 1,
+              "number_of_cards_2nd_half": 1,
+              "team_matches": 8
+            },
+            "41260": {
+              "active": false,
+              "lastevent": "2017-12-17 16:26:48",
+              "started": 18,
+              "goals": 1,
+              "yellow_cards": 2,
+              "matches": 19,
+              "offside": 1,
+              "shots_on_goal": 1,
+              "shots_off_goal": 5,
+              "shots_blocked": 1,
+              "assists": 1,
+              "goal_points": 2,
+              "minutes_played": 1631,
+              "substituted_in": 1,
+              "team_scored": 37,
+              "team_conceded": 15,
+              "total_shots": 7,
+              "matches_won": 11,
+              "matches_lost": 3,
+              "matches_drawn": 5,
+              "last_goals": 1,
+              "number_of_cards_1st_half": 1,
+              "number_of_cards_2nd_half": 1,
+              "team_matches": 36
+            },
+            "42016": {
+              "active": false,
+              "lastevent": "2017-11-29 18:48:03",
+              "started": 1,
+              "goals": 1,
+              "matches": 1,
+              "shots_on_goal": 1,
+              "goal_points": 1,
+              "minutes_played": 90,
+              "team_scored": 2,
+              "team_conceded": 1,
+              "total_shots": 1,
+              "matches_won": 1,
+              "team_matches": 2
+            }
+          }
+        },
+        "2673": {
+          "seasons": {
+            "41576": {
+              "active": true,
+              "lastevent": "2018-05-12 14:28:57",
+              "started": 10,
+              "yellow_cards": 2,
+              "matches": 11,
+              "shots_on_goal": 2,
+              "shots_blocked": 2,
+              "minutes_played": 903,
+              "substituted_in": 1,
+              "team_scored": 17,
+              "team_conceded": 17,
+              "total_shots": 4,
+              "matches_won": 6,
+              "matches_lost": 3,
+              "matches_drawn": 2,
+              "number_of_cards_1st_half": 1,
+              "number_of_cards_2nd_half": 1,
+              "team_matches": 34
+            }
+          }
+        },
+        "4699": {
+          "seasons": {
+            "10876": {
+              "active": true,
+              "lastevent": "2017-11-12 18:09:39",
+              "started": 4,
+              "matches": 4,
+              "shots_off_goal": 2,
+              "minutes_played": 360,
+              "team_scored": 6,
+              "total_shots": 3,
+              "matches_won": 3,
+              "matches_drawn": 1,
+              "shots_blocked": 1,
+              "team_matches": 12
+            },
+            "48238": {
+              "active": true,
+              "lastevent": "2018-06-17 18:56:21",
+              "started": 1,
+              "matches": 1,
+              "minutes_played": 90,
+              "team_scored": 1,
+              "team_conceded": 1,
+              "matches_drawn": 1,
+              "team_matches": 1
+            },
+            "48582": {
+              "active": true,
+              "lastevent": "2018-06-08 20:01:50",
+              "started": 3,
+              "matches": 3,
+              "minutes_played": 225,
+              "substituted_out": 1,
+              "team_scored": 3,
+              "team_conceded": 1,
+              "matches_won": 2,
+              "matches_drawn": 1,
+              "team_matches": 4
+            }
+          }
+        },
+        "4876": {
+          "seasons": {
+            "10102": {
+              "active": false,
+              "lastevent": "2015-11-16 18:12:47",
+              "started": 2,
+              "matches": 2,
+              "minutes_played": 180,
+              "team_scored": 1,
+              "team_conceded": 3,
+              "matches_lost": 1,
+              "team_matches": 5
+            }
+          }
+        }
+      },
+      "total": {
+        "goals": 8,
+        "matches": 109,
+        "shots_on_goal": 11,
+        "shots_off_goal": 13,
+        "goal_points": 10,
+        "minutes_played": 9094,
+        "team_scored": 139,
+        "team_conceded": 70,
+        "total_shots": 28,
+        "matches_won": 46,
+        "matches_drawn": 16,
+        "yellowred_cards": 1,
+        "yellow_cards": 13,
+        "substituted_in": 9,
+        "substituted_out": 5,
+        "matches_lost": 11,
+        "number_of_cards_1st_half": 4,
+        "number_of_cards_2nd_half": 5,
+        "shots_blocked": 4,
+        "offside": 2,
+        "goals_by_header": 1,
+        "first_goals": 2,
+        "last_goals": 2,
+        "assists": 2
+      },
+      "home": {
+        "goals": 2
+      },
+      "away": {
+        "goals": 5
+      },
+      "firsthalf": {
+        "goals": 3
+      },
+      "secondhalf": {
+        "goals": 4
+      }
+    },
+    "teams": {
+      "2458": {
+        "_doc": "uniqueteam",
+        "_id": 2458,
+        "_sid": 1,
+        "name": "温特图尔",
+        "mediumname": "温特图尔",
+        "suffix": null,
+        "abbr": "温特图尔",
+        "nickname": null,
+        "teamtypeid": 0,
+        "iscountry": false,
+        "sex": "m",
+        "haslogo": true,
+        "founded": null,
+        "website": "http://www.fcwinterthur.ch"
+      },
+      "2501": {
+        "_doc": "uniqueteam",
+        "_id": 2501,
+        "_sid": 1,
+        "name": "巴塞尔",
+        "mediumname": "巴塞尔",
+        "suffix": null,
+        "abbr": "巴塞尔",
+        "nickname": null,
+        "teamtypeid": 0,
+        "iscountry": false,
+        "sex": "m",
+        "haslogo": true,
+        "founded": "1893",
+        "website": "http://www.fcb.ch"
+      },
+      "2673": {
+        "_doc": "uniqueteam",
+        "_id": 2673,
+        "_sid": 1,
+        "name": "多特蒙德",
+        "mediumname": "多特蒙德",
+        "suffix": null,
+        "abbr": "多特蒙德",
+        "nickname": null,
+        "teamtypeid": 0,
+        "iscountry": false,
+        "sex": "m",
+        "haslogo": true,
+        "founded": "1909",
+        "website": "http://www.bvb.de"
+      },
+      "4699": {
+        "_doc": "uniqueteam",
+        "_id": 4699,
+        "_sid": 1,
+        "name": "瑞士",
+        "mediumname": "瑞士",
+        "suffix": null,
+        "abbr": "瑞士",
+        "nickname": null,
+        "teamtypeid": 0,
+        "iscountry": true,
+        "sex": "m",
+        "haslogo": true,
+        "founded": null,
+        "website": "http://www.football.ch",
+        "cc": {
+          "_doc": "countrycode",
+          "_id": 206,
+          "a2": "ch",
+          "name": "瑞士",
+          "a3": "CHE",
+          "ioc": "SUI",
+          "continentid": 1,
+          "continent": "欧洲",
+          "population": 7800000
+        }
+      },
+      "4876": {
+        "_doc": "uniqueteam",
+        "_id": 4876,
+        "_sid": 1,
+        "name": "瑞士",
+        "mediumname": "瑞士",
+        "suffix": "U21",
+        "abbr": "瑞士",
+        "nickname": null,
+        "teamtypeid": 0,
+        "iscountry": true,
+        "sex": "m",
+        "haslogo": true,
+        "founded": null,
+        "website": null,
+        "cc": {
+          "_doc": "countrycode",
+          "_id": 206,
+          "a2": "ch",
+          "name": "瑞士",
+          "a3": "CHE",
+          "ioc": "SUI",
+          "continentid": 1,
+          "continent": "欧洲",
+          "population": 7800000
+        }
+      }
+    },
+    "seasons": {
+      "6343": {
+        "_id": "6343",
+        "_doc": "season",
+        "_utid": 216,
+        "name": "瑞士甲级联赛 13/14",
+        "abbr": "CL 13/14",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "12/07/13",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1373580000
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "19/05/14",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1400536799
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "13/14"
+      },
+      "8162": {
+        "_id": "8162",
+        "_doc": "season",
+        "_utid": 216,
+        "name": "瑞士甲级联赛 14/15",
+        "abbr": "CL 14/15",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "18/07/14",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1405634400
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "08/06/15",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1433800799
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "14/15"
+      },
+      "10102": {
+        "_id": "10102",
+        "_doc": "season",
+        "_utid": 26,
+        "name": "U21欧洲锦标赛预选赛 2017",
+        "abbr": "UE 2017,Q",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "23/03/15",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1427065200
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "16/11/16",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1479337199
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "2017"
+      },
+      "10468": {
+        "_id": "10468",
+        "_doc": "season",
+        "_utid": 215,
+        "name": "瑞士超级联赛 15/16",
+        "abbr": "SL 15/16",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "17/07/15",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1437084000
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "29/05/16",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1464559199
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "15/16"
+      },
+      "10486": {
+        "_id": "10486",
+        "_doc": "season",
+        "_utid": 679,
+        "name": "欧罗巴联赛 15/16",
+        "abbr": "UEL 15/16",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "30/06/15",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1435615200
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "18/05/16",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1463608799
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "15/16"
+      },
+      "10876": {
+        "_id": "10876",
+        "_doc": "season",
+        "_utid": 11,
+        "name": "世界锦标赛欧洲区预选赛 2018",
+        "abbr": "WC 2018,QU",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "25/07/15",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1437775200
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "19/11/17",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1511132399
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "2018"
+      },
+      "33017": {
+        "_id": "33017",
+        "_doc": "season",
+        "_utid": 215,
+        "name": "瑞士超级联赛 16/17",
+        "abbr": "SL 16/17",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "23/07/16",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1469224800
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "04/06/17",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1496613599
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "16/17"
+      },
+      "33235": {
+        "_id": "33235",
+        "_doc": "season",
+        "_utid": 399,
+        "name": "瑞士杯 16/17",
+        "abbr": "SC 16/17",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "10/08/16",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1470780000
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "31/05/17",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1496267999
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "16/17"
+      },
+      "41198": {
+        "_id": "41198",
+        "_doc": "season",
+        "_utid": 7,
+        "name": "欧洲冠军联赛 17/18",
+        "abbr": "UCL 17/18",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "27/06/17",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1498514400
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "27/05/18",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1527458399
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "17/18"
+      },
+      "41260": {
+        "_id": "41260",
+        "_doc": "season",
+        "_utid": 215,
+        "name": "瑞士超级联赛 17/18",
+        "abbr": "SL 17/18",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "22/07/17",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1500674400
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "21/05/18",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1526939999
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "17/18"
+      },
+      "41576": {
+        "_id": "41576",
+        "_doc": "season",
+        "_utid": 35,
+        "name": "德国甲级联赛 17/18",
+        "abbr": "B 17/18",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "18/08/17",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1503007200
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "22/05/18",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1527026399
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "17/18"
+      },
+      "42016": {
+        "_id": "42016",
+        "_doc": "season",
+        "_utid": 399,
+        "name": "瑞士杯 17/18",
+        "abbr": "SC 17/18",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "12/08/17",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1502488800
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "28/05/18",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1527544799
+        },
+        "neutralground": false,
+        "friendly": false,
+        "year": "17/18"
+      },
+      "48238": {
+        "_id": "48238",
+        "_doc": "season",
+        "_utid": 16,
+        "name": "世界锦标赛",
+        "abbr": "WC 2018",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "14/06/18",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1528927200
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "16/07/18",
+          "tz": "CEST",
+          "tzoffset": 7200,
+          "uts": 1531778399
+        },
+        "neutralground": true,
+        "friendly": false,
+        "year": "2018"
+      },
+      "48582": {
+        "_id": "48582",
+        "_doc": "season",
+        "_utid": 851,
+        "name": "国际友谊赛 2018",
+        "abbr": "IFG 2018",
+        "start": {
+          "_doc": "time",
+          "time": "00:00",
+          "date": "01/01/18",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1514761200
+        },
+        "end": {
+          "_doc": "time",
+          "time": "23:59",
+          "date": "31/12/18",
+          "tz": "CET",
+          "tzoffset": 3600,
+          "uts": 1546297199
+        },
+        "neutralground": false,
+        "friendly": true,
+        "year": "2018"
+      }
+    },
+    "uniquetournaments": {
+      "7": {
+        "_doc": "uniquetournament",
+        "_id": 7,
+        "_utid": 7,
+        "_sid": 1,
+        "_rcid": 393,
+        "name": "欧洲冠军联赛",
+        "currentseason": 54533,
+        "friendly": false
+      },
+      "11": {
+        "_doc": "uniquetournament",
+        "_id": 11,
+        "_utid": 11,
+        "_sid": 1,
+        "_rcid": 4,
+        "name": "世界锦标赛欧洲区预选赛",
+        "currentseason": 10876,
+        "friendly": false
+      },
+      "16": {
+        "_doc": "uniquetournament",
+        "_id": 16,
+        "_utid": 16,
+        "_sid": 1,
+        "_rcid": 4,
+        "name": "World Cup",
+        "currentseason": 48238,
+        "friendly": false
+      },
+      "26": {
+        "_doc": "uniquetournament",
+        "_id": 26,
+        "_utid": 26,
+        "_sid": 1,
+        "_rcid": 392,
+        "name": "U21欧洲锦标赛预选赛",
+        "currentseason": 39695,
+        "friendly": false
+      },
+      "35": {
+        "_doc": "uniquetournament",
+        "_id": 35,
+        "_utid": 35,
+        "_sid": 1,
+        "_rcid": 30,
+        "name": "德国甲级联赛",
+        "currentseason": 41576,
+        "friendly": false
+      },
+      "215": {
+        "_doc": "uniquetournament",
+        "_id": 215,
+        "_utid": 215,
+        "_sid": 1,
+        "_rcid": 25,
+        "name": "瑞士超级联赛",
+        "currentseason": 41260,
+        "friendly": false
+      },
+      "216": {
+        "_doc": "uniquetournament",
+        "_id": 216,
+        "_utid": 216,
+        "_sid": 1,
+        "_rcid": 25,
+        "name": "瑞士甲级联赛",
+        "currentseason": 41262,
+        "friendly": false
+      },
+      "399": {
+        "_doc": "uniquetournament",
+        "_id": 399,
+        "_utid": 399,
+        "_sid": 1,
+        "_rcid": 25,
+        "name": "瑞士杯",
+        "currentseason": 42016,
+        "friendly": false
+      },
+      "679": {
+        "_doc": "uniquetournament",
+        "_id": 679,
+        "_utid": 679,
+        "_sid": 1,
+        "_rcid": 393,
+        "name": "欧罗巴联赛",
+        "currentseason": 54531,
+        "friendly": false
+      },
+      "851": {
+        "_doc": "uniquetournament",
+        "_id": 851,
+        "_utid": 851,
+        "_sid": 1,
+        "_rcid": 4,
+        "name": "国际友谊赛",
+        "currentseason": 48582,
+        "friendly": true
+      }
+    }
+  }
+}

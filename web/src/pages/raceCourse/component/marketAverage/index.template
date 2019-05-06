@@ -1,0 +1,22 @@
+<div>
+    <div :class="{centerShow: !isVertical,
+                  averageBox: !isVertical,
+                  clearfix: !isVertical,
+                  averageVertical: isVertical}">
+        <div>
+            <span :class="{centerShow: isVertical}">
+                {{(averages && averages.avgEuropeanOdds && averages.avgEuropeanOdds.homeOdds) || ''}}
+            </span>
+        </div>
+        <div>
+            <span :class="{centerShow: isVertical}">
+                {{(averages && averages.avgEuropeanOdds && averages.avgEuropeanOdds.drawOdds) || ''}}
+            </span>
+        </div>
+        <div>
+            <span :class="{centerShow: isVertical}">
+                {{(averages && averages.avgEuropeanOdds && averages.avgEuropeanOdds.awayOdds) || ''}}
+            </span>
+        </div>
+    </div>
+</div>

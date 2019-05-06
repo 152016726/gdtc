@@ -1,0 +1,134 @@
+@import "~common/style/color";
+$borderColor: #dedede;
+.main {
+  width: 1190px;
+  margin: 20px auto;
+  background-color: #FFF;
+  min-height: 300px;
+  .min_tab {
+    height: 32px;
+    line-height: 32px;
+    color: #999;
+    a {
+      color: #999;
+    }
+  }
+  .market_content {
+    border: 1px solid $borderColor;
+    .search {
+      position: relative;
+      top: 0;
+    }
+    .page_tool {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid $borderColor;
+    }
+    .footer-tip {
+      background: #f5f5ce;
+      padding: 10px;
+      p {
+        line-height: 24px;
+      }
+    }
+    .market {
+      ul {
+        li {
+          text-align: center;
+          > div {
+            float: left;
+            height: 100%;
+            border-right: 1px solid $borderColor;
+          }
+          .market_time {
+            width: 106px;
+          }
+          .market_num {
+            width: 87px;
+          }
+          .league {
+            width: 82px;
+          }
+          .team {
+            width: 110px;
+          }
+          .WDW, .CS, .TG, .HFT {
+            width: 108px;
+          }
+          .HWDW {
+            width: 153px;
+          }
+          .halfScore {
+            width: 60px;
+          }
+          .fullScore {
+            width: 60px;
+          }
+          .win {
+            width: 55px;
+          }
+          .flat {
+            width: 55px;
+          }
+          .lose {
+            width: 55px;
+          }
+          .market_state {
+            width: 86px;
+          }
+          .market_result {
+            width: 82px;
+          }
+          .market_info {
+            width: 100px;
+            border: none;
+          }
+          .noBoeder {
+            border-right: none;
+          }
+          .teams {
+            width: 198px;
+            a{
+              color: $linkColor;
+            }
+            span, a{
+              float: left;
+            }
+            .h, .a {
+              width: (198px - 40px) / 2;
+              text-align: right;
+            }
+            .vs {
+              width: 40px;
+            }
+            .a {
+              text-align: left;
+            }
+          }
+          ul {
+            li {
+              span {
+                float: left;
+                border-right: 1px solid $borderColor;
+                text-align: center;
+                margin-left: -1px;
+                height: 39px;
+                &.noBoeder {
+                  border-right: none;
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .w50 {
+    width: 50%;
+  }
+  .w33 {
+    width: 33%;
+  }
+}

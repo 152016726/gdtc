@@ -1,0 +1,82 @@
+<analysis-sub-title-view
+        id="league-trend"
+        :text="textStr">
+    <div class="league-trend clearfix">
+        <div class="league-trend-box"
+             v-for="(item, index_1) in dataList"
+             :key="index_1">
+            <analysis-team-name-title
+                    :type-num="index_1"
+                    :team-name="item.teamName"
+                    :team-short-name='item.teamShortName'>
+            </analysis-team-name-title>
+            <div class="league-trend-box-content">
+                <div class="league-trend-content-title">
+                    <div class="league-content-title-top clearfix">
+                        <div>全场</div>
+                        <div>让球盘</div>
+                        <div>大小球</div>
+                    </div>
+                    <div class="league-li clearfix">
+                        <div></div>
+                        <div>赛</div>
+                        <div>赢盘</div>
+                        <div>走水</div>
+                        <div>输盘</div>
+                        <div>赢盘率</div>
+                        <div>大球</div>
+                        <div>大球率</div>
+                        <div>小球</div>
+                        <div>小球率</div>
+                    </div>
+                </div>
+                <div class="league-trend-content-content">
+                    <ul>
+                        <li class="league-li clearfix"
+                            v-for="(la, index) in listArr"
+                            :key="index">
+                            <div>
+                                {{la.titleText}}
+                            </div>
+                            <div>
+                                <span>{{leagueTrendList[item.title] && leagueTrendList[item.title].totalVersusCount}}</span>
+                            </div>
+                            <div v-for="(listD, index) in la.dataList"
+                                 :key="index">
+                                <span v-if="leagueTrendList[item.title] && leagueTrendList[item.title].hwdw && leagueTrendList[item.title].hwdw[listD]">
+                                    {{leagueTrendList[item.title].hwdw[listD] || '0'}}
+                                </span>
+                                <span v-if="leagueTrendList[item.title] && leagueTrendList[item.title].ou && leagueTrendList[item.title].ou[listD]">
+                                    {{leagueTrendList[item.title].ou[listD] || '0'}}
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="content-bottom clearfix">
+                        <div>近6场</div>
+                        <div>6</div>
+                        <div>
+                            <analysis-result-btn
+                                    v-for="(lastItem, index) in leagueTrendList[item.title] && leagueTrendList[item.title].hwdw && leagueTrendList[item.title].hwdw.lastSix"
+                                    :type-num="1"
+                                    :key="index"
+                                    :result-num="lastItem">
+                            </analysis-result-btn>
+                        </div>
+                        <div>
+                            {{leagueTrendList[item.title] && leagueTrendList[item.title].hwdw && leagueTrendList[item.title].hwdw.sixRate}}
+                        </div>
+                        <div>
+                            <analysis-result-btn
+                                    v-for="(lastItem, index) in leagueTrendList[item.title] && leagueTrendList[item.title].ou && leagueTrendList[item.title].ou.lastSix"
+                                    :type-num="2"
+                                    :result-num="lastItem"
+                                    :key="index">
+                            </analysis-result-btn>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</analysis-sub-title-view>

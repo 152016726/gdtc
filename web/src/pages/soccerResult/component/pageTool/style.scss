@@ -1,0 +1,39 @@
+.tool {
+    display: inline-block;
+    .page_list {
+        display: inline-block;
+        ul {
+            li {
+                font-size: 12px;
+                line-height: 23px;
+                text-align: center;
+                float: left;
+                margin: 0 2px;
+                cursor: pointer;
+            }
+            .u-pg1 {
+                width: 55px;
+                height: 23px;
+                background: url("../../images/u-pg1.jpg") no-repeat center center;
+            }
+            .u-pg2 {
+                width: 24px;
+                height: 23px;
+                background: url("../../images/u-pg2.jpg") no-repeat center center;
+            }
+            .active {
+                background-image: none;
+                background-color: #eb812a;
+                color: #FFF;
+            }
+        }
+    }
+    .lastTip {
+        display: inline-block;
+        width: 200px;
+        vertical-align: super;
+        span {
+            color: #ff5e01;
+        }
+    }
+}

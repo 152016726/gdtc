@@ -1,0 +1,24 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.eventHeader{
+  .continentList{
+    li{
+      float: left;
+      width: 108px;
+      height: 42px;
+      font-size: $FONT_16;
+      text-align: center;
+      line-height: 42px;
+      color: $BasicFontColor;
+      background-color: $BgColor;
+      margin-right: 4px;
+      border-radius: 2px 2px 0 0;
+      border: 1px solid $CommonBorderColor;
+      &.active{
+        color: #ffffff;
+        background-color: $MainColor;
+        border-color: $MainColor;
+      }
+    }
+  }
+}

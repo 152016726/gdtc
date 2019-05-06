@@ -1,0 +1,6 @@
+<div>
+    <div class="centerShow">
+        <div>{{isEndTime ? endShortDate : shortDate}}</div>
+        <div>{{isEndTime ? endTime: startTime}}</div>
+    </div>
+</div>

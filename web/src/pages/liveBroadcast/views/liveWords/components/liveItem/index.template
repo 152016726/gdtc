@@ -1,0 +1,19 @@
+<div class="liveItem">
+    <div v-if="!isFirst" class="line"></div>
+    <ul class="clearfix">
+        <li class="cycle">
+            <div></div>
+        </li>
+        <li class="sysTime">
+            {{sysTime}}
+        </li>
+        <li v-bind:class="['textContent', 'clearfix', isLast ? 'darkBg': '']">
+            <div class="broadcast">
+                <div class="broadcastIcon"></div>
+                <p>直播员</p>
+            </div>
+            <div class="time">{{time}}'</div>
+            <div class="words">{{text}}</div>
+        </li>
+    </ul>
+</div>

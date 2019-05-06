@@ -1,0 +1,9 @@
+<div class="reset-password-view">
+    <div class="welcome-text">
+        重置密码
+    </div>
+    <register-com-view
+            :is-register="false"
+            :tel-num="phone"
+            :submit-call-back="submitCallBack"></register-com-view>
+</div>

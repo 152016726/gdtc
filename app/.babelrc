@@ -1,0 +1,37 @@
+{
+  "presets": ["react-native"],
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "babel-plugin-root-import",
+          {
+            "paths": [{
+              "rootPathPrefix": "~",
+              "rootPathSuffix": "./app"
+            }, {
+              "rootPathPrefix": "#",
+              "rootPathSuffix": "./common_modules"
+            }]
+          }
+        ]
+      ]
+    },
+    "development": {
+      "plugins": [
+        [
+          "babel-plugin-root-import",
+          {
+            "paths": [{
+              "rootPathPrefix": "~",
+              "rootPathSuffix": "./app"
+            }, {
+              "rootPathPrefix": "#",
+              "rootPathSuffix": "./common_modules"
+            }]
+          }
+        ]
+      ]
+    }
+  }
+}

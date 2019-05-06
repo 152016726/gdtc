@@ -1,0 +1,13 @@
+<div class="selections">
+    <div class="select" @click="tabClick">
+        {{placeholder}}
+        <i class="label"
+           :style="{backgroundImage: 'url('+ (isFold ? (!!openIcon ? openIcon : collapse) : (!!closeIcon ? closeIcon : expend)) +')'}">
+        </i>
+    </div>
+    <ul class="items" v-if="isFold && optionList.length > 0">
+        <li v-for="(item, index) in optionList" :key="index" @click="itemClick(item)">
+            {{item.name}}
+        </li>
+    </ul>
+</div>

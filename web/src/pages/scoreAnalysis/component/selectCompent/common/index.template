@@ -1,0 +1,16 @@
+<div class="analysis-select-common-view"
+     v-clickOutside="handleClose">
+    <div class="title-text"
+         :class="{titleTextActive: isShow}"
+         @mouseover="mouseOverHandle">
+        {{titleText}}
+        <span class="downIcon"></span>
+    </div>
+    <div v-if="isShow" class="content-box" @mouseleave="isShow = false">
+        <div class="content-box-top"></div>
+        <div class="content-box-bottom">
+            <i class="minTriangle"/>
+            <slot></slot>
+        </div>
+    </div>
+</div>

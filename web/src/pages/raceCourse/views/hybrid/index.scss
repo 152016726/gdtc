@@ -1,0 +1,101 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+#v-hybrid{
+  border: 1px solid $BorderColor;
+  border-bottom: none;
+  position: relative;
+
+  /* 头部筛选 */
+  .searchBox{
+    height: 42px;
+    width: 100%;
+    background: $marketTitleBgColor;
+    .searchLeft{
+      float: left;
+      margin: 0 20px 0 10px;
+      padding: 12px 0 12px 16px;
+      cursor: pointer;
+      background: url("../../images/unchoose.png") no-repeat left center;
+      &.check{
+        background: url("../../images/choose.png") no-repeat left center;
+      }
+    }
+  }
+  /* 头部筛选 */
+
+  .marketsList{
+    /* 赛事组件宽度 */
+    .marketNum{
+      width: 100px;
+    }
+    .marketTime, .average{
+      width: 86px;
+    }
+    .teamName{
+      width: 164px;
+    }
+    .record{
+      width: 32px;
+    }
+    .WDWLen, .HWDWLen{
+      width: 90px;
+    }
+    .scoreLen, .goalsLen{
+      width: 180px;
+    }
+    .halfLen{
+      width: 180px;
+      border: none;
+    }
+
+    /* 赛事列表 */
+    .listItem{
+      ul{
+        li{
+          .listBox{
+            height: 117px;
+            .marketNum{
+              >div{
+                position: relative;
+              }
+              div:first-of-type{
+                height: 45%;
+              }
+            }
+            .WDWLen, .HWDWLen{
+              div{
+                //height: 33.333%;
+                background: $oddsBgColor;
+                border-bottom: 1px solid $BorderColor;
+                cursor: pointer;
+                //&:last-child{
+                //  border: none;
+                //}
+              }
+              .bet_outcome{
+                height: 39.2px;
+              }
+            }
+            .scoreLen, .goalsLen, .halfLen{
+              .topBox{
+                height: 66.66666%;
+                div{
+                  float: left;
+                  width: 50%;
+                  height: 50%;
+                  background: $oddsBgColor;
+                  cursor: pointer;
+                  border-right: 1px solid $BorderColor;
+                  border-bottom: 1px solid $BorderColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /* 赛事列表 */
+  }
+
+}

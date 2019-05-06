@@ -1,0 +1,133 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.expert_ranking_content_view {
+  .expert-ranking-left-tab-bar {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    background: #F3F8F8;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 14px 0;
+    .tab-bar-title {
+      padding: 10px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $BorderColor;
+    }
+    .tab-bar-content {
+      div {
+        height: 36px;
+        line-height: 36px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &.active {
+          background: $MainColor;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  .expert-ranking-right-content{
+    float: left;
+    width: 980px;
+    border: 1px solid $BorderColor;
+    box-sizing: border-box;
+    text-align: center;
+    .ranking-cell {
+      width: 104px;
+    }
+    .header-icon-cell {
+      width: 120px;
+    }
+    .name-cell {
+      width: 146px;
+    }
+    .hit-rate-cell {
+      width: 162px;
+    }
+    .win-cell {
+      width: 110px;
+    }
+    .defeat-cell {
+      width: 100px;
+    }
+    .recent-dev-cell {
+      width: 110px;
+    }
+    .win-streak-cell {
+      width: 126px;
+    }
+    .content-li-title {
+      height: 42px;
+      line-height: 42px;
+      background: #E6EDFA;
+      border-bottom: 1px solid $BorderColor;
+      >div {
+        float: left;
+      }
+    }
+    .content-box {
+      .content-li {
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid $BorderColor;
+        .header-icon-cell {
+          img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+          }
+        }
+        .hit-rate-cell {
+          color: #DA0303;
+        }
+        &:nth-of-type(-n + 3) {
+          .ranking-cell {
+            padding-top: 12px;
+            height: 38px;
+            span {
+              display: inline-block;
+              width: 23px;
+              height: 28px;
+            }
+          }
+        }
+        &:nth-of-type(1) {
+          .ranking-cell {
+            span {
+              background: url("../images/gold.png") no-repeat center;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .ranking-cell {
+            span {
+              background: url("../images/silver.png") no-repeat center;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          .ranking-cell {
+            span {
+              background: url("../images/cu.png") no-repeat center;
+            }
+          }
+        }
+        &:nth-of-type(even) {
+          background: #FAFAFA;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+        >div {
+          float: left;
+        }
+      }
+    }
+  }
+}

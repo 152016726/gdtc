@@ -1,0 +1,51 @@
+.article {
+    color: #333;
+    padding: 20px;
+    font-size: 14px;
+    div.sub_title {
+        margin-bottom: 10px;
+        line-height: 20px;
+        height: 20px;
+        a {
+            float: right;
+            color: #333;
+            text-decoration: none;
+        }
+        a:link {
+            color: #333;
+        }
+        a:visited {
+            color: #333;
+        }
+        a:hover {
+            color: #333;
+        }
+        span{
+            float: right;
+            color: #333; 
+        }
+    }
+    div.paragraph_title {
+        margin: 0 10px;
+        text-align: center;
+        p {
+            padding: 3px;
+            display: inline-block;
+            border-bottom: 2px solid rgb(240, 84, 84);
+        }
+    }
+    p {
+        margin-bottom: 24px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        text-align: justify;
+    }
+    table{
+        text-align: center;
+        width: 700px;
+        margin: 0 auto;
+    }
+    td{
+        height: 36px;
+    }
+}

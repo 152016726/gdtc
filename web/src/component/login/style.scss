@@ -1,0 +1,183 @@
+@import "../../common/style/color.scss";
+@import "../../common/style/fonts.scss";
+
+.login-alert-cell {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 9999;
+  display: none;
+  .line-between {
+    display: inline-block;
+    border-bottom: 1px solid #E6E6E6;
+    vertical-align: middle;
+  }
+  .error-prompt {
+    display: none;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 12px;
+    color: $MainColor;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      background: url("./images/error.png") no-repeat center;
+    }
+  }
+  .login-alert-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 288px;
+    //height: 365px;
+    padding: 30px 116px;
+    border-radius: 4px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333333;
+    .close-login-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      background: url("./images/close.png") no-repeat center;
+    }
+    .title-logo {
+      font-size: 32px;
+      margin-bottom: 20px;
+      .title-logo {
+        display: inline-block;
+        width: 34px;
+        height: 32px;
+        margin-right: 2px;
+        margin-bottom: 6px;
+        background: url("./images/jclogo.png") no-repeat center;
+        vertical-align: middle;
+      }
+    }
+    .others-login {
+      display: none;
+      margin-bottom: 20px;
+      .others-login-title {
+        span:nth-of-type(1),
+        span:nth-of-type(3) {
+          width: 53px;
+        }
+        span:nth-of-type(2) {
+          margin: 0 14px;
+          color: #909090;
+          font-size: 16px;
+        }
+      }
+      .others-login-icon {
+        margin-top: 20px;
+        a {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          margin-right: 48px;
+          &:nth-of-type(1) {
+            background: url("./images/wb_unselected.png") no-repeat center;
+          }
+          &:nth-of-type(2) {
+            background: url("./images/wx_unselected.png") no-repeat center;
+          }
+          &:nth-of-type(3) {
+            background: url("./images/qq_unselected.png") no-repeat center;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .login-input {
+      margin-bottom: 15px;
+      .login-input-tips {
+        color: #999999;
+        font-size: 16px;
+        span {
+          &:nth-of-type(1),
+          &:nth-of-type(3) {
+            width: 67px;
+          }
+          &:nth-of-type(2) {
+            margin: 0 14px;
+          }
+        }
+      }
+      .login-input-content {
+        margin-top: 20px;
+        input {
+          width: calc(100% - 10px);
+          height: 38px;
+          font-size: 16px;
+          padding-left: 10px;
+          color: #777777;
+          border: 1px solid #CCCCCC;
+          margin-bottom: 10px;
+          border-radius: 2px;
+        }
+        .login-img-code {
+          display: none;
+          margin-bottom: 12px;
+          input {
+            width: 120px;
+            margin: 0;
+          }
+          img {
+            width: 120px;
+            height: 38px;
+            margin: 0 3.5px;
+          }
+          span {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            transform: translateY(8px);
+            cursor: pointer;
+            background: url('../phoneVerify/images/circle.png') no-repeat center;
+            background-size: 100%;
+          }
+        }
+        .login-btn {
+          width: 100%;
+          height: 38px;
+          line-height: 38px;
+          color: #FFFFFF;
+          font-size: 18px;
+          background: #EB812A;
+          cursor: pointer;
+          border-radius: 2px;
+        }
+      }
+    }
+    .login-footer {
+      font-size: 14px;
+      .forget-btn {
+        float: left;
+        a {
+          color: $MainColor;
+        }
+      }
+      .register-btn {
+        float: right;
+        color: #909090;
+        a {
+          color: $MainColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.oddsResult{
+  .odds{
+    font-size: FONT_14;
+    color: #333333;
+    height: 16px;
+    line-height: 16px;
+    width: 30px;
+    margin: 0 4px;
+    &.active{
+      background-color: #DADADA;
+    }
+  }
+}

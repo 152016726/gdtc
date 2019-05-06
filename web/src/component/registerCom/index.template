@@ -1,0 +1,90 @@
+<div class="register-com-view">
+    <ul class="input-box">
+        <li class="account-number clearfix">
+            <div>
+                账号
+            </div>
+            <div>{{telNum}}</div>
+        </li>
+        <li class="img-code" v-if="isShowImgCode">
+            <div>图形验证码</div>
+            <div>
+                <input type="text" v-model="imgPin">
+                <img :src="imgSrc" alt="">
+                <span class="circle-icon" @click="imgSrcIconHandle"></span>
+            </div>
+        </li>
+        <li class="verification-code clearfix">
+            <div>
+                手机验证码
+            </div>
+            <div>
+                <div>
+                    <input
+                       type="text"
+                       placeholder="收到的验证码"
+                       v-model="code"/>
+                </div>
+                <div @click="codeHandle"
+                     :class="{stopCursor: isVer}">
+                    {{codeText}}
+                </div>
+                <div :class="{codeSure: isCodeSure, codeError: isCodeError}"/>
+            </div>
+        </li>
+        <li class="user-name clearfix" v-if="isRegister">
+            <div>
+                昵称
+            </div>
+            <div>
+                <input
+                   type="text"
+                   placeholder="设置昵称"
+                   v-model="userName">
+                <span class="error-prompt" v-if="isUserName">昵称不能为空</span>
+            </div>
+        </li>
+        <li class="user-password clearfix">
+            <div>
+                {{isRegister ? '': '新'}}密码
+            </div>
+            <div>
+                <input
+                    type="password"
+                    placeholder="设定登录密码"
+                    v-model="passWord">
+                <span class="error-prompt" v-if="isPassWord">密码不能为空</span>
+            </div>
+        </li>
+        <li class="user-enter-password clearfix">
+            <div>
+                确认{{isRegister ? '': '新'}}密码
+            </div>
+            <div>
+                <input
+                   type="password"
+                   placeholder="请再一次输入登录密码"
+                   v-model="againPassWord">
+                <span class="error-prompt" v-if="isAgainPassWord">两次密码不一致</span>
+            </div>
+        </li>
+        <li class="agreement clearfix" v-if="isRegister">
+            <div/>
+            <div>
+                <input
+                   type="checkbox"
+                   v-bind:checked="checked"
+                   v-on:change="agreementHandle">
+                阅读并接受<a href="#">《广东竞猜用户服务协议》</a>
+            </div>
+        </li>
+        <li class="submit-btn clearfix">
+            <div/>
+            <div :class="{enterSue: isEnter}">
+                <span @click="submitHandle">
+                    {{isRegister ? '注册': '提交'}}
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>

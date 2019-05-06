@@ -1,0 +1,830 @@
+@import "../../common/style/color.scss";
+@import "../../common/style/fonts.scss";
+.index{
+  background-color:#fafafa;
+  .container{
+    background-color:#ffffff;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  .italic{
+    font-style: italic;
+  }
+  .more{
+    color:#666666;
+    font-size: $FONT_14;
+    margin-right:15px;
+  }
+  .banner{
+    margin-bottom: 20px;
+    .leftBanner{
+      width: 316px;
+      height: 329px;
+      background-color: #faf9e6;
+      padding-top:9.5px;
+      box-sizing: border-box;
+      .universal{
+        color:$BasicFontColor;
+        .icons{
+            width: 60px;
+            height: 103px;
+        }
+        .category{
+          width: 256px;
+          .cateTitle{
+            font-weight: bold;
+            font-size: $FONT_16;
+            color:#333333;
+            height:45px;
+            line-height: 45px;
+          }
+          .types{
+            font-weight: normal;
+            height: 29px;
+            line-height: 29px;
+            font-size:$FONT_14;
+            a{
+              margin:0 12px;
+              &.sign{
+                margin-left:0;
+                &:hover{
+                  color:$MainColor;
+                }
+              }
+            }
+
+          }
+        }
+      }
+      a:hover{
+        color:$MainColor;
+      }
+      .lotteryFoot{
+        .icons{
+          background: url("./images/ball.png") no-repeat;
+          background-position: 20px 9.5px;
+        }
+      }
+      .tools{
+        padding-bottom: 16.5px;
+        .icons{
+          background: url("./images/book.png") no-repeat;
+          background-position: 20px 9.5px;
+        }
+
+      }
+      .apps{
+        height:97px;
+        margin-top: 10px;
+        background-color: #f2f2f2;
+        .evm{
+          width:72px;
+          height:72px;
+          margin-top:12px;
+          margin-left:24px;
+          background: url("./images/code.png") no-repeat center center;
+        }
+        .text{
+          margin-left:24px;
+          width: 56px;
+          margin-top:27px;
+          line-height: 22px;
+          text-align: center;
+          color:$BasicFontColor;
+          font-size:$FONT_14;
+        }
+        .android{
+          cursor: pointer;
+          width:32px;
+          height:72px;
+          margin-top:12px;
+          margin-left:33px;
+          background: url("./images/android.png") no-repeat center center;
+        }
+        .ios{
+          cursor: pointer;
+          width:30px;
+          height:72px;
+          margin-top:12px;
+          margin-left:23px;
+          background: url("./images/ios.png") no-repeat center center;
+        }
+      }
+      .legal{
+        padding-top: 75px;
+        height: 56px;
+        background: url("./images/leagle.png") no-repeat center center;
+        background-size: contain;
+        background-color: #ffffff;
+      }
+    }
+    .swiper-container{
+      margin-left:20px;
+      margin-top:20px;
+      width: 518px;
+      height: 309px;
+      overflow: hidden;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 3;
+      .swiper-wrapper{
+        position: absolute;
+        top:0;
+        left:0;
+        height: 309px;
+        .swiper-slide {
+          float: left;
+          width: 518px;
+          height: 100%;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+          i {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .pagination {
+        position: absolute;
+        right:8px;
+        bottom: 16px;
+        z-index: 10;
+        .swiper-pagination-switch {
+          cursor: pointer;
+          float: left;
+          margin-right: 8px;
+          width: 26px;
+          height: 16px;
+          line-height: 16px;
+          text-align: center;
+          color: #fff;
+          border:1px solid #e5d1d0;
+        }
+        .swiper-active-switch {
+          color:#ffffff;
+          background-color: #be2a24;
+        }
+      }
+    }
+    .rightBanner{
+      width: 316px;
+      height: 309px;
+      margin-left:20px;
+      margin-top:20px;
+      border:1px solid $CommonBorderColor;
+      box-sizing: border-box;
+      position: relative;
+      .notice{
+        width: 100%;
+        .gameNotice{
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          border-bottom:1px solid $CommonBorderColor;
+          background-color: #f2f2f2;
+          position: relative;
+          .info{
+            text-indent: 32px;
+            font-size: $FONT_18;
+            font-weight: bold;
+          }
+          .more{
+            color:#666666;
+            font-size: $FONT_14;
+            margin-right:15px;
+          }
+          .icon{
+            position: absolute;
+            left:12px;
+            top:15px;
+            width: 12px;
+            height:12px;
+            background: url("./images/promote.png") no-repeat;
+          }
+        }
+        .notices{
+          box-sizing: border-box;
+          padding: 8px 12px 0 12px;
+          background-color: #fff;
+          h2{
+            height: 48px;
+            line-height: 48px;
+            border-bottom: 1px dashed #cacaca;
+            font-size: $FONT_16;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 6px;
+          }
+          .articleContent{
+            height: 192px;
+            overflow: hidden;
+            li{
+              line-height: 32px;
+              font-size: $FONT_14;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              a:hover{
+                color:$CommonHoverColor;
+              }
+              i{
+                color:#999999;
+                margin-right:12px;
+                display: inline-block;
+                vertical-align: middle;
+                border:2px solid #333333;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .news{
+    .gameInfo{
+      margin-bottom: 20px;
+      .happyNews{
+        width: 316px;
+        height: 232px;
+        border:1px solid $CommonBorderColor;
+        overflow: hidden;
+        box-sizing: border-box;
+        .gameNotice{
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          border-bottom:1px solid $CommonBorderColor;
+          background-color: #f2f2f2;
+          position: relative;
+          .info{
+            text-indent: 16px;
+            font-size: $FONT_18;
+            font-weight: bold;
+            display: block;
+          }
+        }
+        .notices{
+          height: 191px;
+          box-sizing: border-box;
+          padding: 12px 12px 16px 12px;
+          background-color: #fff;
+          .articleContent{
+            height: 163px;
+            overflow: hidden;
+            li{
+              line-height: 32px;
+              font-size: $FONT_14;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              a:hover{
+                color:$CommonHoverColor;
+              }
+              i{
+                color:#999999;
+                margin-right:12px;
+                display: inline-block;
+                vertical-align: middle;
+                border:2px solid #333333;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+      }
+      .footFocus{
+        margin-left:20px;
+        width: 518px;
+        height: 232px;
+        border:1px solid $CommonBorderColor;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+        .footFocusArticle{
+          height: 40px;
+          line-height: 40px;
+          margin-left:12px;
+          width: 494px;
+          overflow: hidden;
+          border-bottom: 1px solid #d6d6d6;
+          box-sizing: border-box;
+          color:#b33e10;
+          a{
+            color:#b33e10;
+
+          }
+          .fastMsg{
+            text-indent: 20px;
+            font-size: $FONT_18;
+            font-weight: bold;
+            color:$BasicFontColor;
+            background: url("./images/square.png") no-repeat left center;
+          }
+          .analyze{
+            clear: none;
+            font-size: $FONT_14;
+            a{
+              color:#666666;
+            }
+          }
+        }
+        .gamesFocus{
+          margin:0 45px;
+          margin-top:24px;
+          height: 89px;
+          box-sizing: border-box;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          .noneFocus{
+            font-size: 18px;
+            color: #333333;
+            line-height: 140px;
+          }
+          .gamesFocusSub{
+            height: 100%;
+            width: 471px;
+            .swiper-wrapper{
+              position: absolute;
+              top:0;
+              left:0;
+              height:100%;
+              .swiper-slide{
+                float: left;
+                width: 471px;
+                padding-right:45px;
+                height: 100%;
+                box-sizing: border-box;
+                text-align: center;
+                .matchDetails{
+                  font-size:$FONT_14;
+                  margin-bottom: 10px;
+                  .matchTime{
+                    color:$BasicFontColor;
+                    font-size: $FONT_12;
+                    span{
+                      float: left;
+                      margin-right:5px;
+                    }
+                  }
+                  .sands{
+                    margin-right: 5px;
+                    a{
+                      color:#2b78b2;
+                      display: inline-block;
+                      margin:0 5px;
+                    }
+                  }
+                }
+                .matchTeams{
+                  display: inline-block;
+                  margin:0 auto;
+                  .home{
+                    width: 55px;
+                    height: 55px;
+                    line-height: 55px;
+                    background: url('./images/home.png') no-repeat;
+                    background-size: cover;
+                  }
+                  .court{
+                    width: 55px;
+                    height: 55px;
+                    line-height: 55px;
+                    background: url('./images/away.png') no-repeat;
+                    background-size: cover;
+                  }
+                  .match{
+                    font-size: $FONT_16;
+                    line-height: 30px;
+                    text-align: center;
+                    .name{
+                      font-weight: 600;
+                    }
+                  }
+                  .homeTeamName{
+                    width: 84px;
+                    margin-left:20px;
+                  }
+                  .draw{
+                    margin-left:39px;
+                    width: 33px;
+                  }
+                  .courtTeamName{
+                    margin-left:37px;
+                    width: 99px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .leftBtn,.rightBtn{
+          cursor: pointer;
+          position: absolute;
+          top:64%;
+          width: 12px;
+          height: 28px;
+          margin-top:-26px;
+          background: url("./images/goLeft.png") no-repeat;
+          background-size: 100%;
+        }
+        .leftBtn{
+          left:13px;
+        }
+        .rightBtn{
+          right:13px;
+          background: url("./images/goRight.png") no-repeat;
+        }
+        .others{
+          margin:0 45px;
+          margin-top:14px;
+          height: 36px;
+          line-height: 36px;
+          .laba{
+            width: 14px;
+            height: 14px;
+            margin-right: 16px;
+            margin-top:10px;
+            background: url("./images/laba.png") no-repeat 100% 100%;
+          }
+          .short{
+            width: 300px;
+            color:#999999;
+            font-size:$FONT_16;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .figure{
+            height: 36px;
+            width: 90px;
+            font-size:$FONT_16;
+            text-align: center;
+            background-color: $MainColor;
+            color:#fff;
+            border-radius: 4px;
+          }
+        }
+        .swiper-pagination {
+          position: absolute;
+          left:50%;
+          transform: translateX(-50%);
+          bottom: 9px;
+          z-index: 10;
+          text-align: center;
+          .swiper-pagination-switch {
+            float: left;
+            margin: 0 8px;
+            width: 8px;
+            height: 8px;
+            line-height: 8px;
+            background-color:#CDCDCD;
+            border-radius: 50%;
+          }
+          .swiper-active-switch {
+            background-color: #EB812B;
+          }
+        }
+      }
+      .officialNews{
+        width: 316px;
+        height: 232px;
+        margin-left:20px;
+        border:1px solid $CommonBorderColor;
+        overflow: hidden;
+        box-sizing: border-box;
+        .gameNotice{
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          border-bottom:1px solid $CommonBorderColor;
+          background-color: #f2f2f2;
+          position: relative;
+          .info{
+            text-indent: 16px;
+            font-size: $FONT_18;
+            font-weight: bold;
+            display: block;
+          }
+        }
+        .notices{
+          height: 191px;
+          box-sizing: border-box;
+          padding: 12px 12px 16px 12px;
+          background-color: #fff;
+          .articleContent{
+            height: 163px;
+            overflow: hidden;
+            li{
+              line-height: 32px;
+              font-size: $FONT_14;
+              &:hover{
+                color:$CommonHoverColor;
+              }
+              a{
+                width: 100%;
+                em{
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 80%;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                }
+              }
+              a:hover{
+                color:$CommonHoverColor;
+              }
+              i{
+                color:#999999;
+                margin-right:12px;
+                display: inline-block;
+                vertical-align: middle;
+                border:2px solid #333333;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .matches{
+      margin-bottom: 20px;
+      .pitBoard{
+        width: 854px;
+        height: 527px;
+        border:1px solid $CommonBorderColor;
+        box-sizing: border-box;
+        .gameNotice{
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          border-bottom:1px solid $CommonBorderColor;
+          background-color: #f2f2f2;
+          position: relative;
+          .info{
+            text-indent: 16px;
+            font-size: $FONT_18;
+            font-weight: bold;
+            display: block;
+          }
+        }
+        .board{
+          padding:0 12px;
+          margin-bottom: 10px;
+          .title{
+            height:70px;
+            line-height: 70px;
+            font-size: $FONT_16;
+            .line{
+              height:1px;
+              width:750px;
+              display: inline-block;
+              background-color: $CommonBorderColor;
+              vertical-align: middle;
+            }
+          }
+          p{
+            font-size: $FONT_18;
+            font-weight: bold;
+            margin-bottom: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            a{
+              color:#EB812B;
+            }
+          }
+          .avatar{
+            width: 178px;
+            height: 119px;
+            background-size: cover;
+          }
+          .articles{
+            width: 648px;
+            height: 119px;
+            li{
+              float: left;
+              width: 50%;
+              padding-left:24px;
+              line-height: 30px;
+              font-size: $FONT_14;
+              box-sizing: border-box;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              a:hover{
+                color:$CommonHoverColor;
+              }
+              i{
+                color:#999999;
+                margin-right:12px;
+                display: inline-block;
+                vertical-align: middle;
+                border:2px solid #333333;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+      }
+      .others{
+        margin-left:20px;
+        height: 527px;
+        width: 316px;
+        box-sizing: border-box;
+        .skills{
+          height: 258px;
+          margin-bottom: 19px;
+          .gameNotice{
+            height: 40px;
+            line-height: 40px;
+            text-indent: 16px;
+            border-bottom:2px solid $MainColor;
+            background: url("./images/titlebg.png") no-repeat left bottom;
+            .info{
+              color:#ffffff;
+              font-weight: bold;
+              font-size: $FONT_18;
+            }
+          }
+          .notices{
+            box-sizing: border-box;
+            padding: 12px;
+            border:1px solid $CommonBorderColor;
+            border-top:none;
+            background-color: #fff;
+            .articleContent{
+              height: 192px;
+              overflow: hidden;
+              li{
+                line-height: 32px;
+                font-size: $FONT_14;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                a:hover{
+                  color:$CommonHoverColor;
+                }
+                i{
+                  color:#999999;
+                  margin-right:12px;
+                  display: inline-block;
+                  vertical-align: middle;
+                  border:2px solid #333333;
+                  border-radius: 2px;
+                }
+              }
+            }
+          }
+        }
+        .material{
+          height: 250px;
+          box-sizing: border-box;
+          .gameNotice{
+            height: 40px;
+            line-height: 40px;
+            text-indent: 16px;
+            border-bottom:2px solid $MainColor;
+            background: url("./images/titlebg.png") no-repeat left bottom;
+            .info{
+              color:#ffffff;
+              font-weight: bold;
+              font-size: $FONT_18;
+            }
+            .more{
+              color:$BasicFontColor;
+              font-size: $FONT_14;
+              margin-right:15px;
+            }
+          }
+          .notices{
+            box-sizing: border-box;
+            padding: 28px 0 0 25px;
+            border:1px solid $CommonBorderColor;
+            border-top:none;
+            background-color: #fff;
+            li{
+              float: left;
+              text-align: center;
+              width: 50px;
+              box-sizing: border-box;
+              margin-right:22px;
+              margin-bottom: 30px;
+              a{
+                display: block;
+              }
+              i{
+                display: block;
+                width: 48px;
+                height: 32px;
+                border:1px solid $CommonBorderColor;
+                background-size: cover;
+              }
+              p{
+                margin-top:12px;
+                height: 14px;
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+                font-size: $FONT_12;
+                color:$BasicFontColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .photoList{
+    border:1px solid #d6d6d6;
+    margin-bottom: 20px;
+    position: relative;
+    .phototitle{
+      height: 40px;
+      line-height: 40px;
+      width: 100%;
+      background-color: #ebebeb;
+      border: 1px solid #ebebeb;
+      box-sizing: border-box;
+      position: relative;
+      .lotteryList{
+        text-indent: 15px;
+        font-size: $FONT_18;
+        font-weight: bold;
+        color:$BasicFontColor;
+      }
+    }
+    .photoList-container{
+      position: relative;
+      height: 164px;
+      overflow: hidden;
+      margin:18px 58px;
+      .swiper-wrapper{
+        position: absolute;
+        top:0;
+        left:0;
+        .swiper-slide{
+          float: left;
+          width: 222px;
+          padding:0 13px;
+          box-sizing: border-box;
+          &:hover{
+            a{
+              color:$CommonHoverColor;
+            }
+          }
+          p{
+            text-align: center;
+            font-size: $FONT_14;
+            color:$BasicFontColor;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .photo{
+            display: block;
+            height: 130px;
+            border-bottom: 2px solid #ebebeb;
+            border-top: 2px solid #ebebeb;
+            border-left: 1px solid #ebebeb;
+            border-right: 1px solid #ebebeb;
+            margin-bottom: 12px;
+            i{
+              display: block;
+              width: 100%;
+              height:100%;
+              background-size: cover;
+            }
+          }
+        }
+      }
+
+    }
+    .leftBtn,.rightBtn{
+      cursor: pointer;
+      position: absolute;
+      top:50%;
+      width: 18px;
+      height: 42px;
+      margin-top:-21px;
+      background: url("./images/left.png") no-repeat;
+      background-size: 100%;
+    }
+    .leftBtn{
+      left:14px;
+    }
+    .rightBtn{
+      right:14px;
+      background: url("./images/right.png") no-repeat;
+    }
+  }
+}

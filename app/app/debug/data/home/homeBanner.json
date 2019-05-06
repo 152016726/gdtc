@@ -1,0 +1,23 @@
+{
+  "rspCode":"SUCCESS",
+  "data":{
+    "list":[
+      {
+        "image":"https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2263582212.jpg",
+        "alt":"活动图1",
+        "link":"#1"
+      },
+      {
+        "image":"http://localhost:8081/app/views/home/images/home_banner02.png",
+        "alt":"活动图2",
+        "link":"#2"
+      },
+      {
+        "image":"https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2263582212.jpg",
+        "alt":"活动图3",
+        "link":"#3"
+      }
+    ]
+  }
+
+}

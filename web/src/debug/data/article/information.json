@@ -1,0 +1,32 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "list": [
+      {
+        "id": "int 文章id",
+        "titleImage": "string 标题图片",
+        "title": "string 标题",
+        "titleColor": "string 标题颜色",
+        "titleIsBolder": "boolean 标题是否粗体",
+        "titleIsEm": "boolean 标题是否斜体",
+        "description": "string 描述",
+        "label": "string 标签",
+        "publishDate": "string 发布日期",
+        "link": "string 跳转路径"
+      },
+      {
+        "id": "int 文章id",
+        "titleImage": "string 标题图片",
+        "title": "string 标题",
+        "titleColor": "string 标题颜色",
+        "titleIsBolder": "boolean 标题是否粗体",
+        "titleIsEm": "boolean 标题是否斜体",
+        "description": "string 描述",
+        "label": "string 标签",
+        "publishDate": "string 发布日期",
+        "link": "string 跳转路径"
+      }
+    ]
+  }
+}

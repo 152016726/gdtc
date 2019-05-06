@@ -1,0 +1,20 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.plus{
+  background-color: #ffffff;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border:1px solid $CommonBorderColor;
+  border-top:none;
+  dd{
+    border-right: none !important;
+    span{
+      color:$MainColor;
+      font-size: 12px;
+    }
+  }
+  dd:last-child{
+    border-right: 1px solid $CommonBorderColor !important;
+  }
+}

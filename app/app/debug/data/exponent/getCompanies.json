@@ -1,0 +1,73 @@
+{
+  "rspCode": "SUCCESS",
+  "rspMsg": "成功",
+  "sysTime": "2018-11-08 16:31:12",
+  "token": "",
+  "data": {
+    "companies": [
+      {
+        "cnShort": "中国竞彩",
+        "isMain": "1",
+        "cn": "中国竞彩",
+        "type": "1",
+        "cid": "1"
+      },
+      {
+        "cnShort": "立博",
+        "isMain": "1",
+        "cn": "立博",
+        "type": "1",
+        "cid": "2"
+      },
+      {
+        "cnShort": "bwin",
+        "isMain": "1",
+        "cn": "bwin",
+        "type": "1",
+        "cid": "3"
+      },
+      {
+        "cnShort": "Interwetten",
+        "isMain": "1",
+        "cn": "Interwetten",
+        "type": "1",
+        "cid": "4"
+      },
+      {
+        "cnShort": "澳门",
+        "isMain": "1",
+        "cn": "澳门",
+        "type": "1",
+        "cid": "5"
+      },
+      {
+        "cnShort": "伟德",
+        "isMain": "1",
+        "cn": "伟德",
+        "type": "1",
+        "cid": "6"
+      },
+      {
+        "cnShort": "香港马会",
+        "isMain": "1",
+        "cn": "香港马会",
+        "type": "1",
+        "cid": "10"
+      },
+      {
+        "cnShort": "12bet.com",
+        "isMain": "1",
+        "cn": "12bet.com",
+        "type": "1",
+        "cid": "12"
+      },
+      {
+        "cnShort": "皇冠",
+        "isMain": "1",
+        "cn": "皇冠",
+        "type": "1",
+        "cid": "16"
+      }
+    ]
+  }
+}

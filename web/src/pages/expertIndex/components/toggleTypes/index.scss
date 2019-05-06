@@ -1,0 +1,21 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.toggleTypes{
+  dt{
+    float: left;
+    margin: 0 24px;
+    height: 46px;
+    line-height: 46px;
+    box-sizing: border-box;
+    a{
+      color: $BasicFontColor;
+      font-size: 18px;
+    }
+    &.active{
+      border-bottom: 3px solid $MainColor;
+      a{
+        color: $MainColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="dialog_common {{$data.cls}}">
+    <div class="mask"></div>
+    <div class="win">
+        <div class="title">
+            {{@ $data.title}}
+            <a class="btn_close"></a>
+        </div>
+        <div class="main_content">
+            <div class="inner">
+                {{@ $data.content}}
+            </div>
+        </div>
+        <div class="buttons">
+            <ul>
+                {{each $data.buttons}}
+                <li>{{$value.text}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

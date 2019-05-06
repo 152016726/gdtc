@@ -1,0 +1,7 @@
+<div class="choose-recommend-market_title">
+    <ul class="clearfix ">
+        <router-link tag="li" to="/win_draw_win" active-class="active">胜平负/让球胜平负</router-link>
+        <router-link tag="li" to="/totalGoals" active-class="active">总进球数</router-link>
+        <router-link tag="li" to="/singleFlex" active-class="active">单关固定</router-link>
+    </ul>
+</div>

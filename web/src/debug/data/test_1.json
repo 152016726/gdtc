@@ -1,0 +1,37 @@
+{
+  "events": [
+    {
+      "vid": "int 赛事id",
+      "eventState": "int 赛事状态",
+      "completeNo": "String 完整版赛事编号，由比赛日期计算得到的日期和编号组成，如20150201001",
+      "vsDate": "string 比赛时间",
+      "vsTime": "int 球赛进行了多少秒",
+      "leagueId": "int 联赛id",
+      "leagueName": "string 联赛名",
+      "leagueShortName": "string 联赛名简称",
+      "leagueColor": "string 联赛颜色",
+      "homeTid": "int 主队id",
+      "homeName": "string 主队名",
+      "homeShortName": "string 主队名简称",
+      "homeLeagueRank": "string 主队联赛排名",
+      "homeGoalsScored": "int 主队总得分",
+      "homeHalftimeScored": "int 主队半场得分",
+      "homeOverTimeScored": "int 主队加时得分",
+      "homePenaltyScored": "int 主队点球得分",
+      "homeRedCards": "int 主队红牌数",
+      "homeYellowCards": "int 主队黄牌数",
+      "awayTid": "int 客队id",
+      "awayName": "string 客队名",
+      "awayShortName": "string 客队名简称",
+      "awayLeagueRank": "string 客队联赛排名",
+      "awayGoalsScored": "int 客队总得分",
+      "awayHalftimeScored": "int 客队半场得分",
+      "awayOverTimeScored": "int 客队加时得分",
+      "awayPenaltyScored": "int 客队点球得分",
+      "awayRedCards": "int 客队红牌数",
+      "awayYellowCards": "int 客队黄牌数",
+      "asianHandicap": "decimal 亚盘中界线"
+    }
+  ]
+}
+

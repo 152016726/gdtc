@@ -1,0 +1,29 @@
+<div class="header">
+    <div class="left">
+        <div class="code fl">{{getCode(data.completeNo)}}</div>
+        <div class="league fl" :style="{background: '#' + data.leagueColor}">
+            {{data.leagueShortName}}
+        </div>
+        <div class="date fl">
+            {{getSortDate(data.vsDate)}}
+        </div>
+    </div>
+    <div class="other clearfix">
+        <div class="team home">
+            <i v-if="data.homeYellowCards !== '0'" class="yellowCard">{{data.homeYellowCards}}</i>
+            <i v-if="data.homeRedCards !== '0'" class="redCard">{{data.homeRedCards}}</i>
+            <span v-if="data.homeLeagueRank!==''">[{{data.homeLeagueRank}}]</span>
+            <b>{{data.homeShortName}}</b>
+        </div>
+        <div class="score">
+            {{data.homeGoalsScored + '-' + data.awayGoalsScored}}
+        </div>
+        <div class="team away">
+            <b>{{data.awayShortName}}</b>
+            <span v-if="data.awayLeagueRank!==''">[{{data.awayLeagueRank}}]</span>
+            <i v-if="data.awayRedCards !== '0'"  class="redCard">{{data.awayRedCards}}</i>
+            <i v-if="data.awayYellowCards !== '0'" class="yellowCard">{{data.awayYellowCards}}</i>
+        </div>
+    </div>
+    <a class="link" href="#">分析</a>
+</div>

@@ -1,0 +1,75 @@
+<div id="v-hybrid">
+    <div class="updateTime">
+        竞彩奖金更新时间：{{updateTime}}
+        <span @click="updateHandle">[刷新]</span>
+    </div>
+    <div class="marketBox">
+        <div class="searchBox clearfix">
+            <div class="searchLeft"
+                 :class="isFloatBonus && 'check'"
+                 v-on:click="bonusChangeHandle">
+               奖金区浮动显示奖金变化
+            </div>
+            <div class="searchCenter">
+                <ul class="clearfix">
+                    <li>
+                        <match-filter
+                                :submitCb="matchFilterCb"
+                                :arrDateButtons="arrWeek"
+                                :arrHandicapButtons="arrHandicap"
+                                :arrLeagueButtons="arrLeague"/>
+                    </li>
+                    <li>
+                        <odds-filter :submitCb="oddFilterCb"/>
+                    </li>
+                    <li class="hidden-market-tip" v-if="hideLen !== 0">
+                        已隐藏<span class="hidden-number">{{hideLen}}</span>场比赛
+                        <span class="close-btn" @click="closeHiddenHandle"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marketsList topLine"
+             :class="{isFlex: isFlex}">
+            <event-list-title
+                    class="listHeader"
+                    :callbackHandle="callbackHandle">
+                <ul class="clearfix">
+                    <li class="marketNum">编号</li>
+                    <li class="marketTime">
+                        <market-time-select :no-sort="true"/>
+                    </li>
+                    <li class="teamName">
+                        对阵 (主队在上)
+                    </li>
+                    <li class="record">析</li>
+                    <li class="average">
+                        平均欧赔
+                    </li>
+                    <li class="WDWLen">胜平负</li>
+                    <li class="HWDWLen">让球胜平负</li>
+                    <li class="scoreLen">比分</li>
+                    <li class="goalsLen">总进球</li>
+                    <li class="halfLen">半全场</li>
+                </ul>
+            </event-list-title>
+            <match-header
+                    v-for="(item, grpKey) in grpMatch"
+                    :week="item.week"
+                    :date="item.grpDate"
+                    :matchLength="item.events.length"
+                    :key="grpKey">
+                <div class="listItem">
+                    <ul>
+                        <market-li-hyb
+                                v-for="(mk, index) in item.events"
+                                :key="index"
+                                :event="mk"
+                                :row-num="index + '-' + grpKey"
+                                :is-end-time="isEndTime"/>
+                    </ul>
+                </div>
+            </match-header>
+        </div>
+    </div>
+</div>

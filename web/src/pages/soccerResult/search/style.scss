@@ -1,0 +1,137 @@
+@import "../../../common/style/color";
+$searchHeight: 28px;
+@mixin lineHeightAndPadding() {
+  height: $searchHeight;
+  line-height: $searchHeight;
+  padding: 7px 13px;
+}
+
+@mixin inputStyle() {
+  width: 123px - 12px * 2;
+  height: $searchHeight - 2px;
+  line-height: $searchHeight - 2px;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid $CommonBorderColor;
+  background: url('../images/down.png') #fff no-repeat right 13px center;
+  background-size: 9px auto;
+  cursor: pointer;
+  display: block;
+  color: #333;
+}
+
+.search {
+  color: $linkColor;
+  background: #f5f5ce;
+  .search_left {
+    @include lineHeightAndPadding;
+    > ul {
+      > li {
+        float: left;
+        margin-right: 10px;
+        /* ---日期筛选框的样式在 liveScore 页面中有全局控制--- */
+        input {
+          @include inputStyle;
+        }
+        .search_bth {
+          text-align: center;
+          color: #fff;
+          width: 78px;
+          line-height: 28px;
+          background: url("../images/btn.png");
+          background-size: 100% 100%;
+          cursor: pointer;
+        }
+        .search_result {
+          .result_num {
+            color: $MainColor;
+          }
+        }
+        .single_market {
+          margin-right: 45px;
+          input {
+            width: auto;
+            height: auto;
+            vertical-align: inherit;
+            display: inline-block;
+            margin: 0 8px 0 20px;
+          }
+          span {
+            color: #ff5e01;
+          }
+        }
+        &.updata_time {
+          color: #666;
+          float: right;
+          margin-right: 0;
+          .updata_btn {
+            margin-left: 5px;
+            color: $linkColor;
+            cursor: pointer;
+          }
+        }
+      }
+      .allLianSai {
+        position: relative;
+        .chose_allMarket {
+          @include inputStyle;
+        }
+        .liansaiList {
+          position: absolute;
+          background-color: #fff;
+          width: 123px;
+          border: 1px solid $CommonBorderColor;
+          border-top: none;
+          color: #000;
+          max-height: 200px;
+          overflow-y: scroll;
+          display: none;
+          ul {
+            li {
+              cursor: pointer;
+              padding: 0 12px;
+              &:hover{
+                background: $oddsBgColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .market_list_title {
+    $height: 62px;
+    float: left;
+    width: 100%;
+    font-weight: normal;
+    border-top: 1px solid $CommonBorderColor;
+    border-bottom: 1px solid $CommonBorderColor;
+    background: #f5f5ce;
+    .market_title {
+      height: $height;
+      color: #333;
+      .oneLine {
+        height: $height;
+        line-height: $height;
+        p{
+          line-height: $height/3;
+        }
+        .firstP{
+          margin-top: $height/6;;
+        }
+      }
+      .twoLine{
+        ul{
+          li{
+            height: $height/2;
+            line-height: $height/2;
+            border-bottom: 1px solid $CommonBorderColor;
+          }
+          .bottom{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

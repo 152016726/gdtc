@@ -1,0 +1,41 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "list": [
+      {
+        "content": "擅长骏河银行杯、智利超级杯、瑞典杯、联合会杯",
+        "imgUrl": "http://www.okooo.com/home/user/avatar/?uid=23862064&size=middle",
+        "name": "海珠竞彩网点",
+        "tel": "4401032683",
+        "id": 201010101,
+        "matchList": ["[世界杯]哥伦比亚VS英格兰", "[世界杯]西班牙VS俄罗斯"]
+      },
+      {
+        "content": "擅长U20世界杯、吉尼斯被、亚青赛、挪威杯",
+        "time": "06-14 11:06",
+        "imgUrl": "http://static.sporttery.cn/images/2017/01/06/11-1F106143A2S0.jpg",
+        "name": "以雪",
+        "tel": "3311282683",
+        "id": 22222222,
+        "matchList": ["[WNBA]华盛顿神秘VS菲尼克斯"]
+      },
+      {
+        "content": "擅长收集各大新闻爆料，结合基本面分析亚盘、欧赔，精准预测结果",
+        "time": "06-15 11:06",
+        "imgUrl": "http://static.sporttery.cn/images/2017/01/06/11-1F1061443129E.jpg",
+        "name": "熊超",
+        "tel": "5555555555",
+        "id": 222222,
+        "matchList": []
+      }, {
+        "content": "擅长骏河银行杯、智利超级杯、瑞典杯、联合会杯",
+        "imgUrl": "http://www.okooo.com/home/user/avatar/?uid=23862064&size=middle",
+        "name": "海珠竞彩网点",
+        "tel": "4401032683",
+        "id": 201010101,
+        "matchList": ["[世界杯]哥伦比亚VS英格兰2", "[世界杯]西班牙VS俄罗斯2" , "[世界杯]比利时VS日本2"]
+      }
+    ]
+  }
+}

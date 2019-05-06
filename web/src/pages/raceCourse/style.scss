@@ -1,0 +1,196 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+/* 上边框线 */
+.topLine {
+    border-top: 1px solid $BorderColor;
+}
+
+/* 左边框线 */
+.leftLine {
+    border-left: 1px solid $BorderColor;
+}
+
+/* 右边框线 */
+.rightLine {
+    border-right: 1px solid $BorderColor;
+}
+
+/* 下边框线 */
+.bottomLine {
+    border-bottom: 1px solid $BorderColor;
+}
+
+/* 让球字体颜色 */
+.addColor{ //让球为正数时颜色
+    color: $positiveBallColor;
+}
+.subColor{ //让球为负数时颜色
+    color: $negativeBallColor;
+}
+/* 让球字体颜色 */
+
+/* 箭头向上 */
+.upSearch{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);
+}
+
+.arrowIcon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    background: url("./images/jt_sc01.png") no-repeat center;
+}
+
+
+.raceCourse_main {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: #fff;
+    .isFlex {
+        margin-top: 50px;
+    }
+    /* 更新时间 */
+    .updateTime{
+        position: absolute;
+        top: -28px;
+        right: 0;
+        color: #666666;
+        font-size: $FONT_14;
+        span{
+            margin-left: 16px;
+            color: $linkColor;
+            cursor: pointer;
+        }
+    }
+    /* 更新时间 */
+    .market_title {
+        ul {
+            li {
+                float: left;
+                color: $marketTitleColor;
+                font-size: $FONT_14;
+                padding: 8px 20px;
+                border: solid 1px $BorderColor;
+                border-radius: 4px 4px 0 0;
+                border-bottom: none;
+                margin-right: 5px;
+                cursor: pointer;
+                >a{
+                    color: $marketTitleColor;
+                }
+            }
+            .active {
+                color: #fff;
+                background-color: $MainColor;
+            }
+        }
+    }
+
+    /* 头部的赛事筛选 */
+    .searchCenter {
+        float: left;
+        > ul {
+            padding: 7px 0;
+            > li {
+                float: left;
+                margin-right: 20px;
+            }
+            .hidden-market-tip {
+                background: #ffffff;
+                padding: 4px 6px 4px 12px;
+                margin-top: 2px;
+                border-radius: 4px;
+                color: #999999;
+                .hidden-number {
+                    color: #2B78B2;
+                }
+                .close-btn {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    background: url("./images/hidden-close-bth.png") no-repeat center;
+                }
+            }
+        }
+    }
+    .searchRight{
+        float: right;
+        padding-right: 15px;
+        line-height: 42px;
+        span{
+            margin-right: 12px;
+        }
+    }
+     /* 头部的赛事筛选 */
+
+    /* 赛事列表头部 */
+    .listHeader{
+        background: $marketTitleBgColor;
+        border-bottom: 1px solid $BorderColor;
+        top: 0;
+        >ul{
+            >li{
+                float: left;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                border-right: 1px solid $BorderColor;
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+    /* 赛事列表头部 */
+
+    /* 赛事列表 */
+    .listItem{
+        li{
+            border-bottom: 1px solid $BorderColor;
+            .listBox{
+                height: 100%;
+                >div{
+                    float: left;
+                    height: 100%;
+                    text-align: center;
+                    position: relative;
+                    border-right:1px solid $BorderColor;
+                    box-sizing: border-box;
+                    &:last-child{
+                        border: none;
+                    }
+                }
+            }
+            &:nth-child(even) {
+                background: #FAFAFA;
+            }
+            &:hover {
+                background: #f3f0d5;
+            }
+        }
+    }
+    /* 赛事列表 */
+    #betTips{
+        padding: 20px;
+        color: $CommonHeaderColor;
+        background-color: $betTipsColor;
+        margin-top: 10px;
+        li {
+            font-size: 14px;
+            line-height: 28px;
+            &.title{
+                line-height: 36px;
+                font-size: 16px;
+            }
+        }
+    }
+}

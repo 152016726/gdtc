@@ -1,0 +1,14 @@
+@import "../../../../common/style/color";
+
+.marketTimeSelect{
+  .otherTime{
+    background: #fff;
+    border: 1px solid $MainColor;
+    border-top: none;
+    cursor: pointer;
+    text-indent: -14px;
+    &:hover{
+      background: $oddsBgColor;
+    }
+  }
+}

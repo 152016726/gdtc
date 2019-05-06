@@ -1,0 +1,90 @@
+@import "../../common/style/color";
+
+.dialog_common {
+  .mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 9998;
+  }
+  .win {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #fff;
+    z-index: 9999;
+    min-width: 200px;
+    max-width: 90%;
+  }
+  .title {
+    line-height: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    background: $BgColor;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 12px;
+    font-size: 12px;
+    position: relative;
+    .btn_close {
+      width: 12px;
+      height: 12px;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      background: url("./images/closeBtn.png");
+      background-size: 100% 100%;
+    }
+  }
+  .main_content {
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    overflow: auto;
+    box-sizing: border-box;
+    line-height: 24px;
+  }
+  .buttons {
+    padding: 0 12px 12px;
+    ul {
+      text-align: center;
+      font-size: 0;
+      li {
+        display: inline-block;
+        color: #fff;
+        text-align: center;
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+        border-radius: 4px;
+        background: $MainColor;
+        cursor: pointer;
+        margin-right: 16px;
+        vertical-align: middle;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &.warn {
+    .main_content {
+      .inner {
+        background: url("./images/warn.png") left center no-repeat;
+        background-size: auto 100%;
+        text-indent: 40px;
+        display: inline-block;
+        color: #333;
+      }
+    }
+  }
+}

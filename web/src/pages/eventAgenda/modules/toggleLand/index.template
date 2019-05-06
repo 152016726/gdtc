@@ -1,0 +1,19 @@
+<div class="land">
+    <div class="islandName" :class="{active: (fid === event.id) && isShowIsland}" @click="toggleLeagueInfo">
+        {{event.name}}
+        <div class="icon" :style="{backgroundImage: 'url('+ ((fid === event.id) && isShowIsland ? down : right) +')'}"></div>
+    </div>
+    <div class="country" v-if="(fid === event.id) && isShowIsland">
+        <toggle-item
+            v-for="(item, index) in list"
+            :key="index"
+            :fid="fid"
+            :sid="sid"
+            :lid="lid"
+            :event="item"
+            @setDefaultSid="setDefaultSid"
+            @setDefaultInfo="setDefaultInfo"
+        >
+        </toggle-item>
+    </div>
+</div>

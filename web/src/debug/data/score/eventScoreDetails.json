@@ -1,0 +1,31 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "eventState": "9",
+    "homeTid": "123456",
+    "homeName": "曼联",
+    "homeShortName": "曼联",
+    "homeGoalsScored": "",
+    "homeHalftimeScored": "0",
+    "homeLeagueRank": "10",
+    "awayTid": "123458",
+    "awayName": "切尔西",
+    "awayShortName": "切尔西",
+    "awayGoalsScored": "",
+    "awayHalftimeScored": "0",
+    "awayLeagueRank": "9",
+    "leagueId": "123459",
+    "leagueName": "欧巴罗",
+    "leagueColor": "586191",
+    "leagueShortName": "欧巴罗",
+    "season": "2018/2019",
+    "round": "0",
+    "vsDate": "2018-09-01 19:20",
+    "vsTime": "2690",
+    "weatherImage": "http://localhost:3003/component/scoreDetailsHeader/images/tq.png",
+    "weatherText": "晴",
+    "weatherLow": "10",
+    "weatherHigh": "20",
+    "stadiumName": "老特拉福特球场"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "company": [
+      {
+        "value": "bf",
+        "text": "必发赔率"
+      },
+      {
+        "value": "12",
+        "text": "百家欧赔"
+      },
+      {
+        "value": "1",
+        "text": "竞彩"
+      },
+      {
+        "value": "293",
+        "text": "威廉"
+      },
+      {
+        "value": "2",
+        "text": "立博"
+      },
+      {
+        "value": "3",
+        "text": "BET365"
+      },
+      {
+        "value": "6",
+        "text": "伟德"
+      },
+      {
+        "value": "280",
+        "text": "皇冠"
+      },
+      {
+        "value": "5",
+        "text": "澳门"
+      }
+    ]
+  }
+}

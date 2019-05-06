@@ -1,0 +1,31 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "list": [
+      {
+        "id": "123",
+        "name": "英超",
+        "color": "aqua",
+        "shortName": "英超"
+      },
+      {
+        "id": "124",
+        "name": "欧冠",
+        "color": "",
+        "shortName": "欧冠"
+      },
+      {
+        "id": "125",
+        "name": "墨超",
+        "color": "",
+        "shortName": "墨超"
+      },
+      {
+        "id": "126",
+        "name": "欧罗巴",
+        "color": "",
+        "shortName": "欧罗巴"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+<analysis-sub-title-view
+        id="match-before"
+        :text="textStr">
+    <div class="match-before">
+        <div class="match-before-title clearfix">
+            <div class="match-before-title-right">
+                <analysis-single-selection-view
+                        :title-text="fieldTitleText"
+                        :text-li="fieldTextLis"
+                        :selectHandelCallBack="fieldHandle"
+                        :active-index="fieldActiveIndex">
+                </analysis-single-selection-view>
+                <analysis-multiple-selection-view
+                        :title-text="marketTitleText"
+                        :market-lis="marketLis"
+                        :selectHandelCallBack="leagueSelectHandle">
+                </analysis-multiple-selection-view>
+            </div>
+        </div>
+        <div class="match-before-content-box">
+            <div class="match-before-content-title">
+                <ul class="clearfix">
+                    <li class="match">赛事</li>
+                    <li class="match-time">日期</li>
+                    <li class="match-team">
+                        <div>
+                            主场
+                        </div>
+                        <div>
+                            比分(半场)
+                        </div>
+                        <div>
+                            客场
+                        </div>
+                    </li>
+                    <li class="match-corner">
+                        角球
+                    </li>
+                    <li class="handicap second-level-title">
+                        <div class="li-top-title">
+                            亚指
+                        </div>
+                        <div class="li-bottom-content">
+                            <span>主</span>
+                            <span>盘口</span>
+                            <span>客</span>
+                        </div>
+                    </li>
+                    <li class="european second-level-title">
+                        <div class="li-top-title">
+                            欧指
+                        </div>
+                        <div class="li-bottom-content">
+                            <span>主</span>
+                            <span>和</span>
+                            <span>客</span>
+                        </div>
+                    </li>
+                    <li class="full-audience second-level-title">
+                        <div class="li-top-title">
+                            全场
+                        </div>
+                        <div class="li-bottom-content li-bottom-content-one">
+                            <span>胜负</span>
+                            <span>让球</span>
+                            <span>大小</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="match-before-content-content">
+                <ul class="clearfix">
+                    <li class="content-li"
+                        v-for="(ev, index) in eventMatchList">
+                        <div class="match">
+                            <span :title="ev.leagueName"
+                                  :style="{color: ev.leagueColor}">
+                                {{ev.leagueShortName}}
+                            </span>
+                        </div>
+                        <div class="match-time">{{ev.vsDate}}</div>
+                        <div class="match-team">
+                            <div>
+                                <analysis-team-name
+                                        :type-num="1"
+                                        :red-num="ev.homeRedCards"
+                                        :yellow-num="ev.homeYellowCards"
+                                        :team-name="ev.homeName"
+                                        :team-short-name="ev.homeShortName"
+                                        :home-goals-scored="ev.homeGoalsScored"
+                                        :away-goals-scored="ev.awayGoalsScored">
+                                </analysis-team-name>
+                            </div>
+                            <div>
+                                <analysis-score-display-view
+                                        :home-goals-scored="ev.homeGoalsScored"
+                                        :away-goals-scored="ev.awayGoalsScored"
+                                        :home-halftime-scored="ev.homeHalftimeScored"
+                                        :away-halftime-scored="ev.awayHalftimeScored">
+                                </analysis-score-display-view>
+                            </div>
+                            <div>
+                                <analysis-team-name
+                                        :type-num="2"
+                                        :red-num="ev.awayRedCards"
+                                        :yellow-num="ev.awayYellowCards"
+                                        :team-name="ev.awayName"
+                                        :team-short-name="ev.awayShortName"
+                                        :home-goals-scored="ev.homeGoalsScored"
+                                        :away-goals-scored="ev.awayGoalsScored">
+                                </analysis-team-name>
+                            </div>
+                        </div>
+                        <div class="match-corner">{{ev.homeCornerKicks}}-{{ev.awayCornerKicks}}</div>
+                        <div class="handicap">
+                            <span>{{ev.hwdw && ev.hwdw.homeOdds}}</span>
+                            <span>{{ev.hwdw && ev.hwdw.handicap}}</span>
+                            <span>{{ev.hwdw && ev.hwdw.awayOdds}}</span>
+                        </div>
+                        <div class="european">
+                            <span>{{ev.wdw && ev.wdw.homeOdds}}</span>
+                            <span>{{ev.wdw && ev.wdw.drawOdds}}</span>
+                            <span>{{ev.wdw && ev.wdw.awayOdds}}</span>
+                        </div>
+                        <div class="full-audience">
+                            <analysis-result-btn
+                                    :type-num="0"
+                                    :result-num="ev.result && ev.result.wdw">
+                            </analysis-result-btn>
+                            <analysis-result-btn
+                                    :type-num="1"
+                                    :result-num="ev.result && ev.result.hwdw">
+                            </analysis-result-btn>
+                            <analysis-result-btn
+                                    :type-num="2"
+                                    :result-num="ev.result && ev.result.ou">
+                            </analysis-result-btn>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</analysis-sub-title-view>

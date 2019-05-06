@@ -1,0 +1,199 @@
+@import "~common/style/color";
+
+.score-details-header {
+  width: 1190px;
+  margin: 0 auto;
+  .score-details-header-top {
+    height: 248px;
+    padding: 20px 275px;
+    border: 1px solid $CommonBorderColor;
+    background: $oddsBgColor;
+    box-sizing: border-box;
+    > div {
+      float: left;
+    }
+    .header-team-name {
+      margin-top: 44px;
+      width: 164px;
+      > div {
+        float: left;
+        height: 100%;
+      }
+      .leagueRank {
+        margin-right: 20px;
+        line-height: 88px;
+        color: #999;
+      }
+      .lrRight {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+      .team-name {
+        img {
+          width: 100%;
+        }
+        p {
+          text-align: center;
+          margin-top: 8px;
+          color: #333;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      &:nth-of-type(3){
+        margin-left: 12px;
+      }
+    }
+    .header-center-vs {
+      margin: 0 64px;
+      width: 170px;
+      p {
+        text-align: center;
+        padding: 4px 0;
+      }
+      .league-name {
+        padding: 0;
+        font-size: 16px;
+      }
+      .league-time {
+        padding-bottom: 8px;
+      }
+      .league-status {
+        span {
+          padding: 4px 6px;
+          background: rgba(0, 0, 0, .1);
+          border-radius: 4px;
+          color: #666;
+        }
+        .timeColor {
+          color: $MainColor;
+        }
+        .overColor {
+          color: $overEventColor;
+        }
+      }
+      .league-vs {
+        height: 90px;
+        font-size: 30px;
+        .score {
+          color: #F46859;
+          span:nth-of-type(2) {
+            margin: 0 40px;
+          }
+        }
+        .halfScore {
+          font-size: 16px;
+          color: #999;
+        }
+      }
+      .league-weather {
+        img {
+          width: 16px;
+          height: 14px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .score-details-header-tab {
+    margin: 22px 0;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    ul {
+      display: inline-block;
+      li {
+        float: left;
+        width: 153px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        background-color: $MainColor;
+        span {
+          display: inline-block;
+          width: 20px;
+          height: 16px;
+          margin-right: 6px;
+          vertical-align: sub;
+          background-size: 100% 100%;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+        }
+      }
+      .active {
+        background: #fff;
+        height: 46px;
+        line-height: 46px;
+        border: 1px solid $CommonBorderColor;
+        box-sizing: border-box;
+        a {
+          color: $MainColor;
+        }
+      }
+      /* 直播 */
+      .live {
+        span {
+          background-image: url("images/live-noSelect.png");
+        }
+        &.active {
+          span {
+            background-image: url("images/live-select.png");
+          }
+        }
+      }
+
+      /* 分析 */
+      .analysis {
+        span {
+          background-image: url("images/analysis-noSelect.png");
+        }
+        &.active {
+          span {
+            background-image: url("images/analysis-select.png");
+          }
+        }
+      }
+
+      /* 亚盘 */
+      .subplate {
+        span {
+          background-image: url("images/subplate-noSelect.png");
+        }
+        &.active {
+          span {
+            background-image: url("images/subplate-select.png");
+          }
+        }
+      }
+
+      /* 欧赔 */
+      .european {
+        span {
+          background-image: url("images/european-noSelect.png");
+        }
+        &.active {
+          span {
+            background-image: url("images/european-select.png");
+          }
+        }
+      }
+
+      /* 必发 */
+      .betir {
+        span {
+          background-image: url("images/betir-noSelect.png");
+        }
+        &.active {
+          span {
+            background-image: url("images/betir-select.png");
+          }
+        }
+      }
+    }
+
+  }
+}

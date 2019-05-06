@@ -1,0 +1,118 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<staticLabel>
+<div class="container">
+    <div class="articleIndex" ms-controller="articleIndex">
+        <div class="page_location">
+            {{each artileDetail.navText}}
+            <a href='{{$value.link}}'>{{$value.name}}</a>
+            {{if $index !== artileDetail.navText.length - 1}}<span>&gt;</span>{{/if}}
+            {{/each}}
+        </div>
+        <div class="clearfix">
+            <div class="left">
+                <div class="article" data-id="{{artileDetail.id}}">
+                    <div class="top">
+                        <h1>{{artileDetail.title}}</h1>
+                        <div class="info clearfix">
+                            <p><span>{{artileDetail.publishDate + ' ' + artileDetail.author}}</span></p>
+                            <div class="btns articleIndex_share_btns">
+                                <div class="bdsharebuttonbox" data-tag="share_1">
+                                    <a class="weixin" data-cmd="weixin" href="#"></a>
+                                    <a class="sina" data-cmd="tsina" href="#"></a>
+                                    <a class="bds_more"></a>
+                                </div>
+                                <div class="otherBtns">
+                                    <div class="bdsharebuttonbox" data-tag="share_1">
+                                        <a class="sqq" data-cmd="sqq" href="#">分享到腾讯QQ</a>
+                                        <a class="qzone" data-cmd="qzone" href="#">分享到QQ空间</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="content article_content">{{@artileDetail.content}}</div>
+                        {{if artileDetail.keywords !== '' && artileDetail.keywords !== undefined}}
+                        <div class="keyword">关键词：<span>{{artileDetail.keywords}}</span></div>
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="information">
+                    <h2>相关资讯</h2>
+                    <ul class="information_list">
+                        {{each informations || []}}
+                        <li class="clearfix" data-id='{{$value.id}}'>
+                            <a class="img" href='{{$value.link}}'>
+                                <img src='{{$value.titleImage}}' />
+                            </a>
+                            <div class="info">
+                                <a href='{{$value.link}}' title='{{$value.title}}'>
+                                    {{@$value.title}}
+                                </a>
+                                <div class="c">
+                                    {{@$value.description}}
+                                </div>
+                                {{if $value.label && $value.label.replace(/\s/g, "") !== ""}}
+                                <p class="bottom clearfix"><span>标签：</span><span class="tag">{{$value.label}}</span><span class="date">{{$value.publishDate}}</span>
+                                 {{/if}}
+                                </p>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <div class="information_other_list"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="infoList hotspot">
+                    <h2>每日热点</h2>
+                    <ul>
+                        {{each hotspot}}
+                        <li>
+                            <a href='{{$value.link}}'
+                               title='{{$value.title}}'
+                               class='{{($value.titleIsBolder == "true"? "fontBolader" : "") + ($value.titleIsEm  == "true" ? " titleEm" : "") }}'
+                               style='{{"color:"+($value.titleColor)}}'>
+                                {{$value.title}}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="infoList">
+                    <h2>阅读推荐</h2>
+                    <ul>
+                        {{each recommend}}
+                        <li>
+                            <a href='{{$value.link}}'
+                               title='{{$value.title}}'
+                               class='{{($value.titleIsBolder == "true"? "fontBolader" : "") + ($value.titleIsEm  == "true" ? " titleEm" : "") }}'
+                               style='{{"color:"+($value.titleColor)}}'>
+                                {{$value.title}}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <script>
+                window._bd_share_config = {
+                    common: {
+                        bdText: '{{artileDetail.title}}',     //自定义分享内容
+                        bdDesc: '{{artileDetail.title}}',     //自定义分享摘要
+                        bdUrl: location.href,                 //自定义分享url地址
+                        bdPic: '{{artileDetail.titleImage}}'  //自定义分享图片
+                    },
+                    share: [{
+                        bdSize: 16
+                    }]
+                };
+                (document.getElementsByTagName('head')[0] || body).appendChild(document.createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5);
+            </script>
+        </div>
+    </div>
+</div>
+</staticLabel>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

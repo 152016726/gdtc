@@ -1,0 +1,53 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "home": {
+      "totalVersusCount": "26",
+      "hwdw": {
+        "totalWin": "20",
+        "totalDraw": "2",
+        "totalDefeat": "4",
+        "homeWin": "10",
+        "homeDraw": "5",
+        "homeDefeat": "3",
+        "awayWin": "10",
+        "awayDraw": "2",
+        "awayDefeat": "2",
+        "lastSix": "1 0 3 1 3 0"
+      },
+      "ou": {
+        "totalOver": "10",
+        "totalUnder": "2",
+        "homeOver": "10",
+        "homeUnder": "2",
+        "awayOver": "10",
+        "awayUnder": "5",
+        "lastSix": "1 0 3 1 3 0"
+      }
+    },
+    "away": {
+      "totalVersusCount": "26",
+      "hwdw": {
+        "totalWin": "20",
+        "totalDraw": "2",
+        "totalDefeat": "4",
+        "homeWin": "10",
+        "homeDraw": "5",
+        "homeDefeat": "3",
+        "awayWin": "10",
+        "awayDraw": "2",
+        "awayDefeat": "2",
+        "lastSix": "1 0 3 1 3 0"
+      },
+      "ou": {
+        "totalOver": "10",
+        "totalUnder": "2",
+        "homeOver": "10",
+        "homeUnder": "2",
+        "awayOver": "10",
+        "awayUnder": "5",
+        "lastSix": "1 0 3 1 3 0"
+      }
+    }
+  }
+}

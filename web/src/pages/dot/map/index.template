@@ -1,0 +1,61 @@
+<div class="infoList map">
+    <h2>网点导航
+        <div class="city_ctrl clearfix">
+            <div class="info">
+                <span class="cm">当前显示：</span>
+                <span class="address">{{city + area}}</span>
+                <span>{{weather}}</span>
+            </div>
+            <div class="inputs">
+                <div class="city select_box">
+                    <div class="text" @click="showCity">
+                        {{city}}
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li @click="changeCity(ele.name, index)" v-for="(ele, index) in cityList">{{ele.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="area select_box">
+                    <div class="text" @click="showArea">
+                        {{area}}
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li @click="changeArea(ele)" v-for="ele in areaList">{{ele.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search_btn" @click="updateList">查询</div>
+            </div>
+        </div>
+    </h2>
+    <div class="map_wrapper clearfix">
+        <div class="sidebar">
+            <div class="search_box">
+                <input type="text" placeholder="输入关键字" v-model="keyword" @keyup.enter="updateList"/>
+                <p class="info">当前搜索区域共有<b>{{count}}</b>家竞彩店</p>
+                <div v-if="pageBtnCount !== 1 && pageBtnCount !== 0" class="buttons clearfix">
+                    <a @click="changePageStart(-1)"><</a>
+                    <div class="page_btn_wrapper">
+                        <a v-for="(ele, index) in new Array(pageBtnCount)"
+                           :class="{active: index + pageStart === pageIndex}" @click="changePage(index + pageStart)">{{index
+                            + pageStart}}</a>
+                    </div>
+                    <a @click="changePageStart(1)">></a>
+                </div>
+            </div>
+            <div class="city_list">
+                <ul>
+                    <li @click="handleMap" v-for="(ele, index) in list">
+                        <h3>{{`${index + 1}、${ele.dotNumer}`}}</h3>
+                        <p>地址：{{ele.address}}</p>
+                        <p>电话：{{ele.phone}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="map_baidu" id="allMap"></div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<div class="peerReview_main" id="root">
+    <div class="nav-crumbs">
+        <span>
+            <a href="#">
+                首页 >
+            </a>
+        </span>
+        <span>
+            <a href="#">
+                竞彩足球 >
+            </a>
+        </span>
+        <span>
+            同奖回查
+        </span>
+    </div>
+    <div class="title-box">
+        <h1>竞彩足球相同(相似)奖金赛果历史查询</h1>
+        <p>
+            注：“相同(相似)奖金赛果历史查询”功能，主要用途是搜索历史上与当前竞猜的场次奖金相同(三项奖金完全相同)或相似(三项奖金部分相同)的比赛，
+            通过参考历史比赛的结果统计，对当前投注提供依据。奖金可以自由选择三项相同、两项相同或者只有一项相同来进行查询，在此基础上，
+            联赛和主客队是更具体的辅助条件，在查询时也可以忽略不选。某些热门奖金组合出现次数较多，受页面所限，只显示距今最近进行的200场比赛进行统计。
+        </p>
+    </div>
+    <div>
+        <peer-review-list/>
+    </div>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

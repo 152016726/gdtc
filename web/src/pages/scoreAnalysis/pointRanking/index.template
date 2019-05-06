@@ -1,0 +1,49 @@
+<analysis-sub-title-view
+        id="point-ranking"
+        :text="textStr">
+    <div class="point-ranking clearfix">
+        <div class="point-ranking-box"
+             v-for="(mk, index_1) in dataList">
+            <analysis-team-name-title
+                    :type-num="index_1"
+                    :team-name="mk.teamName"
+                    :team-short-name='mk.teamShortName'>
+            </analysis-team-name-title>
+            <div class="point-ranking-content">
+                <div class="point-ranking-content-title">
+                    <ul class="clearfix">
+                        <li class="full-match">全场</li>
+                        <li class="match">赛</li>
+                        <li class="match">胜</li>
+                        <li class="match">平</li>
+                        <li class="match">负</li>
+                        <li class="match">得</li>
+                        <li class="match">失</li>
+                        <li class="match">净</li>
+                        <li class="match-account">得分</li>
+                        <li class="match-ranking">排名</li>
+                        <li class="winning-probability">胜率</li>
+                    </ul>
+                </div>
+                <div class="point-ranking-content-content">
+                    <ul>
+                        <li class="clearfix"
+                            v-for="(item, index) in allPointranking">
+                            <div class="full-match">
+                                {{item.titleText}}
+                            </div>
+                            <div v-for="(itemLi, index) in item.dataList">
+                                <span v-if="itemLi !== 'sixVersusCount'">
+                                    {{pointRankingList[mk.title] && pointRankingList[mk.title][itemLi] || ' '}}
+                                </span>
+                                <span v-else>
+                                    6
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</analysis-sub-title-view>

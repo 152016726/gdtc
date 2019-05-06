@@ -1,0 +1,10 @@
+<div class="toggleIsHistory clearfix">
+    <a href="#"
+       :class="{active: activeIndex === index}"
+       v-for="(item, index) in strList"
+       :key="index"
+       @click.prevent="itemClick(index)"
+    >
+        {{item}}
+    </a>
+</div>

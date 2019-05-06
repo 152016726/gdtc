@@ -1,0 +1,19 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.toggleIsHistory{
+  a{
+    float: left;
+    line-height: 24px;
+    padding: 0 20px;
+    color: $BasicFontColor;
+    font-size: 20px;
+    font-weight: bold;
+    border-right: 1px solid #D2D2D2;
+    &.active{
+      color: $MainColor;
+    }
+    &:last-child{
+      border:none;
+    }
+  }
+}

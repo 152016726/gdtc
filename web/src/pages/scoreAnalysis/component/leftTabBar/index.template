@@ -1,0 +1,8 @@
+<div class="left-tab-bar" id="left-tab-bar">
+    <ul>
+        <li v-for="(item, index) in idDomArr"
+            :key="index">
+            <a v-bind:href="item.idName">{{item.title}}</a>
+        </li>
+    </ul>
+</div>

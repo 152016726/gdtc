@@ -1,0 +1,36 @@
+@import "~common/style/color";
+
+.main {
+  width: 1190px;
+  margin: 20px auto;
+}
+
+/*金额字色*/
+.price_font {
+  color: $betslipRedFont;
+}
+
+/*胜字色*/
+.win_font {
+  color: $DarkerRedColor;
+}
+
+/*平字色*/
+.draw_font {
+  color: $BlueColor;
+}
+
+/*负字色*/
+.lose_font {
+  color: $DarkerGreenColor;
+}
+
+/*正中介线色*/
+.plus_hcap_font {
+  color: $RedColor;
+}
+
+/*负中介线色*/
+.minus_hcap_font {
+  color: $LightGreenColor;
+}

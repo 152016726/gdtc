@@ -1,0 +1,41 @@
+<div class="send-recommend-view" id="send-recommend-view">
+    <div class="send-recommend-view-top">
+        <div class="send-recommend-view-top-title">
+            <span class="tips-title">您选择的赛事:</span>
+            <span class="events-type">玩法-{{eventText}}</span>
+        </div>
+        <div class="send-recommend-view-top-content">
+            <ul class="clearfix">
+                <li v-for="(bl, index) in betsLip">
+                    <recommend-list-view
+                            :key="index"
+                            :match-info="bl.matchInfo"
+                            :out-comes="bl.outcomes">
+                     </recommend-list-view>
+                </li>
+            </ul>
+        </div>
+        <div class="send-recommend-view-top-max-bonus">
+            <span class="send-recommend-view-top-max-bonus-left">回报</span>
+            投入100，最高可中
+            <span class="send-recommend-view-top-max-bonus-right">{{maxBonus}}</span>
+        </div>
+    </div>
+    <div class="send-recommend-view-bottom">
+        <div class="send-recommend-view-bottom-title">
+            晒单理由
+        </div>
+        <div class="send-recommend-view-bottom-content">
+            <div class="send-recommend-view-input-text">
+                <textarea maxlength="150" placeholder="说说你的晒单理由吧..." v-model="textValue"/>
+            </div>
+            <div class="send-recommend-view-input-text-tips clearfix">
+                <div>* 理由不少于30个字，最多不超过150个字</div>
+                <div @click="submitHandle">
+                    <span>{{150 - textValue.length}}字</span>
+                    <span :class="{banSty: textValue.length < 30 }">发布</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+@import "../../common/style/color.scss";
+
+.selectNumBox{
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  margin: 0 8px;
+  display: block;
+  float: left;
+  div{
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $selectNumBorder;
+    display: block;
+    float: left;
+    &.cut{
+      background: url("images/cut.png") no-repeat center $BgColorWhite;
+    }
+    &.add{
+      background: url("images/add.png") no-repeat center $BgColorWhite;
+    }
+  }
+  input{
+    display: block;
+    float: left;
+    width: 58px;
+    height: 26px;
+    line-height: 26px;
+    border-top: 1px solid $selectNumBorder;
+    border-bottom: 1px solid $selectNumBorder;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

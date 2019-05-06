@@ -1,0 +1,29 @@
+<live-score-filter-box
+        :text="'赛事筛选'"
+        :toggleMainContent='toggleMainContent'
+        :show='show'>
+    <div class="scoreMatchBox">
+        <div class="matchTop">
+            <div class="topContent">
+                <ul class="clearfix">
+                    <li v-for="(lr, index) in leagueArr">
+                        <label>
+                            <input type="checkbox"
+                                   :value="lr.lid"
+                                   v-model="selectArr">
+                            <span>{{lr.shortName}}</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="matchBottom clearfix">
+            <div class="bottomLeft">
+                <span @click="checkAllHandle">全选</span>|<span @click="reverseSelectionHandle">反选</span>
+            </div>
+            <div class="bottomRight">
+                <span @click="enterHandle">确认</span>|<span @click="cancelHandle">取消</span>
+            </div>
+        </div>
+    </div>
+</live-score-filter-box>

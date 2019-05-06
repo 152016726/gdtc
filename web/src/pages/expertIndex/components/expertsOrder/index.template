@@ -1,0 +1,73 @@
+<div class="expertsOrder" v-if="!!marketEvents">
+    <div class="selfInfo clearfix">
+        <a class="avatar fl"
+           :style="{backgroundImage: 'url('+marketEvents.webApiPath+marketEvents.icon+')'}"
+           :href="'/expertZone.html?eid='+marketEvents.eid"
+        >
+        </a>
+        <div class="info fl">
+            <div class="details clearfix">
+                <span class="nickname fl">{{marketEvents.nickname}}</span>
+                <i class="rate fl" v-if="+marketEvents.fiveWinrate !== 0">
+                    近5中{{Math.ceil((+marketEvents.fiveWinrate)*5)}}
+                </i>
+                <i class="combat fl" v-if="+marketEvents.comboWin !== 0 || +marketEvents.comboWin !== 1">
+                    {{marketEvents.comboWin}}连胜
+                </i>
+            </div>
+            <div class="focus clearfix">
+                <div class="onFocus fl"
+                     @click.prevent="getConcern"
+                     :class="{active: isFocused}"
+                >
+                    <i class="icon" v-if="isFocused"></i>{{isFocused ? '已关注' : '+ 关注'}}
+                </div>
+                <div class="word fl"><i>[发布时间]</i>{{getDate(marketEvents.publishDate, 'yyyy-MM-dd hh:mm')}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="plays clearfix">
+        <div class="fl playInfo">
+            <p class="type">
+                <i>玩法：</i>
+                {{typeMarket.filter(item=>{return marketEvents.type === item.statusNum})[0].title}}
+            </p>
+            <div v-for="(val, index) in marketEvents.events" :key="index">
+                <div class="matchNum">
+                    <div
+                            :class="['index', {first : index === 0}, {second: index === 1}]"
+                            v-if="marketEvents.events.length > 1"
+                    >
+                    </div>
+                    <i class="completeNum">{{getWeekAndNo(val.completeNo)}}</i>
+                    <i class="time">{{getDate(val.vsDate, 'yyyy/MM/dd hh:mm')}}</i>
+                </div>
+                <p class="matchTeam">
+                    <i class="leagueName">{{val.leagueShortName}}</i>
+                    <i>{{val.homeShortName}}</i>
+                    <i class="vs">{{val.eventState === EventState.FULL_TIME ? val.homeGoalsScored+'-'+val.awayGoalsScored : 'VS'}}</i>
+                    <i>{{val.awayShortName}}</i>
+                </p>
+            </div>
+        </div>
+        <div class="result fr"
+             :class="[
+                {red: marketEvents.state === '2'},
+                {black: marketEvents.state === '3'},
+                {cancel: marketEvents.state === '6'},
+                {delay: marketEvents.state === '5'}
+             ]"
+        >
+        </div>
+    </div>
+    <a class="forMore" :href="'/expertZone.html?eid='+marketEvents.eid">
+        <span>查看晒单详情</span>
+    </a>
+    <!--<div class="description" v-if="!!marketEvents.result">-->
+        <!--<i class="analysis">分析：</i>-->
+        <!--<span>-->
+            <!--{{GetLength(marketEvents.result.analysis) > 70 ? cutStr(marketEvents.result.analysis, 70) : marketEvents.result.analysis}}-->
+            <!--<a href="#" class="more">[查看详情]</a>-->
+        <!--</span>-->
+    <!--</div>-->
+</div>

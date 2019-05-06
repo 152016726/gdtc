@@ -1,0 +1,18 @@
+<div id="player-list-vue" class="playerList clearfix">
+    <div v-bind:class="['playerContent', j==='home'? 'homeContent': 'awayContent']" v-for="(team, j) in playerList">
+        <ul class="clearfix">
+            <li v-for="(players, k) in team"
+                v-bind:class="['teamContent',' clearfix', j==='home'? 'homeTeam': 'awayTeam']">
+                <div v-if="k===1" class="spitLine">
+                    替补阵容
+                </div>
+                <player-line-vue v-for="(player, key) in players"
+                                 :key="key"
+                                 :player="player"
+                                 :index="key"
+                                 :isHome="j==='home'">
+                </player-line-vue>
+            </li>
+        </ul>
+    </div>
+</div>

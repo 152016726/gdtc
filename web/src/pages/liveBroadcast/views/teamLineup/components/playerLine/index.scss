@@ -1,0 +1,47 @@
+.playerLine {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  border-top: none;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333333;
+  border-bottom: 1px solid #ccc;
+  .playerIcon {
+    width: 30px;
+    height: 30px;
+    background: url('./images/player.png') no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+  }
+  &.right {
+    padding-right: 40px;
+    div {
+      float: right;
+    }
+    .playerIcon {
+      margin-left: 16px;
+    }
+    .playerName {
+      margin-right: 33px;
+    }
+  }
+  &.left {
+    padding-left: 40px;
+    div {
+      float: left;
+    }
+    .playerIcon {
+      margin-right: 16px;
+    }
+    .playerName {
+      margin-left: 33px;
+    }
+  }
+  &.colorBg {
+    background-color: #FAFAFA;
+  }
+
+}

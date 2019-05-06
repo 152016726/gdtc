@@ -1,0 +1,25 @@
+<div id="lineup-vue" class="lineupContainer">
+    <div class="lineup_content" v-if="isShowPlayground">
+        <div class="lineupInner">
+            <div v-for="(team, key) in formation" v-bind:class="['innerContent', key==='home' ? '': ' awayStyle']">
+                <div v-for="line in (key==='home' ? homeLineCfg: awayLineCfg)" class="lineupWarp"
+                     v-bind:style="{width: key==='home' ? (1/homeLineCfg.length)*100 + '%': (1/awayLineCfg.length)*100 + '%' }">
+                    <div v-for="type in line" class="lineContent"
+                         v-bind:style="{height: (1/line.length)*100 + '%'}">
+                        <player-cycle-vue v-for="(player,index) in team"
+                                          :key="index"
+                                          v-if="`${player.positionX}-${player.positionY}`===type"
+                                          :isHome="key==='home'"
+                                          :player="player"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <team-vs-vue :homeFormation="homeFormation" :awayFormation="awayFormation"></team-vs-vue>
+    </div>
+    <div class="noDataContent" v-if="!isShowPlayground">
+        <div class="leftLine"></div>
+        <div>暂无阵容数据</div>
+        <div class="rightLine"></div>
+    </div>
+</div>

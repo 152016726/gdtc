@@ -1,0 +1,55 @@
+<dt class="row">
+    <dd class="player">
+        {{typeMarket.filter(item=>{return order.type === item.statusNum})[0].title}}
+    </dd>
+    <dd>
+        <div class="match">
+            <div v-for="(item, key) in order.events">
+                <div
+                        :class="['index', {first : key === 0}, {second: key === 1}]"
+                        v-if="order.events.length > 1"
+                >
+                </div>
+                <i class="completeNum">{{getWeekAndNo(item.completeNo)}}</i>
+                <i class="time">{{getDate(item.vsDate, 'MM/dd hh:mm')}}</i>
+                <i class="leagueName">{{item.leagueShortName}}</i>
+                <i>{{item.homeShortName}}</i>
+                <i class="vs">{{item.eventState === EventState.FULL_TIME ? item.homeGoalsScored+'-'+item.awayGoalsScored : 'VS'}}</i>
+                <i>{{item.awayShortName}}</i>
+            </div>
+        </div>
+    </dd>
+    <dd>
+        <div class="showMore" v-if="Object.keys(recommendOrderDetail).length === 0" @click="showMore">
+            <i>查看详情</i><i class="icon"></i>
+        </div>
+        <div class="description" v-if="Object.keys(recommendOrderDetail).length !== 0">
+            <div class="bets clearfix">
+                <i class="title fl">晒单：</i>
+                <div class="fl">
+                    <div  v-for="(item, index) in recommendOrderDetail.betslip">
+                        <i :class="['index', {first : index === 0}, {second: index === 1}]"
+                           v-if="recommendOrderDetail.betslip.length > 1">
+                        </i>
+                        <div class="details" v-for="(val, key) in item.outcomes" :key="key">
+                            {{!!val.handicap ? `让球(${val.handicap})` : null}}
+                            {{`${getBetCnString(val.marketKey, val.outcomeKey)}@`}}
+                            <i class="rate">{{val.odds}}</i>{{key !== (item.outcomes.length -1) ? '、 ' : ''}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="analysis">
+                <i class="title">分析：</i>
+                <span>{{recommendOrderDetail.analysis}}</span>
+            </div>
+        </div>
+    </dd>
+    <dd>
+        <i v-if="stateArr.indexOf(order.state) === -1" class="noWard">未开奖</i>
+        <i v-if="stateObj.WIN === order.state" class="red result">红</i>
+        <i v-if="stateObj.LOSE === order.state" class="black result">黑</i>
+        <i v-if="stateObj.DELAY === order.state" class="delay result">推迟</i>
+        <i v-if="stateObj.CANCLE === order.state" class="cancel result">取消</i>
+    </dd>
+</dt>

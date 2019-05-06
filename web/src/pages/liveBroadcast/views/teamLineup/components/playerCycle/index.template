@@ -1,0 +1,10 @@
+<div class="outer">
+    <div v-bind:class="['playerCycle', isHome ? '': ' awayCls']">
+        <div class="shirtnum">
+            {{player.shirtnumber||''}}
+        </div>
+        <div class="playerName">
+            {{player.playerCnShort||''}}
+        </div>
+    </div>
+</div>

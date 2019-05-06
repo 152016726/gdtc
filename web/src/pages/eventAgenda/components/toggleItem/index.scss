@@ -1,0 +1,57 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.countryLeague{
+  .countryLeagueName{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    color: #666666;
+    font-size: $FONT_14;
+    line-height: 30px;
+    .switch{
+      margin-top: 10px;
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      background-position: center center;
+      background-size: contain;
+    }
+    .iconFont{
+      margin: 0 10px;
+      margin-top: 9px;
+      width: 12px;
+      height: 12px;
+      background-image: url("../../images/circle.png");
+      background-position: center center;
+    }
+  }
+  .tournament{
+    margin-left: 24px;
+    li{
+      line-height: 30px;
+      .tournamentName{
+        display: block;
+        color: #666666;
+        font-size: 14px;
+        .circle{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          height:4px;
+          width: 4px;
+          border-radius: 4px;
+          background-color: #959797;
+        }
+        &:hover, &.active{
+          color: $MainColor;
+          text-decoration: underline;
+          text-underline: $MainColor;
+          .circle{
+            background-color: $MainColor;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div class="eventHeader">
+    <ul class="continentList clearfix">
+        <li v-for="(item, index) in list"
+            :key="index"
+            :class="defaultIndex === index ? 'active' : ''"
+            @click="itemClick(index, item.id)"
+        >
+            {{item.name}}
+        </li>
+    </ul>
+</div>

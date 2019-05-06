@@ -1,0 +1,15 @@
+<div class="moreBetCtrlBtn"
+     :class="{
+     active: active,
+     csMoreBetCtrlBtn: isCenter
+     }"
+     @click="clickHandle">
+    <h2>
+        <span>
+            <b v-if="selectedBet>0">{{selectedBet}}</b>
+            {{active ? openingText : hidingText}}
+        </span>
+        <span class="arrowIcon"
+              :class="{upSearch: active}"/>
+    </h2>
+</div>

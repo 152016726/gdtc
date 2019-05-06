@@ -1,0 +1,110 @@
+@import "../../common/style/color.scss";
+@import "../../common/style/fonts.scss";
+
+#expertHeader {
+  .headerTop {
+    font-family: "宋体";
+    color: $CommonHeaderColor;
+    height: 36px;
+    line-height: 36px;
+    background-color: $CommonHeaderBg;
+    a {
+      color: $CommonHeaderColor;
+    }
+    .itemsBox {
+      a {
+        margin-left: 20px;
+      }
+      i {
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: text-bottom;
+        &.login {
+          background: url("./images/login.png") no-repeat 100% 100%;
+        }
+        &.register {
+          background: url("./images/register.png") no-repeat 100% 100%;
+        }
+        &.phone {
+          background: url("./images/phone.png") no-repeat 100% 100%;
+        }
+        &.nav {
+          background: url("./images/nav.png") no-repeat 100% 100%;
+        }
+      }
+      .login-status {
+        display: none;
+        img{
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+        .logout-btn {
+          cursor: pointer;
+          border-bottom: 1px solid #666666;
+        }
+      }
+    }
+  }
+  .headerBanner {
+    border-bottom: 4px solid $MainColor;
+    box-sizing: border-box;
+    .container {
+      position: relative;
+    }
+    .promote {
+      height: 82px;
+      width: 352px;
+      a {
+        display: block;
+        height: 100%;
+        background: url('./images/logo.png') no-repeat center center;
+      }
+    }
+    .tabItems {
+      margin-top: 25px;
+      .navigation {
+        li {
+          float: left;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          padding: 0 15px;
+          font-size: 16px;
+          a {
+            color: #333333;
+          }
+          &.active {
+            a {
+              color: #ffffff;
+            }
+            background-color: $MainColor;
+          }
+        }
+      }
+      .search {
+        margin-left: 25px;
+        position: relative;
+        .searchInput {
+          height: 30px;
+          line-height: 30px;
+          width: 158px;
+          background-color: #F1F3F6;
+          color: #A3A3A3;
+          font-size: 15px;
+          text-indent: 8px;
+        }
+        .searchIcon {
+          position: absolute;
+          width: 20px;
+          height: 30px;
+          right: 12px;
+          top: 0;
+          background: url("./images/search.png") no-repeat center center;
+        }
+      }
+    }
+  }
+}

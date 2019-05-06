@@ -1,0 +1,99 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "home": [
+      {
+        "vid": "123456",
+        "vsDate": "09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#DA573A",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "awayTid": "234",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "day": "15"
+      },
+      {
+        "vid": "123456",
+        "vsDate": "09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#DA573A",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "awayTid": "234",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "day": "15"
+      },
+      {
+        "vid": "123456",
+        "vsDate": "09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#DA573A",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "awayTid": "234",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "day": "15"
+      }
+    ],
+    "away": [
+      {
+        "vid": "123456",
+        "vsDate": "09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#DA573A",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "awayTid": "234",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "day": "15"
+      },
+      {
+        "vid": "123456",
+        "vsDate": "09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#DA573A",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "awayTid": "234",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "day": "15"
+      },
+      {
+        "vid": "123456",
+        "vsDate": "09-01",
+        "leagueId": "123",
+        "leagueName": "欧罗巴",
+        "leagueColor": "#DA573A",
+        "leagueShortName": "欧罗巴",
+        "homeTid": "123",
+        "homeName": "曼联",
+        "homeShortName": "曼联",
+        "awayTid": "234",
+        "awayName": "切尔西",
+        "awayShortName": "切尔西",
+        "day": "15"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+    <div class="main"  ms-controller="root">
+        <div class="market_content">
+            <div class="search clearfix" id="search">
+                
+            </div>
+            <div class="market market_lists" id="market_lists">
+
+            </div>
+            
+            <div class="page_tool" id="page_tool">
+                <xmp ms-widget="{is:'ms-page-tool', id:'ms-page-tool'}"></xmp>
+            </div>
+            <div class="footer-tip">
+                <p>注：请注意“让球”只适用于让球胜平负（和其他玩法不同）。</p>
+                <p>注：一般情况下，在当日21点前结束的赛事，会在当日进行兑奖。如果比赛在21点之后结束，则将在第二天早晨开始销售前兑奖。</p>
+                <p>注：列表中标有“单”字样的比赛，表示该场比赛开售单场竞猜胜平负游戏或单场竞猜让球胜平负游戏。</p>
+            </div>
+        </div> 
+    </div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

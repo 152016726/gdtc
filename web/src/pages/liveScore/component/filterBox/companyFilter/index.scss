@@ -1,0 +1,59 @@
+@import "~common/style/color";
+.scoreCompanyBox {
+  width: 305px;
+  label {
+    margin-left: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    input {
+      width: 16px;
+      height: 16px;
+      vertical-align: baseline;
+      margin-right: 6px;
+    }
+  }
+  .matchTop {
+    padding: 15px;
+    ul{
+      li{
+        float: left;
+        width: 50%;
+        padding: 2px;
+      }
+    }
+  }
+  .matchBottom {
+    border-bottom: 1px solid $BorderColor;
+    border-top: 1px solid $BorderColor;
+    div {
+      float: left;
+      width: calc(50% - 40px);
+      padding: 12px 20px;
+      color: #999;
+      span{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+      }
+      span:nth-of-type(1) {
+        margin-right: 12px;
+      }
+      span:nth-of-type(2){
+        margin-left: 12px;
+      }
+    }
+    .bottomLeft{
+      span{
+        color: $MainColor;
+      }
+    }
+    .bottomRight{
+      text-align: right;
+    }
+  }
+}

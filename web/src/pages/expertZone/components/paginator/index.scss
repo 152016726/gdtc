@@ -1,0 +1,27 @@
+@import "~common/style/color.scss";
+.paginator{
+  color: #333333;
+  .pages{
+    cursor: pointer;
+    margin-left: 6px;
+    width: 24px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    &.active{
+      color: #ffffff;
+      background-color: $MainColor;
+    }
+  }
+  .find{
+    margin-left: 12px;
+    .matches{
+      color: $MainColor;
+    }
+  }
+}

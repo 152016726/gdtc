@@ -1,0 +1,27 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.analysis-score-display-view {
+  height: 100%;
+  > div {
+    display: inline-block;
+    line-height: calc(50% + 11px);
+    font-weight: 400;
+    &.scoreFull {
+      font-weight: 600;
+    }
+  }
+  .flatClass {
+    color: #669DF6;
+  }
+  &.verticalCla {
+    > div {
+      height: 50%;
+      line-height: inherit;
+      display: block;
+      &.scoreFull {
+        color: #DA573A !important;
+      }
+    }
+  }
+}

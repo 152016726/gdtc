@@ -1,0 +1,10 @@
+@import "../../../../common/style/color";
+
+.leagueText{
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $BgColorWhite;
+}

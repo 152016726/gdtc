@@ -1,0 +1,140 @@
+/* 奖金明细css */
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.betsSelections{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 708px;
+  color:$BasicFontColor;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: $FONT_14;
+  border:1px solid #EB812B;
+  z-index: 100;
+  transform: translateY(-100%);
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left:0;
+    bottom:-2px;
+    height: 2px;
+    width: 116px;
+    background-color: #ffffff;
+  }
+  .close{
+    position: absolute;
+    width:12px;
+    height: 12px;
+    right: 12px;
+    top:14px;
+    margin-top:-6px;
+    background:url("./images/close.png") no-repeat;
+    background-size:cover;
+  }
+  table{
+    border:none;
+    th{
+      background: none;
+      font-size: $FONT_14;
+      font-weight: normal;
+      border:none;
+      color:$BasicFontColor;
+    }
+    td{
+      border:none;
+    }
+  }
+  .header{
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    background-color: $BgColor;
+  }
+  .content{
+    padding: 5px 0;
+    background-color: #ffffff;
+    tr{
+      line-height: 24px;
+      padding: 10px 0;
+    }
+    .clear{
+      cursor: pointer;
+      background: url("./images/delete.png") no-repeat center center;
+      background-size: 10px 10px;
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .clear{
+    width: 60px;
+    height: 100%;
+    line-height: 44px;
+    a{
+      color: $linkColor;
+    }
+  }
+  .No{
+    width: 70px;
+    height: 100%;
+    line-height: 44px;
+  }
+  .teams{
+    width: 167px;
+    height: 100%;
+    line-height: 44px;
+    .homeName{
+      width: 45%;
+    }
+    .VS{
+      width: 10%;
+    }
+    .awayName{
+      width: 45%;
+    }
+  }
+  .selection{
+    width: 340px;
+    height: 100%;
+    a{
+      display: inline-block;
+      text-align: center;
+      margin:5px 0;
+      width: 100px;
+      height: 24px;
+      line-height: 24px;
+      margin-left: 10px;
+      color:#ffffff;
+      background-color: #B85300;
+    }
+    a:hover{
+      background-color: rgba(184,83,0,0.6);
+      position: relative;
+      &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top:50%;
+        height: 1px;
+        width: 100%;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .banker{
+    width: 38px;
+    text-align: center;
+    padding-right: 30px;
+    line-height: 44px;
+    .check{
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

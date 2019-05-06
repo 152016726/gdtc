@@ -1,0 +1,17 @@
+.filterSeason{
+  padding: 25px 0;
+  border-bottom: 2px solid #e0e3e6;
+  .leagueDescription{
+    line-height: 40px;
+    .flag{
+      height: 40px;
+      width: 58px;
+      background-color: #f10215;
+    }
+    .description{
+      margin-left: 14px;
+      color: #333333;
+      font-size: 20px;
+    }
+  }
+}

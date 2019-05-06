@@ -1,0 +1,18 @@
+<div class="countryLeague">
+    <div class="countryLeagueName clearfix" @click="getSubList">
+        <div class="switch fl" :style="{backgroundImage: 'url('+ (isFold ? fold : unfold) +')'}"></div>
+        <div class="iconFont fl"></div>
+        <i class="fl">{{event.name}}</i>
+    </div>
+    <ul class="tournament" v-if="isFold">
+        <li v-for="(item, index) in subList" :key="index">
+            <a href="#"
+               :class="[{active: (lid === item.id) && (sid === event.id)}, 'tournamentName']"
+               @click.prevent="setDefaultInfo(item)"
+            >
+                <i class="circle"></i>
+                {{item.name}}
+            </a>
+        </li>
+    </ul>
+</div>

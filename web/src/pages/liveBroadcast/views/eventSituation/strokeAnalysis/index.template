@@ -1,0 +1,11 @@
+<div class="strokeAnalysisContent">
+    <line-percent
+            v-for="item in arrLineType"
+            v-if="homeData[item.type]"
+            :key="item.type"
+            :type="item.type"
+            :title="item.text"
+            :left="homeData[item.type]"
+            :right="awayData[item.type]"
+    />
+</div>

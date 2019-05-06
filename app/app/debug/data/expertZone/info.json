@@ -1,0 +1,29 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "id": "1",
+    "name": "盒子精",
+    "nickname": "盒子精",
+    "summary": "广州海珠区客村店店主(店铺信息)广州海珠区客村店店主(店铺信息)广州海珠区客村店店主(店铺信息)广州海珠区客村店店主(店铺信息)广州海珠区客村店店主(店铺信息)",
+    "couponNumber": "20",
+    "phone": "13838383838",
+    "qrCode": "",
+    "icon": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3259600917,179456761&fm=26&gp=0.jpg",
+    "regTime": "",
+    "isExpert": "",
+    "attentionNumber": "20",
+    "fiveWinrate": "0.4",
+    "comboWin": "5",
+    "weekHitRate": "0.6",
+    "monthHitRate": "0.4",
+    "orderTotal": "",
+    "orderWin": "",
+    "orderDefeat": "",
+    "orderDraw": "",
+    "orderState": {
+      "twoStickOne": "true",
+      "single": "true",
+      "tg": "true"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{{extend '../../common/template/main_expert.art'}}
+{{block 'content'}}
+<div id="root" style="background-color: #fafafa;">
+    <div class="container">
+        <expert-zone :eid="eid"></expert-zone>
+    </div>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

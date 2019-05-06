@@ -1,0 +1,20 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.analysis-sub-title-view {
+  .analysis-title{
+    position: relative;
+    padding: 20px 0 20px 24px;
+    color: $MainColor;
+    font-size: $FONT_16;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 20px;
+      left: 0;
+      width: 6px;
+      height: 22px;
+      background: $MainColor;
+    }
+  }
+}

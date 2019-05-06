@@ -1,0 +1,10 @@
+<div class="stageList clearfix">
+    <div class="stage fl"
+         v-for="(item, index) in stageList"
+         :key="index"
+         :class="{active: currentIndex === index}"
+         @click="itemClick(item, index)"
+    >
+        {{item.stageName}}
+    </div>
+</div>

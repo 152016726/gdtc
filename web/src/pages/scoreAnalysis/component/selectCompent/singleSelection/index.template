@@ -1,0 +1,12 @@
+<analysis-select-common-view
+        :title-text="titleText">
+    <div class="analysis-single-election-box">
+        <ul>
+            <li v-for="(lit, index) in textLi"
+                @click="selectHandel(index)"
+                v-bind:class="{active: index === activeIndex}">
+                {{lit.text}}
+            </li>
+        </ul>
+    </div>
+</analysis-select-common-view>

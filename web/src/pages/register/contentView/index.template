@@ -1,0 +1,10 @@
+<div class="register-title">
+    <div class="title-logo">
+        <span></span>
+        广东竞猜
+    </div>
+    <div class="welcome-text">
+        欢迎来到广东竞猜网，请完善你的信息
+    </div>
+    <register-com-view></register-com-view>
+</div>

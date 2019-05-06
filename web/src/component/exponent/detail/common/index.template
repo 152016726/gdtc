@@ -1,0 +1,43 @@
+<div class="exp_table_wrapper common_detail" :class="{wdw:type==='wdw'}">
+    <h1 class="exp_table_title clearfix">
+        <span class="company">{{cname}}</span>
+        <span>{{list.length===0 ? '' : getTimeStr(list[0].updateTimeCurr)}}</span>
+        <span>
+            {{`${home} VS ${away}`}}
+        </span>
+        <span>{{`${type==='ah' ? '亚指': '欧指'} 赔率详细变化`}}</span>
+        <a href="javascript:window.history.back(-1);">返回赔率</a>
+    </h1>
+    <div class="exp_table">
+        <dl class="title">
+            <dd :class="`c${index + 1}`" v-for="(ele, index) in gridConf[type]">
+                {{ele.text}}
+            </dd>
+            <dd :class="`c${gridConf[type].length}`">状态</dd>
+        </dl>
+        <dl v-for="(ele_d, index_d) in list" :class="{row_event: index_d % 2 === 1}">
+            <dd v-for="(ele, index) in gridConf[type]">
+                {{ele.typeKey ==='time'? getTimeStr(ele_d[ele.key]):null}}
+                <bet-outcome v-if="ele.typeKey !=='time'" :isResult="true" :trend="ele_d[ele.typeKey]"
+                             :num="ele_d[ele.key]"/>
+
+            </dd>
+            <dd><i class="curr">即</i></dd>
+        </dl>
+        <dl>
+            <dd>
+                {{initData.homeOddsInit}}
+            </dd>
+            <dd>
+                {{type === 'ah' ? initData.handicapInit: initData.drawOddsInit}}
+            </dd>
+            <dd>
+                {{initData.awayOddsInit}}
+            </dd>
+            <dd>
+                {{getTimeStr(initData.updateTimeInit)}}
+            </dd>
+            <dd><i class="init">(初盘)</i></dd>
+        </dl>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="bet_outcome"
+     :class="{
+     upNum: isUpNum,
+     downNum: isDownNum,
+     active: isSelected,
+     justOdd: text==='',
+     vertical: vertical,
+     isResult: isResult,
+     isPrize: isPrize,
+     isHorizontal: isHorizontal,
+     centerAlign: (num === '0.00' || !num)
+     }"
+     @click="clickHandle">
+    <b v-show="text!==''">
+        {{text}}
+    </b>
+    <span>
+        {{num === '0.00' ? '--': (num || '--')}}
+    </span>
+</div>

@@ -1,0 +1,9 @@
+<div class="hadConcede concedeBox"
+     :class="{addColor: handicap > 0,
+              subColor: handicap < 0}"
+     v-if="isShow">
+    <img src="../../images/singleIcon.png"
+         alt="单关"
+         v-if="dgStatus === '1'">
+    {{marketOdds ? handicap : '未开售'}}
+</div>

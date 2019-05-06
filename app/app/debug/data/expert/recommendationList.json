@@ -1,0 +1,694 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "list": [
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            },
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      },
+      {
+        "rid": "123",
+        "eid": "1234",
+        "state": "1",
+        "nickname": "Jay",
+        "icon": "http://tupian.qqw21.com/article/UploadPic/2014-10/2014101415275079008.jpg",
+        "type": "1",
+        "fiveWinrate": "0.4",
+        "comboWin": "3",
+        "weekHitRate": "50",
+        "monthHitRate": "50",
+        "gameType": "1",
+        "events": [
+          {
+            "vid": "123456",
+            "completeNo": "201901046003",
+            "vsDate": "2019-01-04 16:00",
+            "leagueId": "12345",
+            "leagueName": "欧罗巴",
+            "leagueColor": "aqua",
+            "leagueShortName": "欧罗巴",
+            "homeTid": "123",
+            "homeName": "曼联",
+            "homeShortName": "曼联",
+            "homeGoalsScored": "1",
+            "awayTid": "321",
+            "awayName": "切尔西",
+            "awayShortName": "切尔西",
+            "awayGoalsScored": "2"
+          }
+        ],
+        "result": {
+          "betslip": [
+            {
+              "vid": "123456",
+              "completeNo": "201901046003",
+              "outcomes": [
+                {
+                  "odds":"2.03",
+                  "marketKey":"wdw",
+                  "outcomeKey":"drawOdds"
+                }
+              ]
+            }
+          ],
+          "multiple": "4",
+          "money": "20",
+          "maxBonuce": "123",
+          "minBonuce": "12",
+          "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析分析"
+        }
+      }
+    ]
+  }
+}

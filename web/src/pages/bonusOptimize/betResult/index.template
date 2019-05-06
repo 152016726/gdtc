@@ -1,0 +1,10 @@
+<div class="bet_result_content">
+    <div class="left">
+        <div class="top_price">方案金额： <span class="price">{{pay}}</span> 元</div>
+        <div class="bottom_price">预计奖金： <span class="price">{{bonusInfo ? bonusInfo.minBonus : 0}} ~ {{bonusInfo ? bonusInfo.maxBonus : 0}}</span> 元</div>
+    </div>
+    <div class="right">
+        <button @click="showBonusDetails">奖金明细</button>
+    </div>
+    <bonus-details :options="{isShowBonus,ratio,money:pay,betslip:betslipInfo,allStickResult:result,bonusInfo:bonusCompute}" @toggleBonus="setBonus"></bonus-details>
+</div>

@@ -1,0 +1,14 @@
+<div id="market-time-select"
+     class="marketTimeSelect">
+    <div v-if="noSort">
+        {{defText}}
+    </div>
+    <sort-button
+            :title-text='titleText'
+            v-else="noSort">
+        <div v-on:click="timeHandle"
+             class="otherTime">
+            {{otherText}}
+        </div>
+    </sort-button>
+</div>

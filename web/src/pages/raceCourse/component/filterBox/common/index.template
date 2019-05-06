@@ -1,0 +1,11 @@
+<div class="filter_Box"
+     :class="{active:show}"
+     v-clickOutside="handleClose"
+     :style="{ zIndex: zIndex}"
+>
+    <h2 @click="toggleMainContentSelf">{{text}}</h2>
+    <div class="mc">
+        <a v-if="showCloseBtn" class="btn_close" @click="toggleMainContentSelf"></a>
+        <slot></slot>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div id="event_list_title"
+     :class="isFlex ? 'flexDiv' : 'relativeDiv'">
+    <slot></slot>
+</div>

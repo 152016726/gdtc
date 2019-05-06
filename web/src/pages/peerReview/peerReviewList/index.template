@@ -1,0 +1,143 @@
+<div class="peer-review-list">
+    <div class="peer-review-list-top clearfix">
+        <div class="prl-top-left">
+            <ul class="clearfix">
+                <li>
+                    <span>主胜</span>
+                    <peer-review-drop-select
+                            :content-arr="winContentArr"
+                            :select-value="winSelectValue"
+                            :title-text="winTitleText"
+                            :select-handle-call-back="winSelectHandle"/>
+                </li>
+                <li>
+                    <span>平局</span>
+                    <peer-review-drop-select
+                            :content-arr="flatContentArr"
+                            :select-value="flatSelectValue"
+                            :title-text="flatTitleText"
+                            :select-handle-call-back="flatSelectHandle"/>
+                </li>
+                <li>
+                    <span>客胜</span>
+                    <peer-review-drop-select
+                            :content-arr="loseContentArr"
+                            :select-value="loseSelectValue"
+                            :title-text="loseTitleText"
+                            :select-handle-call-back="loseSelectHandle"/>
+                </li>
+                <li>
+                    <peer-review-drop-select
+                            :content-arr="leagueArr"
+                            :title-text="leagueTitleText"
+                            :select-value="leagueSelectValue"
+                            :select-handle-call-back="leagueSelectHandle"/>
+                </li>
+            </ul>
+        </div>
+        <div class="prl-top-center">
+            <span @click="marketSelectHandle">
+                查询
+            </span>
+            <span @click="resetHandel">
+                重置
+            </span>
+        </div>
+        <div class="prl-top-bottom">
+            <input
+                type="checkbox"
+                @click="singleHandle"
+                :checked="isSingle"/>
+            仅显示单固场
+        </div>
+    </div>
+    <div class="peer-review-list-center">
+        <div class="prl-center-left">
+            共{{marketLen}}场比赛符合条件 :
+        </div>
+        <div class="prl-center-center">
+            其中主队
+        </div>
+        <div>
+            <span class="win-len">
+                胜{{winLen}}场[{{winRatio}}%]
+            </span>
+            <span class="flat-len">
+                平{{flatLen}}场[{{flatRatio}}%]
+            </span>
+            <span class="lose-len">
+                负{{loseLen}}场[{{loseRatio}}%]
+            </span>
+        </div>
+    </div>
+    <div class="peer-review-list-bottom">
+        <div class="prl-bottom-list-title clearfix list-div">
+            <div class="market-date">日期</div>
+            <div class="market-league">赛事</div>
+            <div class="market-team">
+                <span>主队</span>
+                <span>VS</span>
+                <span>客队</span>
+            </div>
+            <div class="home-win">胜</div>
+            <div class="draw">平</div>
+            <div class="away-win">负</div>
+            <div class="select-status">
+                <select
+                     v-model="selected"
+                     v-on:change="bonusSelectHandle">
+                    <option value="0">全部奖金</option>
+                    <option value="1">变化中奖金</option>
+                    <option value="2">最终奖金</option>
+                </select>
+            </div>
+            <div class="market-result">赛果（全场比分）</div>
+        </div>
+        <ul class="prl-bottom-list-content">
+            <li class="clearfix list-div"
+                v-for="(item, index) in marketPeerList"
+                :key="index">
+                <div class="market-date">{{item.vsDate}}</div>
+                <div class="market-league"
+                     :style="{backgroundColor: '#' + item.leagueColor}"
+                     :title="item.leagueName">
+                    {{item.leagueShortName}}
+                </div>
+                <div class="market-team">
+                    <img src="../images/singleIcon.png"
+                         v-if="item.dgStatus === '1'"/>
+                    <span :title="item.homeName">
+                        {{item.homeShortName}}
+                    </span>
+                    <span>
+                        VS
+                    </span>
+                    <span :title="item.awayName">
+                        {{item.awayShortName}}
+                    </span>
+                </div>
+                <div class="home-win">{{item.win === '0.00' ? '--' : item.win}}</div>
+                <div class="draw">{{item.draw === '0.00' ? '--' : item.draw}}</div>
+                <div class="away-win">{{item.defeat === '0.00' ? '--' : item.defeat}}</div>
+                <div class="select-status"
+                     :class="{selectStatusInEnd: item.inEnd === 'true'}">
+                    {{item.inEnd === 'true'? '最终奖金' : '变化中奖金'}}
+                </div>
+                <div class="market-result"
+                     :class="{
+                     winResult: item.homeScore > item.awayScore ,
+                     loseResult: item.homeScore < item.awayScore
+                     }"
+                >
+                    {{item.homeScore}}:{{item.awayScore}}
+                </div>
+            </li>
+            <li class="clearfix list-div"
+                v-if="marketPeerList.length === 0 ">
+                <div class="noDataSty">
+                    暂无数据
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

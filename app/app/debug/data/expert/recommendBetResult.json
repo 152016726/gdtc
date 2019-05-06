@@ -1,0 +1,39 @@
+{
+  "rspCode": "SUCCESS",
+  "data": {
+    "betslip": [
+      {
+        "vid": "1111",
+        "completeNo": "201901023113",
+        "outcomes": [
+          {
+            "odds": "1.98",
+            "marketKey": "wdw",
+            "outcomeKey": "drawOdds"
+          },
+          {
+            "odds": "2.98",
+            "marketKey": "hwdw",
+            "outcomeKey": "homeOdds"
+          }
+        ]
+      },
+      {
+        "vid": "1111",
+        "completeNo": "201901023113",
+        "outcomes": [
+          {
+            "odds": "1.98",
+            "marketKey": "wdw",
+            "outcomeKey": "drawOdds"
+          }
+        ]
+      }
+    ],
+    "multiple": 1,
+    "money": 100,
+    "maxBonuce": 8,
+    "minBonuce": 101,
+    "analysis": "分析分析分析分析分析分析分析分析分析分析分析分析2"
+  }
+}

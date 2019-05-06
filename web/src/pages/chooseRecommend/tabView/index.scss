@@ -1,0 +1,26 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+.choose-recommend-market_title {
+  ul {
+    li {
+      float: left;
+      color: $marketTitleColor;
+      font-size: $FONT_14;
+      padding: 8px 20px;
+      border: solid 1px $BorderColor;
+      border-radius: 4px 4px 0 0;
+      border-bottom: none;
+      margin-right: 5px;
+      cursor: pointer;
+      >a{
+        color: $marketTitleColor;
+      }
+    }
+    .active {
+      color: #fff;
+      background-color: $MainColor;
+      border-color: #eb812b;
+    }
+  }
+}

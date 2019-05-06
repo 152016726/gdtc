@@ -1,0 +1,15 @@
+<analysis-select-common-view
+        :title-text="titleText">
+    <div class="analysis-multiple-selection-box">
+        <ul>
+            <li v-for="(lit, index) in marketLis">
+                <label :class="{active: lit.checked}"
+                       @click="selectHandel(index, lit.leagueId)"
+                       :title="lit.leagueName">
+                    <span></span>
+                    {{lit.text}}
+                </label>
+            </li>
+        </ul>
+    </div>
+</analysis-select-common-view>

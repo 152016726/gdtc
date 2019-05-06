@@ -1,0 +1,151 @@
+/* 奖金明细css */
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.preventScroll {
+  height: 100%;
+  overflow: hidden;
+}
+.bonusDetails{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 999;
+  .bonus{
+    position: absolute;
+    width: 780px;
+    max-height: 640px;
+    top:50%;
+    left:50%;
+    margin-left: -390px;
+    margin-top:-320px;
+    background-color: #fff;
+    .dark{
+      background-color: #F0F3FA;
+    }
+    .red{
+      color:#EB2A2A;
+    }
+    .orange{
+      -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+      cursor: pointer;
+      color:#EB812A;
+    }
+    .blue{
+      -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+      cursor: pointer;
+      color:#2B78B3;
+    }
+    .number{
+      display: inline-block;
+      margin:0 8px;
+    }
+    .bodyHeader{
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      width: 100%;
+      background-color: $BgColor;
+      font-size: $FONT_12;
+      color:$BasicFontColor;
+      position: relative;
+      .close{
+        cursor: pointer;
+        position: absolute;
+        width:12px;
+        height: 12px;
+        right: 12px;
+        top:50%;
+        margin-top:-6px;
+        background:url("./images/close.png") no-repeat;
+        background-size:cover;
+      }
+    }
+    .content{
+      max-height: 466px;
+      margin:30px;
+      margin-bottom: 10px;
+      overflow-y:auto;
+      .bettingDetails,.awardDetails,.breakDetails{
+        h2{
+          line-height: 30px;
+          text-align: center;
+          font-size: $FONT_12;
+          color:$BasicFontColor;
+          font-weight: bold;
+        }
+        .betTable{
+          border:1px solid $CommonBorderColor;
+          color:$BasicFontColor;
+          tr{
+            vertical-align: middle;
+            text-align: center;
+            line-height: 30px;
+            font-size: $FONT_14;
+          }
+          th{
+            color:#fff;
+            background-color: $BonusDetailsExcelColor;
+          }
+          th,td{
+            border-bottom: 1px solid $CommonBorderColor;
+            border-right: 1px solid $CommonBorderColor;
+          }
+          .last_th{
+            border-right:none;
+          }
+        }
+      }
+      .notice{
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+    .bodyBottom{
+      height: 58px;
+      width: 100%;
+      .ok{
+        display: block;
+        margin:0 auto;
+        height: 48px;
+        width: 120px;
+        background-color: $BonusDetailsExcelColor;
+        color:#fff;
+        line-height: 48px;
+        text-align: center;
+        font-size: $FONT_18;
+        font-weight: bold;
+      }
+    }
+    .h1{
+      height: 30px;
+    }
+    .w1{
+      width: 87px;
+    }
+    .w2{
+      width: 173px;
+    }
+    .w3{
+      width: 263px;
+    }
+    .w4{
+      width: 60px;
+    }
+    .w5{
+      width:90px;
+    }
+    .w6{
+      width: 295px;
+    }
+    .w7{
+      width:316px;
+    }
+    .padding{
+      padding-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{{extend '../../common/template/main_expert.art'}}
+{{block 'content'}}
+<div class="expert_group_main" id="root">
+    <expert-group-content-view></expert-group-content-view>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

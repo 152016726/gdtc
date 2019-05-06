@@ -1,0 +1,89 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<staticLabel>
+    <div class="container">
+        <div class="dot_index">
+            <div class="top clearfix">
+                <div class="infoList">
+                    <h2>站点新闻</h2>
+                    <ul class="list">
+                        {{each news}}
+                        <li>
+                            <a href='{{$value.link}}'
+                               title='{{$value.title}}'
+                               class='{{($value.titleIsBolder == "true"? "fontBolader" : "") + ($value.titleIsEm  == "true" ? " titleEm" : "") }}'
+                               style='{{"color:"+($value.titleColor)}}'>
+                                {{$value.title}}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="infoList excellentDot">
+                    <h2>本月优秀站点</h2>
+                    <div class="mc">
+                        <img src='{{excellentDot.pictures[0]}}'/>
+                        <h3 title="{{excellentDot.address}} {{excellentDot.dotNumer}}站点">
+                            <span>{{excellentDot.address}}</span>
+                            <span>{{excellentDot.dotNumer}}站点</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="infoList help">
+                    <h2>站点帮助中心</h2>
+                    <ul class="list">
+                        {{each help}}
+                        <li>
+                            <a href='{{$value.link}}'
+                               title='{{$value.title}}'
+                               class='{{($value.titleIsBolder == "true"? "fontBolader" : "") + ($value.titleIsEm  == "true" ? " titleEm" : "") }}'
+                               style='{{"color:"+($value.titleColor)}}'>
+                                {{$value.title}}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <a class="btn" href="http://apply.gdlottery.cn/">
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="infoList starDot">
+                    <h2>星级站点</h2>
+                    <ul class="clearfix">
+                        {{each starDot}}
+                        <li data-index='{{$index}}' class='{{($index === starDot.length - 1) ? "mr0" : ""}}'>
+                            <a class="img">
+                                <img src='{{$value.pictures[0]}}'/>
+                            </a>
+                            <div class="mc">
+                                <div class="row"><span>编号：</span><i>{{$value.dotNumer}}</i></div>
+                                <div class="row"><span>地址：</span><i>{{$value.address}}</i></div>
+                                <div class="row"><span>电话：</span><i>{{$value.phone}}</i></div>
+                                <div class="row"><span>星级：</span>
+                                    <div class='starBox w{{$value.starLevel}}'>
+                                        <div class='inner'><b></b><b></b><b></b><b></b><b></b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom" id="bottom">
+                <dot-map/>
+            </div>
+        </div>
+    </div>
+    <script>
+        var DOT_STATIC_DATA;
+        (function () {
+            DOT_STATIC_DATA = '{{$data}}';
+            DOT_STATIC_DATA = JSON.parse(DOT_STATIC_DATA.replace(/&#34;/g, '"'));
+        })();
+    </script>
+</staticLabel>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

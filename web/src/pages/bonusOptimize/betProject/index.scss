@@ -1,0 +1,63 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+$styleBorder: 1px solid $DarkerBorderColor;
+
+.bet_project_content{
+  width: 500px;
+  min-height: 240px;
+  box-sizing: border-box;
+  .inner_table{
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    .title{
+      display: table-caption;
+      height: 42px;
+      line-height: 42px;
+      font-size: 16px;
+      padding-left: 14px;
+      background-color: #F4F4F4;
+      color: $playIntroduceContent;
+      border: $styleBorder;
+      box-shadow: 0px -2px 2px #E9E9E9 inset;
+    }
+    dl{
+      display: table-row;
+      dt, dd{
+        display: table-cell;
+        &.number {
+          width: 80px;
+          vertical-align: middle;
+          text-align: center;
+        }
+        &.teams {
+          width: 200px;
+          vertical-align: middle;
+          text-align: center;
+        }
+        &.detail {
+          width: 220px;
+        }
+        border: $styleBorder;
+        border-top: none;
+        border-left: none;
+        &:first-child{
+          border-left: $styleBorder;
+        }
+      }
+      dt {
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background-color: #EBE588;
+      }
+      dd.detail {
+        padding: 6px 20px;
+        p {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

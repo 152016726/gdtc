@@ -1,0 +1,3 @@
+<div v-bind:style="{ minHeight: minHeight + 'px' }">
+    <slot v-if="isNeedShow"></slot>
+</div>

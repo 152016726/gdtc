@@ -1,0 +1,11 @@
+<div class="oddsResult clearfix">
+    <div class="odds fl" :class="{active: homeGoalsScored - awayGoalsScored > 0}">
+        {{!!homeOdds ? homeOdds : '-'}}
+    </div>
+    <div class="odds fl" :class="{active: homeGoalsScored === awayGoalsScored}">
+        {{!!drawOdds ? drawOdds : '-'}}
+    </div>
+    <div class="odds fl" :class="{active: homeGoalsScored - awayGoalsScored < 0}">
+        {{!!awayOdds ? awayOdds : '-'}}
+    </div>
+</div>

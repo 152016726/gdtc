@@ -1,0 +1,99 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.eventAgenda{
+  margin-bottom: 20px;
+  .title{
+    line-height: 36px;
+    color: #999999;
+    font-size: 14px;
+    text-align: left;
+  }
+  .content{
+    width: 100%;
+    border: 1px solid $headerBorderColor;
+    background-color: #f3f8f8;
+    border-radius: 4px;
+    .league{
+      width: 200px;
+      height: 100%;
+      border-right: 1px solid $headerBorderColor;
+      padding-top: 15px;
+      box-sizing: border-box;
+      h2{
+        color:#333333;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid #e0e3e6;
+        padding-top: 12px;
+      }
+      .island{
+        padding-top: 12px;
+        .islandName{
+          height: 28px;
+          line-height: 28px;
+          font-size: 14px;
+          background-color: $MainColor;
+          color: #ffffff;
+          text-indent: 20px;
+          position: relative;
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;
+          user-select:none;
+          .icon{
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            height: 7px;
+            width: 9px;
+            background-image: url("../images/up.png");
+            background-position: center center;
+            background-size: cover;
+          }
+        }
+        .country{
+          padding-left: 20px;
+        }
+      }
+    }
+    .course{
+      width: 990px;
+      padding: 0 20px;
+      background-color: $BgColorWhite;
+      box-sizing: border-box;
+      .round{
+        margin-bottom: 16px;
+      }
+      .team{
+        margin-bottom: 10px;
+      }
+      .leagueRank{
+        margin-bottom: 20px;
+      }
+      .introduction{
+        border: 1px solid $headerBorderColor;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        .intro{
+          height: 34px;
+          line-height: 34px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+          color: #666666;
+          border-bottom: 1px solid $headerBorderColor;
+          background-color: #E6EDFA;
+        }
+        .description{
+          text-indent: 2rem;
+          font-size: 14px;
+          padding: 16px;
+          line-height: 20px;
+          color: #666666;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "isMain": "bool 是否主流公司",
+  "markets": "string 玩法名"
+}

@@ -1,0 +1,52 @@
+@import "~common/style/color";
+@import "~common/style/fonts";
+
+
+.listBox{
+  .injectionArea {
+    line-height: 50px;
+    background: $oddsBgColor;
+    box-sizing: border-box;
+    position: relative;
+    .moreBetCtrlBtn {
+      height: 51px;
+      line-height: 51px;
+    }
+    div{
+      float: right;
+      cursor: pointer;
+      color: #CCBC29;
+      .arrowIcon {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+        margin-left: 2px;
+        background: url("../../../images/jt_sc01.png") no-repeat center;
+      }
+    }
+  }
+}
+
+.main .listItem li .listBox > .upDiv{
+  background: $otherOutcomeBgColor;
+  div{
+    color: #B85300;
+  }
+  .injectionLine{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: $otherOutcomeBgColor;
+  }
+  .injectionTopLine{
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    height: 1px;
+    width: calc(100% + 4px);
+    background: $otherOutcomeBorderColor;
+  }
+}

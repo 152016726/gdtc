@@ -1,0 +1,11 @@
+<body>
+    <div class="register-main" id="root">
+        <div class="register-title">
+            <div class="title-logo">
+                <span></span>
+                广东竞猜
+            </div>
+        </div>
+        <router-view></router-view>
+    </div>
+</body>

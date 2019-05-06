@@ -1,0 +1,27 @@
+<div class="phoneVerify">
+    <div class="phone-input">
+        <div class="phone-input-tips">
+            <span class="line-between"></span>
+            <span>{{$data.title}}</span>
+            <span class="line-between"></span>
+        </div>
+        <div class="phone-input-content">
+            <div class="phone-input-cell">
+                <input type="text" placeholder="输入手机号" id="phone-iphone-num">
+                <div class="phone-code-cell clearfix">
+                    <input type="text" placeholder="验证码" class="fl" id="phone-iphone-code">
+                    <img src="{{$data.imgSrc}}" alt="验证码" class="codeImg fl">
+                    <a href="#" class="refresh fl"></a>
+                </div>
+                <!--<div class="error-prompt">密码错误</div>-->
+            </div>
+            <div class="phone-btn"
+                 id="phone-btn">
+                {{$data.btnTitle}}
+            </div>
+        </div>
+        <div class="goBack">
+            <a href="#" class="checkBack">{{$data.backTitle}}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{{if $data.listData.length !== 0}}
+<ul class="information_list">
+    {{each $data.listData}}
+    <li class="clearfix" data-id='{{$value.id}}'>
+        <a class="img" href='{{$value.link}}'>
+            <img src='{{$value.titleImage}}'/>
+        </a>
+        <div class="info">
+            <a href='{{$value.link}}' title='{{$value.title}}'>
+                {{@$value.title}}
+            </a>
+            <div class="c">
+                {{@$value.description}}
+            </div>
+            {{if $value.label && $value.label.replace(/\s/g, "") !== ""}}
+            <p class="bottom clearfix"><span>标签：</span> <span class="tag">{{$value.label}}</span><span class="date">{{$value.publishDate}}</span>
+            {{/if}}
+            </p>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+{{/if}}
+<div class='{{"information_loadMore" + ($data.dataEnd ? " noMore" : "")  +($data.listData.length !== 0 ? " active" : "")}}'>
+    {{if $data.dataEnd}}
+    没有更多资讯
+    {{else}}
+    点击展开<a>更多</a>
+    {{/if}}
+</div>

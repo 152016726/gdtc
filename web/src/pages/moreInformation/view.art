@@ -1,0 +1,7 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<div id="root" class="more-information-main">
+    <more-information-view></more-information-view>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

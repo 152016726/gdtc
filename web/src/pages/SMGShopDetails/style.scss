@@ -1,0 +1,19 @@
+@import "~common/style/color";
+
+html, body{
+  background: $rowLightBgColor;
+}
+.SMGShopDetails {
+  width: 1190px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background: #fff;
+  .breadCrumbs {
+    height: 48px;
+    line-height: 48px;
+    color: #999999;
+    a{
+      color: #999999;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+.stageList{
+  margin-bottom: 16px;
+  .stage{
+    cursor: pointer;
+    padding: 8px 12px;
+    color: $BasicFontColor;
+    font-size: $FONT_16;
+    border: 1px solid #e6e6e6;
+    margin-left: 8px;
+    border-radius: 18px;
+    margin-top: 16px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    &.active{
+      color: $MainColor;
+      border: 1px solid $MainColor;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}

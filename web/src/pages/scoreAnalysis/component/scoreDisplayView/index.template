@@ -1,0 +1,11 @@
+<div class="analysis-score-display-view"
+     :class="{verticalCla: isVertical}">
+    <div class="scoreFull"
+         :class="{flatColor: !isHomeWin && !isAwayWin}">
+        <span :class="{winColor: isHomeWin}">
+            {{homeGoalsScored}}</span>-<span :class="{winColor: isAwayWin}">{{awayGoalsScored}}</span>
+    </div>
+    <div>
+        ({{homeHalftimeScored}}-{{awayHalftimeScored}})
+    </div>
+</div>

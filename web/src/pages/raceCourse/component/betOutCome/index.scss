@@ -1,0 +1,134 @@
+@import "../../../../common/style/color";
+$lineHeight: 39px;
+.bet_outcome {
+  text-align: left;
+  line-height: $lineHeight;
+  height: $lineHeight;
+  font-size: 0;
+  box-shadow: -6px -6px 6px -6px #dbd9c1 inset;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  span, b {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 12px;
+    white-space: nowrap
+  }
+  b {
+    color: #cfac9d;
+    padding-right: 4px;
+    max-width: 41px / 92px * 100%;
+    font-weight: 400;
+  }
+  span {
+    padding-left: 4px;
+    max-width: 51px / 92px * 100%;
+    font-weight: bold;
+    margin-left: 26%;
+  }
+  &.upNum {
+    color: #ea2a2a;
+    span {
+      padding-right: 12px;
+      background: url("../../images/up.png") right 13px no-repeat;
+      background-size: 6px 12px;
+    }
+    &:not(.justOdd){
+      span{
+        margin-left: inherit;
+      }
+    }
+  }
+
+  &.downNum {
+    color: #0fb80f;
+    span {
+      padding-right: 12px;
+      background: url("../../images/down.png") right 14px no-repeat;
+      background-size: 6px 12px;
+    }
+    &:not(.justOdd){
+      span{
+        margin-left: inherit;
+      }
+    }
+  }
+
+  &.active {
+    color: #fff;
+    background: $MainColor !important;
+    box-shadow: -6px -6px 6px -6px #d86c2e inset;
+    span {
+      padding-right: 0;
+      background: none;
+      color: #fff;
+    }
+    b {
+      color: #fff;
+    }
+  }
+  &.vertical {
+    text-align: center;
+    b, span {
+      display: block;
+      padding: 0 8px;
+      max-width: 100%;
+      line-height: 16px;
+      margin-left: 0;
+    }
+    b{
+      margin-top: 3px;
+    }
+  }
+  &.isResult{
+    background: #fff;
+    box-shadow: none;
+    text-align: center;
+    b, span {
+      color: #999;
+      font-weight: 400;
+      margin-left: 0;
+    }
+  }
+  &.isPrize{
+    span{
+      font-weight: bold;
+      color: $DarkerRedColor
+    }
+  }
+  &.justOdd {
+    span {
+      padding-left: 0;
+      max-width: inherit;
+      line-height: $lineHeight;
+    }
+    &.vertical{
+      span{
+        padding: 0 8px;
+      }
+    }
+  }
+  &.isHorizontal{
+    height: 39px;
+    b, span {
+      float: left;
+      margin-left: 0;
+    }
+    b{
+      margin: 0 6px;
+      padding: 0;
+      width: 24px;
+      text-align: center;
+    }
+  }
+  &.centerAlign{
+    text-align: center;
+    span {
+      margin-left: 0;
+    }
+  }
+}

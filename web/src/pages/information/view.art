@@ -1,0 +1,238 @@
+{{extend '../../common/template/main.art'}}
+{{block 'content'}}
+<staticLabel>
+    <div class="information">
+        <div class="container">
+            <div class="major clearfix">
+                <div class="exhibition fl">
+                    <!-- 轮播图 -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {{each banner val index}}
+                            <div class="swiper-slide">
+                                <a target="{{val.link ? '_blank' : '_self'}}"
+                                   href="{{val.link ? val.link : '#'}}"
+                                   title="{{val.alt}}">
+                                    <i style="
+                                        background: url({{!!val.url?val.url:''}}) no-repeat;
+                                        background-size:cover;">
+                                    </i>
+                                </a>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                        <!--分页器 -->
+                        <div class="pagination">
+
+                        </div>
+                    </div>
+                    <!-- 轮播图 -->
+
+                    <!-- 竞彩图集 -->
+                    <!--<div class="photoList">-->
+                        <!--<div class="phototitle">-->
+                            <!--<div class="lotteryList fl">竞彩图集</div>-->
+                            <!--<a href="#" class="more fr">更多</a>-->
+                        <!--</div>-->
+                        <!--<div class="photoList-container" id="photoContainer">-->
+                            <!--<div class="swiper-wrapper">-->
+                                <!--{{each atlas val index}}-->
+                                <!--<div class="swiper-slide">-->
+                                    <!--<a target="{{val.link ? '_blank' : '_self'}}"-->
+                                       <!--href="{{val.link ? val.link : '#'}}"-->
+                                       <!--class="photo"-->
+                                       <!--title="{{val.title}}">-->
+                                        <!--<i style="-->
+                                            <!--background: url({{!!val.titleImage ? val.titleImage : ''}}) no-repeat;-->
+                                            <!--background-size:cover;">-->
+                                        <!--</i>-->
+                                    <!--</a>-->
+                                    <!--<p>-->
+                                        <!--<a target="{{val.link ? '_blank' : '_self'}}"-->
+                                           <!--href="{{val.link ? val.link : '#'}}"-->
+                                           <!--title="{{val.title}}">-->
+                                            <!--{{val.title}}-->
+                                        <!--</a>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                                <!--{{/each}}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<span class="leftBtn"></span>-->
+                        <!--<span class="rightBtn"></span>-->
+                    <!--</div>-->
+                    <!-- 竞彩图集 -->
+                </div>
+                <!-- 头条&热门&前瞻 -->
+                <div class="teamsInfo fl">
+                    <div class="topic team">
+                        <h2 class="bold">
+                            {{if !!headLine[0]}}
+                            <a target="{{headLine[0].link ? '_blank' : '_self'}}"
+                               href="{{!!headLine[0].link ? headLine[0].link : '#'}}"
+                               title="{{headLine[0].title ? headLine[0].title : ''}}"
+                               class="{{headLine[0].titleIsBolder === 'true' ? 'bold' : ''}} {{headLine[0].titleIsEm === 'true' ? 'italic' : ''}}"
+                               style="{{!!headLine[0].titleColor ? 'color:'+headLine[0].titleColor : ''}};">
+                                {{!!headLine[0].title ? headLine[0].title : ''}}
+                            </a>
+                            {{/if}}
+                        </h2>
+                        <ul class="articleContent">
+                            {{each headLine val index}}
+                                {{if index !== 0}}
+                                    <li>
+                                        <a target="{{val.link ? '_blank' : '_self'}}"
+                                           href="{{val.link ? val.link : '#'}}"
+                                           title="{{val.title}}"
+                                           class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"
+                                           style="{{!!val.titleColor ? 'color:'+val.titleColor : ''}};">
+                                            <i></i>{{val.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="hot team">
+                        <h2 class="bold">
+
+                        </h2>
+                        <ul class="articleContent">
+
+                        </ul>
+                    </div>
+                    <!--<div class="forward team">-->
+                        <!--<h2 class="bold">-->
+                            <!--{{if !!prospect[0]}}-->
+                                <!--<a target="{{prospect[0].link ? '_blank' : '_self'}}"-->
+                                   <!--title="{{prospect[0].title ? prospect[0].title : ''}}"-->
+                                   <!--href="{{!!prospect[0].link ? prospect[0].link : '#'}}"-->
+                                   <!--class="{{prospect[0].titleIsBolder === 'true' ? 'bold' : ''}} {{prospect[0].titleIsEm === 'true' ? 'italic' : ''}}"-->
+                                   <!--style="{{!!prospect[0].titleColor ? 'color:'+prospect[0].titleColor : ''}};">-->
+                                    <!--{{!!prospect[0].title ? prospect[0].title : ''}}-->
+                                <!--</a>-->
+                            <!--{{/if}}-->
+                        <!--</h2>-->
+                        <!--<ul class="articleContent">-->
+                            <!--{{each prospect val index}}-->
+                                <!--{{if index !== 0}}-->
+                                    <!--<li>-->
+                                        <!--<a target="{{val.link ? '_blank' : '_self'}}"-->
+                                           <!--title="{{val.title}}"-->
+                                           <!--href="{{val.link ? val.link : '#'}}"-->
+                                           <!--class="{{val.titleIsBolder === 'true' ? 'bold' : ''}} {{val.titleIsEm === 'true' ? 'italic' : ''}}"-->
+                                           <!--style="{{!!val.titleColor ? 'color:'+val.titleColor : ''}};">-->
+                                            <!--<i></i>{{val.title}}-->
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                <!--{{/if}}-->
+                            <!--{{/each}}-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                </div>
+                <!-- 头条&热门&前瞻 -->
+            </div>
+
+            <div class="info clearfix">
+                <!-- 热门资讯&赛事分析&场外花边 -->
+                <div class="news fl" id="news">
+                    <div class="topic clearfix" id="topic">
+                        <a class="items active" href="#">
+                            热门资讯
+                        </a>
+                        <a class="items" href="#">
+                            赛事分析
+                        </a>
+                        <a class="items" href="#">
+                            专家预测
+                        </a>
+                        <a class="items" href="#">
+                            场外花边
+                        </a>
+                    </div>
+                    <div class="item active">
+                        <ul class="hotNews">
+
+                        </ul>
+                        <div class="more">
+                            <a href="#" tag="hot" class="unfold">点击展开<i>更多</i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul class="hotNews">
+
+                        </ul>
+                        <div class="more">
+                            <a href="#" tag="match" class="unfold">点击展开<i>更多</i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul class="hotNews">
+
+                        </ul>
+                        <div class="more">
+                            <a href="#" tag="expert" class="unfold">点击展开<i>更多</i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul class="hotNews">
+
+                        </ul>
+                        <div class="more">
+                            <a href="#" tag="outhood" class="unfold">点击展开<i>更多</i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 联赛排名 -->
+                <div class="rank fl">
+                    <!-- 积分榜 -->
+                    <div class="teamLeagueRank" id="teamLeagueRank">
+                        <div class="tab">
+                            积分榜
+                        </div>
+                        <div class="teams">
+                            <div class="teamRank clearfix" id="teamRank">
+                                {{each league val index}}
+                                <a href="#" target="_blank" class="{{index === 0 ? 'active' : ''}}">
+                                    {{val.leagueShortName}}
+                                </a>
+                                {{/each}}
+                            </div>
+                        </div>
+                        {{each league val index}}
+                        <table class="item {{index === 0 ? 'active' : ''}}">
+                            <tbody>
+                            <tr>
+                                <th class="w1">排名</th>
+                                <th class="w2">球队</th>
+                                <th class="w1">场次</th>
+                                <th class="w1">胜</th>
+                                <th class="w1">平</th>
+                                <th class="w1">负</th>
+                                <th class="w1">积分</th>
+                            </tr>
+                            {{each val.data item i}}
+                            <tr>
+                                <td><i>{{item.rank}}</i></td>
+                                <td>{{item.teamCnShort}}</td>
+                                <td>{{item.versusCount}}</td>
+                                <td>{{item.winCount}}</td>
+                                <td>{{item.drawCount}}</td>
+                                <td>{{item.loseCount}}</td>
+                                <td>{{item.point}}</td>
+                            </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                        {{/each}}
+                    </div>
+                    <!-- 射手榜暂无 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</staticLabel>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

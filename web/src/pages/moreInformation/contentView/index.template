@@ -1,0 +1,68 @@
+<div class="more-information-view">
+    <div class="more-information-nav">
+        <a href="/index.html">首页</a> > {{titleText}} > 列表
+    </div>
+    <div class="more-information-content clearfix">
+        <div class="more-information-content-left">
+            <div class="mif-content-left-title clearfix">
+                <span>{{titleText}}</span>
+                <span class=""></span>
+            </div>
+            <ul class="content-article-box">
+                <li v-for="(list, index) in leftLists"
+                    :key="index">
+                    <a v-bind:href="list.link"
+                       target="_blank">
+                        <div class="clearfix">
+                            <span></span>
+                            <span>{{list.title}}</span>
+                            <span>{{list.publishDate.substring(0, 10)}}</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="foot-burster" v-if="isShowPageTool">
+                <page-burster-view
+                        :total-number="totalNum"
+                        :page-size="pageSize"
+                        :callBackHandle="callBackHandle">
+                </page-burster-view>
+            </div>
+        </div>
+        <div class="more-information-content-right more-information-content-right-one">
+            <div class="mif-right-title">
+                <span></span>
+                每日热点
+            </div>
+            <ul class="mif-right-content">
+                <li v-for="(hList, index) in hotNewsDay"
+                    :key="index">
+                    <a v-bind:href="hList.link"
+                       target="_blank">
+                        <div>
+                            <span></span>
+                            {{hList.title}}
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="more-information-content-right more-information-content-right-two">
+            <div class="mif-right-title">
+                阅读推荐
+            </div>
+            <ul class="mif-right-content">
+                <li v-for="(rList, index) in recomReading"
+                    :key="index">
+                    <a v-bind:href="rList.link"
+                       target="_blank">
+                        <div>
+                            <span></span>
+                            {{rList.title}}
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

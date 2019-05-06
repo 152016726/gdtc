@@ -1,0 +1,84 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+$border: 1px solid #DEDEDE;
+.teamList{
+  display: table;
+  border-top: $border;
+  border-left: $border;
+  .teamThead{
+    display: table-header-group;
+    .th{
+      display: table-row;
+      dt{
+        display: table-cell;
+        color: #666666;
+        font-size: FONT_14;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        background-color: #E6EDFA;
+        border-right: $border;
+        border-bottom: $border;
+        &:nth-child(1){
+          width: 50px;
+        }
+        &:nth-child(2){
+          width: 168px;
+        }
+        &:nth-child(3){
+          width: 146px;
+        }
+        &:nth-child(4){
+          width: 84px;
+        }
+        &:nth-child(5){
+          width: 146px;
+        }
+        &:nth-child(6){
+          width: 146px;
+        }
+        &:nth-child(7){
+          width: 126px;
+        }
+        &:nth-last-child(1){
+          width: 70px;
+        }
+      }
+    }
+  }
+  .team{
+    display: table-row;
+    background-color: #ffffff;
+    &.even{
+      background-color: #FAFAFA;
+    }
+    .teamItem{
+      display: table-cell;
+      text-align: center;
+      line-height: 42px;
+      color: #333333;
+      border-bottom: $border;
+      border-right: $border;
+      .odds{
+       vertical-align: middle;
+        display: inline-block;
+      }
+      &.rank{
+        color: #666666;
+      }
+      &.score{
+        color: #DA0303;
+        font-weight: 700;
+        i{
+          font-size: FONT_16;
+          margin:0 2px;
+        }
+      }
+      &.analysis{
+        a{
+          color: #2B78B2;
+        }
+      }
+    }
+  }
+}

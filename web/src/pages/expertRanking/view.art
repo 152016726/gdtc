@@ -1,0 +1,7 @@
+{{extend '../../common/template/main_expert.art'}}
+{{block 'content'}}
+<div class="expert_ranking_main" id="root">
+    <expert-ranking-view></expert-ranking-view>
+</div>
+{{/block}}
+{{block 'styleContent'}}{{styleContent}}{{/block}}

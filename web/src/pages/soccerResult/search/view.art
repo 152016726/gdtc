@@ -1,0 +1,109 @@
+<div class="search_left">
+    <ul class="clearfix">
+        <li><input id="start_time" class="start_time data_input" name="start_time" type="text"
+                   value="{{$data.start_date}}"></li>
+        <li>
+            <span>至</span>
+        </li>
+        <li><input id="end_time" class="end_time data_input" name="end_time" type="text" value="{{$data.end_date}}">
+        </li>
+        <li class="allLianSai">
+            <div class="chose_allMarket">{{$data.leagueCheckedText}}</div>
+            <div class="liansaiList">
+                <ul>
+                    {{each $data.liansaiInfo val i}}
+                    <li class="lianSaiName" title="{{val.leagueName}}" data="{{val.leagueId}}">{{val.leagueShortName}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </li>
+        <li class="">
+            <div class="search_bth">
+                开始查询
+            </div>
+        </li>
+        <li class="">
+            <div class="search_result">
+                查询结果：有<span class="result_num" id="result_num">{{$data.count}}</span>场赛事符合要求
+            </div>
+        </li>
+        <li>
+            <div class="single_market">
+                <input id="single_btn" class="single_btn" type="checkbox" {{$data.isSingle ?'checked':''}}>
+                <span>仅显示单固场次</span>
+            </div>
+        </li>
+        <li class="updata_time">
+            <div>
+                更新时间：<span class="time">{{$data.updateString}}</span>
+                <span class="updata_btn">[刷新]</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="market market_list_title">
+    <ul>
+        <li class="market_title clearfix">
+            <div class="market_num oneLine">编号</div>
+            <div class="league oneLine">联赛</div>
+            <div class="market_time oneLine">比赛日期</div>
+            <div class="teams oneLine">
+                <span class="h">主队</span><span class="vs">VS</span><span class="a">客队</span>
+            </div>
+            <div class="halfScore oneLine">
+                <p class="firstP">半场</p>
+                <p>比分</p>
+            </div>
+            <div class="fullScore oneLine">
+                <p class="firstP">全场</p>
+                <p>比分</p>
+            </div>
+            <div class="WDW twoLine">
+                <ul>
+                    <li>胜平负</li>
+                    <li class="bottom">
+                        <span class="w50">彩果</span>
+                        <span class="w50 noBoeder">赔率</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="HWDW twoLine">
+                <ul>
+                    <li>让球胜平负</li>
+                    <li class="bottom">
+                        <span class="w33">让球</span>
+                        <span class="w33">彩果</span>
+                        <span class="w33 noBoeder">赔率</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="CS twoLine">
+                <ul>
+                    <li>比分</li>
+                    <li class="bottom">
+                        <span class="w50">彩果</span>
+                        <span class="w50 noBoeder">赔率</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="TG twoLine">
+                <ul>
+                    <li>总进球数</li>
+                    <li class="bottom">
+                        <span class="w50">彩果</span>
+                        <span class="w50 noBoeder">赔率</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="HFT twoLine noBoeder">
+                <ul>
+                    <li>半全场</li>
+                    <li class="bottom">
+                        <span class="w50">彩果</span>
+                        <span class="w50 noBoeder">赔率</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

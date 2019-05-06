@@ -1,0 +1,171 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+.expertsOrder {
+  width: 383px;
+  border: 1px solid $headerBorderColor;
+  border-radius: 2px;
+  padding: 25px 22px 25px 25px;;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  .selfInfo {
+    .avatar {
+      display: block;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .info {
+      margin-left: 14px;
+      .details {
+        .nickname {
+          padding-right: 9px;
+          line-height: 16px;
+          color: $BasicFontColor;
+          font-weight: bold;
+          border-right: 1px solid #D2D2D2;
+        }
+        .rate, .combat {
+          width: 52px;
+          height: 16px;
+          line-height: 16px;
+          text-align: center;
+          font-size: 12px;
+          border: 1px solid $MainColor;
+          border-radius: 8px;
+        }
+        .rate {
+          margin-left: 10px;
+          color: $MainColor;
+        }
+        .combat {
+          margin-left: 6px;
+          color: #DA573A;
+        }
+      }
+      .focus {
+        margin-top: 10px;
+        line-height: 24px;
+        .onFocus {
+          cursor: pointer;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          width: 60px;
+          height: 24px;
+          font-size: 12px;
+          text-align: center;
+          color: #CC6516;
+          background-color: #EDE7E8;
+          &.active {
+            color: #ffffff;
+            background-color: $MainColor;
+          }
+          .icon{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            vertical-align: middle;
+            background: url("../../images/yiguanzhu.png") no-repeat 100% 100%;
+            background-size: cover;
+          }
+        }
+        .word {
+          font-size: 12px;
+          color: #B6B6B6;
+          text-indent: 12px;
+          i {
+            color: #A0A0A0;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .plays {
+    margin-top: 12px;
+    height: 118px;
+    .playInfo {
+      color: $BasicFontColor;
+      line-height: 20px;
+      .type {
+        width: 100%;
+        margin-bottom: 10px;
+        i {
+          font-weight: bold;
+        }
+      }
+      .matchNum {
+        .first{
+          background: url('../../images/index1.png') no-repeat 100% 100%;
+        }
+        .second{
+          background: url("../../images/index2.png") no-repeat 100% 100%;
+        }
+        .index {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          vertical-align: sub;
+        }
+        .completeNum {
+          color: $MainColor;
+        }
+      }
+      .matchTeam {
+        .leagueName {
+          font-weight: bold;
+        }
+        .vs {
+          color: $MainColor;
+        }
+      }
+    }
+    .result{
+      width: 105px;
+      height: 105px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      &.red{
+        background-image: url("../../images/red.png");
+      }
+      &.black{
+        background-image: url("../../images/black.png");
+      }
+      &.cancel{
+        background-image: url("../../images/qx.png");
+      }
+      &.delay{
+        background-image: url("../../images/tuichi.png");
+      }
+    }
+  }
+  .forMore{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: $MainColor;
+  }
+  .description {
+    color: $BasicFontColor;
+    font-size: 14px;
+    word-break: break-all;
+    .analysis {
+      font-weight: bold;
+    }
+    .more {
+      color: #2B75B3;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@import "~common/style/color.scss";
+@import "~common/style/fonts.scss";
+
+$border: 1px solid $CommonHeaderBg;
+$bg: #F2F2F2;
+.scoreOverlays {
+  position: absolute;
+  width: 420px;
+  left: -10px;
+  top: 38px;
+  z-index: 90;
+  font-weight: normal;
+  .overlays{
+    max-height: 190px;
+    overflow-y: auto;
+    border: 1px solid $CommonHeaderBg;
+    box-shadow: 0 0 6px #999999;
+    font-size: $FONT_14;
+    color: $BasicFontColor;
+    background-color: #ffffff;
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 26px;
+    height: 12px;
+    left: 30px;
+    top: -11px;
+    background: url("./images/icon.png") no-repeat;
+    background-size: cover;
+  }
+  .title {
+    line-height: 28px;
+    text-align: center;
+  }
+  .rank {
+    width: auto;
+    line-height: 30px;
+    color: #999999;
+  }
+  > .tabs:nth-child(2n) {
+    background-color: #fafafa;
+  }
+  > .tabs:nth-child(2n+1) {
+    background-color: #ffffff;
+  }
+  .live {
+    display: table;
+    width: 100%;
+    max-height: 120px;
+    overflow-y: auto;
+    dl {
+      display: table-row;
+      dt {
+        padding: 4px 0;
+        display: table-cell;
+      }
+    }
+  }
+  .tabs, .teamName {
+    width: 100%;
+    line-height: 24px;
+    .left {
+      width: 45% !important;
+      border-bottom: $border;
+      box-sizing: border-box;
+      .home {
+        > div:nth-child(1) {
+          width: 60px;
+          height: 22px;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+        }
+        > div:nth-child(2) {
+          text-align: right;
+        }
+      }
+    }
+    .center {
+      width: 10%;
+      background-color: $bg;
+      border: $border;
+      text-align: center;
+      vertical-align: middle;
+      box-sizing: border-box;
+    }
+    .right {
+      width: 45%;
+      border-bottom: $border;
+      box-sizing: border-box;
+      .away {
+        > div:nth-child(1) {
+          width: 60px;
+          height: 22px;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+        }
+        > div:nth-child(2) {
+          text-align: left;
+        }
+      }
+    }
+  }
+  .teamName {
+    line-height: 28px;
+    background: $bg;
+    border-bottom: $border;
+    border-top: $border;
+    div {
+      border: none;
+    }
+  }
+  .info {
+    padding: 10px 0 20px 0;
+    .rows {
+      p {
+        line-height: 20px;
+        text-align: center;
+        color: #333333;
+      }
+      .line {
+        text-align: center;
+        line-height: 14px;
+        .colorLine {
+          display: inline-block;
+          .homeLine, .awayLine {
+            height: 7px;
+          }
+          .homeLine {
+            background: url("./images/red.png") left center;
+          }
+          .awayLine {
+            background: url("./images/blue.png") left center;
+          }
+        }
+      }
+    }
+  }
+}

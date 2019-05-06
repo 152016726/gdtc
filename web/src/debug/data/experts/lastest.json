@@ -1,0 +1,56 @@
+{
+  "rspCode": "0",
+  "rspMsg": "success",
+  "data": {
+    "list": [
+      {
+        "title": "不擅客战 克里斯恐受挫",
+        "content": "周一102 挪超 斯特罗姆加斯特 VS 克里斯蒂安松 2018-07-10 01:00 地点：马里恩利斯特体育场 天气：27度 晴 场次：挪超第16轮 斯特罗姆加斯特队近况：斯特罗姆加斯特上轮联赛做客1-1战平了利勒斯特罗姆，球队最近连续5战比赛",
+        "time": "06-15 11:06",
+        "imgUrl": "http://www.okooo.com/home/user/avatar/?uid=23862064&size=middle",
+        "name": "海珠竞彩网点",
+        "tel": "4401032683",
+        "id": 201010101,
+        "matchCode": "周五109",
+        "matchType": "美职足",
+        "matchTeam": "亚特联 VS 波特兰",
+        "like": 9,
+        "likeActive": 0,
+        "dislike": 1,
+        "dislikeActive": 0
+      },
+      {
+        "title": "周一102分析：不擅客战 克里斯恐受挫",
+        "content": "周一102 挪超 斯特罗姆加斯特 VS 克里斯蒂安松 2018-07-10 01:00 地点：马里恩利斯特体育场 天气：27度 晴 场次：挪超第16轮 斯特罗姆加斯特队近况： 斯特罗姆加斯特上轮联赛做客1-1战平了利勒斯特罗姆，球队最近连续5战比赛取得了3胜2",
+        "time": "06-14 11:06",
+        "imgUrl": "http://static.sporttery.cn/images/2017/01/06/11-1F106143A2S0.jpg",
+        "name": "以雪",
+        "tel": "3311282683",
+        "id": 22222222,
+        "matchCode": "周一101",
+        "matchType": "挪超",
+        "matchTeam": "斯特罗姆VS克里斯蒂",
+        "like": 29,
+        "likeActive": 1,
+        "dislike": 11,
+        "dislikeActive": 0
+      },
+      {
+        "title": "熊超分析：首尔不败而退 红牛德比发威",
+        "content": "周日103 韩职 大邱FC VS 首尔FC 2018-07-08 18:00 大邱FC本赛季在韩职联的表现十分糟糕，目前14轮比赛过后球队仅以1胜4平9负的成绩暂列积分榜最后一位，期间打进8球共丢26球，进攻端破门乏术，后防线漏洞百出，以球队目前的状态和士气而",
+        "time": "06-15 11:06",
+        "imgUrl": "http://static.sporttery.cn/images/2017/01/06/11-1F1061443129E.jpg",
+        "name": "熊超",
+        "tel": "5555555555",
+        "id": 222222,
+        "matchCode": "周日103",
+        "matchType": "韩职",
+        "matchTeam": "大邱FCVS首尔FC",
+        "like": 9,
+        "likeActive": 0,
+        "dislike": 11,
+        "dislikeActive": 1
+      }
+    ]
+  }
+}

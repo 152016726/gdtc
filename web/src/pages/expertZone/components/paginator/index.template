@@ -1,0 +1,11 @@
+<div class="paginator">
+    <i class="pages"
+       v-for="(item, index) in paginations"
+       :key="index"
+       @click="setIndex(index)"
+       :class="{active: activeIndex === index}"
+    >
+        {{item}}
+    </i>
+    <span class="find">查询结果：<i class="matches">{{count}}</i>有场赛事符合条件</span>
+</div>

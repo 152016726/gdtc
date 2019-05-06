@@ -1,0 +1,3 @@
+<ul class="teams">
+    <li v-for="(item, index) in options.list" :key="index">{{item.name}}</li>
+</ul>

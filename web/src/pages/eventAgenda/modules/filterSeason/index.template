@@ -1,0 +1,15 @@
+<div class="filterSeason clearfix">
+    <div class="leagueDescription fl">
+        <h2 class="description fl">
+            {{seasonName}} {{name}} 赛程积分
+        </h2>
+    </div>
+    <div class="filterItem fr">
+        <selections
+            :optionList="seasonList"
+            :defaultId="seasonId"
+            @transfer="changeSeasonObj"
+        >
+        </selections>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+@import "../../../../common/style/color";
+
+.winDrawWinSelect{
+  .moreSelect{
+    background: $BgColorWhite;
+    width: 158px;
+    border: 1px solid $MainColor;
+    position: relative;
+    ul{
+      li{
+        height: 32px;
+        line-height: 32px;
+        padding-left: 30px;
+        text-align: left;
+        cursor: pointer;
+        &:hover {
+          background: $oddsBgColor;
+        }
+        span{
+          margin-left: 4px;
+          padding-right: 17px;
+          background-size: 12px auto;
+        }
+        .upIcon{
+          background: url("../../images/up.png") center no-repeat;
+        }
+        .downIcon{
+          background: url("../../images/down.png") center no-repeat;
+        }
+      }
+    }
+  }
+  .linkWhite{
+    position: absolute;
+    top: 51px;
+    left: 1px;
+    width: calc(100% - 2px);
+    height: 1px;
+    background: #fff;
+  }
+}
